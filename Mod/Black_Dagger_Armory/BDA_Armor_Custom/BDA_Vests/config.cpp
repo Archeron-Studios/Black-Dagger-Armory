@@ -317,6 +317,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Boston: BDA_Armor_RF {
+		scope = 1
 		author="Rib";
 		displayName="M52D Body Armor (L. Boston)";
 		hiddenSelectionsTextures[]= {
@@ -464,6 +465,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Knight: OPTRE_UNSC_M52D_Armor {
+		scope = 1
 		dlc="BDA";
 		author="Rib + Grif";
 		displayName="M52D Body Armor (N. Knight)";
@@ -688,6 +690,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Reynolds: OPTRE_UNSC_M52D_Armor {
+		scope = 1
 		dlc="BDA";
 		author="Grif";
 		displayName="M52D Body Armor (F. Reynolds)";
@@ -909,6 +912,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Puma: BDA_Armor_RF {
+		scope = 1
 		author = "Grif";
 		displayName = "M52D Body Armor (R. Puma)";
 		hiddenSelectionsTextures[]= {
@@ -1041,6 +1045,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Karson: BDA_Armor_RF {
+		scope = 1
 		author = "Rib";
 		displayName = "M52D Body Armor (J. Karson)";
 		hiddenSelectionsTextures[]= {
@@ -1053,6 +1058,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Fonza: BDA_Armor_MD {
+		scope = 1
 		author = "Grif";
 		displayName = "M52D Body Armor (R. Fonza)";
 		hiddenSelectionsTextures[]= {

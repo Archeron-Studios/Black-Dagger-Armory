@@ -472,6 +472,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Karson_Helmet: BDA_CH252D_Helmet {
+		scope = 1
 		author="Rib";
 		displayName="CH252D Helmet (J. Karson)";
 		hiddenSelectionsTextures[]= {
@@ -499,6 +500,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Karson_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1
 		author="Rib";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Karson_CO.paa",
@@ -743,6 +745,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Boston_Helmet: BDA_CH252D_Helmet {
+		scope = 1
 		author="Rib";
 		displayName="CH252D Helmet (L. Boston)";
 		hiddenSelectionsTextures[]=
@@ -772,6 +775,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Boston_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1
 		author="Rib";
 		hiddenSelectionsTextures[]=
 		{
@@ -913,12 +917,13 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Knight_Helmet: BDA_CH252D_Helmet {
+		scope = 1
 		author="Rib";
 		displayName="CH252D Helmet (N. Knight)";
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Knight_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -935,13 +940,14 @@ class cfgWeapons {
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Knight_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		};
 	};
 	class BDA_CH252D_Knight_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1
 		author="Rib";
 		hiddenSelectionsTextures[]=
 		{
@@ -969,6 +975,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Puma_Helmet: BDA_CH252D_Helmet {
+		scope = 1
 		author="Rib";
 		displayName="CH252D Helmet (R. Puma)";
 		hiddenSelectionsTextures[]=
@@ -998,6 +1005,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Puma_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1
 		author="Rib";
 		hiddenSelectionsTextures[]=
 		{
@@ -1137,12 +1145,13 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Five_Helmet: BDA_CH252D_Helmet {
+		scope = 1
 		author="Rib";
 		displayName="CH252D Helmet (W. Five)";
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Five_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -1166,6 +1175,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Five_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1
 		author="Rib";
 		hiddenSelectionsTextures[]=
 		{
@@ -1193,6 +1203,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Reynolds_Helmet: BDA_CH252D_Helmet {
+		scope = 1
 		author="Rib";
 		displayName="CH252D Helmet (F. Reynolds)";
 		hiddenSelectionsTextures[]=
@@ -1222,6 +1233,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Reynolds_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1
 		author="Rib";
 		hiddenSelectionsTextures[]=
 		{
@@ -1254,7 +1266,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Griffin_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -1271,7 +1283,7 @@ class cfgWeapons {
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Griffin_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
@@ -1678,6 +1690,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Fonza_Helmet: BDA_CH252D_Helmet {
+		scope = 1
 		displayName="CH252D Helmet (R. Fonza)";
 		hiddenSelectionsTextures[]=
 		{
@@ -1706,6 +1719,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Fonza_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Fonza_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
@@ -1731,6 +1745,7 @@ class cfgWeapons {
 	};
 	
 	class BDA_CH252D_Lefferts_Helmet: BDA_CH252D_Helmet {
+		scope = 1
 		author="Grif";
 		displayName="CH252D Helmet (J. Lefferts)";
 		hiddenSelectionsTextures[]=
@@ -1760,6 +1775,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Lefferts_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1
 		author="Rib";
 		hiddenSelectionsTextures[]=
 		{
@@ -1951,6 +1967,7 @@ class cfgWeapons {
 	};
 	
 	class BDA_CH252D_Burkett_Helmet: BDA_CH252D_Helmet {
+		scope = 1
 		author="Zarush";
 		displayName="CH252D Helmet (J. Burkett)";
 		hiddenSelectionsTextures[]=
@@ -1980,6 +1997,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Burkett_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1
 		author="Zarush";
 		hiddenSelectionsTextures[]=
 		{
@@ -2538,7 +2556,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Hill_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -2555,7 +2573,7 @@ class cfgWeapons {
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Hill_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};

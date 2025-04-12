@@ -101,3 +101,4 @@ BDA_RemoveEngineer = {
 	player setVariable ["ace_engineer_engineerclass", 0, true];
 	["You are no longer a Engineer!", "error", 2] call BDA_fnc_notify;
 };
+//

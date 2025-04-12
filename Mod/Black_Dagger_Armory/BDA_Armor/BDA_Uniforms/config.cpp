@@ -31,7 +31,7 @@ class CfgVehicles {
 
     class BDA_Uniform_B_UNSC: OPTRE_UNSC_Army_Soldier_WDL {
 		dlc = "BDA";
-		author="Schlopp";
+		author="Schlopp/Rib";
 		model="\OPTRE_UNSC_Units\Army\uniform.p3d";
 		uniformClass="BDA_Uniform_B";
 		hiddenSelectionsTextures[]= {
@@ -40,10 +40,6 @@ class CfgVehicles {
 		};
 		items[]={};
 		respawnItems[]={};
-	};
-
-	class BDA_Uniform_B_SL_UNSC: BDA_Uniform_B_UNSC {
-		uniformClass="BDA_Uniform_B_SL";
 		hiddenSelections[]= {
 			"camo",
 			"camo2",
@@ -53,18 +49,60 @@ class CfgVehicles {
 		};
 	};
 
+	class BDA_Uniform_B_SL_UNSC: BDA_Uniform_B_UNSC {
+		dlc = "BDA";
+		author="Schlopp/Rib";
+		uniformClass="BDA_Uniform_B_SL";
+	};
+
 	class BDA_Uniform_ONI_UNSC: BDA_Uniform_B_UNSC {
+		dlc = "BDA";
+		author="Schlopp/Rib";
 		uniformClass="BDA_Uniform_ONI_SL";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_ONI_CO.paa",
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_ONI_CO.paa"
 		};
-		hiddenSelections[]= {
-			"camo",
-			"camo2",
-			"insignia",
-			"clan",
-			"A_BaseLeg"
+	};
+
+	class BDA_Uniform_TEST_UNSC: BDA_Uniform_B_UNSC {
+		dlc = "BDA";
+		author="Rib";
+		uniformClass="BDA_Uniform_TEST";
+		model="\OPTRE_UNSC_Units\Army\uniform_rolled.p3d";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST_CO.paa",
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST_CO.paa"
+		};
+	};
+	class BDA_Uniform_TEST2_UNSC: BDA_Uniform_B_UNSC {
+		dlc = "BDA";
+		author="Rib";
+		uniformClass="BDA_Uniform_TEST2";
+		model="\OPTRE_UNSC_Units\Army\uniform_rolled.p3d";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST2_CO.paa",
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST2_CO.paa"
+		};
+	};
+	class BDA_Uniform_TEST3_UNSC: BDA_Uniform_B_UNSC {
+		dlc = "BDA";
+		author="Rib";
+		uniformClass="BDA_Uniform_TEST3";
+		model="\OPTRE_UNSC_Units\Army\uniform_rolled.p3d";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST3_CO.paa",
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST3_CO.paa"
+		};
+	};
+	class BDA_Uniform_TEST4_UNSC: BDA_Uniform_B_UNSC {
+		dlc = "BDA";
+		author="Rib";
+		uniformClass="BDA_Uniform_TEST4";
+		model="\OPTRE_UNSC_Units\Army\uniform_rolled.p3d";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST2_CO.paa",
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST3_CO.paa"
 		};
 	};
 
@@ -138,6 +176,7 @@ class CfgVehicles {
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 class cfgWeapons {
+	class U_B_CombatUniform_mcam;
 	class UniformItem;
 	class ItemInfo;
 	class U_B_HeliPilotCoveralls;
@@ -174,6 +213,31 @@ class cfgWeapons {
 		displayName="Cross-Branch BDU (ONI)";
 		class ItemInfo: ItemInfo {
 			uniformClass="BDA_Uniform_ONI_UNSC";
+		};
+	};
+
+	class BDA_Uniform_TEST: BDA_Uniform_B {
+		displayName="Cross-Branch BDU (TEST)";
+		class ItemInfo: ItemInfo {
+			uniformClass="BDA_Uniform_TEST_UNSC";
+		};
+	};
+	class BDA_Uniform_TEST2: BDA_Uniform_B {
+		displayName="Cross-Branch BDU (TEST2)";
+		class ItemInfo: ItemInfo {
+			uniformClass="BDA_Uniform_TEST2_UNSC";
+		};
+	};
+	class BDA_Uniform_TEST3: BDA_Uniform_B {
+		displayName="Cross-Branch BDU (TEST3)";
+		class ItemInfo: ItemInfo {
+			uniformClass="BDA_Uniform_TEST3_UNSC";
+		};
+	};
+	class BDA_Uniform_TEST4: BDA_Uniform_B {
+		displayName="Cross-Branch BDU (TEST4)";
+		class ItemInfo: ItemInfo {
+			uniformClass="BDA_Uniform_TEST4_UNSC";
 		};
 	};
 

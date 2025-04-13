@@ -388,8 +388,8 @@ class cfgWeapons {
 	};
 
 	class BDA_VX19_Rib_Helmet: BDA_VX19_Helmet {
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		author="Rib";
 		displayName="VX19 Flight Helmet (R. Ribbington)";
 		class ItemInfo: ItemInfo {
@@ -403,8 +403,8 @@ class cfgWeapons {
 		};
 	};
 	class BDA_VX19_Rib_Helmet_dp: BDA_VX19_Helmet_dp {
-		scope = 1;
-		scopeCurator = 1;
+		scope = 2;
+		scopeCurator = 2;
 		author="Rib";
 		displayName="VX19 Flight Helmet (R. Ribbington)";
 		class ItemInfo: ItemInfo {

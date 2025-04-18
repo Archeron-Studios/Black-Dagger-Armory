@@ -396,7 +396,7 @@ class cfgWeapons {
 			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
 			hiddenSelectionsTextures[]={
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Rib_CO.paa",
-				"BDA_Armor_Custom\BDA_Helmets\data\visors\BDA_Pilot_Rib_Visor_CO.paa",
+				"BDA_Armor_Custom\BDA_Helmets\data\visors\BDA_Pilot_Rib_Visor2_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
@@ -2607,6 +2607,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Leviathan_Helmet: BDA_CH252D_Helmet {
+		scope = 1;
 		author="Grif";
 		displayName="CH252D Helmet (S. Leviathan)";
 		hiddenSelectionsTextures[]=
@@ -2636,6 +2637,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Leviathan_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1;
 		author="Grif";
 		hiddenSelectionsTextures[]=
 		{

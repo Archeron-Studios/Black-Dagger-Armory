@@ -140,7 +140,7 @@ class CfgVehicles {
     };
 };
 
-enableDebugConsole[] = { "76561198805462515", "76561198249403686", "76561198066703139" };
+enableDebugConsole[] = { "76561198805462515", "76561198249403686", "76561198066703139" }; //wallace, rib, pey
 
 class cfgMods {
 	author="Rib";

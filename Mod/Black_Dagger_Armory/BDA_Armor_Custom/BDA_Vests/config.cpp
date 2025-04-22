@@ -241,6 +241,26 @@ class cfgWeapons {
 		};
 	};
 
+	class BDA_Pilot_Rib: BDA_Armor_Ribbington_v2 {
+		displayName = "M52D Body Armor (R. Ribbington)";
+		hiddenSelectionsTextures[] = {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",//vest camo
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_CO.paa",//Shoulder camo2
+			"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Rib_Pilot_CO.paa", //legs camo3
+			"optre_unsc_units\army\data\ghillie_woodland_co", //camo4
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Rib_pilot_CO.paa"//camo5
+		};
+		class ItemInfo: ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",//vest camo
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_CO.paa",//Shoulder camo2
+				"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Rib_Pilot_CO.paa", //legs camo3
+				"optre_unsc_units\army\data\ghillie_woodland_co", //camo4
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Rib_pilot_CO.paa"//camo5
+			};
+		};
+	};
+
 	class BDA_Armor_Zarush: OPTRE_UNSC_M52D_Armor {
 		dlc="BDA";
 		author = "Rib";
@@ -1120,6 +1140,7 @@ class cfgWeapons {
 	};
 	
 	class BDA_Armor_Leviathan: BDA_Armor_RF {
+		scope = 1;
 		author = "Grif";
 		displayName = "M52D Body Armor (S. Leviathan)";
 		hiddenSelectionsTextures[]= {

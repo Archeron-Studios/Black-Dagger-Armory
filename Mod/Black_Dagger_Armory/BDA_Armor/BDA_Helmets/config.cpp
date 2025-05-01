@@ -814,10 +814,10 @@ class cfgWeapons {
 		dlc="BDA";
 		scope=2;
 		author="Rib";
-		displayName="VX19 Flight Helmet";
+		displayName="VX19 Flight Helmet (Black)";
 		subItems[] = {"Integrated_NVG_TI_1_F"};
 		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_B_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
@@ -835,7 +835,7 @@ class cfgWeapons {
 				"H_Ghillie"
 			};
 			hiddenSelectionsTextures[]= {
-				"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_B_CO.paa",
 				"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
@@ -848,7 +848,7 @@ class cfgWeapons {
 		author="Rib";
 		subItems[] = {"Integrated_NVG_TI_1_F"};
 		hiddenSelectionsTextures[]={
-				"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_B_CO.paa",
 				"",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
@@ -866,7 +866,63 @@ class cfgWeapons {
 				"H_Ghillie"
 			};
 			hiddenSelectionsTextures[]={
-				"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_B_CO.paa",
+				"",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};	
+		};
+	};
+
+	class BDA_VX19_Helmet_G: BDA_VX19_Helmet {
+		displayName="VX19 Flight Helmet (Green)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_G_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+			hiddenSelections[]={
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				//"H_Collar",
+				//"H_Neck",
+				"H_VacCollar",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]= {
+				"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_G_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
+	class BDA_VX19_Helmet_G_dp: BDA_VX19_Helmet_dp {
+		hiddenSelectionsTextures[]={
+				"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_G_CO.paa",
+				"",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};	
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+			hiddenSelections[]={
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				//"H_Collar",
+				//"H_Neck",
+				"H_VacCollar",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]={
+				"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_G_CO.paa",
 				"",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"

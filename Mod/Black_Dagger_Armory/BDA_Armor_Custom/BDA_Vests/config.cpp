@@ -242,7 +242,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Pilot_Rib: BDA_Armor_Ribbington_v2 {
-		displayName = "M52D Body Armor Pilot (R. Ribbington)";
+		displayName = "M52D Body Armor (R. Ribbington)";
 		hiddenSelectionsTextures[] = {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",//vest camo
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_CO.paa",//Shoulder camo2

@@ -2948,6 +2948,37 @@ class cfgWeapons {
 		};
 	};
 
+	class BDA_VX19_Grffin_Helmet: BDA_VX19_Helmet {
+		scope = 2;
+		scopeAuthor = 2;
+		author="Griffin";
+		displayName="VX19 Flight Helmet (T. Griffin)";
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+			hiddenSelectionsTextures[]={
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Griffin_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
+	class BDA_VX19_Griffin_Helmet_dp: BDA_VX19_Helmet_dp {
+		scope = 2;
+		scopeAuthor = 2;
+		author="Griffin";
+		displayName="VX19 Flight Helmet (T. Griffin)";
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+			hiddenSelectionsTextures[]={
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Griffin_CO.paa",
+				"",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
+
 	//end
 };	
 

@@ -388,8 +388,6 @@ class cfgWeapons {
 	};
 
 	class BDA_VX19_Rib_Helmet: BDA_VX19_Helmet {
-		scope = 2;
-		scopeCurator = 2;
 		author="Rib";
 		displayName="VX19 Flight Helmet (R. Ribbington)";
 		class ItemInfo: ItemInfo {
@@ -403,8 +401,6 @@ class cfgWeapons {
 		};
 	};
 	class BDA_VX19_Rib_Helmet_dp: BDA_VX19_Helmet_dp {
-		scope = 2;
-		scopeCurator = 2;
 		author="Rib";
 		displayName="VX19 Flight Helmet (R. Ribbington)";
 		class ItemInfo: ItemInfo {
@@ -2949,8 +2945,6 @@ class cfgWeapons {
 	};
 
 	class BDA_VX19_Grffin_Helmet: BDA_VX19_Helmet {
-		scope = 2;
-		scopeAuthor = 2;
 		author="Griffin";
 		displayName="VX19 Flight Helmet (T. Griffin)";
 		class ItemInfo: ItemInfo {
@@ -2964,9 +2958,6 @@ class cfgWeapons {
 		};
 	};
 	class BDA_VX19_Griffin_Helmet_dp: BDA_VX19_Helmet_dp {
-		scope = 2;
-		scopeAuthor = 2;
-		author="Griffin";
 		displayName="VX19 Flight Helmet (T. Griffin)";
 		class ItemInfo: ItemInfo {
 			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
@@ -2984,5 +2975,5 @@ class cfgWeapons {
 
 class cfgMods {
 	author="Rib";
-	timepacked="090320251540";
+	timepacked="1700010502025";
 };

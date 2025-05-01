@@ -561,7 +561,7 @@ class cfgWeapons {
 
 	class BDA_CH252D_Helmet_Mortar: BDA_CH252D_Helmet {
 		author = "Rib";
-		displayName="CH252D Helmet (Hangman)";
+		displayName="CH252D Helmet (Instructor)";
 		hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Mortar_CO.paa",
@@ -588,7 +588,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Helmet_Mortar_dp: BDA_CH252D_Helmet_dp {
-		displayName="CH252D Helmet (Hangman)";
+		displayName="CH252D Helmet (Instructor)";
 		hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Mortar_CO.paa",

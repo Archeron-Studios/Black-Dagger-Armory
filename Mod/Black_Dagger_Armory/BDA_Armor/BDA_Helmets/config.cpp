@@ -115,7 +115,7 @@ class cfgWeapons {
 	class BDA_CH252D_Helmet_P1: BDA_CH252D_Helmet {
 		displayName="CH252D Helmet (1stPLT)";
 		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Mammoth_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P1_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
@@ -132,7 +132,7 @@ class cfgWeapons {
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Mammoth_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P1_CO.paa",
 				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
@@ -142,7 +142,7 @@ class cfgWeapons {
 	class BDA_CH252D_Helmet_P1_dp: BDA_CH252D_Helmet_dp {
 		displayName="CH252D Helmet (1stPLT)";
 		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Mammoth_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P1_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -158,7 +158,7 @@ class cfgWeapons {
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Mammoth_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P1_CO.paa",
 				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
@@ -297,7 +297,7 @@ class cfgWeapons {
 		displayName="CH252D Helmet (2ndPLT)";
 		hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Druid_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P2_CO.paa",
 				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
@@ -313,7 +313,7 @@ class cfgWeapons {
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Druid_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P2_CO.paa",
 				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
@@ -324,7 +324,7 @@ class cfgWeapons {
 		displayName="CH252D Helmet (2ndPLT)";
 		hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Druid_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P2_CO.paa",
 				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
@@ -339,7 +339,7 @@ class cfgWeapons {
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Druid_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P2_CO.paa",
 				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
@@ -617,7 +617,7 @@ class cfgWeapons {
 	class BDA_CH252D_Helmet_P3: BDA_CH252D_Helmet {
 		displayName="CH252D Helmet (3rdPLT)";
 		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Outlaw_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P3_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
@@ -633,7 +633,7 @@ class cfgWeapons {
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Outlaw_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P3_CO.paa",
 				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
@@ -643,7 +643,7 @@ class cfgWeapons {
 	class BDA_CH252D_Helmet_P3_dp: BDA_CH252D_Helmet_dp {
 		displayName="CH252D Helmet (3rdPLT)";
 		hiddenSelectionsTextures[]= {
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Outlaw_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P3_CO.paa",
 				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
@@ -656,7 +656,7 @@ class cfgWeapons {
 				"H_Ghillie"
 			};
 			hiddenSelectionsTextures[]= {
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Outlaw_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P3_CO.paa",
 				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};

@@ -844,12 +844,12 @@ class cfgWeapons {
 		};
 	};
 
-	class BDA_Armor_Smith: BDA_Armor_MD {
+	class BDA_Armor_Smith: BDA_Armor_RF {
 		author = "Grif";
 		displayName = "M52D Body Armor (F. Smith)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Smith_Medic_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Smith_CO.paa"
@@ -1017,6 +1017,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Lockwood: BDA_Armor_MD {
+		scope = 1
 		author = "Grif";
 		displayName = "M52D Body Armor (A. Lockwood)";
 		hiddenSelectionsTextures[]= {
@@ -1173,6 +1174,18 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Byrne_CO.paa"
+		};
+	};
+
+	class BDA_Armor_Bachman: BDA_Armor_RF {
+		author = "Grif";
+		displayName = "M52D Body Armor (H. Bachman)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Bachman_CO.paa"
 		};
 	};
 	//end

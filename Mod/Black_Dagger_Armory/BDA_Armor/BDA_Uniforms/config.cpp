@@ -94,6 +94,12 @@ class CfgVehicles {
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST3_CO.paa",
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST3_CO.paa"
 		};
+		hiddenSelectionsMaterials[] = {
+			"",
+			"",
+			"BDA_Armor\BDA_Uniforms\data\uniform_b.rvmat",//mat1
+			"BDA_Armor\BDA_Uniforms\data\uniform_b.rvmat"//mat2
+		};
 	};
 	class BDA_Uniform_TEST4_UNSC: BDA_Uniform_B_UNSC {
 		dlc = "BDA";

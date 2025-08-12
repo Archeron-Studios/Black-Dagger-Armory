@@ -318,11 +318,6 @@ class CfgVehicles {
                 name = "1Rnd_SmokeBlue_Grenade_shell";
                 count = 10;
             };
-            class xx_1Rnd_40mm_Beanbag {
-                name = "TCF_UGL_8Gauge_Beanbag";
-                count = 10;
-            };
-
 		};
     };
 
@@ -411,20 +406,20 @@ class CfgVehicles {
         maximumLoad = 9999999;
         ace_cargo_size = 2;
         ace_cargo_canLoad = 1;
-        class EventHandlers {
-            init = "this addaction['Rearm Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Rearming...', 5, {!isEngineOn veh; !(isNull objectParent player) && (driver (vehicle player)==player);}, {hint 'Rearming Complete';veh setVehicleAmmodef 1;veh setVehicleAmmo 1;}, {hint 'Rearming Aborted';}] call CBA_fnc_progressBar;}];";
-        };
-        /*class UserActions {
+        /*class EventHandlers {
+            init = "this addaction['Rearm Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Rearming...', 5, {!isEngineOn veh; !(isNull objectParent player);}, {hint 'Rearming Complete';veh setVehicleAmmodef 1;veh setVehicleAmmo 1;}, {hint 'Rearming Aborted';}] call CBA_fnc_progressBar;}];";
+        };*/
+        class UserActions {
             class A3_BD_Rearm {
                 displayName = "Rearm Vehicle";
                 radius = 40;
-                condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+                condition = "!(isNull objectParent player)";
                 statement = "call BDA_fnc_VehRearm";
                 onlyforplayer = 0;
                 priority = -900;
                 position = "Camera";
             };
-        };*/
+        };
     };
     
     class BDA_Refuel: B_Slingload_01_Fuel_F {
@@ -442,20 +437,20 @@ class CfgVehicles {
         ace_refuel_hooks[] = {{0.3,-1,-0.6},{0.7,-1,-0.6}};
         ace_refuel_flowRate = 2;
         ace_refuel_canReceive = 1;
-        class EventHandlers {
-            init = "this addaction['Refuel Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Refueling...', 5, {!isEngineOn veh; !(isNull objectParent player) && (driver (vehicle player)==player);}, {hint 'Refueling Complete';veh setFuel 1;}, {hint 'Refueling Aborted';}] call CBA_fnc_progressBar;}];";
-        };
-        /*class UserActions {
+        /*class EventHandlers {
+            init = "this addaction['Refuel Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Refueling...', 5, {!isEngineOn veh; !(isNull objectParent player);}, {hint 'Refueling Complete';veh setFuel 1;}, {hint 'Refueling Aborted';}] call CBA_fnc_progressBar;}];";
+        };*/
+        class UserActions {
             class A3_BD_Refuel {
                 displayName = "Refuel Vehicle";
                 radius = 40;
-                condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+                condition = "!(isNull objectParent player)";
                 statement = "call BDA_fnc_VehRefuel";
                 onlyforplayer = 0;
                 priority = -900;
                 position = "Camera";
             };
-        };*/
+        };
     };
 
     class BDA_Repair: B_Slingload_01_Repair_F {
@@ -472,25 +467,25 @@ class CfgVehicles {
         ace_repair_canRepair = 1;
         ace_repair_spareWheels = 16;
         ace_repair_spareTracks = 8;
-        class EventHandlers {
-            init = "this addaction['Repair Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Repairing...', 5, {!isEngineOn veh; !(isNull objectParent player) && (driver (vehicle player)==player);}, {hint 'Repairing Complete';veh setDamage 0;}, {hint 'Repairing Aborted';}] call CBA_fnc_progressBar;}];";
-        };
-        /*class UserActions {
+        /*class EventHandlers {
+            init = "this addaction['Repair Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Repairing...', 5, {!isEngineOn veh; !(isNull objectParent player);}, {hint 'Repairing Complete';veh setDamage 0;}, {hint 'Repairing Aborted';}] call CBA_fnc_progressBar;}];";
+        };*/
+        class UserActions {
             class A3_BD_Repair {
                 displayName = "Repair Vehicles";
                 radius = 40;
-                condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+                condition = "!(isNull objectParent player)";
                 statement = "call BDA_fnc_VehRepair";
                 onlyforplayer = 0;
                 priority = -900;
                 position = "Camera";
             };
-        };*/
+        };
     };
 
     class BDA_Spawn_Console_air: OPTRE_RS_ConsoleCorvette_SysGreen {
-        scope = 2;
-        scopeCurator = 2;
+        scope = 1;
+        scopeCurator = 1;
         editorCategory = "BDA_EC_BlackDagger";
         editorSubcategory = "BDA_ESC_Props";
         author = "Rib";
@@ -505,5 +500,5 @@ class CfgVehicles {
 
 class cfgMods {
 	author="Rib";
-	timepacked="070320252210"; //fkn tired
+	timepacked="120820251740"; //fkn tired
 };

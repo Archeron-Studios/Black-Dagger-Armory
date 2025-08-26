@@ -3063,8 +3063,7 @@ class cfgWeapons {
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
-		class ItemInfo: ItemInfo
-		{
+		class ItemInfo: ItemInfo {
 			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 			hiddenSelections[]=
 			{
@@ -3090,8 +3089,7 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
-		class ItemInfo: ItemInfo
-		{
+		class ItemInfo: ItemInfo {
 			hiddenSelections[]=
 			{
 				"camo",
@@ -3115,8 +3113,7 @@ class cfgWeapons {
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
-		class ItemInfo: ItemInfo
-		{
+		class ItemInfo: ItemInfo {
 			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 			hiddenSelections[]=
 			{
@@ -3136,6 +3133,7 @@ class cfgWeapons {
 
 	//Pilots
 	class BDA_Heli_Pilot_Jager_Helmet: BDA_Heli_Pilot_Helmet {
+		scope = 1;
 		author = "Rib";
 		displayName = "VX15 Pilot Helmet (R. Jager)";
 		hiddenSelectionsTextures[]= {
@@ -3190,6 +3188,45 @@ class cfgWeapons {
 			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
 			hiddenSelectionsTextures[]={
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Griffin_CO.paa",
+				"",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
+
+	class BDA_VX19_Apollo_Helmet: BDA_VX19_Helmet {
+		author="Rib";
+		displayName="VX19 Flight Helmet (J. Apollo)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Apollo_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+			hiddenSelectionsTextures[]={
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Apollo_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
+	class BDA_VX19_Apollo_Helmet_dp: BDA_VX19_Helmet_dp {
+		author="Rib";
+		displayName="VX19 Flight Helmet (J. Apollo)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Apollo_CO.paa",
+			"",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+			hiddenSelectionsTextures[]={
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Apollo_CO.paa",
 				"",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"

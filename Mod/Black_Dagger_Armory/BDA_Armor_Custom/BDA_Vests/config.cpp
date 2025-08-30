@@ -242,7 +242,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Pilot_Rib: BDA_Armor_Ribbington_v2 {
-		displayName = "M52D Body Armor (R. Ribbington)";
+		displayName = "M52D Pilot Armor (R. Ribbington)";
 		hiddenSelectionsTextures[] = {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",//vest camo
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_CO.paa",//Shoulder camo2
@@ -337,7 +337,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Boston: BDA_Armor_RF {
-		scope = 1
+		scope = 1; //left
 		author="Rib";
 		displayName="M52D Body Armor (L. Boston)";
 		hiddenSelectionsTextures[]= {
@@ -558,7 +558,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Knight: OPTRE_UNSC_M52D_Armor {
-		scope = 1
+		scope = 1; //left
 		dlc="BDA";
 		author="Rib + Grif";
 		displayName="M52D Body Armor (N. Knight)";
@@ -783,7 +783,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Reynolds: OPTRE_UNSC_M52D_Armor {
-		scope = 1
+		scope = 1; //left
 		dlc="BDA";
 		author="Grif";
 		displayName="M52D Body Armor (F. Reynolds)";
@@ -893,6 +893,14 @@ class cfgWeapons {
 		};
 	};
 
+	class BDA_Armor_Pilot_Arturo: BDA_M52B_Pilot_Armor_B {
+		author = "Rib";
+		displayName = "M52B Body Armor (L. Arturo)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52B_Armor_Arturo_CO.paa"
+		};
+	};
+
 	class BDA_Armor_Beefe: BDA_Armor_RF {
 		author = "Grif";
 		displayName = "M52D Body Armor (G. Beefe)";
@@ -934,7 +942,6 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Parhau: BDA_Armor_RF {
-		scope = 1;
 		author = "Grif";
 		displayName = "M52D Body Armor (R. Parhau)";
 		hiddenSelectionsTextures[]= {
@@ -993,7 +1000,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Puma: BDA_Armor_RF {
-		scope = 1
+		scope = 1; //left
 		author = "Grif";
 		displayName = "M52D Body Armor (R. Puma)";
 		hiddenSelectionsTextures[]= {
@@ -1046,7 +1053,7 @@ class cfgWeapons {
 		displayName = "M52D Body Armor (W. Jenkins)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_Scythe_Medic_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_P1_Medic_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Jenkins_CO.paa"
@@ -1078,7 +1085,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Lockwood: BDA_Armor_MD {
-		scope = 1
+		scope = 1; //left
 		author = "Grif";
 		displayName = "M52D Body Armor (A. Lockwood)";
 		hiddenSelectionsTextures[]= {
@@ -1099,6 +1106,18 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Tucker_CO.paa"
+		};
+	};
+
+	class BDA_Armor_Pilot_Tucker: BDA_Armor_Pilot {
+		author = "Rib";
+		displayName = "M52D Pilot Armor (L. Tucker)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
 	};
 
@@ -1127,7 +1146,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Karson: BDA_Armor_RF {
-		scope = 1
+		scope = 1; //left
 		author = "Rib";
 		displayName = "M52D Body Armor (J. Karson)";
 		hiddenSelectionsTextures[]= {
@@ -1140,12 +1159,12 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Fonza: BDA_Armor_MD {
-		scope = 1
+		scope = 1; //left
 		author = "Grif";
 		displayName = "M52D Body Armor (R. Fonza)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_Scythe_Medic_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_P1_Medic_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Fonza_CO.paa"
@@ -1165,7 +1184,7 @@ class cfgWeapons {
 	};	
 
 	class BDA_Armor_Dusk: BDA_Armor_MD {
-		scope = 1;
+		scope = 1; //left;
 		author = "Grif";
 		displayName = "M52D Body Armor (R. Dusk)";
 		hiddenSelectionsTextures[]= {
@@ -1202,7 +1221,7 @@ class cfgWeapons {
 	};
 	
 	class BDA_Armor_Leviathan: BDA_Armor_RF {
-		scope = 1;
+		scope = 1; //left;
 		author = "Grif";
 		displayName = "M52D Body Armor (S. Leviathan)";
 		hiddenSelectionsTextures[]= {

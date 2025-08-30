@@ -75,10 +75,6 @@ class CfgVehicles {
                 name = "OPTRE_M7";
                 count = 2;
             };
-            class xx_TCF_M73H {
-                name = "TCF_M73H";
-                count = 1;
-            };
             class xx_DMNS_M96_LAW {
                 name = "DMNS_M96_LAW";
                 count = 5;
@@ -87,7 +83,17 @@ class CfgVehicles {
                 name = "BDA_RifleBaseAR";
                 count = 4;
             };
-            //mags
+
+            //pistol
+            class xx_OPTRE_12Rnd_127x40_Mag {
+                name = "OPTRE_12Rnd_127x40_Mag";
+                count = 20;
+            };
+            class xx_OPTRE_12Rnd_127x40_Mag {
+                name = "OPTRE_12Rnd_127x40_Mag";
+                count = 20;
+            };
+            //dmr/ar
             class xx_TCF_48Rnd_5x23mm_Mag_JHPT {
                 name = "TCF_48Rnd_5x23mm_Mag_JHPT";
                 count = 30;
@@ -95,6 +101,10 @@ class CfgVehicles {
             class xx_TCF_48Rnd_5x23mm_Mag_HVT {
                 name = "TCF_48Rnd_5x23mm_Mag_HVT";
                 count = 30;
+            };
+            class xx_OPTRE_60Rnd_762x51_Mag_Tracer {
+                name = "OPTRE_60Rnd_762x51_Mag_Tracer";
+                count = 60;
             };
             class xx_TCF_60Rnd_5x23mm_Mag_JHPT {
                 name = "TCF_60Rnd_5x23mm_Mag_JHPT";
@@ -104,17 +114,27 @@ class CfgVehicles {
                 name = "TCF_60Rnd_5x23mm_Mag_HVT";
                 count = 20;
             };
+            class xx_TCF_60Rnd_762x51_Mag_JHPT {
+                name = "OPTRE_12Rnd_127x40_Mag";
+                count = 60;
+            };
+            class xx_TCF_60Rnd_762x51_Mag_JHPT {
+                name = "OPTRE_12Rnd_127x40_Mag";
+                count = 60;
+            };
+            class xx_OPTRE_15Rnd_762x51_Mag_Tracer {
+                name = "OPTRE_15Rnd_762x51_Mag_Tracer";
+                count = 60;
+            };
+            
+            //MGs
             class xx_TCF_200Rnd_95x40_Box_JHPT {
                 name = "TCF_200Rnd_95x40_Box_JHPT";
-                count = 20;
+                count = 15;
             };
             class xx_OPTRE_200Rnd_95x40_Box_Tracer_Yellow {
                 name = "OPTRE_200Rnd_95x40_Box_Tracer_Yellow";
-                count = 20;
-            };
-            class xx_TCF_100Rnd_95x40_Box_JHPT {
-                name = "TCF_100Rnd_95x40_Box_JHPT";
-                count = 20;
+                count = 15;
             };
             class xx_TCF_100Rnd_95x40_Box_JHPT {
                 name = "TCF_100Rnd_95x40_Box_JHPT";
@@ -124,42 +144,16 @@ class CfgVehicles {
                 name = "OPTRE_100Rnd_95x40_Box_Tracer_Yellow";
                 count = 20;
             };
-            class xx_TCF_60Rnd_762x51_Mag_JHPT {
-                name = "OPTRE_12Rnd_127x40_Mag";
-                count = 60;
-            };
-            class xx_TCF_60Rnd_762x51_Mag_JHPT {
-                name = "OPTRE_12Rnd_127x40_Mag";
-                count = 60;
-            };
-            class xx_OPTRE_12Rnd_8Gauge_Pellets {
-                name = "OPTRE_12Rnd_127x40_Mag";
-                count = 30;
-            };
-            class xx_OPTRE_12Rnd_127x40_Mag {
-                name = "OPTRE_12Rnd_127x40_Mag";
-                count = 20;
-            };
-            class xx_OPTRE_12Rnd_127x40_Mag {
-                name = "OPTRE_12Rnd_127x40_Mag";
-                count = 20;
+            class xx_TCF_400Rnd_762x51_Box_APT {
+                name = "TCF_400Rnd_762x51_Box_APT";
+                count = 10;
             };
             class xx_OPTRE_100Rnd_762x51_Box_Tracer {
                 name = "OPTRE_100Rnd_762x51_Box_Tracer";
                 count = 40;
             };
-            class xx_OPTRE_15Rnd_762x51_Mag_Tracer {
-                name = "OPTRE_15Rnd_762x51_Mag_Tracer";
-                count = 60;
-            };
-            class xx_OPTRE_60Rnd_762x51_Mag_Tracer {
-                name = "OPTRE_60Rnd_762x51_Mag_Tracer";
-                count = 60;
-            };
-            class xx_TCF_400Rnd_762x51_Box_APT {
-                name = "TCF_400Rnd_762x51_Box_APT";
-                count = 10;
-            };
+
+            //br
             class xx_36Rnd_95x40_ap_br_55_tracer {
                 name = "36Rnd_95x40_ap_br_55_tracer";
                 count = 60;
@@ -172,10 +166,8 @@ class CfgVehicles {
                 name = "TCF_36Rnd_95x40_Mag_JHPT";
                 count = 60;
             };
-            class xx_OPTRE_12Rnd_8Gauge_Slugs {
-                name = "OPTRE_12Rnd_8Gauge_Slugs";
-                count = 30;
-            };
+
+            //sniper
             class xx_OPTRE_4Rnd_145x114_APFSDS_Mag {
                 name = "OPTRE_4Rnd_145x114_APFSDS_Mag";
                 count = 40;
@@ -193,6 +185,20 @@ class CfgVehicles {
                 count = 20;
             };
 
+            //shotgun
+            class xx_OPTRE_12Rnd_8Gauge_Slugs {
+                name = "OPTRE_12Rnd_8Gauge_Slugs";
+                count = 30;
+            };
+            class xx_OPTRE_12Rnd_8Gauge_Pellets {
+                name = "OPTRE_12Rnd_127x40_Mag";
+                count = 30;
+            };
+            class xx_OPTRE_6Rnd_8Gauge_Beanbags {
+                name = "TCF_6Rnd_8Gauge_Beanbag";
+                count = 6;
+            };
+
             //explosives
             class xx_OPTRE_M41_Twin_HEAT_G {
                 name = "OPTRE_M41_Twin_HEAT_G";
@@ -200,7 +206,7 @@ class CfgVehicles {
             };
             class xx_OPTRE_M41_Twin_HEAT_SACLOS {
                 name = "OPTRE_M41_Twin_HEAT_SACLOS";
-                count = 8;
+                count = 10;
             };
             class xx_OPTRE_SpLaser_Battery_Launcher {
                 name = "OPTRE_SpLaser_Battery_Launcher";
@@ -236,6 +242,18 @@ class CfgVehicles {
                 name = "OPTRE_M2_Smoke_Red";
                 count = 20;
             };
+
+            //pikes
+            class xx_1Rnd_AT_Pike {
+                name = "Pike_MiniMissileATUGL";
+                count = 20;
+            };
+            class xx_1Rnd_HE_Pike {
+                name = "Pike_MiniMissileUGL";
+                count = 20;
+            };
+            
+            //gl
             class xx_1Rnd_HE_Grenade_shell {
                 name = "1Rnd_HE_Grenade_shell";
                 count = 40;
@@ -254,7 +272,7 @@ class CfgVehicles {
             };
             class xx_OPTRE_1Rnd_SmokeBlue_Grenade_shell {
                 name = "OPTRE_1Rnd_SmokeBlue_Grenade_shell";
-                count = 20;
+                count = 15;
             };
             class xx_ACE_HuntIR_M203 {
                 name = "ACE_HuntIR_M203";
@@ -270,19 +288,11 @@ class CfgVehicles {
             };
             class xx_OPTRE_3Rnd_SmokeRed_Grenade_shell {
                 name = "OPTRE_3Rnd_SmokeRed_Grenade_shell";
-                count = 10;
+                count = 6;
             };
             class xx_OPTRE_3Rnd_SmokeBlue_Grenade_shell {
                 name = "OPTRE_3Rnd_SmokeBlue_Grenade_shell";
-                count = 10;
-            };
-            class xx_ACE_40mm_Flare_green {
-                name = "ACE_40mm_Flare_green";
-                count = 10;
-            };
-            class xx_ACE_40mm_Flare_red {
-                name = "ACE_40mm_Flare_red";
-                count = 10;
+                count = 6;
             };
             class xx_3Rnd_Smoke_Grenade_shell {
                 name = "3Rnd_Smoke_Grenade_shell";
@@ -290,27 +300,15 @@ class CfgVehicles {
             };
             class xx_3Rnd_SmokeBlue_Grenade_shell {
                 name = "3Rnd_SmokeBlue_Grenade_shell";
-                count = 10;
-            };
-            class xx_UGL_FlareYellow_F {
-                name = "UGL_FlareYellow_F";
-                count = 10;
-            };
-            class xx_UGL_FlareRed_F {
-                name = "UGL_FlareRed_F";
-                count = 10;
-            };
-            class xx_UGL_FlareGreen_F {
-                name = "UGL_FlareGreen_F";
-                count = 20;
+                count = 5;
             };
             class xx_SmokeShellPurple {
                 name = "SmokeShellPurple";
-                count = 20;
+                count = 6;
             };
             class xx_SmokeShellGreen {
                 name = "SmokeShellGreen";
-                count = 20;
+                count = 6;
             };
             class xx_1Rnd_Smoke_Grenade_shell {
                 name = "1Rnd_Smoke_Grenade_shell";
@@ -363,7 +361,7 @@ class CfgVehicles {
             };
             class xx_ACE_Painkillers {
                 name = "ACE_Painkiller";
-                count = 5;
+                count = 6;
             };
             class xx_ACE_SalineIV {
                 name = "ACE_SalineIV";
@@ -383,10 +381,14 @@ class CfgVehicles {
             };
             class xx_ACE_Tourniquet {
                 name = "ACE_tourniquet";
-                count = 15;
+                count = 20;
             };
             class xx_ACE_SurgicalKit {
                 name = "ACE_surgicalKit";
+                count = 1;
+            };
+            class xx_OPTRE_Bubble_Shield {
+                name = "OPTRE_FC_BubbleShield";
                 count = 1;
             };
 		};
@@ -404,20 +406,20 @@ class CfgVehicles {
         maximumLoad = 9999999;
         ace_cargo_size = 2;
         ace_cargo_canLoad = 1;
-        class EventHandlers {
-            init = "this addaction['Rearm Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Rearming...', 5, {!isEngineOn veh; !(isNull objectParent player) && (driver (vehicle player)==player);}, {hint 'Rearming Complete';veh setVehicleAmmodef 1;veh setVehicleAmmo 1;}, {hint 'Rearming Aborted';}] call CBA_fnc_progressBar;}];";
-        };
-        /*class UserActions {
+        /*class EventHandlers {
+            init = "this addaction['Rearm Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Rearming...', 5, {!isEngineOn veh; !(isNull objectParent player);}, {hint 'Rearming Complete';veh setVehicleAmmodef 1;veh setVehicleAmmo 1;}, {hint 'Rearming Aborted';}] call CBA_fnc_progressBar;}];";
+        };*/
+        class UserActions {
             class A3_BD_Rearm {
                 displayName = "Rearm Vehicle";
                 radius = 40;
-                condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+                condition = "!(isNull objectParent player)";
                 statement = "call BDA_fnc_VehRearm";
                 onlyforplayer = 0;
                 priority = -900;
                 position = "Camera";
             };
-        };*/
+        };
     };
     
     class BDA_Refuel: B_Slingload_01_Fuel_F {
@@ -435,20 +437,20 @@ class CfgVehicles {
         ace_refuel_hooks[] = {{0.3,-1,-0.6},{0.7,-1,-0.6}};
         ace_refuel_flowRate = 2;
         ace_refuel_canReceive = 1;
-        class EventHandlers {
-            init = "this addaction['Refuel Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Refueling...', 5, {!isEngineOn veh; !(isNull objectParent player) && (driver (vehicle player)==player);}, {hint 'Refueling Complete';veh setFuel 1;}, {hint 'Refueling Aborted';}] call CBA_fnc_progressBar;}];";
-        };
-        /*class UserActions {
+        /*class EventHandlers {
+            init = "this addaction['Refuel Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Refueling...', 5, {!isEngineOn veh; !(isNull objectParent player);}, {hint 'Refueling Complete';veh setFuel 1;}, {hint 'Refueling Aborted';}] call CBA_fnc_progressBar;}];";
+        };*/
+        class UserActions {
             class A3_BD_Refuel {
                 displayName = "Refuel Vehicle";
                 radius = 40;
-                condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+                condition = "!(isNull objectParent player)";
                 statement = "call BDA_fnc_VehRefuel";
                 onlyforplayer = 0;
                 priority = -900;
                 position = "Camera";
             };
-        };*/
+        };
     };
 
     class BDA_Repair: B_Slingload_01_Repair_F {
@@ -465,25 +467,25 @@ class CfgVehicles {
         ace_repair_canRepair = 1;
         ace_repair_spareWheels = 16;
         ace_repair_spareTracks = 8;
-        class EventHandlers {
-            init = "this addaction['Repair Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Repairing...', 5, {!isEngineOn veh; !(isNull objectParent player) && (driver (vehicle player)==player);}, {hint 'Repairing Complete';veh setDamage 0;}, {hint 'Repairing Aborted';}] call CBA_fnc_progressBar;}];";
-        };
-        /*class UserActions {
+        /*class EventHandlers {
+            init = "this addaction['Repair Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Repairing...', 5, {!isEngineOn veh; !(isNull objectParent player);}, {hint 'Repairing Complete';veh setDamage 0;}, {hint 'Repairing Aborted';}] call CBA_fnc_progressBar;}];";
+        };*/
+        class UserActions {
             class A3_BD_Repair {
                 displayName = "Repair Vehicles";
                 radius = 40;
-                condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+                condition = "!(isNull objectParent player)";
                 statement = "call BDA_fnc_VehRepair";
                 onlyforplayer = 0;
                 priority = -900;
                 position = "Camera";
             };
-        };*/
+        };
     };
 
     class BDA_Spawn_Console_air: OPTRE_RS_ConsoleCorvette_SysGreen {
-        scope = 2;
-        scopeCurator = 2;
+        scope = 1;
+        scopeCurator = 1;
         editorCategory = "BDA_EC_BlackDagger";
         editorSubcategory = "BDA_ESC_Props";
         author = "Rib";
@@ -498,5 +500,5 @@ class CfgVehicles {
 
 class cfgMods {
 	author="Rib";
-	timepacked="070320252210"; //fkn tired
+	timepacked="120820251740"; //fkn tired
 };

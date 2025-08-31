@@ -733,7 +733,7 @@ class cfgWeapons {
 				"A_KneesMarLeft",
 				"A_KneesMarRight",
 	//			"A_ODST",
-				"A_TacPad",
+	//			"A_TacPad",
 	//			"A_ShinArmorLeft",
 	//			"A_ShinArmorRight",
 	//			"AS_BaseLeft",

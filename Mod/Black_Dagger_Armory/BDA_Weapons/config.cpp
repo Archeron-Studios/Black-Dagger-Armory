@@ -43,28 +43,26 @@ class CfgAmmo {
 
 	class Ribs_M_Anvil3_LGIR: Missile_AGM_02_F {
 		model = "Splits\Splits_Weaponry\Aircraft\Anvil_1_missile_fly.p3d";
-		hit = 650;
+		hit = 450;
+        indirectHit=80;
+        indirectHitRange=8;
+		explosive = 1;
 		caliber=1;
         explosionEffects="HelicopterExplosionEffects2";
         missileLockMaxDistance=4000;
-        missileLockMinDistance=0;
-        missileLockCone=360;
-        weaponLockSystem="1 + 2 + 4 + 8 + 16";
-        missileKeepLockedCone=120;
-        indirectHit=80;
-        indirectHitRange=8;
+        missileLockMinDistance=50;
+        weaponLockSystem="1 + 2 + 4 + 16";
+        missileKeepLockedCone=90;
         mass=2;
 		maxSpeed=400;
         thrust=60;
-        timeToLive=80;
+        timeToLive=20;
         typicalSpeed=50;
         thrustTime=60;
-		explosive = 1;
-		airLock = 1;
 		irLock = 1;
-		canlock = 2;
 		laserLock = 1;
 	};
+
 	class BDA_40mm_HE: B_30mm_HE {
 		hit = 160;
 		typicalSpeed = 1000;
@@ -77,7 +75,7 @@ class CfgAmmo {
 
 class CfgMagazines {
 	/*extern*/ class VehicleMagazine;
-	/*extern*/ class 6Rnd_LG_scalpel;
+	/*extern*/ class 12Rnd_PG_missiles;
 	/*extern*/ class OPTRE_100Rnd_95x40_Box;
 	/*extern*/ class OPTRE_500Rnd_762x51_Box_Tracer;
  
@@ -90,7 +88,7 @@ class CfgMagazines {
 		count = 4;
 		ammo = "Splits_M_ATA_Anaconda_AA";
 		initSpeed = 350;
-		maxLeadSpeed = 320;
+		maxLeadSpeed = 400;
 		sound[] = {"A3\Sounds_F\weapons\Rockets\titan_2", 1.258930, 1, 1000};
 		weaponSoundEffect = "DefaultRifle";
 		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_2", 0.501187, 1.300000, 400};
@@ -102,17 +100,23 @@ class CfgMagazines {
 		hardpoints[] = {"Splits_B_Missiles"};
 		pylonWeapon = "BDA_weapon_Guided_AA_Bottom_Launcher";
 	};
-	class BDA_missiles_LGIR_Anvil3_x60: 6Rnd_LG_scalpel {
+	class BDA_missiles_LGIR_Anvil3_x60: 12Rnd_PG_missiles {
 		dlc = "BDA";
 		scope = 2;
-		displayName = "60Rnd ANVIL III LGIR Missile Pods";
-		descriptionShort = "LGIR Missiles";
+		displayName = "60Rnd ANVIL III LG Missile Pods";
+		descriptionShort = "60rnd LG Missiles";
 		count = 60;
-		initSpeed = 350;
-		maxLeadSpeed = 320;
+		initSpeed = 170;
+		maxLeadSpeed = 800;
 		muzzlePos = "machinegun_beg";
 		muzzleEnd = "machinegun_end";
 		ammo = "Ribs_M_Anvil3_LGIR";
+		sound[] = {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
+		weaponSoundEffect = "DefaultRifle";
+		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.501187,1.3,400};
+		soundHit[] = {"",1.25893,1,1};
+		reloadSound[] = {"",0.000316228,1,20};
+		nameSound = "missiles";
 		autoSeekTarget=1;
 	};
 	class BDA_95x40_400rnd_Box: OPTRE_100Rnd_95x40_Box {
@@ -186,16 +190,13 @@ class CfgWeapons {
 
     class BDA_missiles_Guided_Anvil3: Missile_AGM_02_Plane_CAS_01_F {
         scope = 2;
-        displayName = "ANVIL III LGIR Missile Pods";
-		descriptionShort = "LGIR Missiles";
-        magazines[] = 
-        {
-            "BDA_missiles_LGIR_Anvil3_x60"
-        };
+        displayName = "ANVIL III LG Missile Pods";
+		descriptionShort = "LG Missiles";
+        magazines[] = { "BDA_missiles_LGIR_Anvil3_x60" };
         ballisticsComputer = 16;
 		showAimCursorInternal = 1;
-		reloadTime	= 0.1;
-		magazineReloadTime = 10;
+		reloadTime	= 0.2;
+		magazineReloadTime = 15;
 		weaponLockDelay= 3;
 		canLock = 2;
 		cursor = "EmptyCursor";
@@ -374,5 +375,5 @@ class CfgWeapons {
 
 class cfgMods {
 	author="Rib";
-	timepacked="1210241618";
+	timepacked="113014092025";
 };

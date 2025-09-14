@@ -988,6 +988,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Jager: BDA_M52B_Pilot_Armor_B {
+		scope = 1;
 		author = "Rib/Grif";
 		displayName="M52B Body Armor (R. Jager)";
 		hiddenSelectionsTextures[]= {
@@ -996,6 +997,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Frank: BDA_M52B_Pilot_Armor_B {
+		scope = 1;
 		author = "Grif";
 		displayName="M52B Body Armor (R. Frank)";
 		hiddenSelectionsTextures[]= {
@@ -1024,6 +1026,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Kohl: BDA_Armor_RF {
+		scope = 1;
 		dlc="BDA";
 		author = "Grif";
 		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
@@ -1050,6 +1053,7 @@ class cfgWeapons {
 	};
 	
 	class BDA_Armor_Conrad: BDA_Armor_RF {
+		scope = 1;
 		author = "Grif";
 		displayName = "M52D Body Armor (A. Conrad)";
 		hiddenSelectionsTextures[]= {

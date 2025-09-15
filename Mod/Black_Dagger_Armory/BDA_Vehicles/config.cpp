@@ -23445,7 +23445,7 @@ class CfgVehicles {
 	};
 
 	class BDA_AV22_Sparrowhawk_B: OPTRE_AV22_Sparrowhawk {
-		scope = 2;
+		scope = 1;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;

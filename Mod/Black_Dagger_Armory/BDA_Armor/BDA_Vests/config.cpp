@@ -1244,6 +1244,28 @@ class cfgWeapons {
 		};
 	};
 
+	class BDA_Armor_Pioneer: BDA_Armor_RF_Big {
+		author = "Griffin";
+		displayName = "M52D Body Armor (Pioneer)";
+		hiddenSelectionsTextures[]= {
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Pioneer_CO.paa"
+			};
+		class ItemInfo: ItemInfo {
+			containerClass="Supply300";
+			hiddenSelectionsTextures[]= {
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Pioneer_CO.paa"
+			};
+		};
+	};
+
 	//Naval
 	class BDA_Armor_Pilot: OPTRE_UNSC_M52D_Armor {
 		dlc = "BDA";

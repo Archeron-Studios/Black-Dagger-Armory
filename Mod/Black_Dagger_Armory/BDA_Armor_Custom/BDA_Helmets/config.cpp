@@ -3382,7 +3382,7 @@ class cfgWeapons {
 		};
 	};
 
-	class BDA_VX19_Grffin_Helmet: BDA_VX19_Helmet {
+	class BDA_VX19_Griffin_Helmet: BDA_VX19_Helmet {
 		author="Griffin";
 		displayName="VX19 Flight Helmet (T. Griffin)";
 		hiddenSelectionsTextures[]= {

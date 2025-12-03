@@ -208,13 +208,13 @@ class CfgVehicles {
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class UNSC_BDA_Whiskey316 {
-				displayName="UNSC Whiskey 316";
+			class UNSC_BDA_W610 {
+				displayName="UNSC Whiskey 610";
 				author="Splitjaw/Grif/Rib";
 				textures[]={
-					"\BDA_Vehicles\data\customs\Pelican\BDA_W_body_co.paa",
-					"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
-					"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
+					"\BDA_Vehicles\data\customs\Pelican\BDA_610_body_co.paa",
+					"\BDA_Vehicles\data\customs\Pelican\BDA_wings_and_gear_W_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_B_weaponry_co.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
@@ -232,7 +232,7 @@ class CfgVehicles {
 		textureList[]={
 			"UNSC_BDA_Green", 1,
 			"UNSC_BDA_Black", 1,
-			"UNSC_BDA_Whiskey316", 1,
+			"UNSC_BDA_W610", 1,
 			"UNSC_BDA_Winter", 1
 		};
 
@@ -253,9 +253,10 @@ class CfgVehicles {
 					displayName = "Black";
 					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
             	};
-				class Customs {
-					displayName = "Custom Livieries";
-				};
+				class W610Camo {
+					displayName = "W610";
+					statement = "['UNSC_BDA_W610', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
+            	};
             };
         };
 
@@ -5940,6 +5941,7 @@ class CfgVehicles {
 		textureList[]={
 			"UNSC_BDA_Green", 1,
 			"UNSC_BDA_Black", 1,
+			"UNSC_BDA_W610", 1,
 			"UNSC_BDA_Winter", 1
 		};
 		hiddenSelectionsTextures[]={
@@ -5969,6 +5971,16 @@ class CfgVehicles {
 				};
 				factions[]={"B_BDCUNSC"};
 			};
+			class UNSC_BDA_W610 {
+				displayName="UNSC Whiskey 610";
+				author="Rib";
+				textures[]={
+					"\BDA_Vehicles\data\customs\pelican\BDA_610_body_co.paa",
+					"\BDA_Vehicles\data\customs\pelican\BDA_wings_and_gear_W_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_B_weaponry_co.paa"
+				};
+				factions[]={"B_BDCUNSC"};
+			};			
 			class UNSC_BDA_Winter {
 				displayName="UNSC Winter";
 				author="SplitJaw/Rib";
@@ -5998,9 +6010,10 @@ class CfgVehicles {
 					displayName = "Black";
 					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
             	};
-				class Customs {
-					displayName = "Custom Livieries";
-				};
+				class W610Camo {
+					displayName = "Whiskey610";
+					statement = "['UNSC_BDA_W610', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+            	};
             };
         };
 

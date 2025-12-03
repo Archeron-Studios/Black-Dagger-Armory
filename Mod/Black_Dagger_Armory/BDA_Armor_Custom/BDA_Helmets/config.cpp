@@ -3459,6 +3459,44 @@ class cfgWeapons {
 		};
 	};
 
+	class BDA_VX19_Wolfwood_Helmet: BDA_VX19_Helmet {
+		author="Griffin";
+		displayName="VX19 Flight Helmet (N. Wolfwood)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Wolfwood_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+			hiddenSelectionsTextures[]={
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Wolfwood_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
+	class BDA_VX19_Wolfwood_Helmet_dp: BDA_VX19_Helmet_dp {
+		displayName="VX19 Flight Helmet (N. Wolfwood)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Wolfwood_CO.paa",
+			"",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+			hiddenSelectionsTextures[]={
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Wolfwood_CO.paa",
+				"",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
+
 	//end
 };	
 

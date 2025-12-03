@@ -1346,6 +1346,20 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Hill_CO.paa"
 		};
 	};
+
+	//Pilots
+
+	class BDA_Armor_Wolfwood: BDA_Armor_Pilot {
+		author = "Grif";
+		displayName = "M52A Body Armor (N. Wolfwood)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Wolfwood_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
+		};
+	};	
 	//end
 };
 

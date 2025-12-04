@@ -310,7 +310,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
 	};
 	class BDA_Armor_MD_P1: BDA_Armor_MD {
@@ -318,10 +318,10 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_Scythe_Medic_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_P1_Medic_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_Medic_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_Medic_CO.paa"
 		};
 	};
 	class BDA_Armor_DM_P1: BDA_Armor_DM {
@@ -332,7 +332,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
 	};
 	class BDA_Armor_SN_P1: BDA_Armor_SN {
@@ -343,7 +343,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
 	};
 	class BDA_Armor_AR_P1: BDA_Armor_AR {
@@ -354,7 +354,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
 	};
 	class BDA_Armor_BR_P1: BDA_Armor_BR {
@@ -365,7 +365,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
 	};
 
@@ -566,7 +566,7 @@ class cfgWeapons {
 		};
 	};
 	
-	//Druid
+	//P2
 	class BDA_Armor_RF_P2: BDA_Armor_RF {
 		displayName="M52D Body Armor (Rifleman, 2ndPLT)";
 		hiddenSelectionsTextures[]=
@@ -575,7 +575,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Druid_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P2_CO.paa"
 		};
 	};
 	class BDA_Armor_MD_P2: BDA_Armor_MD {
@@ -583,10 +583,10 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_Scythe_Medic_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_P1_Medic_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_Medic_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_Medic_CO.paa"
 		};
 	};
 	class BDA_Armor_DM_P2: BDA_Armor_DM {
@@ -597,7 +597,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Druid_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P2_CO.paa"
 		};
 	};
 	class BDA_Armor_SN_P2: BDA_Armor_SN {
@@ -608,7 +608,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Druid_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P2_CO.paa"
 		};
 	};
 	class BDA_Armor_AR_P2: BDA_Armor_AR {
@@ -619,7 +619,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Druid_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P2_CO.paa"
 		};
 	};
 	class BDA_Armor_BR_P2: BDA_Armor_BR {
@@ -629,7 +629,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Druid_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P2_CO.paa"
 		};
 	};
 
@@ -831,7 +831,7 @@ class cfgWeapons {
 		};
 	};
 	
-	//Outlaw
+	//P3
 	class BDA_Armor_RF_P3: BDA_Armor_RF {
 		displayName="M52D Body Armor (Rifleman, 3rdPLT)";
 		hiddenSelectionsTextures[]= {
@@ -839,17 +839,17 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Outlaw_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P3_CO.paa"
 		};
 	};
 	class BDA_Armor_MD_P3: BDA_Armor_MD {
 		displayName="M52D Body Armor (Medic, 3rdPLT)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_Scythe_Medic_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_P1_Medic_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Outlaw_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P3_CO.paa"
 		};
 	};
 	class BDA_Armor_DM_P3: BDA_Armor_DM {
@@ -859,7 +859,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Outlaw_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P3_CO.paa"
 		};
 	};
 	class BDA_Armor_SN_P3: BDA_Armor_SN {
@@ -869,7 +869,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Outlaw_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P3_CO.paa"
 		};
 	};
 	class BDA_Armor_AR_P3: BDA_Armor_AR {
@@ -879,7 +879,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Outlaw_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P3_CO.paa"
 		};
 	};
 	class BDA_Armor_BR_P3: BDA_Armor_BR {
@@ -889,7 +889,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Outlaw_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P3_CO.paa"
 		};
 	};
 	
@@ -1224,7 +1224,7 @@ class cfgWeapons {
 	};
 	class BDA_Armor_Mortar: BDA_Armor_RF_Big {
 		author = "Rib";
-		displayName = "M52D Body Armor (Hangman)";
+		displayName = "M52D Body Armor (Instructor)";
 		hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
@@ -1244,6 +1244,28 @@ class cfgWeapons {
 		};
 	};
 
+	class BDA_Armor_Pioneer: BDA_Armor_RF_Big {
+		author = "Griffin";
+		displayName = "M52D Body Armor (Pioneer)";
+		hiddenSelectionsTextures[]= {
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Pioneer_CO.paa"
+			};
+		class ItemInfo: ItemInfo {
+			containerClass="Supply300";
+			hiddenSelectionsTextures[]= {
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Pioneer_CO.paa"
+			};
+		};
+	};
+
 	//Naval
 	class BDA_Armor_Pilot: OPTRE_UNSC_M52D_Armor {
 		dlc = "BDA";
@@ -1255,7 +1277,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
 		class ItemInfo: ItemInfo {
 			containerClass="Supply200";
@@ -1316,7 +1338,7 @@ class cfgWeapons {
 				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
-				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 			};
 		};
 	};

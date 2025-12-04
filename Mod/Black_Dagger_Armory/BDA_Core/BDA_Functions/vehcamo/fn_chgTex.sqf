@@ -38,6 +38,15 @@ switch (_vehCamo) do {
 		};
 		systemChat "Applying blackout texture";
 	};
+		case "UNSC_BDA_W610": {
+		if(_vehClass isEqualTo "BDA_UNSC_D77_TC_Pelican_Single" or _vehClass isEqualTo "BDA_UNSC_D77_TC_Pelican") then 
+		{
+			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\customs\Pelican\BDA_610_body_co.paa"];
+			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\customs\Pelican\BDA_wings_and_gear_W_co.paa"];
+			_tarVeh setObjectTextureGlobal [2, "\BDA_Vehicles\data\pelican\BDA_B_weaponry_co.paa"];
+		};
+		systemChat "Applying Whiskey610 texture";
+	};
 	//hornet 
 	case "BDA_Standard": {
 		if(_vehClass isEqualTo "BDA_UNSC_Hornet_Lite" or _vehClass isEqualTo "BDA_UNSC_Hornet_VTOL" or _vehClass isEqualTo "BDA_UNSC_Hornet") then 

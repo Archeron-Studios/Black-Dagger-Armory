@@ -208,13 +208,13 @@ class CfgVehicles {
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class UNSC_BDA_Whiskey316 {
-				displayName="UNSC Whiskey 316";
+			class UNSC_BDA_W610 {
+				displayName="UNSC Whiskey 610";
 				author="Splitjaw/Grif/Rib";
 				textures[]={
-					"\BDA_Vehicles\data\customs\Pelican\BDA_W_body_co.paa",
-					"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
-					"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
+					"\BDA_Vehicles\data\customs\Pelican\BDA_610_body_co.paa",
+					"\BDA_Vehicles\data\customs\Pelican\BDA_wings_and_gear_W_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_B_weaponry_co.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
@@ -232,7 +232,7 @@ class CfgVehicles {
 		textureList[]={
 			"UNSC_BDA_Green", 1,
 			"UNSC_BDA_Black", 1,
-			"UNSC_BDA_Whiskey316", 1,
+			"UNSC_BDA_W610", 1,
 			"UNSC_BDA_Winter", 1
 		};
 
@@ -253,9 +253,10 @@ class CfgVehicles {
 					displayName = "Black";
 					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
             	};
-				class Customs {
-					displayName = "Custom Livieries";
-				};
+				class W610Camo {
+					displayName = "W610";
+					statement = "['UNSC_BDA_W610', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
+            	};
             };
         };
 
@@ -4481,6 +4482,7 @@ class CfgVehicles {
 		//turrets
 		class Turrets: Turrets {
 			class MainTurret: MainTurret {
+				#define StabilizedInAxesBoth 3
 				isCopilot=1;
 				CanEject=0;
 				body = "mainturret";
@@ -4491,11 +4493,11 @@ class CfgVehicles {
 				gunBeg = "Usti hlavne";
 				gunEnd = "konec hlavne";
 				ejectDeadGunner = 0;
-				minElev=-51;
-				maxElev=9;
+				minElev=-75; //-51
+				maxElev=10; //9
 				initElev=6;
-				minTurn=-120;
-				maxTurn=120;
+				minTurn=-140; //-120
+				maxTurn=140; //120
 				initTurn=0;
 				turretAxis = "OsaVeze";
 				maxHorizontalRotSpeed = 1.75;
@@ -4505,7 +4507,7 @@ class CfgVehicles {
 				gunnerGetInAction = "pilot_Heli_Light_02_Enter";
 				gunnerGetOutAction = "pilot_Heli_Light_02_Exit";
 				precisegetinout=1;
-				gunnerName = "Primary Gunner";
+				gunnerName = "Co-Pilot Gunner";
 				proxyindex = 1;
 				gunnerCompartments="Compartment2";
 				hideWeaponsGunner = 1;
@@ -4551,13 +4553,9 @@ class CfgVehicles {
 						minFov=0.46599999;
 						maxFov=0.46599999;
 						opticsDisplayName="WFOV";
-						visionMode[]=
-						{
-							"Normal",
-							"NVG",
-							"Ti"
-						};
-						thermalMode[]={0,1};
+						directionStabilized = 1;
+						visionMode[] = {"Normal","NVG","Ti"};
+						thermalMode[] = {0,1};
 						gunnerOpticsModel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_wide_F";
 					};
 					class Medium: Wide
@@ -5816,7 +5814,7 @@ class CfgVehicles {
 					directionStabilized = 1;
 					visionMode[] = {"Normal","NVG","Ti"};
 					thermalMode[] = {0,1};
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					gunnerOpticsModel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_wide_F";
 					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
 				};
 				class Medium: Wide {
@@ -5824,21 +5822,21 @@ class CfgVehicles {
 					initFov = "(12 / 120)";
 					minFov = "(12 / 120)";
 					maxFov = "(12 / 120)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+					gunnerOpticsModel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_medium_F";
 				};
 				class Narrow: Wide {
 					opticsDisplayName = "NFOV";
 					initFov = "(4 / 120)";
 					minFov = "(4 / 120)";
 					maxFov = "(4 / 120)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+					gunnerOpticsModel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_narrow_F";
 				};
 				class VeryNarrow: Wide {
 					opticsDisplayName = "VFOV";
 					initFov = "(2 / 120)";
 					minFov = "(2 / 120)";
 					maxFov = "(2 / 120)";
-					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+					gunnerOpticsModel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_narrow_F";
 				};
 			};
 			minTurn = -180;
@@ -5943,7 +5941,7 @@ class CfgVehicles {
 		textureList[]={
 			"UNSC_BDA_Green", 1,
 			"UNSC_BDA_Black", 1,
-			"UNSC_BDA_Whiskey316", 1,
+			"UNSC_BDA_W610", 1,
 			"UNSC_BDA_Winter", 1
 		};
 		hiddenSelectionsTextures[]={
@@ -5973,16 +5971,16 @@ class CfgVehicles {
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class UNSC_BDA_Whiskey316 {
-				displayName="UNSC Whiskey 316";
-				author="Splitjaw/Grif/Rib";
+			class UNSC_BDA_W610 {
+				displayName="UNSC Whiskey 610";
+				author="Rib";
 				textures[]={
-					"\BDA_Vehicles\data\customs\Pelican\BDA_W_body_co.paa",
-					"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
-					"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
+					"\BDA_Vehicles\data\customs\pelican\BDA_610_body_co.paa",
+					"\BDA_Vehicles\data\customs\pelican\BDA_wings_and_gear_W_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_B_weaponry_co.paa"
 				};
 				factions[]={"B_BDCUNSC"};
-			};
+			};			
 			class UNSC_BDA_Winter {
 				displayName="UNSC Winter";
 				author="SplitJaw/Rib";
@@ -6012,9 +6010,10 @@ class CfgVehicles {
 					displayName = "Black";
 					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
             	};
-				class Customs {
-					displayName = "Custom Livieries";
-				};
+				class W610Camo {
+					displayName = "Whiskey610";
+					statement = "['UNSC_BDA_W610', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+            	};
             };
         };
 
@@ -23098,7 +23097,6 @@ class CfgVehicles {
 					};
 					class MarineCamo {
 						displayName = "Marine";
-						condition = "driver vehicle player isEqualTo player";
 						statement = "['BDA_Marine', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 					class WoodlandCamo {
@@ -23459,7 +23457,7 @@ class CfgVehicles {
 	};
 
 	class BDA_AV22_Sparrowhawk_B: OPTRE_AV22_Sparrowhawk {
-		scope = 2;
+		scope = 1;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;

@@ -78,7 +78,7 @@ class RscDisplayMain: RscStandardDisplay {
 			text="Join BDC Server";
 			tooltip="Click to Join the Black Dagger Company Server";
 			style=2;
-			onbuttonclick="connectToServer ['66.196.55.158', 2302, '']"; //games.blackdagger.org OR 66.196.55.158
+			onbuttonclick="connectToServer ['74.208.86.92', 2302, '']"; //games.blackdagger.org OR 74.208.86.92
 			colorBackground[]={0,0,0,0.40000001};
 			colorBackgroundActive[]={1,0,0,0,2};
 			borderSize=0.054000001;
@@ -92,7 +92,7 @@ class RscDisplayMain: RscStandardDisplay {
 			idc=-1;
 			text="Join BDC Discord";
 			tooltip="Click to join the Black Dagger Discord";
-			url="https://discord.gg/blackdaggercompany";
+			url="https://discord.gg/faxU2ty9eQ";
 			colorBackground[]={0,0,0,0.69999999};
 			colorBackgroundActive[]={1,0,0,0,2};
 			borderSize=0.054000001;

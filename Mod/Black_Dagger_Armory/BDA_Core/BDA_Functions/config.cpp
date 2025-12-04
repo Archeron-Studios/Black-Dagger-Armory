@@ -35,6 +35,7 @@ class CfgFunctions {
 			class vehRearm {};
 			class vehRepair {};
 			class vehRefuel {};
+			class vehCleanup {};
 		};
 		class BDA_Vehcamo {
 			file = "\BDA_Core\BDA_Functions\vehcamo";
@@ -140,9 +141,9 @@ class CfgVehicles {
     };
 };
 
-enableDebugConsole[] = { "76561198805462515", "76561198249403686", "76561198066703139" };
+enableDebugConsole[] = { "76561198805462515", "76561198249403686", "76561198066703139" }; //wallace, rib, pey
 
 class cfgMods {
 	author="Rib";
-	timepacked="080320251020";
+	timepacked="120820251740";
 };

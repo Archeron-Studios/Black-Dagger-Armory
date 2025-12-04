@@ -241,6 +241,26 @@ class cfgWeapons {
 		};
 	};
 
+	class BDA_Pilot_Rib: BDA_Armor_Ribbington_v2 {
+		displayName = "M52D Pilot Armor (R. Ribbington)";
+		hiddenSelectionsTextures[] = {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",//vest camo
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_CO.paa",//Shoulder camo2
+			"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Rib_Pilot_CO.paa", //legs camo3
+			"optre_unsc_units\army\data\ghillie_woodland_co", //camo4
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Rib_pilot_CO.paa"//camo5
+		};
+		class ItemInfo: ItemInfo {
+			hiddenSelectionsTextures[] = {
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",//vest camo
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_CO.paa",//Shoulder camo2
+				"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Rib_Pilot_CO.paa", //legs camo3
+				"optre_unsc_units\army\data\ghillie_woodland_co", //camo4
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Rib_pilot_CO.paa"//camo5
+			};
+		};
+	};
+
 	class BDA_Armor_Zarush: OPTRE_UNSC_M52D_Armor {
 		dlc="BDA";
 		author = "Rib";
@@ -317,7 +337,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Boston: BDA_Armor_RF {
-		scope = 1
+		scope = 1; //left
 		author="Rib";
 		displayName="M52D Body Armor (L. Boston)";
 		hiddenSelectionsTextures[]= {
@@ -464,8 +484,81 @@ class cfgWeapons {
 		};
 	};
 
+	class BDA_Armor_Chase: BDA_Armor_RF_Big {
+		author = "Rib";
+		displayName = "M52D Body Armor (F. Chase)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Chase_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Chase_CO.paa"
+		};
+		class ItemInfo: ItemInfo {
+			hiddenSelections[]= {
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+	//			"A_KneesLeft",
+	//			"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+	//			"A_ODST",
+	//			"A_TacPad",
+	//			"A_ShinArmorLeft",
+	//			"A_ShinArmorRight",
+	//			"AS_BaseLeft",
+	//			"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+	//			"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperRight",
+				"AS_ODSTSniperLeft",
+				"AS_SmallLeft",
+	//			"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"AP_Frag",
+				"AP_Smoke",
+				"APO_AR",
+				"APO_Knife",
+				"APO_BR",
+	//			"APO_SMG",
+				"APO_Sniper",
+	//			"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Chase_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Chase_CO.paa"
+			};
+		};
+	};
+
 	class BDA_Armor_Knight: OPTRE_UNSC_M52D_Armor {
-		scope = 1
+		scope = 1; //left
 		dlc="BDA";
 		author="Rib + Grif";
 		displayName="M52D Body Armor (N. Knight)";
@@ -565,7 +658,7 @@ class cfgWeapons {
 				"A_KneesMarLeft",
 				"A_KneesMarRight",
 	//			"A_ODST",
-				"A_TacPad",
+	//			"A_TacPad",
 	//			"A_ShinArmorLeft",
 	//			"A_ShinArmorRight",
 	//			"AS_BaseLeft",
@@ -640,7 +733,7 @@ class cfgWeapons {
 				"A_KneesMarLeft",
 				"A_KneesMarRight",
 	//			"A_ODST",
-				"A_TacPad",
+	//			"A_TacPad",
 	//			"A_ShinArmorLeft",
 	//			"A_ShinArmorRight",
 	//			"AS_BaseLeft",
@@ -690,7 +783,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Reynolds: OPTRE_UNSC_M52D_Armor {
-		scope = 1
+		scope = 1; //left
 		dlc="BDA";
 		author="Grif";
 		displayName="M52D Body Armor (F. Reynolds)";
@@ -764,6 +857,80 @@ class cfgWeapons {
 		};
 	};
 
+	class BDA_Armor_Beefe: OPTRE_UNSC_M52D_Armor {
+		dlc="BDA";
+		author="Grif";
+		displayName = "M52D Body Armor (G. Beefe)";
+		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Beefe_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Beefe_CO.paa"
+		};
+		class ItemInfo: ItemInfo {
+				hiddenSelections[]= {
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+	//			"A_KneesLeft",
+	//			"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+	//			"A_ODST",
+	//			"A_TacPad",
+	//			"A_ShinArmorLeft",
+	//			"A_ShinArmorRight",
+	//			"AS_BaseLeft",
+	//			"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+	//			"AS_ODSTSniperRight",
+	//			"AS_ODSTSniperLeft",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+	//			"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+	//			"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+	//			"AP_Thigh",
+	//			"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+	//			"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]= {
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Reynolds_CO.paa"
+			};
+		};
+	};
+
 	/*class BDA_Armor_Ryder: BDA_Armor_RF {
 		author = "Rib";
 		displayName = "M52D Body Armor (C. Ryder)";
@@ -788,18 +955,6 @@ class cfgWeapons {
 		};
 	};
 
-	class BDA_Armor_Chase: BDA_Armor_RF {
-		author = "Rib";
-		displayName = "M52D Body Armor (F. Chase)";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Chase_CO.paa"
-		};
-	};
-
 	class BDA_Armor_Arturo: BDA_Armor_RF_Big {
 		author = "Rib";
 		displayName = "M52D Body Armor (L. Arturo)";
@@ -812,24 +967,20 @@ class cfgWeapons {
 		};
 	};
 
-	class BDA_Armor_Beefe: BDA_Armor_RF {
-		author = "Grif";
-		displayName = "M52D Body Armor (G. Beefe)";
+	class BDA_Armor_Pilot_Arturo: BDA_M52B_Pilot_Armor_B {
+		author = "Rib";
+		displayName = "M52B Body Armor (L. Arturo)";
 		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Beefe_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Beefe_CO.paa"
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52B_Armor_Arturo_CO.paa"
 		};
 	};
 
-	class BDA_Armor_Smith: BDA_Armor_MD {
+	class BDA_Armor_Smith: BDA_Armor_RF {
 		author = "Grif";
 		displayName = "M52D Body Armor (F. Smith)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Smith_Medic_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Smith_CO.paa"
@@ -837,6 +988,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Jager: BDA_M52B_Pilot_Armor_B {
+		scope = 1;
 		author = "Rib/Grif";
 		displayName="M52B Body Armor (R. Jager)";
 		hiddenSelectionsTextures[]= {
@@ -845,6 +997,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Frank: BDA_M52B_Pilot_Armor_B {
+		scope = 1;
 		author = "Grif";
 		displayName="M52B Body Armor (R. Frank)";
 		hiddenSelectionsTextures[]= {
@@ -853,7 +1006,6 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Parhau: BDA_Armor_RF {
-		scope = 1;
 		author = "Grif";
 		displayName = "M52D Body Armor (R. Parhau)";
 		hiddenSelectionsTextures[]= {
@@ -874,6 +1026,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Kohl: BDA_Armor_RF {
+		scope = 1;
 		dlc="BDA";
 		author = "Grif";
 		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
@@ -900,6 +1053,7 @@ class cfgWeapons {
 	};
 	
 	class BDA_Armor_Conrad: BDA_Armor_RF {
+		scope = 1;
 		author = "Grif";
 		displayName = "M52D Body Armor (A. Conrad)";
 		hiddenSelectionsTextures[]= {
@@ -912,7 +1066,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Puma: BDA_Armor_RF {
-		scope = 1
+		scope = 1; //left
 		author = "Grif";
 		displayName = "M52D Body Armor (R. Puma)";
 		hiddenSelectionsTextures[]= {
@@ -965,7 +1119,7 @@ class cfgWeapons {
 		displayName = "M52D Body Armor (W. Jenkins)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_Scythe_Medic_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_P1_Medic_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Jenkins_CO.paa"
@@ -997,6 +1151,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Lockwood: BDA_Armor_MD {
+		scope = 1; //left
 		author = "Grif";
 		displayName = "M52D Body Armor (A. Lockwood)";
 		hiddenSelectionsTextures[]= {
@@ -1017,6 +1172,18 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Tucker_CO.paa"
+		};
+	};
+
+	class BDA_Armor_Pilot_Tucker: BDA_Armor_Pilot {
+		author = "Rib";
+		displayName = "M52D Pilot Armor (L. Tucker)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
 	};
 
@@ -1045,7 +1212,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Karson: BDA_Armor_RF {
-		scope = 1
+		scope = 1; //left
 		author = "Rib";
 		displayName = "M52D Body Armor (J. Karson)";
 		hiddenSelectionsTextures[]= {
@@ -1058,12 +1225,12 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Fonza: BDA_Armor_MD {
-		scope = 1
+		scope = 1; //left
 		author = "Grif";
 		displayName = "M52D Body Armor (R. Fonza)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_Scythe_Medic_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_P1_Medic_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Fonza_CO.paa"
@@ -1083,7 +1250,7 @@ class cfgWeapons {
 	};	
 
 	class BDA_Armor_Dusk: BDA_Armor_MD {
-		scope = 1;
+		scope = 1; //left;
 		author = "Grif";
 		displayName = "M52D Body Armor (R. Dusk)";
 		hiddenSelectionsTextures[]= {
@@ -1120,6 +1287,7 @@ class cfgWeapons {
 	};
 	
 	class BDA_Armor_Leviathan: BDA_Armor_RF {
+		scope = 1; //left;
 		author = "Grif";
 		displayName = "M52D Body Armor (S. Leviathan)";
 		hiddenSelectionsTextures[]= {
@@ -1136,12 +1304,75 @@ class cfgWeapons {
 		displayName = "M52D Body Armor (S. Zephyr)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_S2_Medic_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_P1_Medic_CO",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Zephyr_CO.paa"
 		};
 	};
+
+	class BDA_Armor_Byrne: BDA_Armor_SN {
+		author = "Grif";
+		displayName = "M52D Body Armor (P. Byrne)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Byrne_CO.paa"
+		};
+	};
+
+	class BDA_Armor_Bachman: BDA_Armor_RF {
+		author = "Grif";
+		displayName = "M52D Body Armor (H. Bachman)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Bachman_CO.paa"
+		};
+	};
+
+	class BDA_Armor_Hill: BDA_Armor_RF {
+		author = "Grif";
+		displayName = "M52D Body Armor (B. Hill)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Hill_CO.paa"
+		};
+	};
+
+	class BDA_Armor_Pike: BDA_Armor_AR {
+		author = "Grif";
+		displayName = "M52D Body Armor (W. Pike)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Pike_CO.paa"
+		};
+	};
+
+
+	//Pilots
+
+	class BDA_Armor_Wolfwood: BDA_Armor_Pilot {
+		author = "Grif";
+		displayName = "M52A Body Armor (N. Wolfwood)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Wolfwood_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
+		};
+	};	
 	//end
 };
 

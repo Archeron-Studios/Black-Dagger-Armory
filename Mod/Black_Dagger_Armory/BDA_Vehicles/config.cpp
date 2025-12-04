@@ -23097,7 +23097,6 @@ class CfgVehicles {
 					};
 					class MarineCamo {
 						displayName = "Marine";
-						condition = "driver vehicle player isEqualTo player";
 						statement = "['BDA_Marine', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 					class WoodlandCamo {

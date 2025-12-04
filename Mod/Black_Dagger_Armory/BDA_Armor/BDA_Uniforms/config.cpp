@@ -71,44 +71,8 @@ class CfgVehicles {
 		uniformClass="BDA_Uniform_TEST";
 		model="\OPTRE_UNSC_Units\Army\uniform_rolled.p3d";
 		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST_CO.paa",
-			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST_CO.paa"
-		};
-	};
-	class BDA_Uniform_TEST2_UNSC: BDA_Uniform_B_UNSC {
-		dlc = "BDA";
-		author="Rib";
-		uniformClass="BDA_Uniform_TEST2";
-		model="\OPTRE_UNSC_Units\Army\uniform_rolled.p3d";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST2_CO.paa",
-			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST2_CO.paa"
-		};
-	};
-	class BDA_Uniform_TEST3_UNSC: BDA_Uniform_B_UNSC {
-		dlc = "BDA";
-		author="Rib";
-		uniformClass="BDA_Uniform_TEST3";
-		model="\OPTRE_UNSC_Units\Army\uniform_rolled.p3d";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST3_CO.paa",
-			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST3_CO.paa"
-		};
-		hiddenSelectionsMaterials[] = {
-			"",
-			"",
-			"BDA_Armor\BDA_Uniforms\data\uniform_b.rvmat",//mat1
-			"BDA_Armor\BDA_Uniforms\data\uniform_b.rvmat"//mat2
-		};
-	};
-	class BDA_Uniform_TEST4_UNSC: BDA_Uniform_B_UNSC {
-		dlc = "BDA";
-		author="Rib";
-		uniformClass="BDA_Uniform_TEST4";
-		model="\OPTRE_UNSC_Units\Army\uniform_rolled.p3d";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST2_CO.paa",
-			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_TEST3_CO.paa"
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_marp_CO.paa",
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_marp_CO.paa"
 		};
 	};
 
@@ -226,24 +190,6 @@ class cfgWeapons {
 		displayName="Cross-Branch BDU (TEST)";
 		class ItemInfo: ItemInfo {
 			uniformClass="BDA_Uniform_TEST_UNSC";
-		};
-	};
-	class BDA_Uniform_TEST2: BDA_Uniform_B {
-		displayName="Cross-Branch BDU (TEST2)";
-		class ItemInfo: ItemInfo {
-			uniformClass="BDA_Uniform_TEST2_UNSC";
-		};
-	};
-	class BDA_Uniform_TEST3: BDA_Uniform_B {
-		displayName="Cross-Branch BDU (TEST3)";
-		class ItemInfo: ItemInfo {
-			uniformClass="BDA_Uniform_TEST3_UNSC";
-		};
-	};
-	class BDA_Uniform_TEST4: BDA_Uniform_B {
-		displayName="Cross-Branch BDU (TEST4)";
-		class ItemInfo: ItemInfo {
-			uniformClass="BDA_Uniform_TEST4_UNSC";
 		};
 	};
 

@@ -220,6 +220,18 @@ switch (_vehCamo) do {
 		};
 		systemChat "Applying Tundra texture";
 	};
+	case "BDA_Romeo610": {
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_MH145_Falcon") then 
+		{
+			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\customs\BDA_Falc_610_m_co.paa"];
+			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\customs\BDA_Falc_610_a_co.paa"];
+			_tarVeh setObjectTextureGlobal [2, "\BDA_Vehicles\data\falcon\Winter\BDA_Falc_Blk_i_co.paa"];
+			_tarVeh setObjectTextureGlobal [3, "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"];
+			_tarVeh setObjectTextureGlobal [4, "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa"];
+			_tarVeh setObjectTextureGlobal [5, "\BDA_Vehicles\data\falcon\customs\falcon_610_var1_ca.paa"];
+		};
+		systemChat "Applying Romeo610 texture";
+	};
 
 	default { };
 };

@@ -22961,6 +22961,19 @@ class CfgVehicles {
 				};
 				factions[]={"B_BDCUNSC"};
 			};
+			class BDA_Romeo610 {
+				displayName = "Romeo610";
+				author = "Griffin";
+				textures[] = {
+					"\BDA_Vehicles\data\falcon\customs\BDA_Falc_test_m_co.paa",
+					"\BDA_Vehicles\data\falcon\customs\BDA_Falc_test_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa", 
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa", 
+					"\BDA_Vehicles\data\falcon\customs\falcon_610_var1_ca.paa"
+				};
+				factions[]={"B_BDCUNSC"};
+			};
 		};
 		textureList[]={
 			"BDA_Classic",
@@ -22986,6 +22999,8 @@ class CfgVehicles {
 			"BDA_Frost",
 			1,
 			"BDA_Tundra",
+			1,
+			"BDA_Romeo610",
 			1,
 		};
 
@@ -23144,6 +23159,13 @@ class CfgVehicles {
 						displayName = "Dune Tan";
 						statement = "['BDA_Dune', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
+				};
+				class Customs {
+					displayName = "Customs";
+					class Romeo610 {
+						displayName = "Romeo-610";
+						statement = "['BDA_Romeo610', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+					};	
 				};
             };
         };

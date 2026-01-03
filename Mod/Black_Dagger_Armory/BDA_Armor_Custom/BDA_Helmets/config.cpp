@@ -698,6 +698,7 @@ class cfgWeapons {
 	};
 	
 	class BDA_CH252D_Arturo_Helmet: BDA_CH252D_Helmet {
+		scope = 1; //left
 		author="Rib";
 		displayName="CH252D Helmet (L. Arturo)";
 		hiddenSelectionsTextures[]=
@@ -727,6 +728,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Arturo_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1; //left
 		author="Rib";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Arturo_CO.paa",
@@ -753,6 +755,7 @@ class cfgWeapons {
 	};
 
 	class BDA_VX19_Arturo_Helmet: BDA_VX19_Helmet {
+		scope = 1; //left
 		author="Rib";
 		displayName="VX19 Flight Helmet (L. Arturo)";
 		hiddenSelectionsTextures[]={
@@ -772,6 +775,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_VX19_Arturo_Helmet_dp: BDA_VX19_Helmet_dp {
+		scope = 1; //left
 		author="Rib";
 		displayName="VX19 Flight Helmet (L. Arturo)";
 		hiddenSelectionsTextures[]={
@@ -1450,6 +1454,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Conrad_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1; //left
 		author="Griffin";
 		hiddenSelectionsTextures[]=
 		{
@@ -2237,7 +2242,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Pal_Helmet: BDA_CH252D_Helmet {
-		
+		scope = 1; //left		
 		author="Rib";
 		displayName="CH252D Helmet (P. Pal)";
 		hiddenSelectionsTextures[]= {
@@ -2263,6 +2268,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Pal_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1; //left
 		author="Rib";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Pey_CO.paa",
@@ -2989,6 +2995,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Hunner_Helmet: BDA_CH252D_Helmet {
+		scope = 1; //left
 		author="Zarush";
 		displayName="CH252D Helmet (T. Hunner)";
 		hiddenSelectionsTextures[]= {
@@ -3017,6 +3024,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Hunner_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1; //left
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Hunner_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
@@ -3094,6 +3102,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Bachman_Helmet: BDA_CH252D_Helmet {
+		scope = 1; //left
 		displayName="CH252D Helmet (H. Bachman)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bachman_CO.paa",
@@ -3120,6 +3129,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Bachman_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1; //left
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bachman_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
@@ -3197,6 +3207,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Lesna_Helmet: BDA_CH252D_Helmet {
+		scope = 1; //left
 		author="Griffin";
 		displayName="CH252D Helmet (T. Lesna)";
 		hiddenSelectionsTextures[]= {
@@ -3224,6 +3235,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Lesna_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1; //left
 		author="Griffin";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Lensa_CO.paa",

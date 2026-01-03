@@ -944,6 +944,7 @@ class cfgWeapons {
 	};*/
 
 	class BDA_Armor_Pey: BDA_Armor_MD {
+		scope = 1; //left
 		author = "Rib";
 		displayName = "M52D Body Armor (P. Pal)";
 		hiddenSelectionsTextures[] = {
@@ -956,6 +957,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Arturo: BDA_Armor_RF_Big {
+		scope = 1; //left
 		author = "Rib";
 		displayName = "M52D Body Armor (L. Arturo)";
 		hiddenSelectionsTextures[]= {
@@ -968,6 +970,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Pilot_Arturo: BDA_M52B_Pilot_Armor_B {
+		scope = 1; //left
 		author = "Rib";
 		displayName = "M52B Body Armor (L. Arturo)";
 		hiddenSelectionsTextures[]= {
@@ -1053,6 +1056,7 @@ class cfgWeapons {
 	};
 	
 	class BDA_Armor_Conrad: BDA_Armor_RF {
+		scope = 1; //left
 		scope = 1;
 		author = "Griffin";
 		displayName = "M52D Body Armor (A. Conrad)";
@@ -1275,6 +1279,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Hunner: BDA_Armor_RF {
+		scope = 1; //left
 		author = "Zarush";
 		displayName = "M52D Body Armor (T. Hunner)";
 		hiddenSelectionsTextures[]= {
@@ -1324,6 +1329,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Bachman: BDA_Armor_RF {
+		scope = 1; //left
 		author = "Griffin";
 		displayName = "M52D Body Armor (H. Bachman)";
 		hiddenSelectionsTextures[]= {

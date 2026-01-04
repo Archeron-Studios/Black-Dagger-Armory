@@ -16,6 +16,7 @@ class CfgPatches {
 		units[]={
             "BDA_Ammo_SupplyPod",
             "BDA_Medical_SupplyPod",
+            "BDA_Ammo_Pioneer_SupplyPod",
             "BDA_Rearm",
             "BDA_Repair",
             "BDA_Refuel",
@@ -307,10 +308,8 @@ class CfgVehicles {
 		editorSubcategory="BDA_ESC_Props";
         displayName = "[BDA] Supply Pod (Medical)";
 		maximumLoad = 10000;
-		class TransportMagazines {
-		};
-		class TransportWeapons {
-		};
+		class TransportMagazines {};
+		class TransportWeapons {};
 		class TransportItems {
 			class xx_ACE_fieldDressing {
                 name = "ACE_fieldDressing";
@@ -369,6 +368,60 @@ class CfgVehicles {
                 count = 1;
             };
 		};
+    };
+
+    class BDA_Ammo_Pioneer_SupplyPod: BDA_Ammo_SupplyPod {
+        displayName = "[BDA] Supply Pod (Pioneer)";
+        class TransportMagazines {
+            class xx_OPTRE_c7_remote_throwable_sticky_mag {
+                name = "OPTRE_c7_remote_throwable_sticky_mag";
+                count = 20;
+            };
+            class xx_ACE_M84 {
+                name = "ACE_M84";
+                count = 20;
+            };
+            class xx_OPTRE_36Rnd_95x40_Mag {
+                name = "OPTRE_36Rnd_95x40_Mag";
+                count = 40;
+            };
+            class xx_OPTRE_60Rnd_762x51_Mag {
+                name = "OPTRE_60Rnd_762x51_Mag";
+                count = 40;
+            };
+            class xx_PHEN_HALO_Flamethrower_Mag_300Rnd_M7057 {
+                name = "PHEN_HALO_Flamethrower_Mag_300Rnd_M7057";
+                count = 8;
+            };
+            class xx_TCF_2Rnd_50x137_PEN {
+                name = "TCF_2Rnd_50x137_PEN";
+                count = 8;
+            };
+            class xx_TCF_2Rnd_50x137_THERMO {
+                name = "TCF_2Rnd_50x137_THERMO";
+                count = 8;
+            };
+            class xx_TCF_2Rnd_50x137_HEAT {
+                name = "TCF_2Rnd_50x137_HEAT";
+                count = 8;
+            };
+        };
+        class TransportWeapons {
+            class xx_TCF_M57_Pilum_B {
+                name = "TCF_M57_Pilum_B";
+                count = 2;
+            };
+        };
+        class TransportItems {
+            class xx_ace_fortify {
+                name = "ace_fortify";
+                count = 2;
+            };
+            class xx_OPTRE_M37_HMG_Bag_Weapon_Single {
+                name = "OPTRE_M37_HMG_Bag_Weapon_Single";
+                count = 3;
+            };
+        };
     };
     
     class BDA_Rearm: B_Slingload_01_Ammo_F {

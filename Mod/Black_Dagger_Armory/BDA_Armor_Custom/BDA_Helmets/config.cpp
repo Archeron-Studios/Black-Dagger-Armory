@@ -2888,7 +2888,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Byrne_Helmet: BDA_CH252D_Helmet {
-		author="Griffin";
+		author="Byrne";
 		displayName="CH252D Helmet (P. Byrne)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Byrne_CO.paa",

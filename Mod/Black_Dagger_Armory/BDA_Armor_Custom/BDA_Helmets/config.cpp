@@ -755,8 +755,7 @@ class cfgWeapons {
 	};
 
 	class BDA_VX19_Arturo_Helmet: BDA_VX19_Helmet {
-		scope = 1; //left
-		author="Rib";
+		author="Byrne";
 		displayName="VX19 Flight Helmet (L. Arturo)";
 		hiddenSelectionsTextures[]={
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Arturo_CO.paa",
@@ -775,8 +774,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_VX19_Arturo_Helmet_dp: BDA_VX19_Helmet_dp {
-		scope = 1; //left
-		author="Rib";
+		author="Byrne";
 		displayName="VX19 Flight Helmet (L. Arturo)";
 		hiddenSelectionsTextures[]={
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Arturo_CO.paa",

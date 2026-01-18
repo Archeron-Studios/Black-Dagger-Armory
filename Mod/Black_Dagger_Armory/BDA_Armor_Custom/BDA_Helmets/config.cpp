@@ -3930,6 +3930,43 @@ class cfgWeapons {
 			};
 		};
 	};
+	class BDA_VX19_Byrne_Helmet: BDA_VX19_Helmet {
+		author="Byrne";
+		displayName="VX19 Flight Helmet (P. Byrne)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Byrne_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+			hiddenSelectionsTextures[]={
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Byrne_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
+	class BDA_VX19_Byrne_Helmet_dp: BDA_VX19_Helmet_dp {
+		displayName="VX19 Flight Helmet (P. Byrne)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Byrne_CO.paa",
+			"",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
+			hiddenSelectionsTextures[]={
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Byrne_CO.paa",
+				"",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
 
 	//end
 };	

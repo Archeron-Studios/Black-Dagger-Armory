@@ -1389,6 +1389,18 @@ class cfgWeapons {
 		};
 	};
 
+	class BDA_Armor_David: BDA_Armor_DM {
+		author = "Griffin";
+		displayName = "M52D Body Armor (S. David)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_David_CO.paa"
+		};
+	};
+
 
 	//Pilots
 

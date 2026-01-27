@@ -4451,7 +4451,6 @@ class CfgVehicles {
 			class _xx_Toolkit {name="ToolKit"; count=2;};
 			class _xx_ACE_WaterBottle {name="ACE_WaterBottle"; count=10;};
 			class _xx_ACE_EntrenchingTool {name="ACE_EntrenchingTool"; count=4;};
-			class _xx_adv_aceCPR_AED {name="adv_aceCPR_AED"; count=2;};
 			class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=20;};
 			//class _xx_ACE_
 		};
@@ -10195,7 +10194,6 @@ class CfgVehicles {
 			class _xx_Toolkit {name="ToolKit"; count=2;};
 			class _xx_ACE_WaterBottle {name="ACE_WaterBottle"; count=10;};
 			class _xx_ACE_EntrenchingTool {name="ACE_EntrenchingTool"; count=4;};
-			class _xx_adv_aceCPR_AED {name="adv_aceCPR_AED"; count=2;};
 			class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=20;};
 			//class _xx_ACE_
 		};
@@ -23485,7 +23483,6 @@ class CfgVehicles {
 			class _xx_Toolkit {name="ToolKit"; count=1;};
 			class _xx_ACE_WaterBottle {name="ACE_WaterBottle"; count=5;};
 			class _xx_ACE_EntrenchingTool {name="ACE_EntrenchingTool"; count=4;};
-			class _xx_adv_aceCPR_AED {name="adv_aceCPR_AED"; count=1;};
 			class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=6;};
 			class _xx_ACE_tourniquet {name = "ACE_tourniquet"; count = 8;};
 			class _xx_ACE_morphine {name = "ACE_morphine"; count = 10;};

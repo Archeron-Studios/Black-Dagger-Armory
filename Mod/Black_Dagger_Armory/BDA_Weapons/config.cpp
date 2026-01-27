@@ -7,8 +7,8 @@ class CfgPatches
 		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle","Splits_Weaponry_Ammo", "OPTRE_Weapons_MG","OPTRE_Weapons_Vehicle"};
 		requiredVersion = 0.100000;
 		units[] = {};
-		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AA_Bottom_Launcher", "BDA_Smartfinder","BDA_M247T_Coax","BDA_MG470_40mm"};
-		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AA_Pelican_x4","BDA_1200rnd_762x51_Box_Tracer","BDA_95x40_400rnd_Box_Tracer","BDA_95x40_400rnd_Box","BDA_1200rnd_762x51_Box_Tracer","BDA_250rnd_40mm_G_HE_Belt","BDA_250rnd_40mm_G_MP_Belt"};
+		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AGM_Launcher","BDA_weapon_Guided_AGM_Bottom_Launcher","BDA_weapon_Guided_AA_Launcher","BDA_weapon_Guided_AA_Bottom_Launcher", "BDA_Smartfinder","BDA_M247T_Coax","BDA_MG470_40mm"};
+		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AGM_Pelican_x3","BDA_PylonMissile_AGM_Pelican_x2","BDA_PylonMissile_AA_Pelican_x2","BDA_PylonMissile_AA_Pelican_x4","BDA_1200rnd_762x51_Box_Tracer","BDA_95x40_400rnd_Box_Tracer","BDA_95x40_400rnd_Box","BDA_1200rnd_762x51_Box_Tracer","BDA_250rnd_40mm_G_HE_Belt","BDA_250rnd_40mm_G_MP_Belt"};
 		ammo[] = {"Ribs_M_Anvil3_LGIR","BDA_40mm_HE","BDA_40mm_MP"};
     };
 };
@@ -34,35 +34,24 @@ class CfgAmmo {
 	/*arma*/ class LaserBombCore;
 	/*arma*/ class BombCore;
 	/*arma*/ class ShellBase;
-	/*arma*/ class Missile_AA_04_F;
 	/*arma*/ class M_AT;
-	/*extern*/ class Missile_AGM_02_F;
-	/*extern*/ class Splits_M_ATA_Anaconda_AA;
+	/*arma*/ class Missile_AA_04_F;
+	/*arma*/ class Missile_AGM_02_F;
 	/*arma*/ class B_30mm_HE;
 	/*arma*/ class B_40mm_GPR;
+	/*extern*/ class Splits_M_ATA_Anaconda_AA;
+	/*extern*/ class Splits_M_ANVIL_3_LGM;
 
-	class Ribs_M_Anvil3_LGIR: Missile_AGM_02_F {
-		model = "Splits\Splits_Weaponry\Aircraft\Anvil_1_missile_fly.p3d";
-		hit = 450;
+	class Ribs_M_Anvil3_LGIR: Splits_M_ANVIL_3_LGM {
+		hit = 750;
         indirectHit=80;
         indirectHitRange=8;
 		explosive = 1;
-		caliber=1;
-        explosionEffects="HelicopterExplosionEffects2";
-        missileLockMaxDistance=4000;
-        missileLockMinDistance=50;
-        weaponLockSystem="1 + 2 + 4 + 16";
-        missileKeepLockedCone=90;
-        mass=2;
-		maxSpeed=400;
-        thrust=60;
-        timeToLive=20;
-        typicalSpeed=50;
-        thrustTime=60;
+		canlock = 2;
+		airlock = 1;
 		irLock = 1;
 		laserLock = 1;
 	};
-
 	class BDA_40mm_HE: B_30mm_HE {
 		hit = 160;
 		typicalSpeed = 1000;
@@ -74,17 +63,49 @@ class CfgAmmo {
 };
 
 class CfgMagazines {
-	/*extern*/ class VehicleMagazine;
-	/*extern*/ class 12Rnd_PG_missiles;
+	/*arma*/ class VehicleMagazine;
+	/*arma*/ class 12Rnd_PG_missiles;
 	/*extern*/ class OPTRE_100Rnd_95x40_Box;
 	/*extern*/ class OPTRE_500Rnd_762x51_Box_Tracer;
- 
+	/*extern*/ class Splits_PylonMissile_AA_Pelican_x2;
+	/*extern*/ class Splits_PylonMissile_AGM_Pelican_x2;
+	/*extern*/ class Splits_PylonMissile_AGM_Bottom_Pelican_x3;
+
+	class BDA_PylonMissile_AGM_Pelican_x2: Splits_PylonMissile_AGM_Pelican_x2 {
+		dlc = "BDA";
+		scope = 2;
+		displayName = "2x AGM-2560B AT Guided Missiles";
+		displayNameShort = "2560-B ATGM";
+		descriptionShort = "Laser-Wire-Guided Anti-Tank Guided Missile";
+		hardpoints[] = {"BDA_T_Missiles"};
+		pylonWeapon = "BDA_weapon_Guided_AGM_Launcher";
+	};
+	class BDA_PylonMissile_AGM_Pelican_x3: Splits_PylonMissile_AGM_Bottom_Pelican_x3 {
+		dlc = "BDA";
+		scope = 2;
+		displayName = "3x AGM-2560B AT Guided Missiles";
+		displayNameShort = "2560-B ATGM";
+		descriptionShort = "Laser-Wire-Guided Anti-Tank Guided Missile";
+		hardpoints[] = {"BDA_B_Missiles"};
+		pylonWeapon = "BDA_weapon_Guided_AGM_Bottom_Launcher";
+	};
+	class BDA_PylonMissile_AA_Pelican_x2: Splits_PylonMissile_AA_Pelican_x2 {
+		dlc = "BDA";
+		scope = 2;
+		displayName = "2x AAM-3000B Guided AA Missiles";
+		displayNameShort = "3-K-B Guided AAM";
+		descriptionShort = "Medium to Long Range Radar Anti-Air Guided Missile";
+		maxLeadSpeed = 400;
+		hardpoints[] = {"BDA_T_Missiles"};
+		pylonWeapon = "BDA_weapon_Guided_AA_Launcher";
+	};
 	class BDA_PylonMissile_AA_Pelican_x4: VehicleMagazine {
 		dlc = "BDA";
 		scope = 2;
-		displayName = "4Rnd AAM-3000B Guided AA Missiles";
-		displayNameShort = "4Rnd Guided AAM";
-		model = "Splits\Splits_Weaponry\Aircraft\pylonpod_Pelican_Top_AA_01";
+		displayName = "4x AAM-3000B Guided AA Missiles";
+		displayNameShort = "3-K-B Guided AAM";
+		descriptionShort = "Medium to Long Range Radar Anti-Air Guided Missile";
+		model = "Foundries\Splits_Weaponry\Aircraft\pylonpod_Pelican_Top_AA_01";
 		count = 4;
 		ammo = "Splits_M_ATA_Anaconda_AA";
 		initSpeed = 350;
@@ -97,7 +118,7 @@ class CfgMagazines {
 		nameSound = "missiles";
 		muzzlePos = "machinegun_beg";
 		muzzleEnd = "machinegun_end";
-		hardpoints[] = {"Splits_B_Missiles"};
+		hardpoints[] = {"BDA_B_Missiles"};
 		pylonWeapon = "BDA_weapon_Guided_AA_Bottom_Launcher";
 	};
 	class BDA_missiles_LGIR_Anvil3_x60: 12Rnd_PG_missiles {
@@ -106,10 +127,8 @@ class CfgMagazines {
 		displayName = "60Rnd ANVIL III LG Missile Pods";
 		descriptionShort = "60rnd LG Missiles";
 		count = 60;
-		initSpeed = 170;
-		maxLeadSpeed = 800;
-		muzzlePos = "machinegun_beg";
-		muzzleEnd = "machinegun_end";
+		initSpeed = 150;
+		maxLeadSpeed = 900;
 		ammo = "Ribs_M_Anvil3_LGIR";
 		sound[] = {"A3\Sounds_F\weapons\Rockets\titan_2",1.25893,1,1000};
 		weaponSoundEffect = "DefaultRifle";
@@ -117,7 +136,6 @@ class CfgMagazines {
 		soundHit[] = {"",1.25893,1,1};
 		reloadSound[] = {"",0.000316228,1,20};
 		nameSound = "missiles";
-		autoSeekTarget=1;
 	};
 	class BDA_95x40_400rnd_Box: OPTRE_100Rnd_95x40_Box {
 		dlc = "BDA";
@@ -178,31 +196,45 @@ class cfgMagazineWells {
 };
 
 class CfgWeapons {
-    /*extern*/ class RocketPods;
-    /*extern*/ class missiles_ASRAAM;
-	/*extern*/ class missiles_titan;
-	/*extern*/ class missiles_SCALPEL;
-	/*extern*/ class Missile_AGM_02_Plane_CAS_01_F;
+    /*arma*/ class RocketPods;
+    /*arma*/ class missiles_ASRAAM;
+	/*arma*/ class missiles_titan;
+	/*arma*/ class missiles_SCALPEL;
+	/*arma*/ class Laserdesignator;
+	/*arma*/ class GMG_40mm;
+	/*arma*/ class GMG_F;
+	/*arma*/ class Missile_AGM_02_Plane_CAS_01_F;
+	/*extern*/ class Splits_missiles_Anvil3;
 	/*extern*/ class OPTRE_M247T_Coax;
-	/*extern*/ class Laserdesignator;
-	/*extern*/ class GMG_40mm;
-	/*extern*/ class GMG_F;
 
-    class BDA_missiles_Guided_Anvil3: Missile_AGM_02_Plane_CAS_01_F {
+    class BDA_missiles_Guided_Anvil3: Splits_missiles_Anvil3 {
         scope = 2;
         displayName = "ANVIL III LG Missile Pods";
-		descriptionShort = "LG Missiles";
-        magazines[] = { "BDA_missiles_LGIR_Anvil3_x60" };
-        ballisticsComputer = 16;
+		descriptionShort = "A3 LG Missiles";
+        magazines[] = { 
+			"BDA_missiles_LGIR_Anvil3_x60" 
+		};
+        ballisticsComputer = 4;
 		showAimCursorInternal = 1;
-		reloadTime	= 0.2;
-		magazineReloadTime = 15;
-		weaponLockDelay= 3;
+		reloadTime = 0.4;
+		magazineReloadTime = 12;
+		weaponLockDelay= 4;
 		canLock = 2;
 		cursor = "EmptyCursor";
 		cursorAim = "OPTRE_ANVIL1";
-		lockAcquire=1;
     };
+
+	class BDA_weapon_Guided_AA_Launcher: RocketPods {
+		scope = 2;
+		displayName ="AAM-3000B";
+		descriptionShort = "AA Missiles";
+		ballisticsComputer = 8;
+		magazines[] = {
+			"BDA_PylonMissile_AA_Pelican_x2"
+        };
+		reloadTime = 0.2;
+		magazineReloadTime = 0.2;
+	};
 
     class BDA_weapon_Guided_AA_Bottom_Launcher: RocketPods {
 		scope = 2;
@@ -212,10 +244,30 @@ class CfgWeapons {
 		magazines[] = 
         {
             "BDA_PylonMissile_AA_Pelican_x4",
-			"Splits_PylonMissile_AA_Pelican_x2"
+			"BDA_PylonMissile_AA_Pelican_x2"
         };
-		reloadTime = 0.200000;
-		magazineReloadTime = 0.200000;
+		reloadTime = 0.2;
+		magazineReloadTime = 0.4;
+	};
+
+	class BDA_weapon_Guided_AGM_Launcher: RocketPods {
+		displayName = "AGM-2560B";
+		ballisticsComputer = 8;
+		magazines[] = {
+			"BDA_PylonMissile_AGM_Pelican_x2"
+		};
+		reloadTime = 0.2;
+		magazineReloadTime = 0.2;
+	};
+
+	class BDA_weapon_Guided_AGM_Bottom_Launcher: RocketPods {
+		displayName = "AGM-2560B";
+		ballisticsComputer = 8;
+		magazines[] = {
+			"BDA_PylonMissile_AGM_Pelican_x3"
+		};
+		reloadTime = 0.2;
+		magazineReloadTime = 0.4;
 	};
 
 	class BDA_M247T_Coax: OPTRE_M247T_Coax {
@@ -375,5 +427,5 @@ class CfgWeapons {
 
 class cfgMods {
 	author="Rib";
-	timepacked="113014092025";
+	timepacked="144027012026";
 };

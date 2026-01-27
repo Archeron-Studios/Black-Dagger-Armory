@@ -163,9 +163,9 @@ class CfgVehicles {
 		class Components;
 	};
 	class OPTRE_UNSC_falcon_S: OPTRE_Falcon_Base {};
+	class OPTRE_UNSC_falcon_medical: OPTRE_Falcon_Base {};
 	class OPTRE_AV22_Sparrowhawk_Base: Helicopter_Base_H {};
 	class OPTRE_AV22_Sparrowhawk: OPTRE_AV22_Sparrowhawk_Base {};
-	class OPTRE_UNSC_falcon_medical;
 
 	class BDA_UNSC_D77_TC_Pelican: Splits_Pelican_base {
 		scope = 2;
@@ -4261,10 +4261,10 @@ class CfgVehicles {
 					class PylonRight1
 					{
 						attachment="";
-						priority=5;
+						priority=4;
 						hardpoints[]=
 						{
-							"Splits_T_Missiles",
+							"BDA_T_Missiles",
 							"OPAEX_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
@@ -4275,10 +4275,10 @@ class CfgVehicles {
 					class PylonRight2
 					{
 						attachment="";
-						priority=4;
+						priority=3;
 						hardpoints[]=
 						{
-							"Splits_T_Missiles",
+							"BDA_T_Missiles",
 							"OPAEX_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
@@ -4289,10 +4289,10 @@ class CfgVehicles {
 					class PylonRight3
 					{
 						attachment="";
-						priority=3;
+						priority=2;
 						hardpoints[]=
 						{
-							"Splits_B_Missiles",
+							"BDA_B_Missiles",
 							"OPAEX_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
@@ -4303,10 +4303,10 @@ class CfgVehicles {
 					class PylonRight4
 					{
 						attachment="";
-						priority=2;
+						priority=1;
 						hardpoints[]=
 						{
-							"Splits_B_Missiles",
+							"BDA_B_Missiles",
 							"OPAEX_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
@@ -4322,17 +4322,17 @@ class CfgVehicles {
 					class PylonsLeft2: PylonRight2
 					{
 						UIposition[]={0.25,0.40000001};
-						mirroredMissilePos=1;
+						mirroredMissilePos=2;
 					};
 					class PylonsLeft3: PylonRight3
 					{
 						UIposition[]={0.60000002,0.5};
-						mirroredMissilePos=1;
+						mirroredMissilePos=3;
 					};
 					class PylonsLeft4: PylonRight4
 					{
 						UIposition[]={0.60000002,0.40000001};
-						mirroredMissilePos=1;
+						mirroredMissilePos=4;
 					};
 				};
 				class Presets {
@@ -10007,7 +10007,7 @@ class CfgVehicles {
 						priority=5;
 						hardpoints[]=
 						{
-							"Splits_T_Missiles",
+							"BDA_T_Missiles",
 							"OPAEX_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
@@ -10021,7 +10021,7 @@ class CfgVehicles {
 						priority=4;
 						hardpoints[]=
 						{
-							"Splits_T_Missiles",
+							"BDA_T_Missiles",
 							"OPAEX_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
@@ -10035,7 +10035,7 @@ class CfgVehicles {
 						priority=3;
 						hardpoints[]=
 						{
-							"Splits_B_Missiles",
+							"BDA_B_Missiles",
 							"OPAEX_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
@@ -10049,7 +10049,7 @@ class CfgVehicles {
 						priority=2;
 						hardpoints[]=
 						{
-							"Splits_B_Missiles",
+							"BDA_B_Missiles",
 							"OPAEX_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
@@ -23473,6 +23473,81 @@ class CfgVehicles {
 				statement="0 = this spawn OPTRE_fnc_AirbrakeEngage";
 			};
 		};
+
+		class ACE_SelfActions: ACE_SelfActions {
+            class vehCamo {
+                displayName = "Change Camo";
+				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+				priority = 5;
+				class Temperate {
+					displayName = "Temperate Ops";
+					class OliveCamo {
+						displayName = "Olive";
+						statement = "['BDA_Classic', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+					};
+					class JungleCamo {
+						displayName = "Jungle";
+						statement = "['BDA_Jungle', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+					};
+					class MarineCamo {
+						displayName = "Marine";
+						statement = "['BDA_Marine', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+					};
+					class WoodlandCamo {
+						displayName = "Woodland";
+						statement = "['BDA_Woodland', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+					};
+					class BJ7Camo {
+						displayName = "BJ7";
+						statement = "['BDA_BJ7', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+					};
+				};
+				class Winter {
+					displayName = "Winter Ops";
+					class FrostCamo {
+						displayName = "Frost";
+						statement = "['BDA_Frost', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+					};
+					class TundraCamo {
+						displayName = "Tundra";
+						statement = "['BDA_Tundra', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+					};
+				};
+				class Night {
+					displayName = "Night Ops";
+					class BlackCamo {
+						displayName = "Blackout";
+						statement = "['BDA_Black', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+					};
+					class UrbanCamo {
+						displayName = "Urban";
+						statement = "['BDA_Urban', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+					};
+				};
+				class Desert {
+					displayName = "Desert Ops";
+					class DesertCamo {
+						displayName = "Desert Tan";
+						statement = "['BDA_Desert', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+					};
+					class ArabianCamo {
+						displayName = "Arabian";
+						statement = "['BDA_Arab', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+					};
+					class DuneCamo {
+						displayName = "Dune Tan";
+						statement = "['BDA_Dune', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+					};
+				};
+				class Customs {
+					displayName = "Customs";
+					class Romeo610 {
+						displayName = "Romeo-610";
+						statement = "['BDA_Romeo610', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+					};	
+				};
+            };
+        };
 
 		class TransportItems {
 			class _xx_FirstAidKit {name="FirstAidKit"; count=10;};

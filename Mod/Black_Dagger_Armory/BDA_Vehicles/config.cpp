@@ -387,7 +387,6 @@ class CfgVehicles {
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"BDA_missiles_LGIR_Anvil3_x60",
-			"BDA_missiles_LGIR_Anvil3_x60"
 		};
 		weapons[] = {
 			"CMFlareLauncher",
@@ -23356,10 +23355,19 @@ class CfgVehicles {
 			1,
 		};
 
+		hiddenSelections[]= {
+			"camo1",
+			"camo2",
+			"camo3",
+			"camoGlass",
+			"camoGlassPilot",
+			"camomedical",
+			"camoDecal"
+		};
 		hiddenSelectionsTextures[]= {
-			"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_m_co.paa",
-			"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_a_co.paa",
-			"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_i_co.paa",
+			"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_m_co.paa",
+			"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_a_co.paa",
+			"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_i_co.paa",
 			"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
 			"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
 			"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",

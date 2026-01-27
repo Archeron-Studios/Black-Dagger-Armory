@@ -130,7 +130,7 @@ switch (_vehCamo) do {
 		};
 		systemChat "Applying Marine texture";
 	};
-	case "BDA_Jungle": {
+	case "BDA_Jungle2": {
 		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_MH145_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_jun_m_co.paa"];
@@ -148,7 +148,7 @@ switch (_vehCamo) do {
 		};
 		systemChat "Applying BJ7 texture";
 	};
-	case "BDA_Woodland": {
+	case "BDA_Woodland2": {
 		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_MH145_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_wdl_m_co.paa"];
@@ -157,7 +157,7 @@ switch (_vehCamo) do {
 		};
 		systemChat "Applying Woodland texture";
 	};
-	case "BDA_Black": {
+	case "BDA_Black2": {
 		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_MH145_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_m_co.paa"];
@@ -175,7 +175,7 @@ switch (_vehCamo) do {
 		};
 		systemChat "Applying Urban texture";
 	};
-	case "BDA_Desert": {
+	case "BDA_Desert2": {
 		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_MH145_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Arid\BDA_Falc_des_m_co.paa"];

@@ -11,7 +11,13 @@ class CfgPatches {
             "Extended_Eventhandlers",
             "A3_Supplies_F_Heli",
             "OPTRE_Misc_Crates",
-            "ace_interaction"
+            "ace_interaction",
+            "OPTRE_Weapons",
+            "OPTRE_Weapons_MG",
+            "OPTRE_Weapons_Pistol",
+            "OPTRE_Weapons_Turrets",
+            "OPTRE_FC_Weapons",
+            "TCF_WEAPONRY",
         };
 		units[]={
             "BDA_Ammo_SupplyPod",
@@ -63,7 +69,25 @@ class CfgVehicles {
 		maximumLoad = 20000;
 		supplyRadius = 2.000000;
 		armor = 15000;
-        class TransportMagazines {
+        class TransportMagazines {};
+        class TransportWeapons {};
+		class TransportItems {
+            class xx_ACE_M26_Clacker {
+                name = "ACE_M26_Clacker";
+                count = 3;
+            };
+            class xx_OPTRE_M7 {
+                name = "OPTRE_M7";
+                count = 2;
+            };
+            class xx_DMNS_M96_LAW {
+                name = "DMNS_M96_LAW";
+                count = 5;
+            };
+            class xx_BDA_RifleBaseAR {
+                name = "BDA_RifleBaseAR";
+                count = 4;
+            };
             class xx_1Rnd_HE_Grenade_shell {
                 name = "1Rnd_HE_Grenade_shell";
                 count = 100;
@@ -277,26 +301,6 @@ class CfgVehicles {
                 count = 20;
             };
 		};
-        class TransportWeapons { 
-            class xx_OPTRE_M7 {
-                name = "OPTRE_M7";
-                count = 2;
-            };
-            class xx_DMNS_M96_LAW {
-                name = "DMNS_M96_LAW";
-                count = 5;
-            };
-            class xx_BDA_RifleBaseAR {
-                name = "BDA_RifleBaseAR";
-                count = 4;
-            };
-		};
-		class TransportItems {
-            class xx_ACE_M26_Clacker {
-                name = "ACE_M26_Clacker";
-                count = 3;
-            };
-		};
     };
 
     class BDA_Medical_SupplyPod: OPTRE_Ammo_SupplyPod_Medical {
@@ -370,56 +374,67 @@ class CfgVehicles {
 		};
     };
 
-    class BDA_Ammo_Pioneer_SupplyPod: BDA_Ammo_SupplyPod {
+    class BDA_Ammo_Pioneer_SupplyPod: OPTRE_Ammo_SupplyPod_Empty {
+        dlc = "BDA";
+        scope = 2;
+        scopeCurator = 2;
+        author = "Rib";
+        editorCategory="BDA_EC_BlackDagger";
+		editorSubcategory="BDA_ESC_Props";
         displayName = "[BDA] Supply Pod (Pioneer)";
-        class TransportMagazines {
-            class xx_OPTRE_c7_remote_throwable_sticky_mag {
-                name = "OPTRE_c7_remote_throwable_sticky_mag";
-                count = 20;
+        transportMaxWeapons = 100;
+		transportMaxMagazines = 1000;
+        transportMaxBackpacks = 10;
+		maximumLoad = 20000;
+		supplyRadius = 2.000000;
+		armor = 15000;
+        class TransportBackpacks {};
+        class TransportMagazines {};
+        class TransportWeapons {};
+        class TransportItems {
+           class _xx_ACE_Fortify {
+                name = "ACE_Fortify";
+                count = 2;
             };
-            class xx_ACE_M84 {
-                name = "ACE_M84";
-                count = 20;
-            };
-            class xx_OPTRE_36Rnd_95x40_Mag {
-                name = "OPTRE_36Rnd_95x40_Mag";
-                count = 40;
-            };
-            class xx_OPTRE_60Rnd_762x51_Mag {
-                name = "OPTRE_60Rnd_762x51_Mag";
-                count = 40;
-            };
-            class xx_PHEN_HALO_Flamethrower_Mag_300Rnd_M7057 {
-                name = "PHEN_HALO_Flamethrower_Mag_300Rnd_M7057";
-                count = 8;
-            };
-            class xx_TCF_2Rnd_50x137_PEN {
+            class _xx_TCF_2Rnd_50x137_PEN {
                 name = "TCF_2Rnd_50x137_PEN";
                 count = 8;
             };
-            class xx_TCF_2Rnd_50x137_THERMO {
+            class _xx_TCF_2Rnd_50x137_THERMO {
                 name = "TCF_2Rnd_50x137_THERMO";
                 count = 8;
             };
-            class xx_TCF_2Rnd_50x137_HEAT {
+            class _xx_TCF_2Rnd_50x137_HEAT {
                 name = "TCF_2Rnd_50x137_HEAT";
                 count = 8;
             };
-        };
-        class TransportWeapons {
-            class xx_TCF_M57_Pilum_B {
-                name = "TCF_M57_Pilum_B";
-                count = 2;
+            class _xx_OPTRE_36Rnd_95x40_Mag {
+                name = "OPTRE_36Rnd_95x40_Mag";
+                count = 40;
             };
-        };
-        class TransportItems {
-            class xx_ace_fortify {
-                name = "ace_fortify";
-                count = 2;
+            class _xx_OPTRE_60Rnd_762x51_Mag {
+                name = "OPTRE_60Rnd_762x51_Mag";
+                count = 40;
             };
-            class xx_OPTRE_M37_HMG_Bag_Weapon_Single {
+            class _xx_PHEN_HALO_Flamethrower_Mag_300Rnd_M7057 {
+                name = "PHEN_HALO_Flamethrower_Mag_300Rnd_M7057";
+                count = 8;
+            };
+            class _xx_ACE_M84 {
+                name = "ACE_M84";
+                count = 20;
+            };
+            class _xx_OPTRE_c7_remote_throwable_sticky_mag {
+                name = "OPTRE_c7_remote_throwable_sticky_mag";
+                count = 20;
+            };
+            class _xx_OPTRE_M37_HMG_Bag_Weapon_Single {
                 name = "OPTRE_M37_HMG_Bag_Weapon_Single";
                 count = 3;
+            };
+            class _xx_TCF_M57_Pilum_B {
+                name = "TCF_M57_Pilum_B";
+                count = 1;
             };
         };
     };

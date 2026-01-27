@@ -23178,11 +23178,22 @@ class CfgVehicles {
 			class _xx_Toolkit {name="ToolKit"; count=1;};
 			class _xx_ACE_WaterBottle {name="ACE_WaterBottle"; count=5;};
 			class _xx_ACE_EntrenchingTool {name="ACE_EntrenchingTool"; count=4;};
-			class _xx_adv_aceCPR_AED {name="adv_aceCPR_AED"; count=1;};
 			class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=6;};
 			class _xx_ACE_tourniquet {name = "ACE_tourniquet"; count = 8;};
 			class _xx_ACE_morphine {name = "ACE_morphine"; count = 10;};
 		};
+
+		class Ace_Cargo {
+			class xx_BDA_Ammo_SupplyPod {
+				type = "BDA_Ammo_SupplyPod";
+				amount = 1;
+			};
+			class xx_BDA_Medical_SupplyPod {
+				type = "BDA_Medical_SupplyPod";
+				amount = 1;
+			};
+		};
+
 		magazines[]= {
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"168Rnd_CMFlare_Chaff_Magazine",
@@ -23204,7 +23215,7 @@ class CfgVehicles {
 		cost = 500;
 		maximumLoad = 1000;
 		OPTRE_canThrust = 1;
-		ace_cargo_space = 12;
+		ace_cargo_space = 14;
 
 		class textureSources {
 			class BDA_Classic {
@@ -23479,6 +23490,18 @@ class CfgVehicles {
 			class _xx_ACE_tourniquet {name = "ACE_tourniquet"; count = 8;};
 			class _xx_ACE_morphine {name = "ACE_morphine"; count = 10;};
 		};
+
+		class Ace_Cargo {
+			class xx_BDA_Ammo_SupplyPod {
+				type = "BDA_Ammo_SupplyPod";
+				amount = 1;
+			};
+			class xx_BDA_Medical_SupplyPod {
+				type = "BDA_Medical_SupplyPod";
+				amount = 1;
+			};
+		};
+
 		magazines[]= {
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"168Rnd_CMFlare_Chaff_Magazine",
@@ -23771,5 +23794,5 @@ class CfgVehicles {
 
 class cfgMods {
 	author="Rib";
-	timepacked="0811242120";
+	timepacked="130027012026";
 };

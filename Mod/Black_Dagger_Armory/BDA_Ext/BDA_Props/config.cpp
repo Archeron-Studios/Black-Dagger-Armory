@@ -545,5 +545,5 @@ class CfgVehicles {
 
 class cfgMods {
 	author="Rib";
-	timepacked="120820251740"; //fkn tired
+	timepacked="130027012026";
 };

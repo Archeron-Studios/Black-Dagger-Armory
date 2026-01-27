@@ -4260,7 +4260,7 @@ class CfgVehicles {
 				class Pylons {
 					class PylonRight1
 					{
-						attachment="Splits_PylonMissile_AA_Pelican_x2";
+						attachment="";
 						priority=5;
 						hardpoints[]=
 						{
@@ -4274,7 +4274,7 @@ class CfgVehicles {
 					};
 					class PylonRight2
 					{
-						attachment="Splits_PylonMissile_AA_Pelican_x2";
+						attachment="";
 						priority=4;
 						hardpoints[]=
 						{
@@ -4288,7 +4288,7 @@ class CfgVehicles {
 					};
 					class PylonRight3
 					{
-						attachment="Splits_PylonMissile_AGM_Bottom_Pelican_x3";
+						attachment="";
 						priority=3;
 						hardpoints[]=
 						{
@@ -4302,7 +4302,7 @@ class CfgVehicles {
 					};
 					class PylonRight4
 					{
-						attachment="BDA_PylonMissile_AA_Pelican_x4";
+						attachment="";
 						priority=2;
 						hardpoints[]=
 						{
@@ -10004,7 +10004,7 @@ class CfgVehicles {
 				class Pylons {
 					class PylonRight1
 					{
-						attachment="Splits_PylonMissile_AA_Pelican_x2";
+						attachment="";
 						priority=5;
 						hardpoints[]=
 						{
@@ -10018,7 +10018,7 @@ class CfgVehicles {
 					};
 					class PylonRight2
 					{
-						attachment="Splits_PylonMissile_AA_Pelican_x2";
+						attachment="";
 						priority=4;
 						hardpoints[]=
 						{
@@ -10032,7 +10032,7 @@ class CfgVehicles {
 					};
 					class PylonRight3
 					{
-						attachment="Splits_PylonMissile_AGM_Bottom_Pelican_x3";
+						attachment="";
 						priority=3;
 						hardpoints[]=
 						{
@@ -10046,7 +10046,7 @@ class CfgVehicles {
 					};
 					class PylonRight4
 					{
-						attachment="BDA_PylonMissile_AA_Pelican_x4";
+						attachment="";
 						priority=2;
 						hardpoints[]=
 						{

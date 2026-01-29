@@ -20,6 +20,7 @@ class CfgPatches {
 		skipWhenMissingDependencies=1;
 	};
 };
+
 class cfgWeapons {
 	/*arma*/ class ItemInfo;
 	/*arma*/ class VestItem;
@@ -769,6 +770,7 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Zodiac_CO.paa"
 		};
+	};
 
 	class BDA_Armor_Covell: BDA_Armor_DM {
 		author = "Griffin";
@@ -998,9 +1000,7 @@ class cfgWeapons {
 		};
 	};
 
-
 	//Pilots
-
 	class BDA_Armor_Wolfwood: BDA_Armor_Pilot {
 		author = "Griffin";
 		displayName = "M52A Body Armor (N. Wolfwood)";

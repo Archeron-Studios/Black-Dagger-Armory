@@ -1,7 +1,5 @@
-class CfgPatches
-{
-	class BDA_Sounds
-	{
+class CfgPatches {
+	class BDA_Sounds {
 		author = "Black Dagger Development Crew";
 		units[]={};
 		weapons[]={};
@@ -9,41 +7,35 @@ class CfgPatches
 		requiredAddons[]={};
 	};
 };
-class CfgMusicClasses
-{
-	class BDA_RCH
-	{
-		displayName="Black Dagger (Reach)";
+class CfgMusicClasses {
+	class BDA_RCH {
+		displayName = "Black Dagger (Reach)";
 	};
-	class BDA_2
-	{
-		displayName="Black Dagger (2)";
+	class BDA_2 {
+		displayName = "Black Dagger (2)";
 	};
-	class BDA_3
-	{
-		displayName="Black Dagger (3)";
+	class BDA_3 {
+		displayName = "Black Dagger (3)";
 	};
-	class BDA_OTH
-	{
-		displayName="Black Dagger (Other)";
+	class BDA_OTH {
+		displayName = "Black Dagger (Other)";
 	};
-	class BDA_MGS
-	{
-		displayName="Black Dagger (Metal Gear)";
+	class BDA_MGS {
+		displayName = "Black Dagger (Metal Gear)";
 	};
 	class BDA_CP2077 {
 		displayName = "Black Dagger (Cyberpunk 2077)";
 	};
-	class BDA_CMS
-	{
-		displayName="Black Dagger (Crimson Storm)";
+	class BDA_CMS {
+		displayName = "Black Dagger (Crimson Storm)";
 	};
+	class BDA_Jeff {
+		displayName = "Black Dagger (Announcer)";
+	}
 };
-class CfgMusic
-{
+class CfgMusic {
 	tracks[]={};
-	class BDA_MjolnirMix
-	{
+	class BDA_MjolnirMix {
 		name="Mjolnir Mix";
 		sound[]=
 		{
@@ -55,8 +47,7 @@ class CfgMusic
 		duration="251"; //time in seconds
 		musicClass="BDA_2";
 	};
-	class BDA_WarthogRun
-	{
+	class BDA_WarthogRun {
 		name="Warthog Run";
 		sound[]=
 		{
@@ -68,8 +59,7 @@ class CfgMusic
 		duration="500";
 		musicClass="BDA_3";
 	};
-	class BDA_Overture
-	{
+	class BDA_Overture {
 		name="Overture";
 		sound[]=
 		{
@@ -81,8 +71,7 @@ class CfgMusic
 		duration="287";
 		musicClass="BDA_RCH";
 	};
-	class BDA_WinterContingency
-	{
+	class BDA_WinterContingency {
 		name="Winter Contingency";
 		sound[]=
 		{
@@ -94,8 +83,7 @@ class CfgMusic
 		duration="730";
 		musicClass="BDA_RCH";
 	};
-	class BDA_ONI_SwordBase
-	{
+	class BDA_ONI_SwordBase {
 		name="ONI: Sword Base";
 		sound[]=
 		{
@@ -107,8 +95,7 @@ class CfgMusic
 		duration="508";
 		musicClass="BDA_RCH";
 	};
-	class BDA_Nightfall
-	{
+	class BDA_Nightfall {
 		name="Nightfall";
 		sound[]=
 		{
@@ -120,8 +107,7 @@ class CfgMusic
 		duration="340";
 		musicClass="BDA_RCH";
 	};
-	class BDA_TipOfTheSpear
-	{
+	class BDA_TipOfTheSpear {
 		name="Tip of the Spear";
 		sound[]=
 		{
@@ -133,8 +119,7 @@ class CfgMusic
 		duration="365";
 		musicClass="BDA_RCH";
 	};
-	class BDA_LongNightOfSolace
-	{
+	class BDA_LongNightOfSolace {
 		name="Long Night of Solace";
 		sound[]=
 		{
@@ -146,8 +131,7 @@ class CfgMusic
 		duration="706";
 		musicClass="BDA_RCH";
 	};
-	class BDA_Exodus
-	{
+	class BDA_Exodus {
 		name="Exodus";
 		sound[]=
 		{
@@ -159,8 +143,7 @@ class CfgMusic
 		duration="438";
 		musicClass="BDA_RCH";
 	};
-	class BDA_NewAlexandria
-	{
+	class BDA_NewAlexandria {
 		name="New Alexandria";
 		sound[]=
 		{
@@ -172,8 +155,7 @@ class CfgMusic
 		duration="504";
 		musicClass="BDA_RCH";
 	};
-	class BDA_ThePackage
-	{
+	class BDA_ThePackage {
 		name="The Package";
 		sound[]=
 		{
@@ -185,8 +167,7 @@ class CfgMusic
 		duration="393";
 		musicClass="BDA_RCH";
 	};
-	class BDA_ThePillarofAutumn
-	{
+	class BDA_ThePillarofAutumn {
 		name="The Pillar of Autumn";
 		sound[]=
 		{
@@ -198,8 +179,7 @@ class CfgMusic
 		duration="564";
 		musicClass="BDA_RCH";
 	};
-	class BDA_Epilogue
-	{
+	class BDA_Epilogue {
 		name="Epilogue";
 		sound[]=
 		{
@@ -211,8 +191,7 @@ class CfgMusic
 		duration="257";
 		musicClass="BDA_RCH";
 	};
-	class BDA_FromtheVault
-	{
+	class BDA_FromtheVault {
 		name="From the Vault";
 		sound[]=
 		{
@@ -224,8 +203,7 @@ class CfgMusic
 		duration="275";
 		musicClass="BDA_RCH";
 	};
-	class BDA_Ashes
-	{
+	class BDA_Ashes {
 		name="Ashes";
 		sound[]=
 		{
@@ -237,8 +215,7 @@ class CfgMusic
 		duration="147";
 		musicClass="BDA_RCH";
 	};
-	class BDA_Fortress
-	{
+	class BDA_Fortress {
 		name="Fortress";
 		sound[]=
 		{
@@ -250,8 +227,7 @@ class CfgMusic
 		duration="64";
 		musicClass="BDA_RCH";
 	};
-	class BDA_WereNotGoingAnywhere
-	{
+	class BDA_WereNotGoingAnywhere {
 		name="We're Not Going Anywhere";
 		sound[]=
 		{
@@ -263,8 +239,7 @@ class CfgMusic
 		duration="67";
 		musicClass="BDA_RCH";
 	};
-	class BDA_AtAnyCost
-	{
+	class BDA_AtAnyCost {
 		name="At Any Cost";
 		sound[]=
 		{
@@ -276,8 +251,7 @@ class CfgMusic
 		duration="138";
 		musicClass="BDA_RCH";
 	};
-	class BDA_BothWays_Remix
-	{
+	class BDA_BothWays_Remix {
 		name="Both Ways - Remix";
 		sound[]=
 		{
@@ -289,8 +263,7 @@ class CfgMusic
 		duration="130";
 		musicClass="BDA_RCH";
 	};
-	class BDA_WalkingAway
-	{
+	class BDA_WalkingAway {
 		name="Walking Away";
 		sound[]=
 		{
@@ -302,8 +275,7 @@ class CfgMusic
 		duration="91";
 		musicClass="BDA_RCH";
 	};
-	class BDA_GhostsAndGlass
-	{
+	class BDA_GhostsAndGlass {
 		name="Ghosts and Glass";
 		sound[]=
 		{
@@ -315,8 +287,7 @@ class CfgMusic
 		duration="144";
 		musicClass="BDA_RCH";
 	};
-	class BDA_WeRemember
-	{
+	class BDA_WeRemember {
 		name="We Remember";
 		sound[]=
 		{
@@ -328,8 +299,7 @@ class CfgMusic
 		duration="123";
 		musicClass="BDA_RCH";
 	};
-	class BDA_FreeBird
-	{
+	class BDA_FreeBird {
 		name="Free Bird";
 		sound[]=
 		{
@@ -341,8 +311,7 @@ class CfgMusic
 		duration="550";
 		musicClass="BDA_OTH";
 	};
-	class BDA_KasamirsPride
-	{
+	class BDA_KasamirsPride {
 		name="Kasamir's Pride";
 		sound[]=
 		{
@@ -497,10 +466,82 @@ class CfgMusic
 		duration="126"; //time in seconds
 		musicClass="BDA_CP2077";
 	};
+	class BDA_JS_BasedLib {
+		name="Based Liberal";
+		sound[]=
+		{
+			"BDA_SFX\music\data\JeffSteezy\BasedLiberal.ogg",
+			1,
+			1
+		};
+		theme="Halo Announcer";
+		duration="2"; //time in seconds
+		musicClass="BDA_Jeff";
+	};
+	class BDA_JS_MommyMilkers {
+		name="Mommy Milkers";
+		sound[]=
+		{
+			"BDA_SFX\music\data\JeffSteezy\MommyMilkers.ogg",
+			1,
+			1
+		};
+		theme="Halo Announcer";
+		duration="2"; //time in seconds
+		musicClass="BDA_Jeff";
+	};
+	class BDA_JS_OJSimpson {
+		name="O.J Simpson";
+		sound[]=
+		{
+			"BDA_SFX\music\data\JeffSteezy\OJSimpson.ogg",
+			1,
+			1
+		};
+		theme="Halo Announcer";
+		duration="3"; //time in seconds
+		musicClass="BDA_Jeff";
+	};
+	class BDA_JS_Redditor {
+		name="Redditor";
+		sound[]=
+		{
+			"BDA_SFX\music\data\JeffSteezy\Redditor.ogg",
+			1,
+			1
+		};
+		theme="Halo Announcer";
+		duration="2"; //time in seconds
+		musicClass="BDA_Jeff";
+	};
+	class BDA_JS_SocialCreditDeduction {
+		name="Social Credit Deducted";
+		sound[]=
+		{
+			"BDA_SFX\music\data\JeffSteezy\SocialCreditDeduction.ogg",
+			1,
+			1
+		};
+		theme="Halo Announcer";
+		duration="5"; //time in seconds
+		musicClass="BDA_Jeff";
+	};
+	class BDA_JS_YourTeamSucks {
+		name="Your Team Sucks";
+		sound[]=
+		{
+			"BDA_SFX\music\data\JeffSteezy\YourTeamSucks.ogg",
+			1,
+			1
+		};
+		theme="Halo Announcer";
+		duration="3"; //time in seconds
+		musicClass="BDA_Jeff";
+	};
 
 };
 
 class cfgMods {
 	author="Rib";
-	timepacked="070320252103";
+	timepacked="010029012026";
 };

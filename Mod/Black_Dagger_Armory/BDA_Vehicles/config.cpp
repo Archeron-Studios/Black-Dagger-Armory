@@ -4474,6 +4474,10 @@ class CfgVehicles {
 					type = "BDA_Medical_SupplyPod";
 					amount = 1;
 				};
+				class xx_BDA_Ammo_Pioneer_SupplyPod {
+					type = "BDA_Ammo_Pioneer_SupplyPod";
+					amount = 1;
+				};
 			};
 		};
 
@@ -10214,6 +10218,10 @@ class CfgVehicles {
 				};
 				class xx_BDA_Medical_SupplyPod {
 					type = "BDA_Medical_SupplyPod";
+					amount = 1;
+				};
+				class xx_BDA_Ammo_Pioneer_SupplyPod {
+					type = "BDA_Ammo_Pioneer_SupplyPod";
 					amount = 1;
 				};
 			};
@@ -23190,6 +23198,10 @@ class CfgVehicles {
 				type = "BDA_Medical_SupplyPod";
 				amount = 1;
 			};
+			class xx_BDA_Ammo_Pioneer_SupplyPod {
+				type = "BDA_Ammo_Pioneer_SupplyPod";
+				amount = 1;
+			};
 		};
 
 		magazines[]= {
@@ -23570,6 +23582,10 @@ class CfgVehicles {
 			};
 			class xx_BDA_Medical_SupplyPod {
 				type = "BDA_Medical_SupplyPod";
+				amount = 1;
+			};
+			class xx_BDA_Ammo_Pioneer_SupplyPod {
+				type = "BDA_Ammo_Pioneer_SupplyPod";
 				amount = 1;
 			};
 		};

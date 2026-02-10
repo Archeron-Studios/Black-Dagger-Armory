@@ -1664,7 +1664,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Grif_Helmet: BDA_CH252D_Helmet {
-		author="Grif";
+		author="Byrne";
 		displayName="CH252D Helmet (D. Grif)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Grif_CO.paa",
@@ -1691,7 +1691,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Grif_Helmet_dp: BDA_CH252D_Helmet_dp {
-		author="Grif";
+		author="Byrne";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Grif_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",

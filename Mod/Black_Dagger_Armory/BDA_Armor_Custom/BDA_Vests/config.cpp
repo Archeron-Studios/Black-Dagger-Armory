@@ -1012,6 +1012,19 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
 	};	
+	class BDA_Armor_Apollo: BDA_Armor_Pilot
+	{
+		author="Apollo";
+		displayName="M52A Body Armor (J. Apollo)";
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Vest_Apollo_CO.paa",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Apollo_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
+		};
+	};
 	//end
 };
 

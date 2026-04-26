@@ -188,7 +188,7 @@ class CfgVehicles {
 		};
 
 		class textureSources {
-			class UNSC_BDA_Green {
+			class BDA_Pelican_Green {
 				displayName="UNSC Green";
 				author="Splitjaw/Rib";
 				textures[]={
@@ -198,7 +198,7 @@ class CfgVehicles {
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class UNSC_BDA_Black {
+			class BDA_Pelican_Black {
 				displayName="UNSC Black";
 				author="Rib";
 				textures[]={
@@ -208,7 +208,7 @@ class CfgVehicles {
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class UNSC_BDA_W610 {
+			class BDA_Pelican_W610 {
 				displayName="UNSC Whiskey 610";
 				author="Splitjaw/Grif/Rib";
 				textures[]={
@@ -218,7 +218,7 @@ class CfgVehicles {
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class UNSC_BDA_Winter {
+			class BDA_Pelican_Winter {
 				displayName="UNSC Winter";
 				author="SplitJaw/Rib";
 				textures[]= {
@@ -230,10 +230,10 @@ class CfgVehicles {
 			};
 		};
 		textureList[]={
-			"UNSC_BDA_Green", 1,
-			"UNSC_BDA_Black", 1,
-			"UNSC_BDA_W610", 1,
-			"UNSC_BDA_Winter", 1
+			"BDA_Pelican_Green", 1,
+			"BDA_Pelican_Black", 1,
+			"BDA_Pelican_W610", 1,
+			"BDA_Pelican_Winter", 1
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
@@ -243,19 +243,19 @@ class CfgVehicles {
 				priority = 5;
 				class GreenCamo {
 					displayName = "Green";
-					statement = "['UNSC_BDA_Green', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
+					statement = "['BDA_Pelican_Green', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
             	};
 				class WinterCamo {
 					displayName = "Winter";
-					statement = "['UNSC_BDA_Winter', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
+					statement = "['BDA_Pelican_Winter', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
             	};
 				class BlackCamo {
 					displayName = "Black";
-					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
+					statement = "['BDA_Pelican_Black', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
             	};
 				class W610Camo {
 					displayName = "W610";
-					statement = "['UNSC_BDA_W610', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
+					statement = "['BDA_Pelican_W610', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
             	};
             };
         };
@@ -5941,10 +5941,10 @@ class CfgVehicles {
 
 		//textures
 		textureList[]={
-			"UNSC_BDA_Green", 1,
-			"UNSC_BDA_Black", 1,
-			"UNSC_BDA_W610", 1,
-			"UNSC_BDA_Winter", 1
+			"BDA_Pelican_Green", 1,
+			"BDA_Pelican_Black", 1,
+			"BDA_Pelican_W610", 1,
+			"BDA_Pelican_Winter", 1
 		};
 		hiddenSelectionsTextures[]={
 			"\BDA_Vehicles\data\pelican\BDA_G_body_co.paa",
@@ -5953,7 +5953,7 @@ class CfgVehicles {
 		};
 
 		class textureSources {
-			class UNSC_BDA_Green {
+			class BDA_Pelican_Green {
 				displayName="UNSC Green";
 				author="Splitjaw/Rib";
 				textures[]={
@@ -5963,7 +5963,7 @@ class CfgVehicles {
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class UNSC_BDA_Black {
+			class BDA_Pelican_Black {
 				displayName="UNSC Black";
 				author="Rib";
 				textures[]={
@@ -5973,7 +5973,7 @@ class CfgVehicles {
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class UNSC_BDA_W610 {
+			class BDA_Pelican_W610 {
 				displayName="UNSC Whiskey 610";
 				author="Rib";
 				textures[]={
@@ -5983,7 +5983,7 @@ class CfgVehicles {
 				};
 				factions[]={"B_BDCUNSC"};
 			};			
-			class UNSC_BDA_Winter {
+			class BDA_Pelican_Winter {
 				displayName="UNSC Winter";
 				author="SplitJaw/Rib";
 				textures[]= {
@@ -6002,19 +6002,19 @@ class CfgVehicles {
 				priority = 5;
 				class GreenCamo {
 					displayName = "Green";
-					statement = "['UNSC_BDA_Green', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+					statement = "['BDA_Pelican_Green', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
             	};
 				class WinterCamo {
 					displayName = "Winter";
-					statement = "['UNSC_BDA_Winter', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+					statement = "['BDA_Pelican_Winter', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
             	};
 				class BlackCamo {
 					displayName = "Black";
-					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+					statement = "['BDA_Pelican_Black', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
             	};
 				class W610Camo {
 					displayName = "Whiskey610";
-					statement = "['UNSC_BDA_W610', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+					statement = "['BDA_Pelican_W610', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
             	};
             };
         };
@@ -11346,55 +11346,55 @@ class CfgVehicles {
 			"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"
 		};
 		class textureSources {
-			class BDA_standard {
+			class BDA_Hornet_Standard {
 				displayName="Standard Marine";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Blackout {
+			class BDA_Hornet_Blackout {
 				displayName="Blackout";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Black.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Dark {
+			class BDA_Hornet_Dark {
 				displayName="Urban";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Dark.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Desert {
+			class BDA_Hornet_Desert {
 				displayName="Desert";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Desert.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Grey {
+			class BDA_Hornet_Grey {
 				displayName="Grey";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Grey.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Jungle {
+			class BDA_Hornet_Jungle {
 				displayName="Jungle";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Jungle.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Olive {
+			class BDA_Hornet_Olive {
 				displayName="Olive";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Olive.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Woodland {
+			class BDA_Hornet_Woodland {
 				displayName="Woodland";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Woodland.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Winter {
+			class BDA_Hornet_Winter {
 				displayName="Winter";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Winter.paa"};
@@ -11402,15 +11402,15 @@ class CfgVehicles {
 			};
 		};
 		textureList[]= {
-			"BDA_Standard", 1,
-			"BDA_Blackout", 1,
-			"BDA_Dark", 1,
-			"BDA_Desert", 1,
-			"BDA_Grey", 1,
-			"BDA_Jungle", 1,
-			"BDA_Olive", 1,
-			"BDA_Woodland", 1,
-			"BDA_Winter", 1
+			"BDA_Hornet_Standard", 1,
+			"BDA_Hornet_Blackout", 1,
+			"BDA_Hornet_Dark", 1,
+			"BDA_Hornet_Desert", 1,
+			"BDA_Hornet_Grey", 1,
+			"BDA_Hornet_Jungle", 1,
+			"BDA_Hornet_Olive", 1,
+			"BDA_Hornet_Woodland", 1,
+			"BDA_Hornet_Winter", 1
 		};
 
 		class UserActions {
@@ -11452,48 +11452,48 @@ class CfgVehicles {
 					displayName = "Temperate Ops";
 					class GreenCamo {
 						displayName = "Standard";
-						statement = "['BDA_Green', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Standard', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 					class JungleCamo {
 						displayName = "Jungle";
-						statement = "['BDA_Jungle', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Jungle', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 					class OliveCamo {
 						displayName = "Olive";
-						statement = "['BDA_Olive', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Olive', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 					class WoodlandCamo {
 						displayName = "Woodland";
-						statement = "['BDA_Woodland', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Woodland', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 				};
 				class Winter {
 					displayName = "Winter Ops";
 					class WinterCamo {
 						displayName = "Winter";
-						statement = "['BDA_Winter', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Winter', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 					class GreyCamo {
 						displayName = "Grey";
-						statement = "['BDA_Grey', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Grey', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 				};
 				class Night {
 					displayName = "Night Ops";
 					class BlackCamo {
 						displayName = "Blackout";
-						statement = "['BDA_Blackout', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Blackout', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 					class DarkCamo {
 						displayName = "Darkie";
-						statement = "['BDA_Dark', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Dark', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 				};
 				class Desert {
 					displayName = "Desert Ops";
 					class DesertCamo {
 						displayName = "Desert Tan";
-						statement = "['BDA_Desert', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Desert', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 				};
             };
@@ -11713,55 +11713,55 @@ class CfgVehicles {
 		incomingMissileDetectionSystem="8 + 16";
 
 		class textureSources {
-			class BDA_standard {
+			class BDA_Hornet_Standard {
 				displayName="Standard Marine";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Blackout {
+			class BDA_Hornet_Blackout {
 				displayName="Blackout";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Black.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Dark {
+			class BDA_Hornet_Dark {
 				displayName="Urban";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Dark.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Desert {
+			class BDA_Hornet_Desert {
 				displayName="Desert";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Desert.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Grey {
+			class BDA_Hornet_Grey {
 				displayName="Grey";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Grey.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Jungle {
+			class BDA_Hornet_Jungle {
 				displayName="Jungle";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Jungle.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Olive {
+			class BDA_Hornet_Olive {
 				displayName="Olive";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Olive.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Woodland {
+			class BDA_Hornet_Woodland {
 				displayName="Woodland";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Woodland.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Winter {
+			class BDA_Hornet_Winter {
 				displayName="Winter";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Winter.paa"};
@@ -11769,15 +11769,15 @@ class CfgVehicles {
 			};
 		};
 		textureList[]= {
-			"BDA_Standard", 1,
-			"BDA_Blackout", 1,
-			"BDA_Dark", 1,
-			"BDA_Desert", 1,
-			"BDA_Grey", 1,
-			"BDA_Jungle", 1,
-			"BDA_Olive", 1,
-			"BDA_Woodland", 1,
-			"BDA_Winter", 1
+			"BDA_Hornet_Standard", 1,
+			"BDA_Hornet_Blackout", 1,
+			"BDA_Hornet_Dark", 1,
+			"BDA_Hornet_Desert", 1,
+			"BDA_Hornet_Grey", 1,
+			"BDA_Hornet_Jungle", 1,
+			"BDA_Hornet_Olive", 1,
+			"BDA_Hornet_Woodland", 1,
+			"BDA_Hornet_Winter", 1
 		};
 
 		class UserActions {
@@ -11819,49 +11819,49 @@ class CfgVehicles {
 					displayName = "Temperate Ops";
 					class GreenCamo {
 						displayName = "Standard";
-						statement = "['BDA_Green', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Standard', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 					class JungleCamo {
 						displayName = "Jungle";
-						statement = "['BDA_Jungle', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Jungle', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 					class OliveCamo {
 						displayName = "Olive";
 						condition = "driver vehicle player isEqualTo player";
-						statement = "['BDA_Olive', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Olive', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 					class WoodlandCamo {
 						displayName = "Woodland";
-						statement = "['BDA_Woodland', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Woodland', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 				};
 				class Winter {
 					displayName = "Winter Ops";
 					class WinterCamo {
 						displayName = "Winter";
-						statement = "['BDA_Winter', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Winter', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 					class GreyCamo {
 						displayName = "Grey";
-						statement = "['BDA_Grey', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Grey', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 				};
 				class Night {
 					displayName = "Night Ops";
 					class BlackCamo {
 						displayName = "Blackout";
-						statement = "['BDA_Blackout', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Blackout', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 					class DarkCamo {
 						displayName = "Darkie";
-						statement = "['BDA_Dark', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Dark', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 				};
 				class Desert {
 					displayName = "Desert Ops";
 					class DesertCamo {
 						displayName = "Desert Tan";
-						statement = "['BDA_Desert', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Desert', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 				};
             };
@@ -12099,55 +12099,55 @@ class CfgVehicles {
 			"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"
 		};
 		class textureSources {
-			class BDA_standard {
+			class BDA_Hornet_Standard {
 				displayName="Standard Marine";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Blackout {
+			class BDA_Hornet_Blackout {
 				displayName="Blackout";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Black.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Dark {
+			class BDA_Hornet_Dark {
 				displayName="Urban";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Dark.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Desert {
+			class BDA_Hornet_Desert {
 				displayName="Desert";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Desert.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Grey {
+			class BDA_Hornet_Grey {
 				displayName="Grey";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Grey.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Jungle {
+			class BDA_Hornet_Jungle {
 				displayName="Jungle";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Jungle.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Olive {
+			class BDA_Hornet_Olive {
 				displayName="Olive";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Olive.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Woodland {
+			class BDA_Hornet_Woodland {
 				displayName="Woodland";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Woodland.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Winter {
+			class BDA_Hornet_Winter {
 				displayName="Winter";
 				author="Black Dagger Armory";
 				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Winter.paa"};
@@ -12155,15 +12155,15 @@ class CfgVehicles {
 			};
 		};
 		textureList[]= {
-			"BDA_Standard", 1,
-			"BDA_Blackout", 1,
-			"BDA_Dark", 1,
-			"BDA_Desert", 1,
-			"BDA_Grey", 1,
-			"BDA_Jungle", 1,
-			"BDA_Olive", 1,
-			"BDA_Woodland", 1,
-			"BDA_Winter", 1
+			"BDA_Hornet_Standard", 1,
+			"BDA_Hornet_Blackout", 1,
+			"BDA_Hornet_Dark", 1,
+			"BDA_Hornet_Desert", 1,
+			"BDA_Hornet_Grey", 1,
+			"BDA_Hornet_Jungle", 1,
+			"BDA_Hornet_Olive", 1,
+			"BDA_Hornet_Woodland", 1,
+			"BDA_Hornet_Winter", 1
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
@@ -12175,48 +12175,48 @@ class CfgVehicles {
 					displayName = "Temperate Ops";
 					class GreenCamo {
 						displayName = "Standard";
-						statement = "['BDA_Green', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Standard', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 					class JungleCamo {
 						displayName = "Jungle";
-						statement = "['BDA_Jungle', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Jungle', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 					class OliveCamo {
 						displayName = "Olive";
-						statement = "['BDA_Olive', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Olive', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 					class WoodlandCamo {
 						displayName = "Woodland";
-						statement = "['BDA_Woodland', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Woodland', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 				};
 				class Winter {
 					displayName = "Winter Ops";
 					class WinterCamo {
 						displayName = "Winter";
-						statement = "['BDA_Winter', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Winter', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 					class GreyCamo {
 						displayName = "Grey";
-						statement = "['BDA_Grey', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Grey', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 				};
 				class Night {
 					displayName = "Night Ops";
 					class BlackCamo {
 						displayName = "Blackout";
-						statement = "['BDA_Blackout', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Blackout', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 					class DarkCamo {
 						displayName = "Darkie";
-						statement = "['BDA_Dark', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Dark', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 				};
 				class Desert {
 					displayName = "Desert Ops";
 					class DesertCamo {
 						displayName = "Desert Tan";
-						statement = "['BDA_Desert', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Desert', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 				};
             };
@@ -22846,123 +22846,159 @@ class CfgVehicles {
 		};
 
 		class textureSources {
-			class BDA_Classic {
+			class BDA_Falcon_Classic {
 				displayName = "Classic";
 				author = "Rib/Vespade";
 				textures[] = {
 					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_m_co.paa",
 					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_a_co.paa",
-					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_var1_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Marine {
+			class BDA_Falcon_Marine {
 				displayName = "Marine";
 				author = "Rib/Vespade";
 				textures[] = {
 					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_mar_m_co.paa",
 					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_mar_a_co.paa",
-					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_mar_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_mar_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_var1_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Jungle {
+			class BDA_Falcon_Jungle {
 				displayName = "Jungle";
 				author = "Rib/Vespade";
 				textures[] = {
 					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_jun_m_co.paa",
 					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_jun_a_co.paa",
-					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_jun_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_jun_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_var1_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_BJ7 {
+			class BDA_Falcon_BJ7 {
 				displayName = "BJ7";
 				author = "Rib/Vespade";
 				textures[] = {
 					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_bj7_m_co.paa",
 					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_bj7_a_co.paa",
-					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_bj7_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_bj7_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_var1_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Woodland {
+			class BDA_Falcon_Woodland {
 				displayName = "Woodland";
 				author = "Rib/Vespade";
 				textures[] = {
 					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_wdl_m_co.paa",
 					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_wdl_a_co.paa",
-					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_wdl_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_wdl_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_var1_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Black {
+			class BDA_Falcon_Black {
 				displayName = "Black";
 				author = "Rib/Vespade";
 				textures[] = {
 					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_m_co.paa",
 					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_a_co.paa",
-					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_var1_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Urban {
+			class BDA_Falcon_Urban {
 				displayName = "Urban";
 				author = "Rib/Vespade";
 				textures[] = {
 					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_urb_m_co.paa",
 					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_urb_a_co.paa",
-					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_urb_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_urb_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_var1_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Arab {
+			class BDA_Falcon_Arab {
 				displayName = "Arabian";
 				author = "Rib/Vespade";
 				textures[] = {
 					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_ara_m_co.paa",
 					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_ara_a_co.paa",
-					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_ara_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_ara_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_var1_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Desert {
+			class BDA_Falcon_Desert {
 				displayName = "Desert";
 				author = "Rib/Vespade";
 				textures[] = {
 					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_des_m_co.paa",
 					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_des_a_co.paa",
-					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_des_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_des_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_var1_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Dune {
+			class BDA_Falcon_Dune {
 				displayName = "Dune";
 				author = "Rib/Vespade";
 				textures[] = {
 					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_dun_m_co.paa",
 					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_dun_a_co.paa",
-					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_dun_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_dun_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_var1_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Frost {
+			class BDA_Falcon_Frost {
 				displayName = "Frost";
 				author = "Rib/Vespade";
 				textures[] = {
 					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_fro_m_co.paa",
 					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_fro_a_co.paa",
-					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_fro_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_fro_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_var1_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Tundra {
+			class BDA_Falcon_Tundra {
 				displayName = "Tundra";
 				author = "Rib/Vespade";
 				textures[] = {
 					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_m_co.paa",
 					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_a_co.paa",
-					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_var1_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
@@ -22972,7 +23008,7 @@ class CfgVehicles {
 				textures[] = {
 					"\BDA_Vehicles\data\falcon\customs\BDA_Falc_test_m_co.paa",
 					"\BDA_Vehicles\data\falcon\customs\BDA_Falc_test_a_co.paa",
-					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_i_co.paa",
+					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_i_co.paa",
 					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa", 
 					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa", 
 					"\BDA_Vehicles\data\falcon\customs\falcon_610_var1_ca.paa"
@@ -22981,29 +23017,29 @@ class CfgVehicles {
 			};
 		};
 		textureList[]={
-			"BDA_Classic",
+			"BDA_Falcon_Classic",
 			1,
-			"BDA_Marine",
+			"BDA_Falcon_Marine",
 			1,
-			"BDA_Jungle",
+			"BDA_Falcon_Jungle",
 			1,
-			"BDA_BJ7",
+			"BDA_Falcon_BJ7",
 			1,
-			"BDA_Woodland",
+			"BDA_Falcon_Woodland",
 			1,
-			"BDA_Black",
+			"BDA_Falcon_Black",
 			1,
-			"BDA_Urban",
+			"BDA_Falcon_Urban",
 			1,
-			"BDA_Arab",
+			"BDA_Falcon_Arab",
 			1,
-			"BDA_Desert",
+			"BDA_Falcon_Desert",
 			1,
-			"BDA_Dune",
+			"BDA_Falcon_Dune",
 			1,
-			"BDA_Frost",
+			"BDA_Falcon_Frost",
 			1,
-			"BDA_Tundra",
+			"BDA_Falcon_Tundra",
 			1,
 			"BDA_Romeo610",
 			1,
@@ -23109,67 +23145,67 @@ class CfgVehicles {
 					displayName = "Temperate Ops";
 					class OliveCamo {
 						displayName = "Olive";
-						statement = "['BDA_Classic', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+						statement = "['BDA_Falcon_Classic', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 					class JungleCamo {
 						displayName = "Jungle";
-						statement = "['BDA_Jungle', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+						statement = "['BDA_Falcon_Jungle', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 					class MarineCamo {
 						displayName = "Marine";
-						statement = "['BDA_Marine', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+						statement = "['BDA_Falcon_Marine', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 					class WoodlandCamo {
 						displayName = "Woodland";
-						statement = "['BDA_Woodland', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+						statement = "['BDA_Falcon_Woodland', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 					class BJ7Camo {
 						displayName = "BJ7";
-						statement = "['BDA_BJ7', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+						statement = "['BDA_Falcon_BJ7', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 				};
 				class Winter {
 					displayName = "Winter Ops";
 					class FrostCamo {
 						displayName = "Frost";
-						statement = "['BDA_Frost', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+						statement = "['BDA_Falcon_Frost', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 					class TundraCamo {
 						displayName = "Tundra";
-						statement = "['BDA_Tundra', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+						statement = "['BDA_Falcon_Tundra', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 				};
 				class Night {
 					displayName = "Night Ops";
 					class BlackCamo {
 						displayName = "Blackout";
-						statement = "['BDA_Black', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+						statement = "['BDA_Falcon_Black', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 					class UrbanCamo {
 						displayName = "Urban";
-						statement = "['BDA_Urban', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+						statement = "['BDA_Falcon_Urban', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 				};
 				class Desert {
 					displayName = "Desert Ops";
 					class DesertCamo {
 						displayName = "Desert Tan";
-						statement = "['BDA_Desert', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+						statement = "['BDA_Falcon_Desert', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 					class ArabianCamo {
 						displayName = "Arabian";
-						statement = "['BDA_Arab', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+						statement = "['BDA_Falcon_Arab', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 					class DuneCamo {
 						displayName = "Dune Tan";
-						statement = "['BDA_Dune', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+						statement = "['BDA_Falcon_Dune', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};
 				};
 				class Customs {
 					displayName = "Customs";
 					class Romeo610 {
 						displayName = "Romeo-610";
-						statement = "['BDA_Romeo610', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
+						statement = "['BDA_Falcon_Romeo610', 'BDA_UNSC_UH145A_Falcon2'] call BDA_fnc_chgTex";
 					};	
 				};
             };
@@ -23198,10 +23234,6 @@ class CfgVehicles {
 				type = "BDA_Medical_SupplyPod";
 				amount = 1;
 			};
-			class xx_BDA_Ammo_Pioneer_SupplyPod {
-				type = "BDA_Ammo_Pioneer_SupplyPod";
-				amount = 1;
-			};
 		};
 
 		magazines[]= {
@@ -23228,151 +23260,215 @@ class CfgVehicles {
 		ace_cargo_space = 14;
 
 		class textureSources {
-			class BDA_Classic {
+			class BDA_FalconM_Classic {
 				displayName = "Classic";
 				author = "Rib/Vespade";
 				textures[] = {
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_m_co.paa",
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_a_co.paa",
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_m_co.paa",
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_medical_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Marine {
+			class BDA_FalconM_Marine {
 				displayName = "Marine";
 				author = "Rib/Vespade";
 				textures[] = {
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_mar_m_co.paa",
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_mar_a_co.paa",
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_mar_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_mar_m_co.paa",
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_mar_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_mar_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_medical_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Jungle {
+			class BDA_FalconM_Jungle {
 				displayName = "Jungle";
 				author = "Rib/Vespade";
 				textures[] = {
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_jun_m_co.paa",
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_jun_a_co.paa",
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_jun_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_jun_m_co.paa",
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_jun_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_jun_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_medical_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_BJ7 {
+			class BDA_FalconM_BJ7 {
 				displayName = "BJ7";
 				author = "Rib/Vespade";
 				textures[] = {
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_bj7_m_co.paa",
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_bj7_a_co.paa",
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_bj7_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_bj7_m_co.paa",
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_bj7_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_bj7_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_medical_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Woodland {
+			class BDA_FalconM_Woodland {
 				displayName = "Woodland";
 				author = "Rib/Vespade";
 				textures[] = {
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_wdl_m_co.paa",
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_wdl_a_co.paa",
-					"BDA_Vehicles\data\falcon\Temperate\BDA_Falc_wdl_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_wdl_m_co.paa",
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_wdl_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_wdl_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_medical_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Black {
+			class BDA_FalconM_Black {
 				displayName = "Black";
 				author = "Rib/Vespade";
 				textures[] = {
-					"BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_m_co.paa",
-					"BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_a_co.paa",
-					"BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_m_co.paa",
+					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_medical_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Urban {
+			class BDA_FalconM_Urban {
 				displayName = "Urban";
 				author = "Rib/Vespade";
 				textures[] = {
-					"BDA_Vehicles\data\falcon\Night\BDA_Falc_urb_m_co.paa",
-					"BDA_Vehicles\data\falcon\Night\BDA_Falc_urb_a_co.paa",
-					"BDA_Vehicles\data\falcon\Night\BDA_Falc_urb_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_urb_m_co.paa",
+					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_urb_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_urb_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_medical_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Arab {
+			class BDA_FalconM_Arab {
 				displayName = "Arabian";
 				author = "Rib/Vespade";
 				textures[] = {
-					"BDA_Vehicles\data\falcon\Arid\BDA_Falc_ara_m_co.paa",
-					"BDA_Vehicles\data\falcon\Arid\BDA_Falc_ara_a_co.paa",
-					"BDA_Vehicles\data\falcon\Arid\BDA_Falc_ara_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_ara_m_co.paa",
+					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_ara_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_ara_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_medical_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Desert {
+			class BDA_FalconM_Desert {
 				displayName = "Desert";
 				author = "Rib/Vespade";
 				textures[] = {
-					"BDA_Vehicles\data\falcon\Arid\BDA_Falc_des_m_co.paa",
-					"BDA_Vehicles\data\falcon\Arid\BDA_Falc_des_a_co.paa",
-					"BDA_Vehicles\data\falcon\Arid\BDA_Falc_des_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_des_m_co.paa",
+					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_des_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_des_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_medical_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Dune {
+			class BDA_FalconM_Dune {
 				displayName = "Dune";
 				author = "Rib/Vespade";
 				textures[] = {
-					"BDA_Vehicles\data\falcon\Arid\BDA_Falc_dun_m_co.paa",
-					"BDA_Vehicles\data\falcon\Arid\BDA_Falc_dun_a_co.paa",
-					"BDA_Vehicles\data\falcon\Arid\BDA_Falc_dun_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_dun_m_co.paa",
+					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_dun_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Arid\BDA_Falc_dun_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_medical_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Frost {
+			class BDA_FalconM_Frost {
 				displayName = "Frost";
 				author = "Rib/Vespade";
 				textures[] = {
-					"BDA_Vehicles\data\falcon\Winter\BDA_Falc_fro_m_co.paa",
-					"BDA_Vehicles\data\falcon\Winter\BDA_Falc_fro_a_co.paa",
-					"BDA_Vehicles\data\falcon\Winter\BDA_Falc_fro_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_fro_m_co.paa",
+					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_fro_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_fro_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_medical_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
-			class BDA_Tundra {
+			class BDA_FalconM_Tundra {
 				displayName = "Tundra";
 				author = "Rib/Vespade";
 				textures[] = {
-					"BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_m_co.paa",
-					"BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_a_co.paa",
-					"BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_i_co.paa"
+					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_m_co.paa",
+					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_medical_ca.paa"
+				};
+				factions[]={"B_BDCUNSC"};
+			};
+			class BDA_FalconM_Romeo610 {
+				displayName = "Romeo610";
+				author = "Griffin";
+				textures[] = {
+					"\BDA_Vehicles\data\falcon\customs\BDA_Falc_610_m_co.paa",
+					"\BDA_Vehicles\data\falcon\customs\BDA_Falc_610_a_co.paa",
+					"\BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_i_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+					"\optre_vehicles_air\falcon\data\medical\camomedical_co.paa",
+					"\BDA_Vehicles\data\falcon\decals\falcon_decal_medical_ca.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
 		};
 		textureList[]={
-			"BDA_Classic",
+			"BDA_FalconM_Classic",
 			1,
-			"BDA_Marine",
+			"BDA_FalconM_Marine",
 			1,
-			"BDA_Jungle",
+			"BDA_FalconM_Jungle",
 			1,
-			"BDA_BJ7",
+			"BDA_FalconM_BJ7",
 			1,
-			"BDA_Woodland",
+			"BDA_FalconM_Woodland",
 			1,
-			"BDA_Black",
+			"BDA_FalconM_Black",
 			1,
-			"BDA_Urban",
+			"BDA_FalconM_Urban",
 			1,
-			"BDA_Arab",
+			"BDA_FalconM_Arab",
 			1,
-			"BDA_Desert",
+			"BDA_FalconM_Desert",
 			1,
-			"BDA_Dune",
+			"BDA_FalconM_Dune",
 			1,
-			"BDA_Frost",
+			"BDA_FalconM_Frost",
 			1,
-			"BDA_Tundra",
+			"BDA_FalconM_Tundra",
+			1,
+			"BDA_FalconM_Romeo610",
 			1,
 		};
 
@@ -23495,67 +23591,67 @@ class CfgVehicles {
 					displayName = "Temperate Ops";
 					class OliveCamo {
 						displayName = "Olive";
-						statement = "['BDA_Classic', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+						statement = "['BDA_FalconM_Classic', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
 					};
 					class JungleCamo {
 						displayName = "Jungle";
-						statement = "['BDA_Jungle', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+						statement = "['BDA_FalconM_Jungle', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
 					};
 					class MarineCamo {
 						displayName = "Marine";
-						statement = "['BDA_Marine', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+						statement = "['BDA_FalconM_Marine', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
 					};
 					class WoodlandCamo {
 						displayName = "Woodland";
-						statement = "['BDA_Woodland', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+						statement = "['BDA_FalconM_Woodland', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
 					};
 					class BJ7Camo {
 						displayName = "BJ7";
-						statement = "['BDA_BJ7', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+						statement = "['BDA_FalconM_BJ7', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
 					};
 				};
 				class Winter {
 					displayName = "Winter Ops";
 					class FrostCamo {
 						displayName = "Frost";
-						statement = "['BDA_Frost', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+						statement = "['BDA_FalconM_Frost', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
 					};
 					class TundraCamo {
 						displayName = "Tundra";
-						statement = "['BDA_Tundra', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+						statement = "['BDA_FalconM_Tundra', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
 					};
 				};
 				class Night {
 					displayName = "Night Ops";
 					class BlackCamo {
 						displayName = "Blackout";
-						statement = "['BDA_Black', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+						statement = "['BDA_FalconM_Black', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
 					};
 					class UrbanCamo {
 						displayName = "Urban";
-						statement = "['BDA_Urban', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+						statement = "['BDA_FalconM_Urban', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
 					};
 				};
 				class Desert {
 					displayName = "Desert Ops";
 					class DesertCamo {
 						displayName = "Desert Tan";
-						statement = "['BDA_Desert', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+						statement = "['BDA_FalconM_Desert', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
 					};
 					class ArabianCamo {
 						displayName = "Arabian";
-						statement = "['BDA_Arab', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+						statement = "['BDA_FalconM_Arab', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
 					};
 					class DuneCamo {
 						displayName = "Dune Tan";
-						statement = "['BDA_Dune', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+						statement = "['BDA_FalconM_Dune', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
 					};
 				};
 				class Customs {
 					displayName = "Customs";
 					class Romeo610 {
 						displayName = "Romeo-610";
-						statement = "['BDA_Romeo610', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
+						statement = "['BDA_FalconM_Romeo610', 'BDA_UNSC_MH145_Falcon'] call BDA_fnc_chgTex";
 					};	
 				};
             };
@@ -23582,10 +23678,6 @@ class CfgVehicles {
 			};
 			class xx_BDA_Medical_SupplyPod {
 				type = "BDA_Medical_SupplyPod";
-				amount = 1;
-			};
-			class xx_BDA_Ammo_Pioneer_SupplyPod {
-				type = "BDA_Ammo_Pioneer_SupplyPod";
 				amount = 1;
 			};
 		};

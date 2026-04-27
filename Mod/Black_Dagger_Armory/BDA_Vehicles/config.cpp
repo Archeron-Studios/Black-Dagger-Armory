@@ -162,9 +162,9 @@ class CfgVehicles {
 	class OPTRE_Hornet_Base: Helicopter_Base_H {
 		class Components;
 	};
+	class OPTRE_AV22_Sparrowhawk_Base: Helicopter_Base_H {};
 	class OPTRE_UNSC_falcon_S: OPTRE_Falcon_Base {};
 	class OPTRE_UNSC_falcon_medical: OPTRE_Falcon_Base {};
-	class OPTRE_AV22_Sparrowhawk_Base: Helicopter_Base_H {};
 	class OPTRE_AV22_Sparrowhawk: OPTRE_AV22_Sparrowhawk_Base {};
 
 	class BDA_UNSC_D77_TC_Pelican: Splits_Pelican_base {
@@ -23713,7 +23713,6 @@ class CfgVehicles {
 			"camo5",
 			"camo6",
 			"camo7",
-			"attach_noseLaser",
 			"attach_CannonHeavy",
 			"attach_Decal1",
 			"attach_Decal2"

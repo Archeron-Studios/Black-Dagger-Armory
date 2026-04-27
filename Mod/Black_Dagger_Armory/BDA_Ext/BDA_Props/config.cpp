@@ -566,6 +566,7 @@ class CfgVehicles {
             };
         };
     };
+    
 };
 
 class cfgMods {

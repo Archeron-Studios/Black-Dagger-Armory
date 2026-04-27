@@ -541,12 +541,34 @@ class CfgVehicles {
     class BDA_Spawn_Console_ground: BDA_Spawn_Console_air {
         displayName = "Ground Spawn Console";
     };
-//end
-};
+    
+    /*OPTRE Pelican Supply Drop Module PATCH*/
+    class Module_F;
+    class Module_OPTRE_PelicanSupplyDrop: Module_F {
+        class Arguments {
+            class box1 {
+                class values {
+                    class bda_pod_ammo {
+                        name = "[BDA] Supply Pod (Ammo)";
+                        value = "BDA_Ammo_SupplyPod";
+                    };
 
-#include "OPTRE_PelicanDropSupplys_patch.hpp"
+                    class bda_pod_medical {
+                        name = "[BDA] Supply Pod (Medical)";
+                        value = "BDA_Medical_SupplyPod";
+                    };
+
+                    class bda_pod_pioneer {
+                        name = "[BDA] Supply Pod (Pioneer)";
+                        value = "BDA_Ammo_Pioneer_SupplyPod";
+                    };
+                };
+            };
+        };
+    };
+};
 
 class cfgMods {
 	author="Rib";
-	timepacked="130027012026";
+	timepacked="210027042026";
 };

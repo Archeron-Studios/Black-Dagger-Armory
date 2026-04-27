@@ -18,6 +18,7 @@ class CfgPatches {
             "OPTRE_Weapons_Turrets",
             "OPTRE_FC_Weapons",
             "TCF_WEAPONRY",
+            "OPTRE_Modules"
         };
 		units[]={
             "BDA_Ammo_SupplyPod",
@@ -542,6 +543,8 @@ class CfgVehicles {
     };
 //end
 };
+
+#include "OPTRE_PelicanDropSupplys_patch.hpp"
 
 class cfgMods {
 	author="Rib";

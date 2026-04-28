@@ -62,6 +62,15 @@ class CfgFunctions {
 		};
 		class BDA_AirVehThrust {
 			file = "\BDA_Core\BDA_Functions\AirVehThrust";
+			class thruster400Engage {};
+			class thruster400Disengage {};
+			class afterburners600Engage {};
+			class afterburners600Disengage {};
+			class airbrakeEngage {};
+			class fullAirbrakeEngage {};
+			class fullAirbrakeEngageFast {};
+			class halfAirbrakeEngage {};
+			class halfAirbrakeEngageFast {};
 		};
 		class BDA_PeliMagSys {
 			file = "\BDA_Core\BDA_Functions\PeliMagSys";

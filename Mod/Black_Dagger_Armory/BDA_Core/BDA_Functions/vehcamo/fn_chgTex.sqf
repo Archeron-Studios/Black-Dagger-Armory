@@ -113,7 +113,7 @@ switch (_vehCamo) do {
 	};
 	//Falcon
 	case "BDA_Falcon_Classic": {
-		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2") then 
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_UH145S_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_m_co.paa"];
 			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_cla_a_co.paa"];
@@ -125,7 +125,7 @@ switch (_vehCamo) do {
 		systemChat "Applying Olive texture";
 	};
 	case "BDA_Falcon_Marine": {
-		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2") then 
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_UH145S_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_mar_m_co.paa"];
 			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_mar_a_co.paa"];
@@ -137,7 +137,7 @@ switch (_vehCamo) do {
 		systemChat "Applying Marine texture";
 	};
 	case "BDA_Falcon_Jungle": {
-		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2") then 
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_UH145S_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_jun_m_co.paa"];
 			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_jun_a_co.paa"];
@@ -149,7 +149,7 @@ switch (_vehCamo) do {
 		systemChat "Applying Jungle texture";
 	};
 	case "BDA_Falcon_BJ7": {
-		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2") then 
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_UH145S_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_bj7_m_co.paa"];
 			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_bj7_a_co.paa"];
@@ -161,7 +161,7 @@ switch (_vehCamo) do {
 		systemChat "Applying BJ7 texture";
 	};
 	case "BDA_Falcon_Woodland": {
-		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2") then 
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_UH145S_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_wdl_m_co.paa"];
 			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\Temperate\BDA_Falc_wdl_a_co.paa"];
@@ -173,7 +173,7 @@ switch (_vehCamo) do {
 		systemChat "Applying Woodland texture";
 	};
 	case "BDA_Falcon_Black": {
-		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2") then 
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_UH145S_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_m_co.paa"];
 			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\Night\BDA_Falc_blk_a_co.paa"];
@@ -185,7 +185,7 @@ switch (_vehCamo) do {
 		systemChat "Applying Black texture";
 	};
 	case "BDA_Falcon_Urban": {
-		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2") then 
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_UH145S_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Night\BDA_Falc_urb_m_co.paa"];
 			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\Night\BDA_Falc_urb_a_co.paa"];
@@ -197,7 +197,7 @@ switch (_vehCamo) do {
 		systemChat "Applying Urban texture";
 	};
 	case "BDA_Falcon_Desert": {
-		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2") then 
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_UH145S_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Arid\BDA_Falc_des_m_co.paa"];
 			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\Arid\BDA_Falc_des_a_co.paa"];
@@ -209,7 +209,7 @@ switch (_vehCamo) do {
 		systemChat "Applying Desert texture";
 	};
 	case "BDA_Falcon_Arab": {
-		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2") then 
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_UH145S_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Arid\BDA_Falc_ara_m_co.paa"];
 			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\Arid\BDA_Falc_ara_a_co.paa"];
@@ -221,7 +221,7 @@ switch (_vehCamo) do {
 		systemChat "Applying Arabian texture";
 	};
 	case "BDA_Falcon_Dune": {
-		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2") then 
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_UH145S_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Arid\BDA_Falc_dun_m_co.paa"];
 			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\Arid\BDA_Falc_dun_a_co.paa"];
@@ -233,7 +233,7 @@ switch (_vehCamo) do {
 		systemChat "Applying Dune texture";
 	};
 	case "BDA_Falcon_Frost": {
-		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2") then 
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_UH145S_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Winter\BDA_Falc_fro_m_co.paa"];
 			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\Winter\BDA_Falc_fro_a_co.paa"];
@@ -245,7 +245,7 @@ switch (_vehCamo) do {
 		systemChat "Applying Frost texture";
 	};
 	case "BDA_Falcon_Tundra": {
-		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2") then 
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_UH145S_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_m_co.paa"];
 			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\Winter\BDA_Falc_tun_a_co.paa"];
@@ -257,7 +257,7 @@ switch (_vehCamo) do {
 		systemChat "Applying Tundra texture";
 	};
 	case "BDA_Falcon_Romeo610": {
-		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2") then 
+		if(_vehClass isEqualTo "BDA_UNSC_UH145A_Falcon2" or _vehClass isEqualTo "BDA_UNSC_UH145S_Falcon") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\falcon\customs\BDA_Falc_610_m_co.paa"];
 			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\falcon\customs\BDA_Falc_610_a_co.paa"];

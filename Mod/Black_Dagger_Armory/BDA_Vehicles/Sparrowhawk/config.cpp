@@ -164,7 +164,12 @@ class CfgVehicles {
 			"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
 			"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa", 
 			"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-			"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa"
+			"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+			"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+			"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+			"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+			"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+			"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
 		};
 		weapons[] = {
 			"OPTRE_MISRIAH_Cannon",
@@ -282,7 +287,7 @@ class CfgVehicles {
         };
 
         class textureSources {
-            class black {
+            class BDA_Sparrowhawk_Black {
                 displayName = "Black";
                 author = "Rib";
                 textures[] = {
@@ -298,13 +303,294 @@ class CfgVehicles {
                     "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
                     "\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa", 
                     "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa"
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
                 };
             };
-
+            class BDA_Sparrowhawk_Desert {
+                displayName = "Desert";
+                author = "Rib";
+                textures[] = {
+                    "\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_1_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_2_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_3_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_4_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_5_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_cannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_fcannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+                };
+            };
+            class BDA_Sparrowhawk_Dune {
+                displayName = "Dune";
+                author = "Rib";
+                textures[] = {
+                    "\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_1_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_2_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_3_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_4_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_5_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_cannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_fcannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+                };
+            };
+            class BDA_Sparrowhawk_Frost {
+                displayName = "Frost";
+                author = "Rib";
+                textures[] = {
+                    "\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_1_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_2_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_3_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_4_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_5_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_cannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_fcannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+                };
+            };
+            class BDA_Sparrowhawk_Jungle {
+                displayName = "Jungle";
+                author = "Rib";
+                textures[] = {
+                    "\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_1_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_2_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_3_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_4_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_5_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_cannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_fcannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+                };
+            };
+            class BDA_Sparrowhawk_Marine {
+                displayName = "Marine";
+                author = "Rib";
+                textures[] = {
+                    "\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_1_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_2_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_3_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_4_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_5_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_cannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_fcannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+                };
+            };
+            class BDA_Sparrowhawk_Tundra {
+                displayName = "Tundra";
+                author = "Rib";
+                textures[] = {
+                    "\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_1_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_2_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_3_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_4_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_5_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_cannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_fcannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+                };
+            };
+            class BDA_Sparrowhawk_Urban {
+                displayName = "Urban";
+                author = "Rib";
+                textures[] = {
+                    "\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_1_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_2_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_3_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_4_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_5_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_cannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_fcannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+                };
+            };
+            class BDA_Sparrowhawk_Woodland {
+                displayName = "Woodland";
+                author = "Rib";
+                textures[] = {
+                    "\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_1_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_2_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_3_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_4_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_5_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_cannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_fcannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+                };
+            };
+            class BDA_Sparrowhawk_Decal01 {
+                displayName = "Black (Decal 01)";
+                author = "Rib";
+                textures[] = {
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_1_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_2_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_3_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_4_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_5_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_cannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_fcannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa"
+                };
+            };
+            class BDA_Sparrowhawk_Decal02 {
+                displayName = "Black (Decal 02)";
+                author = "Rib";
+                textures[] = {
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_1_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_2_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_3_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_4_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_5_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_cannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_fcannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+                };
+            };
+            class BDA_Sparrowhawk_Decal03 {
+                displayName = "Black (Decal 03)";
+                author = "Rib";
+                textures[] = {
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_1_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_2_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_3_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_4_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_5_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_cannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_fcannon_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_03_ca.paa",
+                    "\BDA_Vehicles\data\sparrowhawk\decals\decal_03_ca.paa"
+                };
+            };
+        };
+        textureList[] = {
+            "BDA_Sparrowhawk_Black", 1,
+            "BDA_Sparrowhawk_Desert", 1,
+            "BDA_Sparrowhawk_Dune", 1,
+            "BDA_Sparrowhawk_Frost", 1,
+            "BDA_Sparrowhawk_Jungle", 1,
+            "BDA_Sparrowhawk_Marine", 1,
+            "BDA_Sparrowhawk_Tundra", 1,
+            "BDA_Sparrowhawk_Urban", 1,
+            "BDA_Sparrowhawk_Woodland", 1,
+            "BDA_Sparrowhawk_Decal01", 0,
+            "BDA_Sparrowhawk_Decal02", 0,
+            "BDA_Sparrowhawk_Decal03", 0
         };
 
-        
     };
     
 
@@ -314,7 +600,3 @@ class cfgMods {
 	author="Rib";
 	timepacked="120028042026";
 };
-
-/*
-figure out how the decals and interiors work (light panels)
-*/

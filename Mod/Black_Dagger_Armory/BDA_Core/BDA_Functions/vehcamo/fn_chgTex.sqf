@@ -451,21 +451,125 @@ switch (_vehCamo) do {
 				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_5_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_cannon_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_fcannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
 			];
 			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
 		};
 		systemChat "Applying Black texture";
+	};
+	case "BDA_Sparrowhawk_Black_Decal01": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Black (Decal 01) texture";
+	};
+	case "BDA_Sparrowhawk_Black_Decal02": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Black (Decal 02) texture";
+	};
+	case "BDA_Sparrowhawk_Black_Decal03": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_03_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Black (Decal 03) texture";
+	};
+	case "BDA_Sparrowhawk_Black_Decal04": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_04_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Black (Decal 04) texture";
 	};
 	case "BDA_Sparrowhawk_Desert": {
 		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
@@ -477,21 +581,125 @@ switch (_vehCamo) do {
 				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_5_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_cannon_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_fcannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
 			];
 			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
 		};
 		systemChat "Applying Desert texture";
+	};
+	case "BDA_Sparrowhawk_Desert_Decal01": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Desert (Decal 01) texture";
+	};
+	case "BDA_Sparrowhawk_Desert_Decal02": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Desert (Decal 02) texture";
+	};
+	case "BDA_Sparrowhawk_Desert_Decal03": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_03_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Desert (Decal 03) texture";
+	};
+	case "BDA_Sparrowhawk_Desert_Decal04": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\desert\BDA_sparrowhawk_des_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_04_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Desert (Decal 04) texture";
 	};
 	case "BDA_Sparrowhawk_Dune": {
 		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
@@ -503,21 +711,125 @@ switch (_vehCamo) do {
 				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_5_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_cannon_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_fcannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
 			];
 			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
 		};
 		systemChat "Applying Dune texture";
+	};
+	case "BDA_Sparrowhawk_Dune_Decal01": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Dune (Decal 01) texture";
+	};
+	case "BDA_Sparrowhawk_Dune_Decal02": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Dune (Decal 02) texture";
+	};
+	case "BDA_Sparrowhawk_Dune_Decal03": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_03_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Dune (Decal 03) texture";
+	};
+	case "BDA_Sparrowhawk_Dune_Decal04": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\dune\BDA_sparrowhawk_dun_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_04_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Dune (Decal 04) texture";
 	};
 	case "BDA_Sparrowhawk_Frost": {
 		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
@@ -529,21 +841,125 @@ switch (_vehCamo) do {
 				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_5_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_cannon_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_fcannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
 			];
 			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
 		};
 		systemChat "Applying Frost texture";
+	};
+	case "BDA_Sparrowhawk_Frost_Decal01": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Frost (Decal 01) texture";
+	};
+	case "BDA_Sparrowhawk_Frost_Decal02": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Frost (Decal 02) texture";
+	};
+	case "BDA_Sparrowhawk_Frost_Decal03": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_03_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Frost (Decal 03) texture";
+	};
+	case "BDA_Sparrowhawk_Frost_Decal04": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\frost\BDA_sparrowhawk_frs_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_04_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Frost (Decal 04) texture";
 	};
 	case "BDA_Sparrowhawk_Jungle": {
 		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
@@ -555,21 +971,125 @@ switch (_vehCamo) do {
 				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_5_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_cannon_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_fcannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
 			];
 			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
 		};
 		systemChat "Applying Jungle texture";
+	};
+	case "BDA_Sparrowhawk_Jungle_Decal01": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Jungle (Decal 01) texture";
+	};
+	case "BDA_Sparrowhawk_Jungle_Decal02": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Jungle (Decal 02) texture";
+	};
+	case "BDA_Sparrowhawk_Jungle_Decal03": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_03_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Jungle (Decal 03) texture";
+	};
+	case "BDA_Sparrowhawk_Jungle_Decal04": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\jungle\BDA_sparrowhawk_jng_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_04_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Jungle (Decal 04) texture";
 	};
 	case "BDA_Sparrowhawk_Marine": {
 		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
@@ -581,21 +1101,125 @@ switch (_vehCamo) do {
 				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_5_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_cannon_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_fcannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
 			];
 			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
 		};
 		systemChat "Applying Marine texture";
+	};
+	case "BDA_Sparrowhawk_Marine_Decal01": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Marine (Decal 01) texture";
+	};
+	case "BDA_Sparrowhawk_Marine_Decal02": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Marine (Decal 02) texture";
+	};
+	case "BDA_Sparrowhawk_Marine_Decal03": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_03_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Marine (Decal 03) texture";
+	};
+	case "BDA_Sparrowhawk_Marine_Decal04": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\marine\BDA_sparrowhawk_mar_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_04_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Marine (Decal 04) texture";
 	};
 	case "BDA_Sparrowhawk_Tundra": {
 		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
@@ -607,21 +1231,125 @@ switch (_vehCamo) do {
 				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_5_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_cannon_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_fcannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
 			];
 			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
 		};
 		systemChat "Applying Tundra texture";
+	};
+	case "BDA_Sparrowhawk_Tundra_Decal01": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Tundra (Decal 01) texture";
+	};
+	case "BDA_Sparrowhawk_Tundra_Decal02": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Tundra (Decal 02) texture";
+	};
+	case "BDA_Sparrowhawk_Tundra_Decal03": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_03_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Tundra (Decal 03) texture";
+	};
+	case "BDA_Sparrowhawk_Tundra_Decal04": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\tundra\BDA_sparrowhawk_tun_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_04_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Tundra (Decal 04) texture";
 	};
 	case "BDA_Sparrowhawk_Urban": {
 		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
@@ -633,21 +1361,125 @@ switch (_vehCamo) do {
 				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_5_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_cannon_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_fcannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
 			];
 			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
 		};
 		systemChat "Applying Urban texture";
+	};
+	case "BDA_Sparrowhawk_Urban_Decal01": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Urban (Decal 01) texture";
+	};
+	case "BDA_Sparrowhawk_Urban_Decal02": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Urban (Decal 02) texture";
+	};
+	case "BDA_Sparrowhawk_Urban_Decal03": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_03_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Urban (Decal 03) texture";
+	};
+	case "BDA_Sparrowhawk_Urban_Decal04": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\urban\BDA_sparrowhawk_urb_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_04_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Urban (Decal 04) texture";
 	};
 	case "BDA_Sparrowhawk_Woodland": {
 		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
@@ -659,100 +1491,125 @@ switch (_vehCamo) do {
 				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_5_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_cannon_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_fcannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
 			];
 			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
 		};
 		systemChat "Applying Woodland texture";
 	};
-	case "BDA_Sparrowhawk_Decal01": {
+	case "BDA_Sparrowhawk_Woodland_Decal01": {
 		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
 			private _tex = [
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_1_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_2_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_3_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_4_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_5_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_cannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_fcannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_01_ca.paa"
+				"#(argb,8,8,3)color(0,0,0,0,co)"
 			];
 			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
 		};
-		systemChat "Applying Black (Decal 01) texture";
+		systemChat "Applying Woodland (Decal 01) texture";
 	};
-	case "BDA_Sparrowhawk_Decal02": {
+	case "BDA_Sparrowhawk_Woodland_Decal02": {
 		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
 			private _tex = [
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_1_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_2_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_3_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_4_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_5_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_cannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_fcannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa"
+				"#(argb,8,8,3)color(0,0,0,0,co)"
 			];
 			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
 		};
-		systemChat "Applying Black (Decal 02) texture";
+		systemChat "Applying Woodland (Decal 02) texture";
 	};
-	case "BDA_Sparrowhawk_Decal03": {
+	case "BDA_Sparrowhawk_Woodland_Decal03": {
 		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
 			private _tex = [
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_1_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_2_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_3_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_4_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_5_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_cannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_fcannon_co.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
 				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_SPLASER_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_CANNON_CO.paa",
-				"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_HCANNON_CO.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
 				"\BDA_Vehicles\data\sparrowhawk\decals\decal_03_ca.paa",
-				"\BDA_Vehicles\data\sparrowhawk\decals\decal_03_ca.paa"
+				"#(argb,8,8,3)color(0,0,0,0,co)"
 			];
 			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
 		};
-		systemChat "Applying Black (Decal 03) texture";
+		systemChat "Applying Woodland (Decal 03) texture";
 	};
-
+	case "BDA_Sparrowhawk_Woodland_Decal04": {
+		if (_vehClass isEqualTo "BDA_AV22_Sparrowhawk") then {
+			private _tex = [
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_1_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_2_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_3_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_4_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_5_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_cannon_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\woodland\BDA_sparrowhawk_wdl_fcannon_co.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\bda_sparrowhawk_lights_co.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"\BDA_Vehicles\data\sparrowhawk\BDA_sparrowhawk_glass_CA.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"#(argb,8,8,3)color(0,0,0,0,co)",
+				"\BDA_Vehicles\data\sparrowhawk\decals\decal_04_ca.paa",
+				"#(argb,8,8,3)color(0,0,0,0,co)"
+			];
+			{ _tarVeh setObjectTextureGlobal [_forEachIndex, _x] } forEach _tex;
+		};
+		systemChat "Applying Woodland (Decal 04) texture";
+	};
 	default { };
 };

@@ -250,7 +250,7 @@ class CfgVehicles {
 				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
 				userActionID=93;
 			};
-			class Afterburnerss600Engage {
+			class Afterburners600Engage {
 				animPeriod=5;
 				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
 				displayName="<t color='#04B45F'>Engage Afterburners";
@@ -275,6 +275,34 @@ class CfgVehicles {
 				radius=100000;
 				showWindow=0;
 				statement="0 = this spawn BDA_fnc_Afterburners600Disengage";
+				textToolTip="<t color='#FCE205'>Disengage Afterburners";
+				userActionID=95;
+			};
+            class Afterburners800Engage {
+				animPeriod=5;
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName="<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn BDA_fnc_Afterburners800Engage";
+				textToolTip="<t color='#04B45F'>Engage Afterburners";
+				userActionID=94;
+			};
+			class Afterburners800Disengage {
+				animPeriod=5;
+				condition="(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName="<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault="<t color='#FCE205'>Disengage Afterburners";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn BDA_fnc_Afterburners800Disengage";
 				textToolTip="<t color='#FCE205'>Disengage Afterburners";
 				userActionID=95;
 			};

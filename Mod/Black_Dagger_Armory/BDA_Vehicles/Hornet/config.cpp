@@ -363,11 +363,11 @@ class CfgVehicles {
 						UIposition[]={0.22,0.2};
 					};
 					class pylons3: pylons1 {
-						mirroredMissilePos=1;
+						mirroredMissilePos=2;
 						UIposition[]={0.42,0.2};
 					};
 					class pylons4: pylons1 {
-						mirroredMissilePos=1;
+						mirroredMissilePos=3;
 						UIposition[]={0.54,0.2};
 					};
 				};
@@ -708,6 +708,34 @@ class CfgVehicles {
 				textToolTip="<t color='#FCE205'>Disengage Afterburners";
 				userActionID=95;
 			};
+			class Afterburners800Engage {
+				animPeriod=5;
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName="<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn BDA_fnc_Afterburners800Engage";
+				textToolTip="<t color='#04B45F'>Engage Afterburners";
+				userActionID=94;
+			};
+			class Afterburners800Disengage {
+				animPeriod=5;
+				condition="(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName="<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault="<t color='#FCE205'>Disengage Afterburners";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn BDA_fnc_Afterburners800Disengage";
+				textToolTip="<t color='#FCE205'>Disengage Afterburners";
+				userActionID=95;
+			};
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
@@ -958,7 +986,7 @@ class CfgVehicles {
 	};
 
 	class BDA_UNSC_Hornet_VTOL: VTOL_Base_F {
-		scope = 2
+		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		vehicleClass = "BDA_UNSC_Air_Class";

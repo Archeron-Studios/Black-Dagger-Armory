@@ -681,7 +681,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Smith_Helmet: BDA_CH252D_Helmet {
-		author="Rib";
+		author="Old Man Byrne";
 		displayName="CH252D Helmet (F. Smith)";
 		hiddenSelectionsTextures[]=
 		{
@@ -710,7 +710,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Smith_Helmet_dp: BDA_CH252D_Helmet_dp {
-		author="Rib";
+		author="Old Man Byrne";
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Smith_CO.paa",
@@ -737,7 +737,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Cross_Helmet: BDA_CH252D_Helmet {
-		author="Wallace";
+		author="Old Man Byrne";
 		displayName="CH252D Helmet (S. Cross)";
 		hiddenSelectionsTextures[]=
 		{
@@ -766,7 +766,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Cross_Helmet_dp: BDA_CH252D_Helmet_dp {
-		author="Wallace";
+		author="Old Man Byrne";
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Cross_CO.paa",

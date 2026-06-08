@@ -1,24 +1,24 @@
 _pelican = _this;
-_pelican setvariable ["OPTRE_Thruster_EngagedStatus",true,true];
-_pelican setvariable ["OPTRE_Afterburners_EngagedStatus",false,true];
-hint "DISENGAGING AFTERBURNERS\n CONTINUING FORWARD THRUST";
+_pelican setvariable ["OPTRE_Thruster_EngagedStatus",false,true];
+_pelican setvariable ["OPTRE_Afterburners_EngagedStatus",true,true];
+hint "ENGAGING AFTERBURNERS";
 sleep 0.5;
-if (speed _pelican > 500) then {
+if (speed _pelican <= 540) then {
 		_vel = velocity _pelican;
 		_dir = direction _pelican;
-		_speed = -10;
+		_speed = 40;
 		_pelican setVelocity [
 		(_vel select 0) + (sin _dir * _speed), 
 		(_vel select 1) + (cos _dir * _speed), 
 		(_vel select 2)
 		];
 	};
-while {((_pelican getvariable ["OPTRE_Thruster_EngagedStatus",false]) AND (alive _pelican))} do
+while {((_pelican getvariable ["OPTRE_Afterburners_EngagedStatus",false]) AND (alive _pelican))} do
 {
-	if (speed _pelican <= 400) then {
+	if (speed _pelican <= 800) then {
 		_vel = velocity _pelican;
 		_dir = direction _pelican;
-		_speed = 10;
+		_speed = 20;
 		_pelican setVelocity [
 		(_vel select 0) + (sin _dir * _speed), 
 		(_vel select 1) + (cos _dir * _speed), 

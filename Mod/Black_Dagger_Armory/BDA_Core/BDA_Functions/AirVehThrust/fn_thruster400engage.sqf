@@ -17,7 +17,7 @@ while {((_pelican getvariable ["OPTRE_Thruster_EngagedStatus",false]) AND (alive
 	if (speed _pelican <= 400) then {
 		_vel = velocity _pelican;
 		_dir = direction _pelican;
-		_speed = 8;
+		_speed = 16;
 		_pelican setVelocity [
 		(_vel select 0) + (sin _dir * _speed), 
 		(_vel select 1) + (cos _dir * _speed), 

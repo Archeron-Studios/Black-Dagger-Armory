@@ -1011,6 +1011,29 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_David_CO.paa"
 		};
 	};
+	
+	class BDA_Armor_Legear: BDA_Armor_DM {
+		author = "Old Man Byrne";
+		displayName = "M52D Body Armor (L. Legear)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Legear_CO.paa"
+		};
+	};
+		class BDA_Armor_Nurse: BDA_Armor_MD {
+		author = "Old Man Byrne";
+		displayName = "M52D Body Armor (I. Nurse)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_S1_Medic_CO",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Nurse_CO.paa"
+		};
+	};
 
 	//Pilots
 	class BDA_Armor_Wolfwood: BDA_Armor_Pilot {

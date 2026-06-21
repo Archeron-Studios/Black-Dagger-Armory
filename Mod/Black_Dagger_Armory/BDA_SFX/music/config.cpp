@@ -333,7 +333,7 @@ class CfgMusic {
 		};
 		theme="Halo 4 OST - 117";
 		duration="728";
-		musicClass="BDA_OTH";
+		musicClass="BDA_CMS";
 	};
 	class BDA_Helldiver {
 		name="Helldivers OST";
@@ -357,6 +357,18 @@ class CfgMusic {
 		theme="Halo 2";
 		duration="281";
 		musicClass="BDA_2";
+	};
+	class BDA_OneFinalEffort {
+		name="One Final Effort";
+		sound[]=
+		{
+			"BDA_SFX\music\data\OneFinalEffort.ogg",
+			1,
+			1
+		};
+		theme="Halo 3";
+		duration="185";
+		musicClass="BDA_3";
 	};
 	class BDA_MGS_VirtuousMission {
 		name="Virtuous Mission";

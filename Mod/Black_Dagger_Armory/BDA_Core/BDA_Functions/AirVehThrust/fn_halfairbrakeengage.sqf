@@ -1,6 +1,7 @@
 _pelican = _this;
 _pelican setvariable ["OPTRE_Thruster_EngagedStatus",false,true];
 _pelican setvariable ["OPTRE_Afterburners_EngagedStatus",false,true];
+_pelican setVariable ["BDA_ThrustMode", 0, true];
 hint format["DISENGAGING ANY FORWARD THRUSTERS\n& ENGAGING AIRBRAKES (HALF)"];
 sleep 0.5;
 if (speed _pelican > 450) then {

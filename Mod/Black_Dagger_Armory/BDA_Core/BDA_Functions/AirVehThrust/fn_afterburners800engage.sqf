@@ -1,6 +1,7 @@
 _pelican = _this;
 _pelican setvariable ["OPTRE_Thruster_EngagedStatus",false,true];
 _pelican setvariable ["OPTRE_Afterburners_EngagedStatus",true,true];
+_pelican setVariable ["BDA_ThrustMode", 800, true];
 hint "ENGAGING AFTERBURNERS";
 sleep 0.5;
 if (speed _pelican <= 540) then {

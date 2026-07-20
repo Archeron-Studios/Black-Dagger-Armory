@@ -1,5 +1,6 @@
 _pelican = _this;
 _pelican setvariable ["OPTRE_Thruster_EngagedStatus",true,true];
+_pelican setVariable ["BDA_ThrustMode", 400, true];
 hint "ENGAGING FORWARD THRUSTERS";
 sleep 0.5;
 if (speed _pelican <= 250) then {

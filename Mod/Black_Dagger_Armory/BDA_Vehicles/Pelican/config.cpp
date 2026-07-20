@@ -131,6 +131,7 @@ class CfgVehicles {
 		displayName = "D77-TC Pelican";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_D77_TC_Pelican.jpg";
 		crew = "B_BDA_Pilot";
+		BDA_ThrustModes[] = {400, 600};
 		//textures
 		hiddenSelectionsTextures[] = {
 			"\BDA_Vehicles\data\pelican\BDA_G_body_co.paa",
@@ -346,7 +347,7 @@ class CfgVehicles {
 			};
 			class Afterburners600Engage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
 				displayName="<t color='#04B45F'>Engage Afterburners";
 				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
 				onlyForPlayer=0;
@@ -5795,6 +5796,7 @@ class CfgVehicles {
 			"Laserbatteries"
 		};
 		crew = "B_BDA_Pilot";
+		BDA_ThrustModes[] = {400};
 
 		//single seat stuff
 		class pilotCamera {

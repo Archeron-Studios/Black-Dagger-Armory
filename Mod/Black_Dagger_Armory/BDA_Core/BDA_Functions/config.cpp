@@ -5,6 +5,7 @@ class CfgPatches {
 			"A3_Weapons_F",
 			"A3_characters_f_bootcamp",
 			"A3_Characters_F",
+			"cba_main",
 			"ace_common",
 			"OPTRE_Core",
             "BDA_Core",
@@ -66,11 +67,22 @@ class CfgFunctions {
 			class thruster400Disengage {};
 			class afterburners600Engage {};
 			class afterburners600Disengage {};
+			class afterburners800Engage {};
+			class afterburners800Disengage {};
 			class airbrakeEngage {};
 			class fullAirbrakeEngage {};
 			class fullAirbrakeEngageFast {};
 			class halfAirbrakeEngage {};
 			class halfAirbrakeEngageFast {};
+		};
+		class BDA_Keybinds {
+			file = "\BDA_Core\BDA_Functions\Keybinds";
+			class initKeybinds { preInit = 1; };
+			class setThrustMode {};
+			class thrustUp {};
+			class thrustDown {};
+			class thrustOff {};
+			class airbrakeKey {};
 		};
 		class BDA_PeliMagSys {
 			file = "\BDA_Core\BDA_Functions\PeliMagSys";

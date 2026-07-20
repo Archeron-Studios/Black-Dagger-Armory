@@ -115,6 +115,7 @@ class CfgVehicles {
 		cost = 500;
 		maximumLoad = 1000;
 		OPTRE_canThrust = 1;
+		BDA_ThrustModes[] = {400};
 		ace_cargo_space = 12;
 		magazines[]= {
 			"168Rnd_CMFlare_Chaff_Magazine",
@@ -629,6 +630,7 @@ class CfgVehicles {
 		cost = 200;
 		maximumLoad = 1000;
 		OPTRE_canThrust = 1;
+		BDA_ThrustModes[] = {400};
 		ace_cargo_space = 14;
         magazines[] = {
 			"168Rnd_CMFlare_Chaff_Magazine",
@@ -1166,6 +1168,7 @@ class CfgVehicles {
 		cost = 1000;
 		maximumLoad = 1000;
 		OPTRE_canThrust = 1;
+		BDA_ThrustModes[] = {400};
 		ace_cargo_space = 14;
         magazines[] = {
 			"168Rnd_CMFlare_Chaff_Magazine",

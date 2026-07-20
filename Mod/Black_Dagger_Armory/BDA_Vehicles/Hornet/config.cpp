@@ -142,6 +142,7 @@ class CfgVehicles {
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.jpg";
 		crew = "B_BDA_Pilot";
 		OPTRE_canThrust = 1;
+		BDA_ThrustModes[] = {400};
 		weapons[] = {
 			"OPTRE_GUA23AW",
 			"CMFlareLauncher",
@@ -551,6 +552,7 @@ class CfgVehicles {
 		armor = 200;
 		cost = 2000;
 		OPTRE_canThrust = 1;
+		BDA_ThrustModes[] = {400, 600, 800};
 		radartype=4;
 		lockdetectionsystem="2 + 4 + 8";
 		incomingMissileDetectionSystem="8 + 16";
@@ -682,7 +684,7 @@ class CfgVehicles {
 			};
 			class Afterburnerss600Engage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
 				displayName="<t color='#04B45F'>Engage Afterburners";
 				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
 				onlyForPlayer=0;
@@ -710,7 +712,7 @@ class CfgVehicles {
 			};
 			class Afterburners800Engage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
 				displayName="<t color='#04B45F'>Engage Afterburners";
 				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
 				onlyForPlayer=0;

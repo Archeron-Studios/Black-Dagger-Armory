@@ -6,6 +6,7 @@ class CfgPatches {
 			"A3_characters_f_bootcamp",
 			"A3_Characters_F",
 			"cba_main",
+			"cba_keybinding",
 			"ace_common",
 			"OPTRE_Core",
             "BDA_Core",
@@ -77,7 +78,7 @@ class CfgFunctions {
 		};
 		class BDA_Keybinds {
 			file = "\BDA_Core\BDA_Functions\Keybinds";
-			class initKeybinds { preInit = 1; };
+			class initKeybinds { postInit = 1; };
 			class setThrustMode {};
 			class thrustUp {};
 			class thrustDown {};

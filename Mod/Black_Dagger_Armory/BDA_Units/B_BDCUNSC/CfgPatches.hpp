@@ -13,6 +13,7 @@ class CfgPatches {
             "B_BDA_1_1",
             "B_BDA_1_2",
             "B_BDA_1_3",
+            "B_BDA_1_4",
             "B_BDA_2_1",
             "B_BDA_2_2",
             "B_BDA_2_3",

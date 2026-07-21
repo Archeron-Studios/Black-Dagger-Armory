@@ -588,6 +588,48 @@ class CfgVehicles {
 
     };
 
+    class B_BDA_1_4 : B_BDA_Rifleman {
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_1_4.jpg";
+        author = "Rib";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "1-4";
+        side = 1;
+        faction = "B_BDCUNSC";
+        editorSubcategory = "BDA_ESC_Squads";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
+
+        uniformClass = "BDA_Uniform_B_SL";
+
+        linkedItems[] = {"BDA_Armor_RF_S8","BDA_CH252D_Helmet_S8","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"};
+        respawnlinkedItems[] = {"BDA_Armor_RF_S8","BDA_CH252D_Helmet_S8","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"};
+
+        weapons[] = {"OPTRE_MA5B","OPTRE_M6C","OPTRE_Binoculars"};
+        respawnWeapons[] = {"OPTRE_MA5B","OPTRE_M6C","OPTRE_Binoculars"};
+
+        magazines[] = {"TCF_60Rnd_762x51_Mag_JHP","TCF_12Rnd_127x40_Mag_JHP","TCF_60Rnd_762x51_Mag_JHP","TCF_12Rnd_127x40_Mag_JHP"};
+        respawnMagazines[] = {"TCF_60Rnd_762x51_Mag_JHP","TCF_12Rnd_127x40_Mag_JHP","TCF_60Rnd_762x51_Mag_JHP","TCF_12Rnd_127x40_Mag_JHP"};
+
+        backpack = "BDA_Rucksack_B";
+
+        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5B","","","OPTRE_MA5_SmartLink",{"TCF_60Rnd_762x51_Mag_JHP",60},{},""},{},{"OPTRE_M6C","OPTRE_M6C_compensator","","",{"TCF_12Rnd_127x40_Mag_JHP",12},{},""},{"BDA_Uniform_B_SL",{{"ACE_CableTie",6},{"ACE_EntrenchingTool",1},{"ACE_IR_Strobe_Item",3}}},{"BDA_Armor_RF_S8",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",10},{"ACE_packingBandage",10},{"ACE_quikclot",10},{"ACE_epinephrine",4},{"ACE_splint",2},{"ACE_tourniquet",4},{"OPTRE_M9_Frag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Blue",2,1},{"ACE_painkillers",1,10}}},{"BDA_Rucksack_B",{{"ItemcTabHCam",1},{"TCF_12Rnd_127x40_Mag_JHP",3,12},{"OPTRE_60Rnd_762x51_Mag",8,60}}},"BDA_CH252D_Helmet_S8","",{"OPTRE_Binoculars","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
     class B_BDA_2_1 : B_BDA_Rifleman {
         editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_2_1.jpg";
         author = "Rib";

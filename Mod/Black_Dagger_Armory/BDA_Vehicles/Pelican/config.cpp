@@ -1,5 +1,5 @@
 class CfgPatches {
-	class BDA_Vehicles {
+	class BDA_Vehicles_Pelican {
 		author = "Black Dagger Development Crew";
 		units[]= {
 			"BDA_UNSC_D77_TC_Pelican",

@@ -299,6 +299,34 @@ class CfgVehicles {
 
     };
 
+    class B_BDA_Pioneer : B_BDA_Demo {
+        author = "Rib";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Pioneer";
+        side = 1;
+        faction = "B_BDCUNSC";
+        editorSubcategory = "BDA_ESC_Squads";
+
+        linkedItems[] = {"BDA_Armor_Pioneer","BDA_CH252D_Helmet_Pioneer","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"};
+        respawnlinkedItems[] = {"BDA_Armor_Pioneer","BDA_CH252D_Helmet_Pioneer","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"};
+
+        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5B","","","",{"TCF_60Rnd_762x51_Mag_JHP",60},{},""},{},{"OPTRE_M6C","OPTRE_M6C_compensator","","",{"TCF_12Rnd_127x40_Mag_JHP",12},{},""},{"BDA_Uniform_B_SL",{{"ACE_EntrenchingTool",1}}},{"BDA_Armor_Pioneer",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",10},{"ACE_packingBandage",10},{"ACE_quikclot",10},{"ACE_epinephrine",4},{"ACE_splint",2},{"ACE_tourniquet",4},{"ACE_IR_Strobe_Item",1},{"ACE_CableTie",3},{"OPTRE_M9_Frag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Blue",2,1},{"ACE_painkillers",1,10}}},{"BDA_Rucksack_B_Heavy",{{"MineDetector",1},{"ItemcTabHCam",1},{"ACE_M26_Clacker",1},{"ACE_DefusalKit",1},{"ace_marker_flags_white",5},{"ace_marker_flags_red",20},{"ace_marker_flags_blue",5},{"C7_Remote_Mag",4,1},{"C12_Remote_Mag",2,1},{"TCF_60Rnd_762x51_Mag_JHP",8,60},{"TCF_12Rnd_127x40_Mag_JHP",3,12},{"OPTRE_60Rnd_762x51_Mag",8,60}}},"BDA_CH252D_Helmet_Pioneer","",{"OPTRE_Binoculars","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"}};
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
     class B_BDA_Rocket : B_soldier_AT_F_OCimport_02 {
         editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Rocket.jpg";
         author = "Rib";

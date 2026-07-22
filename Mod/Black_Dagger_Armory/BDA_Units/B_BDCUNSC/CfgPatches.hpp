@@ -6,6 +6,7 @@ class CfgPatches {
             "B_BDA_Autorifleman",
             "B_BDA_Medic",
             "B_BDA_Demo",
+            "B_BDA_Pioneer",
             "B_BDA_Rocket",
             "B_BDA_SquadLead",
             "B_BDA_Breacher",

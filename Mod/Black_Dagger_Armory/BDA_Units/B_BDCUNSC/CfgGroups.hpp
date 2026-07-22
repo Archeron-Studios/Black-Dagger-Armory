@@ -517,51 +517,6 @@ class CfgGroups {
                     };
                 };
 
-                class B_BDA_Squad_Bullfrog {
-                    name = "Bullfrog Squad";
-                    side = 1;
-                    faction = "B_BDCUNSC";
-                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
-                    rarityGroup = 0.5;
-
-                    class Unit0 {
-                        position[] = {0,0,0};
-                        rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_BDA_Bullfrog";
-                    };
-                    class Unit1 {
-                        position[] = {5,-5,0};
-                        rank = "CORPORAL";
-                        side = 1;
-                        vehicle = "B_BDA_Bullfrog";
-                    };
-                    class Unit2 {
-                        position[] = {-5,-5,0};
-                        rank = "CORPORAL";
-                        side = 1;
-                        vehicle = "B_BDA_Bullfrog";
-                    };
-                    class Unit3 {
-                        position[] = {10,-10,0};
-                        rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_BDA_Bullfrog";
-                    };
-                    class Unit4 {
-                        position[] = {-10,-10,0};
-                        rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_BDA_Bullfrog";
-                    };
-                    class Unit5 {
-                        position[] = {15,-15,0};
-                        rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_BDA_Bullfrog";
-                    };
-                };
-
                 class B_BDA_1PltCmd {
                     name = "1st Platoon Command";
                     side = 1;
@@ -633,6 +588,132 @@ class CfgGroups {
             class SpecOps {
                 name = "Special Forces";
 
+                class B_BDA_Bullfrog {
+                    name = "Bullfrog Squad";
+                    side = 1;
+                    faction = "B_BDCUNSC";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "LIEUTENANT";
+                        side = 1;
+                        vehicle = "B_BDA_Bullfrog";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BDA_Bullfrog";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BDA_Medic";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Bullfrog";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Bullfrog";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BDA_Bullfrog";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BDA_Bullfrog";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Bullfrog";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Bullfrog";
+                    };
+                };
+
+                class B_BDA_Pioneers {
+                    name = "Pioneers Element";
+                    side = 1;
+                    faction = "B_BDCUNSC";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "LIEUTENANT";
+                        side = 1;
+                        vehicle = "B_BDA_Pioneer";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BDA_Pioneer";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BDA_Medic";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Pioneer";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Pioneer";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BDA_Pioneer";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BDA_Rocketman";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Pioneer";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Pioneer";
+                    };
+                };
+
             };
 
             class Motorized {
@@ -648,50 +729,10 @@ class CfgGroups {
             class Support {
                 name = "Support Infantry";
 
-                class B_BDA_81NAW {
-                    name = "81st Naval Air Wing";
-                    side = 1;
-                    faction = "B_BDCUNSC";
-                    icon = "\A3\ui_f\data\map\markers\nato\b_air.paa";
-                    rarityGroup = 0.5;
+            };
 
-                    class Unit0 {
-                        position[] = {0,0,0};
-                        rank = "LIEUTENANT";
-                        side = 1;
-                        vehicle = "B_BDA_PilotLead";
-                    };
-                    class Unit1 {
-                        position[] = {5,-5,0};
-                        rank = "SERGEANT";
-                        side = 1;
-                        vehicle = "B_BDA_PilotLead";
-                    };
-                    class Unit2 {
-                        position[] = {-5,-5,0};
-                        rank = "CORPORAL";
-                        side = 1;
-                        vehicle = "B_BDA_Pilot";
-                    };
-                    class Unit3 {
-                        position[] = {10,-10,0};
-                        rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_BDA_Pilot";
-                    };
-                    class Unit4 {
-                        position[] = {-10,-10,0};
-                        rank = "CORPORAL";
-                        side = 1;
-                        vehicle = "B_BDA_Pilot";
-                    };
-                    class Unit5 {
-                        position[] = {15,-15,0};
-                        rank = "PRIVATE";
-                        side = 1;
-                        vehicle = "B_BDA_Pilot";
-                    };
-                };
+            class Mechanized {
+                name = "Mechanised Infantry";
 
                 class B_BDA_102MP {
                     name = "102nd Mechanised Platoon";
@@ -728,11 +769,6 @@ class CfgGroups {
 
             };
 
-            class Mechanized {
-                name = "Mechanized Infantry";
-
-            };
-
             class Armored {
                 name = "Armor";
 
@@ -750,6 +786,117 @@ class CfgGroups {
 
             class Air {
                 name = "Air";
+
+                class B_BDA_82OS {
+                    name = "82nd Odin Squadron Command";
+                    side = 1;
+                    faction = "B_BDCUNSC";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_air.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "MAJOR";
+                        side = 1;
+                        vehicle = "B_BDA_PilotLead";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CAPTAIN";
+                        side = 1;
+                        vehicle = "B_BDA_PilotLead";
+                    };
+                };
+
+                class B_BDA_82LF {
+                    name = "82nd Loki Flight";
+                    side = 1;
+                    faction = "B_BDCUNSC";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_air.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "LIEUTENANT";
+                        side = 1;
+                        vehicle = "B_BDA_PilotLead";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BDA_PilotLead";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Pilot";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Pilot";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Pilot";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Pilot";
+                    };
+                };
+
+                class B_BDA_82TF {
+                    name = "82nd Thor Flight";
+                    side = 1;
+                    faction = "B_BDCUNSC";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_air.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "LIEUTENANT";
+                        side = 1;
+                        vehicle = "B_BDA_PilotLead";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BDA_PilotLead";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Pilot";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Pilot";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Pilot";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_Pilot";
+                    };
+                };
 
             };
 

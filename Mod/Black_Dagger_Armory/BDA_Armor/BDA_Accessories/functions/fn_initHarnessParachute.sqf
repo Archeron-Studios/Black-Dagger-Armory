@@ -10,24 +10,17 @@ if (isNil "CBA_fnc_addClassEventHandler") exitWith {
 	diag_log "[BDA] CBA missing - harness parachute system not initialized";
 };
 
-["Air", "GetIn", {
-	params ["_unit", "_role", "_vehicle"];
+["Air", "GetIn", { _this call BDA_fnc_harnessParachuteOnGetIn; }, true] call CBA_fnc_addClassEventHandler;
 
-	if !(_unit isKindOf "Man") exitWith {};
-	if (!local _unit) exitWith {};
-	if (backpack _unit isNotEqualTo "BDA_Naval_Pilot_Harness") exitWith {};
+{
+	[_x, "GetIn", { _this call BDA_fnc_harnessParachuteOnGetIn; }, true] call CBA_fnc_addClassEventHandler;
+	[_x, "GetOut", { _this call BDA_fnc_harnessParachuteOnGetOut; }, true] call CBA_fnc_addClassEventHandler;
+} forEach [
+	"BDA_UNSC_D77_TC_Pelican",
+	"BDA_UNSC_D77_TC_Pelican_Single"
+];
 
-	[_vehicle, _unit] call BDA_fnc_harnessParachuteAddVehicleActions;
-}, true] call CBA_fnc_addClassEventHandler;
-
-["Air", "GetOut", {
-	params ["_unit", "_role", "_vehicle"];
-
-	if !(_unit isKindOf "Man") exitWith {};
-	if (!local _unit) exitWith {};
-
-	[_vehicle] call BDA_fnc_harnessParachuteRemoveVehicleActions;
-}, true] call CBA_fnc_addClassEventHandler;
+["Air", "GetOut", { _this call BDA_fnc_harnessParachuteOnGetOut; }, true] call CBA_fnc_addClassEventHandler;
 
 if (!hasInterface) exitWith {};
 

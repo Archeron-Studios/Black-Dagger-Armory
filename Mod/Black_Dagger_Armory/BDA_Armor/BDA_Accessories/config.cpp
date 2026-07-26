@@ -237,7 +237,6 @@ class CfgVehicles {
 			"BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_co.paa"
 		};
 	};
-
 	class BDA_S13_Jumppack_DEV: BDA_S13_Jumppack {
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -260,20 +259,17 @@ class CfgVehicles {
 			{"High Jump",{5,35,50,0,0,1}}	//custom - doesn't work... FOR now
 		};
 	};
-
 	class BDA_S13_Jumppack_Heavy: BDA_S13_Jumppack {
 		displayName = "S13 SOLA Jumppack (Heavy)";
         maximumload = 550;
 		mass = 100;
 	};
 	class BDA_S13_Jumppack_Heavy_On: BDA_S13_Jumppack_On {};
-
 	class BDA_S13_Jumppack_Medic: BDA_S13_Jumppack {
 		displayName = "S13 SOLA Jumppack (Medic)";
 		hiddenSelectionsTextures[]={"BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_MED_CO.paa"};
 	};
 	class BDA_S13_Jumppack_Medic_On: BDA_S13_Jumppack_On {};
-
 	class BDA_S13_Jumppack_RTO: BDA_S13_Jumppack {
 		displayName = "S13 SOLA Jumppack RTO";
 		hiddenSelectionsTextures[]={"BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_CMD_CO.paa"};
@@ -294,7 +290,6 @@ class CfgVehicles {
 		tf_subtype="digital_lr";
 		tf_range=25000;
 	};
-
 	class BDA_UAV_Backpack: Weapon_Bag_Base {
 		dlc="BDA";
 		scope = 1;
@@ -340,6 +335,9 @@ class CfgFunctions {
 			class harnessParachuteRestore {};
 			class harnessParachuteStash {};
 			class harnessParachuteCanOpen {};
+			class harnessParachuteOnGetIn {};
+			class harnessParachuteOnGetOut {};
+			class harnessParachuteIsPelican {};
 			class harnessParachuteAddAction {};
 			class harnessParachuteOpenFromAction {};
 			class harnessParachuteAddVehicleActions {};

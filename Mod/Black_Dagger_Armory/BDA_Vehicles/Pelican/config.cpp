@@ -95,7 +95,11 @@ class CfgVehicles {
 		};
 	};
 	class B_Heli_Transport_01_F: Helicopter_Base_H {};
+
 	class Splits_Pelican_base: B_Heli_Transport_01_F {
+		driverCanEject = 0;
+		gunnerCanEject = 0;
+		cargoCanEject = 0;
 		class Turrets {
 			class MainTurret;
 			class RearDoorGun;
@@ -131,6 +135,9 @@ class CfgVehicles {
 		displayName = "D77-TC Pelican";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_D77_TC_Pelican.jpg";
 		crew = "B_BDA_Pilot";
+		driverCanEject = 0;
+		gunnerCanEject = 0;
+		cargoCanEject = 0;
 		BDA_ThrustModes[] = {400, 600};
 		//textures
 		hiddenSelectionsTextures[] = {
@@ -213,6 +220,19 @@ class CfgVehicles {
         };
 
 		class UserActions {
+			class EmergencyEject {
+				userActionID = 52;
+				displayName = "<t color='#FE9A2E'>Emergency Eject</t>";
+				displayNameDefault = "Emergency Eject";
+				textToolTip = "Emergency eject with auto-deploy parachute";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 100000;
+				priority = 0.05;
+				onlyForPlayer = 1;
+				condition = "(player in crew this) && (alive this) && (alive player) && (vehicle player == this)";
+				statement = "[this, player] call BDA_fnc_pelicanEmergencyEject;";
+			};
 			class PelLift_LoadVehicle {
 				userActionID = 6;
 				displayName = "Load Vehicle";
@@ -5796,6 +5816,9 @@ class CfgVehicles {
 			"Laserbatteries"
 		};
 		crew = "B_BDA_Pilot";
+		driverCanEject = 0;
+		gunnerCanEject = 0;
+		cargoCanEject = 0;
 		BDA_ThrustModes[] = {400};
 
 		//single seat stuff
@@ -6019,6 +6042,19 @@ class CfgVehicles {
         };
 
 		class UserActions {
+			class EmergencyEject {
+				userActionID = 52;
+				displayName = "<t color='#FE9A2E'>Emergency Eject</t>";
+				displayNameDefault = "Emergency Eject";
+				textToolTip = "Emergency eject with auto-deploy parachute";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 100000;
+				priority = 0.05;
+				onlyForPlayer = 1;
+				condition = "(player in crew this) && (alive this) && (alive player) && (vehicle player == this)";
+				statement = "[this, player] call BDA_fnc_pelicanEmergencyEject;";
+			};
 			class PelLift_LoadVehicle {
 				userActionID = 6;
 				displayName = "Load Vehicle";
@@ -11327,6 +11363,20 @@ class CfgVehicles {
 
 };
 
+class CfgRemoteExec {
+	class Functions {
+		mode = 1;
+		jip = 0;
+		class BDA_fnc_pelicanEmergencyEject { allowedTargets = 2; };
+		class BDA_fnc_pelicanEmergencyEjectLaunch { allowedTargets = 1; };
+		class BDA_fnc_pelicanEmergencyEjectMonitor { allowedTargets = 2; };
+		class BDA_fnc_pelicanEmergencyEjectDeployChute { allowedTargets = 2; };
+		class BDA_fnc_pelicanEmergencyEjectEnterChute { allowedTargets = 1; };
+		class BDA_fnc_pelicanEmergencyEjectLandCleanup { allowedTargets = 2; };
+		class BDA_fnc_pelicanEmergencyEjectMoveOut { allowedTargets = 1; };
+	};
+};
+
 class CfgFunctions {
 	class BDA {
 		tag = "BDA";
@@ -11339,6 +11389,17 @@ class CfgFunctions {
 			class pelicanloadsupplypodsmenuload {};
 			class pelicanloadsupplypodsmenuopened {};
 			class pelicanloadsupplypodsmenuunload {};
+		};
+		class PelicanEject {
+			file = "\BDA_Vehicles\Pelican\functions";
+			class pelicanEmergencyEjectPos {};
+			class pelicanEmergencyEject {};
+			class pelicanEmergencyEjectLaunch {};
+			class pelicanEmergencyEjectMonitor {};
+			class pelicanEmergencyEjectDeployChute {};
+			class pelicanEmergencyEjectEnterChute {};
+			class pelicanEmergencyEjectLandCleanup {};
+			class pelicanEmergencyEjectMoveOut {};
 		};
 	};
 };

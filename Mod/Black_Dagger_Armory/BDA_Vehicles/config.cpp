@@ -1,7 +1,17 @@
 class CfgPatches {
 	class BDA_Vehicles {
 		author = "Black Dagger Development Crew";
-		units[]= {};
+		units[]= {
+			"BDA_UNSC_D77_TC_Pelican",
+			"BDA_UNSC_D77_TC_Pelican_Single",
+			"BDA_UNSC_Hornet",
+			"BDA_UNSC_Hornet_Lite",
+			"BDA_UNSC_Hornet_VTOL",
+			"BDA_UNSC_UH145A_Falcon2",
+			"BDA_UNSC_MH145_Falcon",
+			"BDA_UNSC_UH145S_Falcon",
+			"BDA_AV22_Sparrowhawk"
+		};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]= {
@@ -18,6 +28,10 @@ class CfgPatches {
 			"OPTRE_Vehicles_Air",
 			"OPTRE_Vehicles_Hornet",
 			"OPTRE_Vehicles_Sparrowhawk",
+			"BDA_Vehicles_Hornet",
+			"BDA_Vehicles_Falcon",
+			"BDA_Vehicles_Pelican",
+			"BDA_Vehicles_Sparrowhawk",
 			"ace_interaction",
 			"BDA_Weapons"
 		};

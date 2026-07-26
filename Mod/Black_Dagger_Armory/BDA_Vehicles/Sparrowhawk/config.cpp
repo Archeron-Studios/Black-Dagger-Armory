@@ -2,7 +2,7 @@ class CfgPatches {
 	class BDA_Vehicles_Sparrowhawk {
 		author = "Black Dagger Development Crew";
 		units[]= {
-			"BDA_AV22_Sparrowhawk_B"
+			"BDA_AV22_Sparrowhawk"
 		};
 		weapons[]={};
 		requiredVersion=0.1;

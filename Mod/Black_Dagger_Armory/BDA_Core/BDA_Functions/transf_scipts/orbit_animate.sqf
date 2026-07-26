@@ -17,4 +17,4 @@ _nclass = typeOf _al_orbit;
 _poz_obj= getposasl _al_orbit;
 deleteVehicle _al_orbit;
 
-null= [[_nclass,_al_orbit_radius,_al_obrit_speed,_al_clock_wise,_dist_dependent,_poz_obj],"BDA_Core\BDA_Functions\transf_scripts\orbit.sqf"] remoteExec ["BIS_fnc_execVM",0,true];
+null= [[_nclass,_al_orbit_radius,_al_obrit_speed,_al_clock_wise,_dist_dependent,_poz_obj],"BDA_Core\BDA_Functions\transf_scipts\orbit.sqf"] remoteExec ["BIS_fnc_execVM",0,true];

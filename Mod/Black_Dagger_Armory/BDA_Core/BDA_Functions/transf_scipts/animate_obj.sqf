@@ -21,4 +21,4 @@ _dist_dependent	= _this select 14;
 if (!isNil{_al_rock getVariable "activ"}) exitWith {};
 _al_rock setVariable ["activ",true,true];
 
-[[_al_rock,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent],"BDA_Core\BDA_Functions\transf_scripts\rock_float.sqf"] remoteExec ["execVM",0,true];
+[[_al_rock,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent],"BDA_Core\BDA_Functions\transf_scipts\rock_float.sqf"] remoteExec ["execVM",0,true];

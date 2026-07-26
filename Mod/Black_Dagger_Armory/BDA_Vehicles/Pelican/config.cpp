@@ -11327,6 +11327,22 @@ class CfgVehicles {
 
 };
 
+class CfgFunctions {
+	class BDA {
+		tag = "BDA";
+		class PeliMagSys {
+			file = "\BDA_Vehicles\Pelican\functions";
+			class pelicanloadvalidate {};
+			class pelicanunloadvalidate {};
+			class pelicanload_unloadallsupplypods {};
+			class pelicanloadsupplypodmenudetachmenu {};
+			class pelicanloadsupplypodsmenuload {};
+			class pelicanloadsupplypodsmenuopened {};
+			class pelicanloadsupplypodsmenuunload {};
+		};
+	};
+};
+
 class cfgMods {
 	author="Rib";
 	timepacked="120028042026";

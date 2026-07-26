@@ -7,10 +7,9 @@ class CfgPatches {
 			"A3_Characters_F",
 			"cba_main",
 			"cba_keybinding",
-			"ace_common",
 			"OPTRE_Core",
-            "BDA_Core",
-			"BDA_Weapons"
+			"BDA_Core",
+			"BDA_Vehicles"
 		};
 		units[]={};
 		weapons[]={};
@@ -26,11 +25,8 @@ class CfgFunctions {
         class Core_Func {
             file = "\BDA_Core\BDA_Functions";
 			class vehSupply {};
-			class vehSpawner {};
 			class medicCheck {};
 			class notify {};
-			class isBino {};
-			class advMark {};
         };
 		class BDA_vehsupply {
 			file = "\BDA_Core\BDA_Functions\vehsupply";
@@ -38,10 +34,6 @@ class CfgFunctions {
 			class vehRepair {};
 			class vehRefuel {};
 			class vehCleanup {};
-		};
-		class BDA_Vehcamo {
-			file = "\BDA_Core\BDA_Functions\vehcamo";
-			class chgTex {};
 		};
 		class BDA_Loadouts {
 			file = "\BDA_Core\BDA_Functions\loadouts";
@@ -51,30 +43,8 @@ class CfgFunctions {
 			class updateLoadLB {};
 			class getScopes {};
 		};
-		class BDA_Markers {
-			file = "\BDA_Core\BDA_Functions\Markers";
-			class isLZ {};
-			class isFM {};
-			class isFrd {};
-			class isEnm {};
-			class isCM {};
-		};
 		class BDA_Transf {
 			file = "\BDA_Core\BDA_Functions\transf_scipts";
-		};
-		class BDA_AirVehThrust {
-			file = "\BDA_Core\BDA_Functions\AirVehThrust";
-			class thruster400Engage {};
-			class thruster400Disengage {};
-			class afterburners600Engage {};
-			class afterburners600Disengage {};
-			class afterburners800Engage {};
-			class afterburners800Disengage {};
-			class airbrakeEngage {};
-			class fullAirbrakeEngage {};
-			class fullAirbrakeEngageFast {};
-			class halfAirbrakeEngage {};
-			class halfAirbrakeEngageFast {};
 		};
 		class BDA_Keybinds {
 			file = "\BDA_Core\BDA_Functions\Keybinds";
@@ -84,16 +54,6 @@ class CfgFunctions {
 			class thrustDown {};
 			class thrustOff {};
 			class airbrakeKey {};
-		};
-		class BDA_PeliMagSys {
-			file = "\BDA_Core\BDA_Functions\PeliMagSys";
-			class pelicanloadvalidate {};
-			class pelicanunloadvalidate {};
-			class pelicanload_unloadallsupplypods {};
-			class pelicanloadsupplypodmenudetachmenu {};
-			class pelicanloadsupplypodsmenuload {};
-			class pelicanloadsupplypodsmenuopened {};
-			class pelicanloadsupplypodsmenuunload {};
 		};
     };
 };
@@ -129,38 +89,6 @@ class CfgWallaceLoad {
 	{
 		name = "Rocket Jockey Kit";
 	};
-};
-
-class CfgVehicles {
-    class Man;
-    class CAManBase: Man {
-        class ACE_SelfActions {
-            class Markers {
-                displayName = "Place Marker";
-                condition = "[] call BDA_fnc_isBino";
-				class MarkLZ {
-                displayName = "Mark LZ";
-				statement = "[] call BDA_fnc_isLZ";
-            	};
-				class MarkFM {
-                displayName = "Mark Firemission";
-				statement = "[] call BDA_fnc_isFM";
-            	};
-				class MarkFRND {
-                displayName = "Mark Friendly";
-				statement = "[] call BDA_fnc_isFrd";
-            	};
-				class MarkENMY {
-                displayName = "Mark Enemy";
-				statement = "[] call BDA_fnc_isEnm";
-            	};
-				class MarkCM {
-				displayName = "Mark CAS Mission";
-				statement = "[] call BDA_fnc_isCM";
-				};
-            };
-        };
-    };
 };
 
 enableDebugConsole[] = { "76561198805462515", "76561198249403686", "76561198066703139" }; //wallace, rib, pey

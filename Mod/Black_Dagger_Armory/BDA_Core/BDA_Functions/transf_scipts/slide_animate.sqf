@@ -18,4 +18,4 @@ deleteVehicle _al_slide ;
 if (!isNil{_al_slide getVariable "activ"}) exitWith {};
 _al_slide setVariable ["activ",true,true];
 
-null= [[_nclass,_slide_vel,_slide_dist,_dist_dependent,_poz_obj,_dir_slide,_alt_obj],"BDA_Core\BDA_Functions\transf_scripts\slide.sqf"] remoteExec ["BIS_fnc_execVM",0,true];
+null= [[_nclass,_slide_vel,_slide_dist,_dist_dependent,_poz_obj,_dir_slide,_alt_obj],"BDA_Core\BDA_Functions\transf_scipts\slide.sqf"] remoteExec ["BIS_fnc_execVM",0,true];

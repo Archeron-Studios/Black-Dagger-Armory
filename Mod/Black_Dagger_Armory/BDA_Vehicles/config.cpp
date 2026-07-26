@@ -23,3 +23,29 @@ class CfgPatches {
 		};
 	};
 };
+
+class CfgFunctions {
+	class BDA {
+		tag = "BDA";
+		class Vehicles {
+			file = "\BDA_Vehicles\functions";
+			class vehSpawner {};
+			class advMark {};
+			class chgTex {};
+		};
+		class AirVehThrust {
+			file = "\BDA_Vehicles\functions\AirVehThrust";
+			class thruster400Engage {};
+			class thruster400Disengage {};
+			class afterburners600Engage {};
+			class afterburners600Disengage {};
+			class afterburners800Engage {};
+			class afterburners800Disengage {};
+			class airbrakeEngage {};
+			class fullAirbrakeEngage {};
+			class fullAirbrakeEngageFast {};
+			class halfAirbrakeEngage {};
+			class halfAirbrakeEngageFast {};
+		};
+	};
+};

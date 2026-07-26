@@ -24,4 +24,4 @@ _poz_obj= getposatl _object_name;
 _alt_obj= getposatl _object_name select 2;
 deleteVehicle _object_name;
 
-null= [[_nclass,_slide_move,_bounce_move,_rot_move,_roll_vel,_orbit_move,_dist_dependent,_poz_obj,_alt_obj],"BDA_Core\BDA_Functions\transf_scripts\obj_float.sqf"] remoteExec ["BIS_fnc_execVM",0,true];
+null= [[_nclass,_slide_move,_bounce_move,_rot_move,_roll_vel,_orbit_move,_dist_dependent,_poz_obj,_alt_obj],"BDA_Core\BDA_Functions\transf_scipts\obj_float.sqf"] remoteExec ["BIS_fnc_execVM",0,true];

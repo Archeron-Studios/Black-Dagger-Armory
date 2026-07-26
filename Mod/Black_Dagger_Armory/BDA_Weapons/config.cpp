@@ -4,7 +4,7 @@ class CfgPatches
     {
         author = "Black Dagger Development Crew";
 		name = "Black Dagger Weapons";
-		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle","Splits_Weaponry_Ammo", "OPTRE_Weapons_MG","OPTRE_Weapons_Vehicle"};
+		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle","Splits_Weaponry_Ammo", "OPTRE_Weapons_MG","OPTRE_Weapons_Vehicle","ace_common"};
 		requiredVersion = 0.100000;
 		units[] = {};
 		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AGM_Launcher","BDA_weapon_Guided_AGM_Bottom_Launcher","BDA_weapon_Guided_AA_Launcher","BDA_weapon_Guided_AA_Bottom_Launcher", "BDA_Smartfinder","BDA_M247T_Coax","BDA_MG470_40mm"};
@@ -420,6 +420,56 @@ class CfgWeapons {
 				positionName="usti hlavne";
 				directionName="konec hlavne";
 				effectName="GrenadeLauncherCloud";
+			};
+		};
+	};
+};
+
+class CfgFunctions {
+	class BDA {
+		tag = "BDA";
+		class Weapons {
+			file = "\BDA_Weapons\functions";
+			class isBino {};
+		};
+		class Markers {
+			file = "\BDA_Weapons\functions\Markers";
+			class isLZ {};
+			class isFM {};
+			class isFrd {};
+			class isEnm {};
+			class isCM {};
+		};
+	};
+};
+
+class CfgVehicles {
+	class Man;
+	class CAManBase: Man {
+		class ACE_SelfActions {
+			class Markers {
+				displayName = "Place Marker";
+				condition = "[] call BDA_fnc_isBino";
+				class MarkLZ {
+					displayName = "Mark LZ";
+					statement = "[] call BDA_fnc_isLZ";
+				};
+				class MarkFM {
+					displayName = "Mark Firemission";
+					statement = "[] call BDA_fnc_isFM";
+				};
+				class MarkFRND {
+					displayName = "Mark Friendly";
+					statement = "[] call BDA_fnc_isFrd";
+				};
+				class MarkENMY {
+					displayName = "Mark Enemy";
+					statement = "[] call BDA_fnc_isEnm";
+				};
+				class MarkCM {
+					displayName = "Mark CAS Mission";
+					statement = "[] call BDA_fnc_isCM";
+				};
 			};
 		};
 	};

@@ -1,5 +1,5 @@
-// null= [this,cc] execVM "BDA_Core\BDA_Functions\transf_scripts\rock_float.sqf";
-// null= [this,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent] execVM "BDA_Core\BDA_Functions\transf_scripts\rock_float.sqf";
+// null= [this,cc] execVM "BDA_Core\BDA_Functions\transf_scipts\rock_float.sqf";
+// null= [this,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent] execVM "BDA_Core\BDA_Functions\transf_scipts\rock_float.sqf";
 
 //if (!isServer) exitWith {};
 /*
@@ -39,9 +39,9 @@ _dist_dependent	= _this select 14;
 //0 setFog [0.1, -0.35, 250];
 
 // miscare rotatie
-// null= [this,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent] execVM "BDA_Core\BDA_Functions\transf_scripts\rock_float.sqf";
+// null= [this,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent] execVM "BDA_Core\BDA_Functions\transf_scipts\rock_float.sqf";
 // ROT+BOUNCE
-// null= [this,true,0.1,true,true,0.01,false,1,false,1,1,true,false,1,2000] execVM "BDA_Core\BDA_Functions\transf_scripts\rock_float.sqf";
+// null= [this,true,0.1,true,true,0.01,false,1,false,1,1,true,false,1,2000] execVM "BDA_Core\BDA_Functions\transf_scipts\rock_float.sqf";
 
 
 	_ii=0;
@@ -60,7 +60,7 @@ _dist_dependent	= _this select 14;
 /*
 
 // miscare ascendenta
-// null= [this,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent] execVM "BDA_Core\BDA_Functions\transf_scripts\rock_float.sqf";
+// null= [this,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent] execVM "BDA_Core\BDA_Functions\transf_scipts\rock_float.sqf";
 
 if (_bounce) then {
 
@@ -109,7 +109,7 @@ if (_bounce) then {
 };
 
 // slide
-// null= [this,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent] execVM "BDA_Core\BDA_Functions\transf_scripts\rock_float.sqf";
+// null= [this,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent] execVM "BDA_Core\BDA_Functions\transf_scipts\rock_float.sqf";
 
 if (_slide) then {
 [_al_rock,_slide_vit] spawn 
@@ -158,8 +158,8 @@ if (_slide) then {
 };
 
 // orbit
-// null= [this,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent] execVM "BDA_Core\BDA_Functions\transf_scripts\rock_float.sqf";
-// null= [this,true,0.1,true,false,1,false,1,true,50,0.1,true,false,1] execVM "BDA_Core\BDA_Functions\transf_scripts\rock_float.sqf";
+// null= [this,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent] execVM "BDA_Core\BDA_Functions\transf_scipts\rock_float.sqf";
+// null= [this,true,0.1,true,false,1,false,1,true,50,0.1,true,false,1] execVM "BDA_Core\BDA_Functions\transf_scipts\rock_float.sqf";
 
 if (_orbit) then {
 [_al_rock,_obrit_speed,_orbit_clock_wise,_orbit_radius] spawn 
@@ -195,7 +195,7 @@ if (_orbit) then {
 };
 
 // rostogolire
-// null= [this,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent] execVM "BDA_Core\BDA_Functions\transf_scripts\rock_float.sqf";
+// null= [this,_rotire,_rot_vit,_rot_dir,_bounce,_bounce_speed,_slide,_slide_vit,_orbit,_orbit_radius,_obrit_speed,_orbit_clock_wise,_rostogolire,_rost_vite,_dist_dependent] execVM "BDA_Core\BDA_Functions\transf_scipts\rock_float.sqf";
 
 if (_rostogolire) then {
 [_al_rock,_rost_vite] spawn {

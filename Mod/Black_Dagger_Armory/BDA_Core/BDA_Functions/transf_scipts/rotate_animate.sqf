@@ -17,4 +17,4 @@ _poz_obj= getposatl _al_rot;
 _alt_obj= getposatl _al_rot select 2;
 deleteVehicle _al_rot;
 
-null= [[_nclass,_vit_rot,_dir_rot,_dist_dependent,_poz_obj,_alt_obj],"BDA_Core\BDA_Functions\transf_scripts\rotate.sqf"] remoteExec ["BIS_fnc_execVM",0,true];
+null= [[_nclass,_vit_rot,_dir_rot,_dist_dependent,_poz_obj,_alt_obj],"BDA_Core\BDA_Functions\transf_scipts\rotate.sqf"] remoteExec ["BIS_fnc_execVM",0,true];

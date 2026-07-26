@@ -10,7 +10,8 @@ class CfgPatches {
 			"OPTRE_UNSC_Units_Army",
 			"DMNS_Supplies_F_Bags",
 			"NSM_patch_end",
-			"OPTRE_Weapons_Backpacks"
+			"OPTRE_Weapons_Backpacks",
+			"cba_main"
 		};
 		units[]={};
 		weapons[]={};
@@ -26,7 +27,8 @@ class CfgPatches {
 			"BDA_Rucksack_B_SL",
 			"BDA_COMM_Uplink_Module",
 			"BDA_Rucksack_B_TEST",
-			"BDA_Naval_Belt_R"
+			"BDA_Naval_Belt_R",
+			"BDA_Naval_Pilot_Harness"
 		};
 		requiredVersion=0.1;
 	};
@@ -154,18 +156,36 @@ class CfgVehicles {
 		model="\A3\Characters_F\BLUFOR\equip_b_belt";
 		maximumLoad=400;
 		mass=10;
-		hiddenSelections[] = {
-			"camo"
-		};
-		hiddenSelectionsTextures[] = {
-			"BDA_Armor\BDA_Vests\data\BDA_Belt_NAVCOM_CO.paa"
-		};
+		hiddenSelections[] = { "camo" };
+		hiddenSelectionsTextures[] = { "BDA_Armor\BDA_Vests\data\BDA_Belt_NAVCOM_CO.paa" };
 		tf_encryptionCode="tf_west_radio_code";
 		tf_dialog="rt1523g_radio_dialog";
 		tf_subtype="digital_lr";
 		tf_range=30000;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
+	};
+	// Bag_Base only — no B_Parachute / backpackSimulation (keeps vanilla get out/eject; our scripts deploy the chute)
+	class BDA_Naval_Pilot_Harness: Bag_Base {
+		dlc = "BDA";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		author = "Rib";
+		isBackpack = 1;
+		displayName = "NAVCOM Pilot Harness";
+		picture = "\A3\Supplies_F_Exp\Bags\Data\UI\icon_B_ViperLightHarness_blk_F_ca.paa";
+		model = "\A3\Supplies_F_Exp\Bags\B_ViperLightHarness_F.p3d";
+		maximumLoad = 400;
+		mass = 15;
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Accessories\Data\BDA_Pilot_Harness_CO.paa"};
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 30000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
 	};
 
 	class BDA_S13_Jumppack: NSM_neutral_XD_1_Backpack {
@@ -297,6 +317,37 @@ class CfgVehicles {
 		};
 	};
 };
+
+class CfgRemoteExec {
+	class Functions {
+		mode = 1;
+		jip = 0;
+		class BDA_fnc_harnessParachuteDeploy { allowedTargets = 2; };
+		class BDA_fnc_harnessParachuteEnterChute { allowedTargets = 1; };
+		class BDA_fnc_harnessParachuteRestore { allowedTargets = 1; };
+	};
+};
+
+class CfgFunctions {
+	class BDA {
+		tag = "BDA";
+		class HarnessParachute {
+			file = "\BDA_Armor\BDA_Accessories\functions";
+			class initHarnessParachute { postInit = 1; };
+			class harnessParachuteDeploy {};
+			class harnessParachuteEnterChute {};
+			class harnessParachuteMonitor {};
+			class harnessParachuteRestore {};
+			class harnessParachuteStash {};
+			class harnessParachuteCanOpen {};
+			class harnessParachuteAddAction {};
+			class harnessParachuteOpenFromAction {};
+			class harnessParachuteAddVehicleActions {};
+			class harnessParachuteRemoveVehicleActions {};
+		};
+	};
+};
+
 class cfgMods
 {
 	author="Rib";

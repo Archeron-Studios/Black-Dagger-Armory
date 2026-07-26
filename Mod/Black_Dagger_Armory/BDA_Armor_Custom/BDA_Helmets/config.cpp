@@ -22,7 +22,6 @@ class CfgPatches {
 };
 
 class cfgWeapons {
-	class ItemInfo;
 	/*extern*/ class VES_S1ONIR;
 	/*extern*/ class VES_S1ONIR_dp;
 	/*intern*/ class BDA_CH252D_Helmet;

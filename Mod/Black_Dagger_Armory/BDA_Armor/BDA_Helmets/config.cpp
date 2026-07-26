@@ -22,7 +22,6 @@ class CfgPatches
 	};
 };
 class cfgWeapons {
-	/*arma*/ class ItemInfo;
 	/*extern*/ class OPTRE_UNSC_CH252D_Helmet_Base;
 	/*extern*/ class OPTRE_UNSC_CH252D_Helmet_dp;
 	/*extern*/ class OPTRE_UNSC_Recon_Helmet;

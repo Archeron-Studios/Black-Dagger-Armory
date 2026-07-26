@@ -139,7 +139,6 @@ class CfgVehicles {
 
 class cfgWeapons {
 	class UniformItem;
-	class ItemInfo;
 	class U_B_HeliPilotCoveralls;
 	class OPTRE_UNSC_Army_Uniform_WDL;
 	class U_C_Scientist;

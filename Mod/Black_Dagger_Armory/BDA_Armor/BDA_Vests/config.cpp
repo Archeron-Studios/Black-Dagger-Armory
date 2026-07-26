@@ -1150,7 +1150,7 @@ class cfgWeapons {
 	class BDA_Armor_Pilot: OPTRE_UNSC_M52D_Armor {
 		dlc = "BDA";
 		author = "Rib";
-		displayName="M52A Body Armor (81st Naval Air Squadron)";
+		displayName="M52A Body Armor (82nd Naval Air Squadron)";
 		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
@@ -1225,7 +1225,7 @@ class cfgWeapons {
 	class BDA_M52B_Pilot_Armor_B: OPTRE_FC_M52B_Armor_Vest {
 		dlc = "BDA";
 		author = "Rib";
-		displayName="M52B Body Armor - Black (81st Naval Air Squadron)";
+		displayName="M52B Body Armor - Black (82nd Naval Air Squadron)";
 		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]= {
 			"\BDA_Armor\BDA_Vests\data\BDA_M52B_Armor_B_CO.paa"
@@ -1238,7 +1238,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_M52B_Pilot_Armor_G: BDA_M52B_Pilot_Armor_B {
-		displayName="M52B Body Armor - Green (81st Naval Air Squadron)";
+		displayName="M52B Body Armor - Green (82nd Naval Air Squadron)";
 		hiddenSelectionsTextures[]= {
 			"\BDA_Armor\BDA_Vests\data\BDA_M52B_Armor_G_CO.paa"
 		};

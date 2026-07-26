@@ -579,7 +579,7 @@ class CfgGroups {
                         position[] = {10,-10,0};
                         rank = "CORPORAL";
                         side = 1;
-                        vehicle = "B_BDA_1_0";
+                        vehicle = "B_BDA_2_0";
                     };
                 };
 
@@ -698,7 +698,7 @@ class CfgGroups {
                         position[] = {-15,-15,0};
                         rank = "CORPORAL";
                         side = 1;
-                        vehicle = "B_BDA_Rocketman";
+                        vehicle = "B_BDA_Rocket";
                     };
                     class Unit7 {
                         position[] = {20,-20,0};
@@ -728,7 +728,6 @@ class CfgGroups {
 
             class Support {
                 name = "Support Infantry";
-
             };
 
             class Mechanized {

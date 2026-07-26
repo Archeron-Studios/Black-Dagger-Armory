@@ -104,7 +104,7 @@ class CfgVehicles {
     class BDA_UNSC_UH145A_Falcon2: OPTRE_UNSC_falcon_S {
 		dlc = "BDA";
 		author = "Rib";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_UH145A_Falcon2.jpg";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Falcon.jpg";
 		scope = 2;
 		scopeCurator = 2;
 		side = 1;
@@ -624,7 +624,7 @@ class CfgVehicles {
 		displayName = "MH-145 Falcon";
 		side = 1;
 		faction = "B_BDCUNSC";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_UH145A_Falcon2.jpg";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Falcon.jpg";
 		crew = "B_BDA_Pilot";
 		armor = 450;
 		cost = 200;
@@ -1162,7 +1162,7 @@ class CfgVehicles {
 		displayName = "UH-145S Falcon";
 		side = 1;
 		faction = "B_BDCUNSC";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_UH145A_Falcon2.jpg";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Falcon.jpg";
 		crew = "B_BDA_Pilot";
 		armor = 250;
 		cost = 1000;

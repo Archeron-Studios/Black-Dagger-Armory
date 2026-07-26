@@ -18,6 +18,7 @@ class CfgPatches {
             "B_BDA_2_1",
             "B_BDA_2_2",
             "B_BDA_2_3",
+            "B_BDA_Bullfrog",
             "B_BDA_1_0",
             "B_BDA_2_0",
             "B_BDA_Grenadier",
@@ -25,7 +26,8 @@ class CfgPatches {
             "B_BDA_PilotLead",
             "B_BDA_Crewman",
             "B_BDA_Rib",
-            "B_BDA_Teamleader"
+            "B_BDA_Teamleader",
+            "B_BDA_RTO"
         };
         weapons[] = {};
         requiredVersion = 1.62;

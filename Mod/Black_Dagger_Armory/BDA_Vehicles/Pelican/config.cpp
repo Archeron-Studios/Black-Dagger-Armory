@@ -57,7 +57,6 @@ class CfgVehicles {
 		class ACE_SelfActions;
 	};
 	class Helicopter_Base_F: Helicopter {
-		class Turrets;
 		class HitPoints;
 		class ViewPilot;
 		class CargoTurret;
@@ -140,6 +139,7 @@ class CfgVehicles {
 		cargoCanEject = 0;
 		BDA_ThrustModes[] = {400, 600};
 		//textures
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
 		hiddenSelectionsTextures[] = {
 			"\BDA_Vehicles\data\pelican\BDA_G_body_co.paa",
 			"\BDA_Vehicles\data\pelican\BDA_G_wings_and_gear_co.paa",
@@ -5968,6 +5968,7 @@ class CfgVehicles {
 			"BDA_Pelican_W610", 1,
 			"BDA_Pelican_Winter", 1
 		};
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
 		hiddenSelectionsTextures[]={
 			"\BDA_Vehicles\data\pelican\BDA_G_body_co.paa",
 			"\BDA_Vehicles\data\pelican\BDA_G_wings_and_gear_co.paa",

@@ -57,6 +57,7 @@ class CfgVehicles {
 		class ACE_SelfActions;
 	};
 	class Helicopter_Base_F: Helicopter {
+		class Turrets;
 		class HitPoints;
 		class ViewPilot;
 		class CargoTurret;

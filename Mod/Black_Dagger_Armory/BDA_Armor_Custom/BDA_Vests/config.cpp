@@ -22,6 +22,7 @@ class CfgPatches {
 };
 
 class cfgWeapons {
+	/*arma*/ class ItemInfo;
 	/*arma*/ class VestItem;
 	/*arma*/ class Uniform_Base;
 	/*arma*/ class HitpointsProtectionInfo;

@@ -20,6 +20,7 @@ class CfgPatches {
 };
 
 class cfgWeapons {
+	/*arma*/ class ItemInfo;
 	/*extern*/ class OPTRE_UNSC_M52D_Armor;
 	/*extern*/ class OPTRE_UNSC_M52D_Armor_Rifleman;
 	/*extern*/ class OPTRE_UNSC_M52D_Armor_Demolitions;

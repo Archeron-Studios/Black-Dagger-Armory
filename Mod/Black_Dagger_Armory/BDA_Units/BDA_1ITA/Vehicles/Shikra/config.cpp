@@ -49,7 +49,9 @@ class CfgVehicles {
 		class Eventhandlers;
 		class ViewPilot;
 	};
-    class Plane_Fighter_02_Base_F;
+    class Plane_Fighter_02_Base_F {
+		class Components;
+	};
 
     class BDA_1ITA_Shikra: Plane_Fighter_02_Base_F {
         scope = 2;
@@ -75,7 +77,6 @@ class CfgVehicles {
 
         weapons[] = {"weapon_Fighter_Gun_30mm", "Laserdesignator_pilotCamera", "CMFlareLauncher"};
 		magazines[] = {"magazine_Fighter02_Gun30mm_AA_x180", "magazine_Fighter02_Gun30mm_AA_x180", "Laserbatteries", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
-		class Components;
 		class Components: Components {
 			class SensorsManagerComponent {
 				class Components {
@@ -301,7 +302,7 @@ class CfgVehicles {
 						bay = 2;
 					};
 					class pylonBayLeft1: pylonBayRight1 {
-						UIposition = {0.200000, 0.150000};
+						UIposition[] = {0.200000, 0.150000};
 						mirroredMissilePos = 7;
 						bay = 1;
 					};

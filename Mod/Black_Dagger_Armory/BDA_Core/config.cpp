@@ -80,7 +80,7 @@ class RscDisplayMain: RscStandardDisplay {
 			style=2;
 			onbuttonclick="connectToServer ['74.208.86.92', 2302, '']"; //games.blackdagger.org OR 74.208.86.92
 			colorBackground[]={0,0,0,0.40000001};
-			colorBackgroundActive[]={1,0,0,0,2};
+			colorBackgroundActive[]={1,0,0,0.2};
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
 			x="safeZoneX + safeZoneW - 0.8";
@@ -94,7 +94,7 @@ class RscDisplayMain: RscStandardDisplay {
 			tooltip="Click to join the Black Dagger Discord";
 			url="https://discord.gg/faxU2ty9eQ";
 			colorBackground[]={0,0,0,0.69999999};
-			colorBackgroundActive[]={1,0,0,0,2};
+			colorBackgroundActive[]={1,0,0,0.2};
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
 			x="safeZoneX + 0.2 * safeZoneW";

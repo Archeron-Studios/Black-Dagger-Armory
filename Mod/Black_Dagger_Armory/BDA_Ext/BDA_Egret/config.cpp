@@ -75,50 +75,19 @@ class cfgVehicles
 		};
 		soundLocked[]=
 		{
-			"BDA_Ext\BDA_Egret\sfx\targeted_alarm.ogg",
+			"\A3\Sounds_F\weapons\Rockets\opfor_lock_1",
 			1,
 			1
 		};
 		soundIncommingMissile[]=
 		{
-			"NCA\NCA_vehicles\aircraft\sounds\incomingMissile_alarm.ogg",
+			"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1",
 			1,
 			1
 		};
-		soundEngineOnExt[]=
-		{
-			"BDA_Ext\BDA_Egret\sfx\engineStartup_exterior.ogg",
-			1.4125376,
-			1,
-			600
-		};
-		soundEngineOnInt[]=
-		{
-			"BDA_Ext\BDA_Egret\sfx\engineStartup_interior.ogg",
-			1.4125376,
-			1,
-			600
-		};
-		soundEngineOffExt[]=
-		{
-			"BDA_Ext\BDA_Egret\sfx\engineShutdown_exterior.ogg",
-			0.31622776,
-			1
-		};
-		soundEngineOffInt[]=
-		{
-			"BDA_Ext\BDA_Egret\sfx\engineShutdown_interior.ogg",
-			0.79432821,
-			1,
-			600
-		};
-		flySound[]=
-		{
-			"BDA_Ext\BDA_Egret\sfx\engine_exterior.ogg",
-			0,
-			1,
-			1
-		};
+		// Engine audio inherited from OPTRE_Pelican_unarmed (parent).
+		// Local sfx only has interior startup + exterior shutdown; using those
+		// for both int/ext produced silent/wrong engine cues.
 	};
 };
 class cfgMods {

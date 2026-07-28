@@ -89,6 +89,10 @@ class CfgWallaceLoad {
 	{
 		name = "Rocket Jockey Kit";
 	};
+	class BDA_Breacher
+	{
+		name = "Breacher Kit";
+	};
 };
 
 enableDebugConsole[] = { "76561198805462515", "76561198249403686", "76561198066703139" }; //wallace, rib, pey

@@ -21,121 +21,30 @@ removeGoggles player;
 
 player forceAddUniform "BDA_Uniform_B_SL";
 
-switch (_getSelUni) do {
-
-	if(_getSel isEqualTo "BDA_Rifleman") then 
-	{
-		case "Default": { player addVest "BDA_Armor_RF"; player addHeadgear "BDA_CH252D_Helmet";};
-		case "1st CMD": { player addVest "BDA_Armor_RF_P1"; player addHeadgear "BDA_CH252D_Helmet_P1";};
-		case "1-1": { player addVest "BDA_Armor_RF_S1"; player addHeadgear "BDA_CH252D_Helmet_S1";};
-		case "1-2": { player addVest "BDA_Armor_RF_S2"; player addHeadgear "BDA_CH252D_Helmet_S2";};
-		case "1-3": { player addVest "BDA_Armor_RF_S3"; player addHeadgear "BDA_CH252D_Helmet_S3";};
-		case "1-4": { player addVest "BDA_Armor_RF_S4"; player addHeadgear "BDA_CH252D_Helmet_S4";};
-		case "2nd CMD": { player addVest "BDA_Armor_RF_P2"; player addHeadgear "BDA_CH252D_Helmet_P2";};
-		case "2-1": { player addVest "BDA_Armor_RF_S5"; player addHeadgear "BDA_CH252D_Helmet_S5";};
-		case "2-2": { player addVest "BDA_Armor_RF_S6"; player addHeadgear "BDA_CH252D_Helmet_S6";};
-		case "2-3": { player addVest "BDA_Armor_RF_S7"; player addHeadgear "BDA_CH252D_Helmet_S7";};
-		default { };
-	};
-	if(_getSel isEqualTo "BDA_AutoRifleman") then 
-	{
-		case "Default": { player addVest "BDA_Armor_AR"; player addHeadgear "BDA_CH252D_Helmet";};
-		case "1st CMD": { player addVest "BDA_Armor_AR_P1"; player addHeadgear "BDA_CH252D_Helmet_P1";};
-		case "1-1": { player addVest "BDA_Armor_AR_S1"; player addHeadgear "BDA_CH252D_Helmet_S1";};
-		case "1-2": { player addVest "BDA_Armor_AR_S2"; player addHeadgear "BDA_CH252D_Helmet_S2";};
-		case "1-3": { player addVest "BDA_Armor_AR_S3"; player addHeadgear "BDA_CH252D_Helmet_S3";};
-		case "1-4": { player addVest "BDA_Armor_AR_S4"; player addHeadgear "BDA_CH252D_Helmet_S4";};
-		case "2nd CMD": { player addVest "BDA_Armor_AR_P2"; player addHeadgear "BDA_CH252D_Helmet_P2";};
-		case "2-1": { player addVest "BDA_Armor_AR_S5"; player addHeadgear "BDA_CH252D_Helmet_S5";};
-		case "2-2": { player addVest "BDA_Armor_AR_S6"; player addHeadgear "BDA_CH252D_Helmet_S6";};
-		case "2-3": { player addVest "BDA_Armor_RF_S7"; player addHeadgear "BDA_CH252D_Helmet_S7";};
-		default { };
-	};
-	if(_getSel isEqualTo "BDA_Sniper") then 
-	{
-		case "Default": { player addVest "BDA_Armor_SN"; player addHeadgear "BDA_CH252D_Helmet";};
-		case "1st CMD": { player addVest "BDA_Armor_SN_P1"; player addHeadgear "BDA_CH252D_Helmet_P1";};
-		case "1-1": { player addVest "BDA_Armor_SN_S1"; player addHeadgear "BDA_CH252D_Helmet_S1";};
-		case "1-2": { player addVest "BDA_Armor_SN_S2"; player addHeadgear "BDA_CH252D_Helmet_S2";};
-		case "1-3": { player addVest "BDA_Armor_SN_S3"; player addHeadgear "BDA_CH252D_Helmet_S3";};
-		case "1-4": { player addVest "BDA_Armor_SN_S4"; player addHeadgear "BDA_CH252D_Helmet_S4";};
-		case "2nd CMD": { player addVest "BDA_Armor_SN_P2"; player addHeadgear "BDA_CH252D_Helmet_P2";};
-		case "2-1": { player addVest "BDA_Armor_SN_S5"; player addHeadgear "BDA_CH252D_Helmet_S5";};
-		case "2-2": { player addVest "BDA_Armor_SN_S6"; player addHeadgear "BDA_CH252D_Helmet_S6";};
-		case "2-3": { player addVest "BDA_Armor_RF_S7"; player addHeadgear "BDA_CH252D_Helmet_S7";};
-		default { };
-	};
-	if(_getSel isEqualTo "BDA_EOD") then 
-	{
-		case "Default": { player addVest "BDA_Armor_DM"; player addHeadgear "BDA_CH252D_Helmet";};
-		case "1st CMD": { player addVest "BDA_Armor_DM_P1"; player addHeadgear "BDA_CH252D_Helmet_P1";};
-		case "1-1": { player addVest "BDA_Armor_DM_S1"; player addHeadgear "BDA_CH252D_Helmet_S1";};
-		case "1-2": { player addVest "BDA_Armor_DM_S2"; player addHeadgear "BDA_CH252D_Helmet_S2";};
-		case "1-3": { player addVest "BDA_Armor_DM_S3"; player addHeadgear "BDA_CH252D_Helmet_S3";};
-		case "1-4": { player addVest "BDA_Armor_DM_S4"; player addHeadgear "BDA_CH252D_Helmet_S4";};
-		case "2nd CMD": { player addVest "BDA_Armor_DM_P2"; player addHeadgear "BDA_CH252D_Helmet_P2";};
-		case "2-1": { player addVest "BDA_Armor_DM_S5"; player addHeadgear "BDA_CH252D_Helmet_S5";};
-		case "2-2": { player addVest "BDA_Armor_DM_S6"; player addHeadgear "BDA_CH252D_Helmet_S6";};
-		case "2-3": { player addVest "BDA_Armor_RF_S7"; player addHeadgear "BDA_CH252D_Helmet_S7";};
-		default { };
-	};
-	if(_getSel isEqualTo "BDA_Demolitions") then 
-	{
-		case "Default": { player addVest "BDA_Armor_DM"; player addHeadgear "BDA_CH252D_Helmet";};
-		case "1st CMD": { player addVest "BDA_Armor_DM_P1"; player addHeadgear "BDA_CH252D_Helmet_P1";};
-		case "1-1": { player addVest "BDA_Armor_DM_S1"; player addHeadgear "BDA_CH252D_Helmet_S1";};
-		case "1-2": { player addVest "BDA_Armor_DM_S2"; player addHeadgear "BDA_CH252D_Helmet_S2";};
-		case "1-3": { player addVest "BDA_Armor_DM_S3"; player addHeadgear "BDA_CH252D_Helmet_S3";};
-		case "1-4": { player addVest "BDA_Armor_DM_S4"; player addHeadgear "BDA_CH252D_Helmet_S4";};
-		case "2nd CMD": { player addVest "BDA_Armor_DM_P2"; player addHeadgear "BDA_CH252D_Helmet_P2";};
-		case "2-1": { player addVest "BDA_Armor_DM_S5"; player addHeadgear "BDA_CH252D_Helmet_S5";};
-		case "2-2": { player addVest "BDA_Armor_DM_S6"; player addHeadgear "BDA_CH252D_Helmet_S6";};
-		case "2-3": { player addVest "BDA_Armor_RF_S7"; player addHeadgear "BDA_CH252D_Helmet_S7";};
-		default { };
-	};
-	if(_getSel isEqualTo "BDA_Grenadier") then 
-	{
-		case "Default": { player addVest "BDA_Armor_RF"; player addHeadgear "BDA_CH252D_Helmet";};
-		case "1st CMD": { player addVest "BDA_Armor_RF_P1"; player addHeadgear "BDA_CH252D_Helmet_P1";};
-		case "1-1": { player addVest "BDA_Armor_RF_S1"; player addHeadgear "BDA_CH252D_Helmet_S1";};
-		case "1-2": { player addVest "BDA_Armor_RF_S2"; player addHeadgear "BDA_CH252D_Helmet_S2";};
-		case "1-3": { player addVest "BDA_Armor_RF_S3"; player addHeadgear "BDA_CH252D_Helmet_S3";};
-		case "1-4": { player addVest "BDA_Armor_RF_S4"; player addHeadgear "BDA_CH252D_Helmet_S4";};
-		case "2nd CMD": { player addVest "BDA_Armor_RF_P2"; player addHeadgear "BDA_CH252D_Helmet_P2";};
-		case "2-1": { player addVest "BDA_Armor_RF_S5"; player addHeadgear "BDA_CH252D_Helmet_S5";};
-		case "2-2": { player addVest "BDA_Armor_RF_S6"; player addHeadgear "BDA_CH252D_Helmet_S6";};
-		case "2-3": { player addVest "BDA_Armor_RF_S7"; player addHeadgear "BDA_CH252D_Helmet_S7";};
-		default { };
-	};
-	if(_getSel isEqualTo "BDA_RktJky") then 
-	{
-		case "Default": { player addVest "BDA_Armor_RF"; player addHeadgear "BDA_CH252D_Helmet";};
-		case "1st CMD": { player addVest "BDA_Armor_RF_P1"; player addHeadgear "BDA_CH252D_Helmet_P1";};
-		case "1-1": { player addVest "BDA_Armor_RF_S1"; player addHeadgear "BDA_CH252D_Helmet_S1";};
-		case "1-2": { player addVest "BDA_Armor_RF_S2"; player addHeadgear "BDA_CH252D_Helmet_S2";};
-		case "1-3": { player addVest "BDA_Armor_RF_S3"; player addHeadgear "BDA_CH252D_Helmet_S3";};
-		case "1-4": { player addVest "BDA_Armor_RF_S4"; player addHeadgear "BDA_CH252D_Helmet_S4";};
-		case "2nd CMD": { player addVest "BDA_Armor_RF_P2"; player addHeadgear "BDA_CH252D_Helmet_P2";};
-		case "2-1": { player addVest "BDA_Armor_RF_S5"; player addHeadgear "BDA_CH252D_Helmet_S5";};
-		case "2-2": { player addVest "BDA_Armor_RF_S6"; player addHeadgear "BDA_CH252D_Helmet_S6";};
-		case "2-3": { player addVest "BDA_Armor_RF_S7"; player addHeadgear "BDA_CH252D_Helmet_S7";};
-		default { };
-	};
-	if(_getSel isEqualTo "BDA_Breacher") then 
-	{
-		case "Default": { player addVest "BDA_Armor_RF"; player addHeadgear "BDA_CH252D_Helmet";};
-		case "1st CMD": { player addVest "BDA_Armor_RF_P1"; player addHeadgear "BDA_CH252D_Helmet_P1";};
-		case "1-1": { player addVest "BDA_Armor_RF_S1"; player addHeadgear "BDA_CH252D_Helmet_S1";};
-		case "1-2": { player addVest "BDA_Armor_RF_S2"; player addHeadgear "BDA_CH252D_Helmet_S2";};
-		case "1-3": { player addVest "BDA_Armor_RF_S3"; player addHeadgear "BDA_CH252D_Helmet_S3";};
-		case "1-4": { player addVest "BDA_Armor_RF_S4"; player addHeadgear "BDA_CH252D_Helmet_S4";};
-		case "2nd CMD": { player addVest "BDA_Armor_RF_P2"; player addHeadgear "BDA_CH252D_Helmet_P2";};
-		case "2-1": { player addVest "BDA_Armor_RF_S5"; player addHeadgear "BDA_CH252D_Helmet_S5";};
-		case "2-2": { player addVest "BDA_Armor_RF_S6"; player addHeadgear "BDA_CH252D_Helmet_S6";};
-		case "2-3": { player addVest "BDA_Armor_RF_S7"; player addHeadgear "BDA_CH252D_Helmet_S7";};
-		default { };
-	};
+// Role determines the vest family; squad selection determines the P/S variant suffix.
+private _vestBase = switch (_getSel) do {
+	case "BDA_AutoRifleman": { "BDA_Armor_AR" };
+	case "BDA_Sniper": { "BDA_Armor_SN" };
+	case "BDA_EOD": { "BDA_Armor_DM" };
+	case "BDA_Demolitions": { "BDA_Armor_DM" };
+	default { "BDA_Armor_RF" };
 };
+
+private _squadSuffix = switch (_getSelUni) do {
+	case "1st CMD": { "_P1" };
+	case "1-1": { "_S1" };
+	case "1-2": { "_S2" };
+	case "1-3": { "_S3" };
+	case "1-4": { "_S4" };
+	case "2nd CMD": { "_P2" };
+	case "2-1": { "_S5" };
+	case "2-2": { "_S6" };
+	case "2-3": { "_S7" };
+	default { "" };
+};
+
+player addVest (_vestBase + _squadSuffix);
+player addHeadgear ("BDA_CH252D_Helmet" + _squadSuffix);
 
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
@@ -332,24 +241,24 @@ if(_getSel isEqualTo "BDA_Breacher") then
 	player addBackpack "BDA_Rucksack_B";
 
 	comment "Add items to containers";
-	for "_i" from 1 to 12 do {this addItemToUniform "ACE_CableTie";};
-	for "_i" from 1 to 3 do {this addItemToUniform "ACE_IR_Strobe_Item";};
+	for "_i" from 1 to 12 do {player addItemToUniform "ACE_CableTie";};
+	for "_i" from 1 to 3 do {player addItemToUniform "ACE_IR_Strobe_Item";};
 	player addItemToUniform "ACE_EntrenchingTool";
-	for "_i" from 1 to 10 do {this addItemToVest "ACE_fieldDressing";};
-	for "_i" from 1 to 10 do {this addItemToVest "ACE_elasticBandage";};
-	for "_i" from 1 to 10 do {this addItemToVest "ACE_packingBandage";};
-	for "_i" from 1 to 10 do {this addItemToVest "ACE_quikclot";};
-	for "_i" from 1 to 4 do {this addItemToVest "ACE_epinephrine";};
-	for "_i" from 1 to 2 do {this addItemToVest "ACE_splint";};
-	for "_i" from 1 to 4 do {this addItemToVest "ACE_tourniquet";};
-	for "_i" from 1 to 4 do {this addItemToVest "OPTRE_M9_Frag";};
-	for "_i" from 1 to 2 do {this addItemToVest "OPTRE_M2_Smoke";};
-	for "_i" from 1 to 2 do {this addItemToVest "OPTRE_M2_Smoke_Blue";};
+	for "_i" from 1 to 10 do {player addItemToVest "ACE_fieldDressing";};
+	for "_i" from 1 to 10 do {player addItemToVest "ACE_elasticBandage";};
+	for "_i" from 1 to 10 do {player addItemToVest "ACE_packingBandage";};
+	for "_i" from 1 to 10 do {player addItemToVest "ACE_quikclot";};
+	for "_i" from 1 to 4 do {player addItemToVest "ACE_epinephrine";};
+	for "_i" from 1 to 2 do {player addItemToVest "ACE_splint";};
+	for "_i" from 1 to 4 do {player addItemToVest "ACE_tourniquet";};
+	for "_i" from 1 to 4 do {player addItemToVest "OPTRE_M9_Frag";};
+	for "_i" from 1 to 2 do {player addItemToVest "OPTRE_M2_Smoke";};
+	for "_i" from 1 to 2 do {player addItemToVest "OPTRE_M2_Smoke_Blue";};
 	player addItemToVest "ACE_painkillers";
 	player addItemToBackpack "ItemcTabHCam";
 	player addItemToBackpack "ACE_wirecutter";
 	player addItemToBackpack "OPTRE_MA5B";
-	for "_i" from 1 to 8 do {this addItemToBackpack "TCF_60Rnd_762x51_Mag_JHP";};
+	for "_i" from 1 to 8 do {player addItemToBackpack "TCF_60Rnd_762x51_Mag_JHP";};
 	player addItemToBackpack "TCF_12Rnd_8Gauge_Beanbag";
 };
 
@@ -365,7 +274,7 @@ switch (_getSelWeapon) do {
 	case "OPTRE_SRS99D": {player addWeapon "OPTRE_SRS99D"; player addPrimaryWeaponItem "OPTRE_SRS99_Scope"; player addPrimaryWeaponItem "OPTRE_4Rnd_145x114_APFSDS_Mag"; for "_i" from 1 to 12 do {player addItemToBackpack "OPTRE_4Rnd_145x114_APFSDS_Mag";};};
 	case "OPTRE_M73": {player addWeapon "OPTRE_M73"; player addPrimaryWeaponItem "OPTRE_200Rnd_95x40_Box"; for "_i" from 1 to 5 do {player addItemToBackpack "OPTRE_200Rnd_95x40_Box";};};
 	case "OPTRE_M319N": {player addWeapon "OPTRE_M319N"; player addPrimaryWeaponItem "3Rnd_HE_Grenade_shell"; for "_i" from 1 to 8 do {player addItemToBackpack "3Rnd_HE_Grenade_shell";}; for "_i" from 1 to 5 do {player addItemToBackpack "ACE_40mm_Flare_white";}; for "_i" from 1 to 5 do {player addItemToBackpack "ACE_HuntIR_M203";}; for "_i" from 1 to 6 do {player addItemToBackpack "OPTRE_1Rnd_Smoke_Grenade_shell";}; for "_i" from 1 to 4 do {player addItemToBackpack "OPTRE_1Rnd_SmokeRed_Grenade_shell";}; for "_i" from 1 to 4 do {player addItemToBackpack "OPTRE_1Rnd_SmokeBlue_Grenade_shell";}; for "_i" from 1 to 8 do {player addItemToBackpack "OPTRE_36Rnd_95x40_Mag_Tracer";}; };
-	case "OPTRE_M90A": {player addWeapon "OPTRE_M90A"; player addPrimaryWeaponItem "OPTRE_12Rnd_8Gauge_Slugs"; for "_i" from 1 to 2 do {this addItemToBackpack "OPTRE_12Rnd_8Gauge_Slugs";}; player addItemToBackpack "TCF_12Rnd_8Gauge_Beanbag"; };
+	case "OPTRE_M90A": {player addWeapon "OPTRE_M90A"; player addPrimaryWeaponItem "OPTRE_12Rnd_8Gauge_Slugs"; for "_i" from 1 to 2 do {player addItemToBackpack "OPTRE_12Rnd_8Gauge_Slugs";}; player addItemToBackpack "TCF_12Rnd_8Gauge_Beanbag"; };
 	default { };
 };
 

@@ -177,7 +177,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Beefus_Helmet: BDA_CH252D_Helmet {
-		displayName="CH252D Helmet (G. Beefus)";
+		displayName="CH252D Helmet (G. Beefe)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Beefus_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
@@ -581,100 +581,6 @@ class cfgWeapons {
 			{
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Zodiac_CO.paa",
 				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
-				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-			};
-		};
-	};
-	
-	class BDA_CH252D_Arturo_Helmet: BDA_CH252D_Helmet {
-		author="Rib";
-		displayName="CH252D Helmet (L. Arturo)";
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Arturo_CO.paa",
-			"BDA_Armor_Custom\BDA_Helmets\data\visors\BDA_Visor_Arturo_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelections[]=
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"H_Ghillie"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Arturo_CO.paa",
-				"BDA_Armor_Custom\BDA_Helmets\data\visors\BDA_Visor_Arturo_CO.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-			};
-		};
-	};
-	class BDA_CH252D_Arturo_Helmet_dp: BDA_CH252D_Helmet_dp {
-		author="Rib";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Arturo_CO.paa",
-			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-			hiddenSelections[]=
-			{
-				"camo",
-				"camo2",
-				"camo4",
-				"H_Ghillie"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Arturo_CO.paa",
-				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
-				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-			};
-		};
-	};
-
-	class BDA_VX19_Arturo_Helmet: BDA_VX19_Helmet {
-		author="Byrne";
-		displayName="VX19 Flight Helmet (L. Arturo)";
-		hiddenSelectionsTextures[]={
-			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Arturo_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
-		class ItemInfo: ItemInfo {
-			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
-			hiddenSelectionsTextures[]={
-				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Arturo_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-			};
-		};
-	};
-	class BDA_VX19_Arturo_Helmet_dp: BDA_VX19_Helmet_dp {
-		author="Byrne";
-		displayName="VX19 Flight Helmet (L. Arturo)";
-		hiddenSelectionsTextures[]={
-			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Arturo_CO.paa",
-			"",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
-		class ItemInfo: ItemInfo {
-			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
-			hiddenSelectionsTextures[]={
-				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Arturo_CO.paa",
-				"",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		};

@@ -424,7 +424,7 @@ class CfgVehicles {
 			};
 			class Thruster400Engage {
 				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 0) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND (((getPosATL this) select 2) > 1)";
 				displayName="<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer=0;
@@ -438,7 +438,7 @@ class CfgVehicles {
 			};
 			class Thruster400Disengage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 400) AND (player == driver this) AND (alive this)";
 				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer=0;
@@ -962,7 +962,7 @@ class CfgVehicles {
 			};
 			class Thruster400Engage {
 				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 0) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND (((getPosATL this) select 2) > 1)";
 				displayName="<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer=0;
@@ -976,7 +976,7 @@ class CfgVehicles {
 			};
 			class Thruster400Disengage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 400) AND (player == driver this) AND (alive this)";
 				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer=0;
@@ -1477,7 +1477,7 @@ class CfgVehicles {
 			};
 			class Thruster400Engage {
 				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 0) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND (((getPosATL this) select 2) > 1)";
 				displayName="<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer=0;
@@ -1491,7 +1491,7 @@ class CfgVehicles {
 			};
 			class Thruster400Disengage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 400) AND (player == driver this) AND (alive this)";
 				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer=0;

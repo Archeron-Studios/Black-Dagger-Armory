@@ -51,8 +51,8 @@ class CfgFunctions {
 			file = "\BDA_Vehicles\functions\AirVehThrust";
 			class thruster400Engage {};
 			class thruster400Disengage {};
-			class afterburners600Engage {};
-			class afterburners600Disengage {};
+			class boosters600Engage {};
+			class boosters600Disengage {};
 			class afterburners800Engage {};
 			class afterburners800Disengage {};
 			class airbrakeEngage {};

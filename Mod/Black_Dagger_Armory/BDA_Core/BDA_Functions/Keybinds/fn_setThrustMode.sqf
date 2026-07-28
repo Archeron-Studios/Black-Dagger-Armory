@@ -34,7 +34,7 @@ switch (_targetMode) do {
 	};
 	case 600: {
 		_vehicle setVariable ["BDA_ThrustMode", 600, true];
-		_vehicle spawn BDA_fnc_Afterburners600Engage;
+		_vehicle spawn BDA_fnc_Boosters600Engage;
 	};
 	case 800: {
 		_vehicle setVariable ["BDA_ThrustMode", 800, true];

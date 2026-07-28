@@ -6,7 +6,7 @@ if (isNil "CBA_fnc_addKeybind") exitWith {
 [
 	"Black Dagger",
 	"BDA_ThrustUp",
-	["Thrust Up", "Cycle thruster/afterburner speed up"],
+	["Thrust Up", "Cycle thrust stage up (Thrusters > Boosters > Afterburners)"],
 	{call BDA_fnc_thrustUp},
 	"",
 	[-1, [false, false, false]]
@@ -15,7 +15,7 @@ if (isNil "CBA_fnc_addKeybind") exitWith {
 [
 	"Black Dagger",
 	"BDA_ThrustDown",
-	["Thrust Down", "Cycle thruster/afterburner speed down"],
+	["Thrust Down", "Cycle thrust stage down (Afterburners > Boosters > Thrusters)"],
 	{call BDA_fnc_thrustDown},
 	"",
 	[-1, [false, false, false]]
@@ -24,7 +24,7 @@ if (isNil "CBA_fnc_addKeybind") exitWith {
 [
 	"Black Dagger",
 	"BDA_ThrustOff",
-	["Thrusters Off", "Disengage thrusters and afterburners"],
+	["Thrusters Off", "Disengage all thrust stages"],
 	{call BDA_fnc_thrustOff},
 	"",
 	[-1, [false, false, false]]

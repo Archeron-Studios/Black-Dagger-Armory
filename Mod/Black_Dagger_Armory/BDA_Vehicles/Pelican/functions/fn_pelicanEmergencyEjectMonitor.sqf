@@ -29,7 +29,8 @@ if (isNull _unit) exitWith {};
 
 		private _altASL = (getPosASL _unit) select 2;
 		private _falling = (velocity _unit) select 2 < -2;
-		private _safetyDeploy = (time - _launchTime) > 2;
+		// Backstop only: primary triggers are falling or low altitude
+		private _safetyDeploy = (time - _launchTime) > 6;
 
 		(time >= _minFlightTime) && {_safetyDeploy || _falling || {_altASL < 350}}
 	};

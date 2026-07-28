@@ -79,7 +79,7 @@ switch true do {
 };
 
 if (_loaded) then {
-	_spelican setVariable ["Splits_Pelican_AttachedToVehiclesEffect", [vehicle player], true];
+	_spelican setVariable ["Splits_Pelican_AttachedToVehiclesEffect", [_veh], true];
 	titleText ["-------------------------------------------<br/><t color='#ff0000' size='1.5'>VEHICLE LOADED!</t><br/>-------------------------------------------<br/>", "PLAIN DOWN", -1, true, true];
 	playSound "FD_Finish_F";
 } else {

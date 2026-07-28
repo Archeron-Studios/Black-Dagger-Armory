@@ -9,13 +9,13 @@ _spelican allowDamage false;
 
 {
 	detach _x;
-	_v = (velocity vehicle player);
+	_v = (velocity _spelican);
 	_x setVelocity [_v select 0, _v select 1, ((_v select 2) - 2)];
 	_x allowDamage false;
 	if (random 100 > 15) then {_x setCenterOfMass [[0,0,-2],10];};
 	_x addEventHandler ["HandleDamage",{
 		playSound3d ["A3\Sounds_F\sfx\missions\vehicle_collision.wss", (_this select 0),false, getPos (_this select 0), 0.5, 1, 300];
-		_spelican removeAllEventHandlers "HandleDamage";
+		(_this select 0) removeEventHandler ["HandleDamage", _thisEventHandler];
 	}];
 	sleep 0.5;
 } forEach _vehicles;

@@ -13,7 +13,7 @@ private _vicCount = {
 	!(["SupplyPod", (typeOf _x)] call BIS_fnc_inString);
 } count _vehicles;
 if (_vicCount isEqualTo 0) exitWith {
-	_pelican spawn Splits_fnc_PelicanLoad_UnloadAllSupplyPods;
+	_pelican spawn BDA_fnc_PelicanLoad_UnloadAllSupplyPods;
 };
 
 //Abort nonclears.

@@ -15,7 +15,7 @@ class CfgPatches
 			"BDA_Core"
 		};
 		units[]={};
-		weapons[]={"BDA_VX19_Helmet","BDA_CH252D_Helmet",};
+		weapons[]={"BDA_VX19_Helmet","BDA_CH252D_Helmet"};
 		magazines[]={};
 		ammo[]={};
 		requiredVersion=0.1;
@@ -41,7 +41,7 @@ class cfgWeapons {
 		scope=2;
 		author="Schlopp";
 		displayName="CH252D Helmet";
-		picture="\BDA_Armor\BDA_Helmets\data\icons\BDA_ODST_Helmet";
+		picture="\BDA_Armor\BDA_Helmets\data\icons\BDA_ODST_Helmet.paa";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -81,7 +81,7 @@ class cfgWeapons {
 		scopeCurator=1;
 		author="Rib";
 		displayName="CH252D Helmet";
-		picture="\BDA_Armor\BDA_Helmets\data\icons\BDA_ODST_Helmet";
+		picture="\BDA_Armor\BDA_Helmets\data\icons\BDA_ODST_Helmet.paa";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelections[]= {
 			"camo",
@@ -519,8 +519,7 @@ class cfgWeapons {
 			};
 			hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S7_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\
-				",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
@@ -684,14 +683,14 @@ class cfgWeapons {
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Pioneer_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Pioneer_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		};
 	};
 	class BDA_CH252D_Helmet_Pioneer_dp: BDA_CH252D_Helmet_dp {
-		displayName="CH252D Helmet (Instructor)";
+		displayName="CH252D Helmet (Pioneer)";
 		hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Pioneer_CO.paa",
@@ -711,55 +710,6 @@ class cfgWeapons {
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Pioneer_CO.paa",
-				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
-				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-			};
-		};
-	};
-	
-	class BDA_CH252D_Helmet_P3: BDA_CH252D_Helmet {
-		displayName="CH252D Helmet (3rdPLT)";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P3_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
-		class ItemInfo: ItemInfo {
-			hiddenSelections[]=
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"H_Ghillie"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P3_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-			};
-		};
-	};
-	class BDA_CH252D_Helmet_P3_dp: BDA_CH252D_Helmet_dp {
-		displayName="CH252D Helmet (3rdPLT)";
-		hiddenSelectionsTextures[]= {
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P3_CO.paa",
-				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
-				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-			};
-		class ItemInfo: ItemInfo {
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-			hiddenSelections[]= {
-				"camo",
-				"camo2",
-				"camo4",
-				"H_Ghillie"
-			};
-			hiddenSelectionsTextures[]= {
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_P3_CO.paa",
 				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
@@ -937,54 +887,54 @@ class cfgWeapons {
 
 	class BDA_ShipHat_Base: H_Cap_oli {
 		scope = 1;
-		scopeAuthor = 1;
+		scopeCurator = 1;
 		author = "Rib";
 	};
 	class BDA_ShipHat_AS: BDA_ShipHat_Base { //Cruiser (Halcyon)
 		scope = 2;
-		scopeAuthor = 2;
+		scopeCurator = 2;
 		displayName = "Cap [Arizona Sword]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_Ari.paa"};
 	};
 	class BDA_ShipHat_OC: BDA_ShipHat_Base { //Destroyer (Halberd)
 		scope = 2;
-		scopeAuthor = 2;
+		scopeCurator = 2;
 		displayName = "Cap [Occam's Chainsaw]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_OC.paa"};
 	};
 	class BDA_ShipHat_MQ: BDA_ShipHat_Base { //Destroyer (Halberd)
 		scope = 2;
-		scopeAuthor = 2;
+		scopeCurator = 2;
 		displayName = "Cap [Mississippi Queen]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_MQ.paa"};
 	};
 	class BDA_ShipHat_AC: BDA_ShipHat_Base { //Frigate (Paris)
 		scope = 2;
-		scopeAuthor = 2;
+		scopeCurator = 2;
 		displayName = "Cap [Alaskan Conquest]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_AC.paa"};
 	};
 	class BDA_ShipHat_BI: BDA_ShipHat_Base { //Frigate (Charon)
 		scope = 2;
-		scopeAuthor = 2;
+		scopeCurator = 2;
 		displayName = "Cap [Big Iron]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_BI.paa"};
 	};
 	class BDA_ShipHat_PAC: BDA_ShipHat_Base { //Destroyer (Halberd)
 		scope = 2;
-		scopeAuthor = 2;
+		scopeCurator = 2;
 		displayName = "Cap [Pomp and Circumstance]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_PAC.paa"};
 	};
 	class BDA_ShipHat_AITH: BDA_ShipHat_Base { //Frigate (Charon)
 		scope = 2;
-		scopeAuthor = 2;
+		scopeCurator = 2;
 		displayName = "Cap [Ace In The Hole]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_AITH.paa"};
 	};
 	class BDA_ShipHat_LDU: BDA_ShipHat_Base { //Frigate (Charon)
 		scope = 2;
-		scopeAuthor = 2;
+		scopeCurator = 2;
 		displayName = "Cap [Land Down Under]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_LDU.paa"};
 	};

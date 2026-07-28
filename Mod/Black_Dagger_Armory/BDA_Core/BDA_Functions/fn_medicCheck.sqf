@@ -19,11 +19,11 @@ this addAction ["<t color='#de1f1f'>[Debug]</t> Remove Engineer",  "call BDA_Rem
 // Mostly Using the default arma medic as a debug option and decent fucking variable (thanks ace yer shite)
 BDA_checkPermissions = {
 		//Checking all variables for given level
-		_med = player getVariable "ace_medical_medicclass";
+		_med = player getVariable ["ace_medical_medicclass", 0];
 		_medLevel = "None";
-		_eng = player getVariable "ace_engineer_engineerclass";
+		_eng = player getVariable ["ace_engineer_engineerclass", 0];
 		_engLevel = "None";
-		_eod = player getVariable "ace_isEOD";
+		_eod = player getVariable ["ace_isEOD", false];
 		_eodLevel = "None";
 
 		//Red - #ff0000
@@ -32,17 +32,17 @@ BDA_checkPermissions = {
 
 		switch (_med) do 
 		{
-			default {hint "None"};
 			case 0: {_medLevel = "None"};
 			case 1: {_medLevel = "Medic"};
 			case 2: {_medLevel = "Doctor"};
+			default {_medLevel = "None"};
 		};
 		switch (_eng) do 
 		{
-			default {hint "None"};
 			case 0: {_engLevel = "None"};
 			case 1: {_engLevel = "Engineer"};
 			case 2: {_engLevel = "Adv. Engineer"};
+			default {_engLevel = "None"};
 		};
 		if (_eod isEqualTo true) then {_eodLevel = "EOD"};
 		
@@ -89,7 +89,7 @@ BDA_RemoveDoctor = {
 BDA_GiveEngineer = {
 	player setUnitTrait ["explosiveSpecialist",true]; 
 	player setVariable ["ace_isEngineer", 2, true];
-	player setVariable ["ace_isEOD", true];
+	player setVariable ["ace_isEOD", true, true];
 	player setVariable ["ace_engineer_engineerclass", 2, true];
 	["You have now been assigned a Engineer!", "success", 2] call BDA_fnc_notify;
 };
@@ -97,7 +97,7 @@ BDA_GiveEngineer = {
 BDA_RemoveEngineer = {
 	player setUnitTrait ["explosiveSpecialist",false]; 
 	player setVariable ["ace_isEngineer", 0, true];
-	player setVariable ["ace_isEOD", false];
+	player setVariable ["ace_isEOD", false, true];
 	player setVariable ["ace_engineer_engineerclass", 0, true];
 	["You are no longer a Engineer!", "error", 2] call BDA_fnc_notify;
 };

@@ -26,7 +26,6 @@ class CfgPatches {
 			"BDA_Rucksack_B_Super_Heavy",
 			"BDA_Rucksack_B_SL",
 			"BDA_COMM_Uplink_Module",
-			"BDA_Rucksack_B_TEST",
 			"BDA_Naval_Belt_R",
 			"BDA_Naval_Pilot_Harness"
 		};
@@ -303,7 +302,7 @@ class CfgVehicles {
 		picture = "\A3\Supplies_F_Orange\Bags\Data\UI\icon_C_IDAP_UAV_ca";
 		model = "\A3\Drones_F\Weapons_F_Gamma\Ammoboxes\Bags\UAV_backpack_F.p3d";
 		hiddenSelectionTextures[]={
-			"BDA_Armor\BDA_Accessories\data\BDA_UAV_Bacpack_CO.paa"
+			"BDA_Armor\BDA_Accessories\data\BDA_UAV_Backpack_CO.paa"
 		};
 		class assembleInfo: assembleInfo {
 			base = "";

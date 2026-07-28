@@ -49,7 +49,7 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
 		class ItemInfo: ItemInfo {
 			hiddenSelections[]= {
@@ -552,7 +552,7 @@ class cfgWeapons {
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Armor_Griffin_CO.paa",
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Griffin_CO.paa",
 				"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Griffin_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Griffin_CO.paa"
@@ -1048,17 +1048,6 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
 	};
-	class BDA_Armor_Beavers: BDA_Armor_MD {
-		author = "Griffin";
-		displayName = "M52D Body Armor (J. Beavers)";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_S7_Medic_CO.paa",
-			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Beavers_CO.paa"
-		};
-	};
 	class BDA_Armor_Frost: BDA_Armor_MD {
 		author = "Rib";
 		displayName = "M52D Body Armor (B. Frost)";
@@ -1090,6 +1079,17 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Legion_CO.paa"
+		};
+	};
+	class BDA_Armor_Ant: BDA_Armor_RF {
+		author = "Rib";
+		displayName = "M52D Body Armor (F. Ant)";
+		hiddenSelectionsTextures[] = {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_S4_Medic_CO",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Ant_CO.paa"
 		};
 	};
 	class BDA_Armor_Burgs: BDA_Armor_RF {

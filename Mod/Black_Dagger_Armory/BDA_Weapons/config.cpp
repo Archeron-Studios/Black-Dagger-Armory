@@ -188,8 +188,8 @@ class cfgMagazineWells {
 
 	class BDA_Magwell_M73: OPTRE_Magwell_M73 {
 		BDA_95x40_400Rnd[]={
-			"BDA_95x40_Box_400rnd_Box",
-			"BDA_95x40_Box_400rnd_Box_Tracer"
+			"BDA_95x40_400rnd_Box",
+			"BDA_95x40_400rnd_Box_Tracer"
 		};
 	};
 	

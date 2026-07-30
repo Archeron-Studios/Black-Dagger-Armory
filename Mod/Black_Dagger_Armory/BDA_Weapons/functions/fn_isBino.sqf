@@ -1,8 +1,6 @@
 /*
-File : fn_advMark.sqf
-Author: Wallace
-Sub Author: Rib
-Description: This script checks if the player is in binos
+File : fn_isBino.sqf
+Description: Gate for foot marker placement — BDA Smartfinder only.
 */
-if ((currentWeapon player == "BDA_Smartfinder")) exitWith {true};
-false
+
+[] call BDA_fnc_isSmartfinder

@@ -44,7 +44,6 @@ class CfgFunctions {
 		class Vehicles {
 			file = "\BDA_Vehicles\functions";
 			class vehSpawner {};
-			class advMark {};
 			class chgTex {};
 		};
 		class AirVehThrust {

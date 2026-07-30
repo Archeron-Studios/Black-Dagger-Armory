@@ -453,6 +453,7 @@ class CfgVehicles {
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
+			#include "\BDA_Weapons\cfg\BDA_VehiclePlaceMarker.hpp"
             class vehCamo {
                 displayName = "Change Camo";
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
@@ -991,6 +992,7 @@ class CfgVehicles {
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
+			#include "\BDA_Weapons\cfg\BDA_VehiclePlaceMarker.hpp"
             class vehCamo {
                 displayName = "Change Camo";
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
@@ -1506,6 +1508,7 @@ class CfgVehicles {
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
+			#include "\BDA_Weapons\cfg\BDA_VehiclePlaceMarker.hpp"
             class vehCamo {
                 displayName = "Change Camo";
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";

@@ -104,6 +104,11 @@ class CfgMarkers {
 		icon="\BDA_Core\BDA_UI\markers\MapMarkers\mech.paa";
 		name="Mechanized";
 	};
+	class BDA_motor_Marker: BDA_Dot_Marker
+	{
+		icon="\BDA_Core\BDA_UI\markers\MapMarkers\motor.paa";
+		name="Motorized";
+	};
 	class BDA_mort_Marker: BDA_Dot_Marker
 	{
 		icon="\BDA_Core\BDA_UI\markers\MapMarkers\mortar.paa";

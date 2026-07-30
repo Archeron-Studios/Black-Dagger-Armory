@@ -1,20 +1,19 @@
-lzNames = ["Alpha","Bravo","Charlie","Delta","Echo","Foxtrot","Gamma","Hotel","India","Juliet","Kilo","Lima","Mike","November","Oscar","Papa","Quebec","Romeo","Sierra","Tango","Uniform","Victor","Xray","Yankee","Zulu"];
+private _lzNames = ["Alpha","Bravo","Charlie","Delta","Echo","Foxtrot","Gamma","Hotel","India","Juliet","Kilo","Lima","Mike","November","Oscar","Papa","Quebec","Romeo","Sierra","Tango","Uniform","Victor","Xray","Yankee","Zulu"];
 
 hint "placing marker";
 
-_seed = round(random 1e6); 
-_var = "_USER_DEFINED_" + format["%1",_seed];
-_LZSelect = selectRandom lzNames;
-_LZSelect2 = selectRandom lzNames;
-_LZConc = format["%1-%2",_LZSelect,_LZSelect2];
-_wPos = screenToWorld [0.5,0.5];
-_gridRef = mapGridPosition _wPos;
-_setSide = setCurrentChannel 0;
-_channelSay = currentChannel;
+private _seed = round(random 1e6);
+private _var = "_USER_DEFINED_" + format ["%1", _seed];
+private _lzSelect = selectRandom _lzNames;
+private _lzSelect2 = selectRandom _lzNames;
+private _lzConc = format ["%1-%2", _lzSelect, _lzSelect2];
+private _wPos = call BDA_fnc_getMarkPosition;
 
-_mrkStr = createMarker [_var, _wPos, _channelSay, player];
-_mrkStr setMarkerColor "ColorBlufor";
-_mrkStr setMarkerText format["LZ: %1",_LZConc];
-_mrkStr setMarkerType "BDA_lz_Marker";
-_gridPos = mapGridPosition getMarkerPos _mrkStr;
-systemChat format["Marked LZ %2 at %1",_gridPos,_LZConc];
+setCurrentChannel 0;
+private _channelSay = currentChannel;
+
+private _markerText = format ["LZ: %1", _lzConc];
+[_var, _wPos, _channelSay, player, "ColorBlufor", "BDA_lz_Marker", _markerText] call BDA_fnc_placeMarker;
+
+private _gridPos = mapGridPosition _wPos;
+systemChat format ["Marked LZ %2 at %1", _gridPos, _lzConc];

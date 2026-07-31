@@ -10905,11 +10905,11 @@ class CfgVehicles {
 						UIposition[]={0.22,0.2};
 					};
 					class pylons3: pylons1 {
-						mirroredMissilePos=1;
+						mirroredMissilePos=2;
 						UIposition[]={0.42,0.2};
 					};
 					class pylons4: pylons1 {
-						mirroredMissilePos=1;
+						mirroredMissilePos=3;
 						UIposition[]={0.54,0.2};
 					};
 				};
@@ -10924,7 +10924,7 @@ class CfgVehicles {
 							"OPTRE_32Rnd_Anvil3_missiles",
 							"OPTRE_8rnd_C2GMLS_missiles",
 							"OPTRE_8rnd_C2GMLS_missiles",
-							"OPTRE_8rnd_C2GMLS_missiles",
+							"OPTRE_32Rnd_Anvil3_missiles",
 						};
 					};
 					class CAS_AT {

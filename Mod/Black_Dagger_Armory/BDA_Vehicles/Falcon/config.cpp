@@ -109,6 +109,7 @@ class CfgVehicles {
 		scopeCurator = 2;
 		side = 1;
 		faction = "B_BDCUNSC";
+		editorSubcategory = "BDA_ESC_Air";
 		displayName = "UH-145A Falcon";
 		crew = "B_BDA_Pilot";
 		armor = 350;
@@ -625,6 +626,7 @@ class CfgVehicles {
 		displayName = "MH-145 Falcon";
 		side = 1;
 		faction = "B_BDCUNSC";
+		editorSubcategory = "BDA_ESC_Air";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Falcon.jpg";
 		crew = "B_BDA_Pilot";
 		armor = 450;
@@ -1164,6 +1166,7 @@ class CfgVehicles {
 		displayName = "UH-145S Falcon";
 		side = 1;
 		faction = "B_BDCUNSC";
+		editorSubcategory = "BDA_ESC_Air";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Falcon.jpg";
 		crew = "B_BDA_Pilot";
 		armor = 250;

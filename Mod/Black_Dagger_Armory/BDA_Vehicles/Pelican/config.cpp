@@ -132,6 +132,7 @@ class CfgVehicles {
 		dlc="BDA";
 		author = "Rib";
 		faction = "B_BDCUNSC";
+		editorSubcategory = "BDA_ESC_Air";
 		displayName = "D77-TC Pelican";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_D77_TC_Pelican.jpg";
 		crew = "B_BDA_Pilot";
@@ -5798,6 +5799,7 @@ class CfgVehicles {
 		dlc="BDA";
 		author = "Rib";
 		faction = "B_BDCUNSC";
+		editorSubcategory = "BDA_ESC_Air";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_D77_TC_Pelican.jpg";
 		displayName = "D77-TC Pelican (Single)";
 		memoryPointDriverOptics= "PIP2_pos";

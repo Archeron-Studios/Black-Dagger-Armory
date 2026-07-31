@@ -27,7 +27,19 @@ class CfgPatches {
             "B_BDA_Crewman",
             "B_BDA_Rib",
             "B_BDA_Teamleader",
-            "B_BDA_RTO"
+            "B_BDA_RTO",
+            "BDA_UNSC_D77_TC_Pelican",
+            "BDA_UNSC_D77_TC_Pelican_Single",
+            "BDA_UNSC_Hornet",
+            "BDA_UNSC_Hornet_Lite",
+            "BDA_UNSC_Hornet_VTOL",
+            "BDA_UNSC_UH145A_Falcon2",
+            "BDA_UNSC_MH145_Falcon",
+            "BDA_UNSC_UH145S_Falcon",
+            "BDA_AV22_Sparrowhawk",
+            "BDA_Egret_Spaceliner_Static_F",
+            "BDA_Egret_Spaceliner_F",
+            "BDA_Frigate"
         };
         weapons[] = {};
         requiredVersion = 1.62;

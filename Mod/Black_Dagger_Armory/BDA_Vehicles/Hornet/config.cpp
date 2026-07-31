@@ -138,6 +138,7 @@ class CfgVehicles {
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		side = 1;
+		editorSubcategory = "BDA_ESC_Air";
 		displayName = "AV-15 Heavy Hornet";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.jpg";
 		crew = "B_BDA_Pilot";
@@ -547,6 +548,7 @@ class CfgVehicles {
 		author = "Rib";
 		faction = "B_BDCUNSC";
 		side = 1;
+		editorSubcategory = "BDA_ESC_Air";
 		displayName = "AV-15 Hornet Stealth";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.jpg";
 		crew = "B_BDA_Pilot";
@@ -998,6 +1000,7 @@ class CfgVehicles {
 		author = "Rib";
 		faction = "B_BDCUNSC";
 		side = 1;
+		editorSubcategory = "BDA_ESC_Air";
 		displayName = "AV-15 Hornet VTOL";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.jpg";
 		model="\OPTRE_Vehicles_Air\Hornet\hornet.p3d";

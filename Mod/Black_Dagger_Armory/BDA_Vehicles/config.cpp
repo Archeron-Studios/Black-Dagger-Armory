@@ -19,6 +19,7 @@ class CfgPatches {
 			"A3_Air_F_Beta",
 			"A3_Weapons_F",
 			"A3_Drones_F",
+			"A3_Data_F_Curator",
 			"OPTRE_Core",
 			"BDA_Core",
 			"B_BDCUNSC",

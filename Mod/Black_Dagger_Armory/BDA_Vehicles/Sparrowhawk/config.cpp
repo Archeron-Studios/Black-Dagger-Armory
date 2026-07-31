@@ -121,6 +121,7 @@ class CfgVehicles {
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		side = 1;
+		editorSubcategory = "BDA_ESC_Air";
         displayName = "AV-22C Sparrowhawk";
         crew = "B_BDA_Pilot";
 		BDA_ThrustModes[] = {400, 600, 800};

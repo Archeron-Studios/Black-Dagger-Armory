@@ -34,7 +34,9 @@ class cfgVehicles
 	{
 		author="Schlopp";
 		scope=2;
-		editorCategory="BDA_EC_BlackDagger";
+		scopeCurator=2;
+		side=1;
+		faction="B_BDCUNSC";
 		editorSubcategory="BDA_ESC_AerospaceShip";
 		armor=500000;
 		displayname="Egret Spaceliner";
@@ -53,6 +55,7 @@ class cfgVehicles
 	{
 		author="Schlopp";
 		scope=2;
+		scopeCurator=2;
 		armor=200000;
 		side=1;
 		faction="B_BDCUNSC";

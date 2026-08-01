@@ -15,7 +15,7 @@ if (isNil "CBA_fnc_addKeybind") exitWith {
 [
 	"Black Dagger",
 	"BDA_ThrustDown",
-	["Thrust Down", "Cycle thrust stage down (Afterburners > Boosters > Thrusters)"],
+	["Thrust Down", "Disengage one thrust stage down (Afterburners > Boosters > Thrusters > Off)"],
 	{call BDA_fnc_thrustDown},
 	"",
 	[-1, [false, false, false]]

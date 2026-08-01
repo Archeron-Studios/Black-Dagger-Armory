@@ -41,10 +41,6 @@ class CfgFunctions {
 			class openLoadouts {};
 			class loadLoadout {};
 			class updateLoadLB {};
-			class getScopes {};
-		};
-		class BDA_Transf {
-			file = "\BDA_Core\BDA_Functions\transf_scipts";
 		};
 		class BDA_Keybinds {
 			file = "\BDA_Core\BDA_Functions\Keybinds";

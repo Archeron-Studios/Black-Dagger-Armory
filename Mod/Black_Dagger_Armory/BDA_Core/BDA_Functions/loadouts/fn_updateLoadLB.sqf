@@ -1,5 +1,8 @@
-_getIndex = lbCurSel 42001;
-_getSel = lbData [42001, _getIndex];
+private _getIndex = lbCurSel 42001;
+if (_getIndex < 0) exitWith {};
+
+private _getSel = lbData [42001, _getIndex];
+if (_getSel isEqualTo "") exitWith {};
 
 ctrlShow [42004, false];
 ctrlShow [42003, false];
@@ -20,27 +23,26 @@ switch (_getSel) do {
 
 lbClear 42002;
 
-switch (_getSel) do {
-	case "BDA_Rifleman": { allowedWeapons = ["OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"]; };
-	case "BDA_AutoRifleman": { allowedWeapons = ["OPTRE_M73", "OPTRE_M247"]; };
-	case "BDA_Sniper": { allowedWeapons = ["OPTRE_SRS99D","OPTRE_M392_DMR"]; };
-	case "BDA_EOD": { allowedWeapons = ["OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"]; };
-	case "BDA_Demolitions": { allowedWeapons = ["OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"]; };
-	case "BDA_Grenadier": { allowedWeapons = ["OPTRE_MA5BGL","OPTRE_M319N","OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"]; };
-	case "BDA_RktJky": { allowedWeapons = ["OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"]; };
-	case "BDA_Breacher": { allowedWeapons = ["OPTRE_M90A","OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"]; };
-	default { allowedWeapons = ["OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"]; };
-};  //OPTRE_MA5BGL
+private _allowedWeapons = switch (_getSel) do {
+	case "BDA_Rifleman": { ["OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"] };
+	case "BDA_AutoRifleman": { ["OPTRE_M73", "OPTRE_M247"] };
+	case "BDA_Sniper": { ["OPTRE_SRS99D", "OPTRE_M392_DMR"] };
+	case "BDA_EOD": { ["OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"] };
+	case "BDA_Demolitions": { ["OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"] };
+	case "BDA_Grenadier": { ["OPTRE_MA5BGL", "OPTRE_M319N", "OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"] };
+	case "BDA_RktJky": { ["OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"] };
+	case "BDA_Breacher": { ["OPTRE_M90A", "OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"] };
+	default { ["OPTRE_MA5B", "OPTRE_BR55HB_Grey", "OPTRE_M392_DMR", "OPTRE_M45", "OPTRE_M7"] };
+};
 
 {
-	// Current result is saved in variable _x
-
-	_getRealName = getText(configFile >> "CfgWeapons" >> _x >> "displayname");
-	_getIcon = getText(configFile >> "CfgWeapons" >> _x >> "picture");
+	private _getRealName = getText(configFile >> "CfgWeapons" >> _x >> "displayname");
+	private _getIcon = getText(configFile >> "CfgWeapons" >> _x >> "picture");
 
 	lbAdd [42002, _getRealName];
 	lbSetData [42002, lbSize 42002 - 1, _x];
 	lbSetPicture[42002, lbSize 42002 - 1, _getIcon];
 	lbSetPictureColor[42002, lbSize 42002 - 1, [1,1,1,1]];
-} forEach allowedWeapons;
+} forEach _allowedWeapons;
+
 lbSetCurSel [42002, 0];

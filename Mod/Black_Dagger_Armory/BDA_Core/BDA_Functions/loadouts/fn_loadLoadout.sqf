@@ -1,15 +1,22 @@
-_getIndex = lbCurSel 42001;
-_getSel = lbData [42001, _getIndex]; 
+private _getIndex = lbCurSel 42001;
+private _getWeaponIndex = lbCurSel 42002;
+private _getLauncherIndex = lbCurSel 42003;
+private _getUniIndex = lbCurSel 42006;
 
-_getWeaponIndex = lbCurSel 42002;
-_getSelWeapon = lbData [42002, _getWeaponIndex]; 
+if (_getIndex < 0) exitWith { hint "Select a loadout kit." };
+if (_getWeaponIndex < 0) exitWith { hint "Select a primary weapon." };
+if (_getLauncherIndex < 0) exitWith { hint "Select a launcher option." };
+if (_getUniIndex < 0) exitWith { hint "Select a squad assignment." };
 
-_getLauncherIndex = lbCurSel 42003;
-_getSelLauncher = lbData [42003, _getLauncherIndex]; 
+private _getSel = lbData [42001, _getIndex];
+private _getSelWeapon = lbData [42002, _getWeaponIndex];
+private _getSelLauncher = lbData [42003, _getLauncherIndex];
+private _getSelUni = lbData [42006, _getUniIndex];
 
-_getUniIndex = lbCurSel 42006;
-_getSelUni = lbData [42006, _getUniIndex]; 
-
+if (_getSel isEqualTo "") exitWith { hint "Invalid loadout selection." };
+if (_getSelWeapon isEqualTo "") exitWith { hint "Invalid weapon selection." };
+if (_getSelLauncher isEqualTo "") exitWith { hint "Invalid launcher selection." };
+if (_getSelUni isEqualTo "") exitWith { hint "Invalid squad selection." };
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;

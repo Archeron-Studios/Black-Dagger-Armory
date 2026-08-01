@@ -49,6 +49,9 @@ class CfgFunctions {
 		};
 		class AirVehThrust {
 			file = "\BDA_Vehicles\functions\AirVehThrust";
+			class stopThrustScript {};
+			class spawnThrustScript {};
+			class thrustDisengage {};
 			class thruster400Engage {};
 			class thruster400Disengage {};
 			class boosters600Engage {};

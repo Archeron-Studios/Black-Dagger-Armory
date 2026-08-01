@@ -18,6 +18,10 @@ if (isNull _target) then {
 	_target = call BDA_fnc_resolveSpottedTarget;
 };
 
+if (isNull _target) exitWith {
+	hint "No target spotted — aim at a threat and try again.";
+};
+
 private _wPos = [_target] call BDA_fnc_getSpottedPosition;
 private _seed = round(random 1e6);
 private _var = "_USER_DEFINED_" + format ["%1", _seed];

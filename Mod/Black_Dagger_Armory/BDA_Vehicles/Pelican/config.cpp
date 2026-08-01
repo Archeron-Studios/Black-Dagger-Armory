@@ -322,7 +322,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_FullAirbrakeEngage";
+				statement="[this, BDA_fnc_FullAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
 				userActionID=90;
 			};
@@ -336,7 +336,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_HalfAirbrakeEngage";
+				statement="[this, BDA_fnc_HalfAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#F28D00'>Engage Airbrakes (Half)";
 				userActionID=91;
 			};
@@ -350,7 +350,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Engage";
+				statement="[this, BDA_fnc_Thruster400Engage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
 				userActionID=92;
 			};
@@ -364,7 +364,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Disengage";
+				statement="[this, BDA_fnc_Thruster400Disengage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
 				userActionID=93;
 			};
@@ -378,7 +378,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Boosters600Engage";
+				statement="[this, BDA_fnc_Boosters600Engage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#04B45F'>Engage Boosters";
 				userActionID=94;
 			};
@@ -392,7 +392,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Boosters600Disengage";
+				statement="[this, BDA_fnc_Boosters600Disengage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FCE205'>Disengage Boosters";
 				userActionID=95;
 			};
@@ -6147,7 +6147,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_FullAirbrakeEngage";
+				statement="[this, BDA_fnc_FullAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
 				userActionID=90;
 			};
@@ -6161,7 +6161,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_HalfAirbrakeEngage";
+				statement="[this, BDA_fnc_HalfAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#F28D00'>Engage Airbrakes (Half)";
 				userActionID=91;
 			};
@@ -6175,7 +6175,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Engage";
+				statement="[this, BDA_fnc_Thruster400Engage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
 				userActionID=92;
 			};
@@ -6189,7 +6189,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Disengage";
+				statement="[this, BDA_fnc_Thruster400Disengage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
 				userActionID=93;
 			};

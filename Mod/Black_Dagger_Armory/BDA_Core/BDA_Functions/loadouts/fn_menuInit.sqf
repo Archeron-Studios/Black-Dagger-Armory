@@ -24,18 +24,18 @@ lbSetCurSel [42001, 0];
 
 // ------------------------------------- Getting all Launcher
 
-lbClear 42003;
+lbClear 42004;
 
 private _allowedLaunch = ["NO LAUNCHER", "OPTRE_M41_SSR"];
 
 {
 	private _getRealName = getText(configFile >> "CfgWeapons" >> _x >> "displayname");
 
-	lbAdd [42003, _getRealName];
-	lbSetData [42003, lbSize 42003 - 1, _x];
+	lbAdd [42004, _getRealName];
+	lbSetData [42004, lbSize 42004 - 1, _x];
 } forEach _allowedLaunch;
 
-lbSetCurSel [42003, 0];
+lbSetCurSel [42004, 0];
 
 // ------------------------------------- Getting all Squads
 

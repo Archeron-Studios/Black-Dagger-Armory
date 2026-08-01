@@ -14,7 +14,7 @@ switch (_getSel) do {
 	case "BDA_EOD": { ctrlSetText [42005, "BDA_Core\BDA_Functions\loadouts\data\demo.paa"]; };
 	case "BDA_Demolitions": { ctrlSetText [42005, "BDA_Core\BDA_Functions\loadouts\data\demo.paa"]; };
 	case "BDA_Grenadier": { ctrlSetText [42005, "BDA_Core\BDA_Functions\loadouts\data\gren.paa"]; };
-	case "BDA_RktJky": { ctrlSetText [42005, "BDA_Core\BDA_Functions\loadouts\data\RkyJky.paa"]; ctrlShow [42003, true]; };
+	case "BDA_RktJky": { ctrlSetText [42005, "BDA_Core\BDA_Functions\loadouts\data\RkyJky.paa"]; ctrlShow [42004, true]; };
 	case "BDA_Breacher": { ctrlSetText [42005, "BDA_Core\BDA_Functions\loadouts\data\sniper.paa"]; };
 	default { };
 };

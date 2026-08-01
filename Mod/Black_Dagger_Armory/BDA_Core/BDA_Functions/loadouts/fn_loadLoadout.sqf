@@ -1,6 +1,6 @@
 private _getIndex = lbCurSel 42001;
 private _getWeaponIndex = lbCurSel 42002;
-private _getLauncherIndex = lbCurSel 42003;
+private _getLauncherIndex = lbCurSel 42004;
 private _getUniIndex = lbCurSel 42006;
 
 if (_getIndex < 0) exitWith { hint "Select a loadout kit." };
@@ -10,7 +10,7 @@ if (_getUniIndex < 0) exitWith { hint "Select a squad assignment." };
 
 private _getSel = lbData [42001, _getIndex];
 private _getSelWeapon = lbData [42002, _getWeaponIndex];
-private _getSelLauncher = lbData [42003, _getLauncherIndex];
+private _getSelLauncher = lbData [42004, _getLauncherIndex];
 private _getSelUni = lbData [42006, _getUniIndex];
 
 if (_getSel isEqualTo "") exitWith { hint "Invalid loadout selection." };

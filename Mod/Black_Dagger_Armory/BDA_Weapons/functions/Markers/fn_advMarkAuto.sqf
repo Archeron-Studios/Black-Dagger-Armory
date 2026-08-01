@@ -12,6 +12,10 @@ if (isNull _target) then {
 	_target = call BDA_fnc_resolveSpottedTarget;
 };
 
+if (isNull _target) exitWith {
+	hint "No target spotted — aim at a threat and try again.";
+};
+
 private _threatType = [_target] call BDA_fnc_classifySpottedTarget;
 
 if (_threatType isEqualTo "") then {

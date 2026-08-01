@@ -1,4 +1,6 @@
-params ["_vehicle", "_targetMode"];
+params ["_vehicle", "_targetMode", ["_forceOff", false]];
+
+private _thrustCooldown = 0.6;
 
 if (!alive _vehicle) exitWith {};
 if (player != driver _vehicle) exitWith {};
@@ -13,33 +15,61 @@ if (_targetMode != 0 && !(_targetMode in _modes)) exitWith {};
 if (_targetMode != 0 && {!isEngineOn _vehicle}) exitWith {};
 if (_targetMode != 0 && {_current == 0} && {((getPosATL _vehicle) select 2) <= 1}) exitWith {};
 
+private _downgrade = !_forceOff && {_targetMode < _current || {_targetMode == 0 && _current > 0}};
+
+[_vehicle] call BDA_fnc_stopThrustScript;
 _vehicle setVariable ["BDA_ThrustChanging", true, false];
 
 _vehicle setVariable ["OPTRE_Thruster_EngagedStatus", false, true];
 _vehicle setVariable ["OPTRE_Afterburners_EngagedStatus", false, true];
-sleep 0.6;
+sleep 0.4;
 
 if (!alive _vehicle || {player != driver _vehicle}) exitWith {
 	_vehicle setVariable ["BDA_ThrustChanging", false, false];
 };
 
-switch (_targetMode) do {
-	case 0: {
+if (_forceOff && _targetMode == 0) then {
+	if (_current > 0
+		|| {_vehicle getVariable ["OPTRE_Thruster_EngagedStatus", false]}
+		|| {_vehicle getVariable ["OPTRE_Afterburners_EngagedStatus", false]}
+	) then {
+		[_vehicle, BDA_fnc_thrustDisengage] call BDA_fnc_spawnThrustScript;
+	} else {
 		_vehicle setVariable ["BDA_ThrustMode", 0, true];
 		hint "THRUSTERS OFF";
 	};
-	case 400: {
-		_vehicle setVariable ["BDA_ThrustMode", 400, true];
-		_vehicle spawn BDA_fnc_Thruster400Engage;
-	};
-	case 600: {
-		_vehicle setVariable ["BDA_ThrustMode", 600, true];
-		_vehicle spawn BDA_fnc_Boosters600Engage;
-	};
-	case 800: {
-		_vehicle setVariable ["BDA_ThrustMode", 800, true];
-		_vehicle spawn BDA_fnc_Afterburners800Engage;
+} else {
+	if (_downgrade) then {
+		switch (_current) do {
+			case 800: { [_vehicle, BDA_fnc_Afterburners800Disengage] call BDA_fnc_spawnThrustScript; };
+			case 600: { [_vehicle, BDA_fnc_Boosters600Disengage] call BDA_fnc_spawnThrustScript; };
+			case 400: { [_vehicle, BDA_fnc_thrustDisengage] call BDA_fnc_spawnThrustScript; };
+			default {
+				_vehicle setVariable ["BDA_ThrustMode", 0, true];
+				hint "THRUSTERS OFF";
+			};
+		};
+	} else {
+		switch (_targetMode) do {
+			case 0: {
+				_vehicle setVariable ["BDA_ThrustMode", 0, true];
+				hint "THRUSTERS OFF";
+			};
+			case 400: {
+				_vehicle setVariable ["BDA_ThrustMode", 400, true];
+				[_vehicle, BDA_fnc_Thruster400Engage] call BDA_fnc_spawnThrustScript;
+			};
+			case 600: {
+				_vehicle setVariable ["BDA_ThrustMode", 600, true];
+				[_vehicle, BDA_fnc_Boosters600Engage] call BDA_fnc_spawnThrustScript;
+			};
+			case 800: {
+				_vehicle setVariable ["BDA_ThrustMode", 800, true];
+				[_vehicle, BDA_fnc_Afterburners800Engage] call BDA_fnc_spawnThrustScript;
+			};
+		};
 	};
 };
 
+sleep _thrustCooldown;
 _vehicle setVariable ["BDA_ThrustChanging", false, false];

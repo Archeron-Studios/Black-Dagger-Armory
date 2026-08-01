@@ -10,5 +10,5 @@ if ((_vehicle getVariable ["BDA_ThrustMode", 0]) == 0
 	&& {!(_vehicle getVariable ["OPTRE_Afterburners_EngagedStatus", false])}
 ) exitWith {false};
 
-[_vehicle, 0] spawn BDA_fnc_setThrustMode;
+[_vehicle, 0, true] spawn BDA_fnc_setThrustMode;
 true

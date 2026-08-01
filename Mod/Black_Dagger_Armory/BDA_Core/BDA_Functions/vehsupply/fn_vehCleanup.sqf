@@ -1,14 +1,18 @@
 //
-//		Name: BDA_fn_vehCleanup.sqf
-//		Author: Wallace & Rib
-//		Description: does logistics for pilots without the necessity for vehicles (ammo, fuel, repairs etc).
-//                                                                                                                                                                                          
-//      Exmaple1: this addAction ["Cleanup Vehicles", call BDA_fnc_vehCleanup];    
+// Standalone cleanup — deletes the single closest vehicle to the pad marker.
 
-_marker = _this select 0;
-_markerLoc = getPosATL marker;
+params [["_marker", "", [""]]];
 
-BDA_Cleanup = {
-    _veh = { deleteVehicle _x; } forEach nearestObjects [_marker, ["Air","Car","Tank","Plane","Ship"],150] select 0;
-    systemChat format ["Removed Closest Vehicle..."];
+if (_marker isEqualTo "") exitWith {
+	diag_log "[BDA] vehCleanup requires a marker name.";
 };
+
+private _pos = getMarkerPos _marker;
+private _near = nearestObjects [_pos, ["Air", "Car", "Tank", "Plane", "Ship"], 150];
+
+if (_near isEqualTo []) exitWith {
+	systemChat "No vehicle nearby to remove.";
+};
+
+deleteVehicle (_near select 0);
+systemChat "Removed closest vehicle.";

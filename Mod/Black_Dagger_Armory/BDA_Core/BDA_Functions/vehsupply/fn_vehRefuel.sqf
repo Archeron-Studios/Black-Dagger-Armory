@@ -1,11 +1,20 @@
 //
-//		Name: BDA_fn_vehSupply.sqf
-//		Author: Wallace & Rib
-//		Description: does logistics for pilots without the necessity for vehicles (ammo, fuel, repairs etc).
-//                                                                                                                                                                                          
-//      Example3: call BDA_fnc_Rearm/Refuel/Repair;
-//      Example2: this addAction ["Refuel Vehicle", call BDA_fnc_VehRefuel];
+// Standalone refuel action — finds nearest vehicle to the player.
 
-BDA_VehRefuel = {
-    _veh = nearestObjects [player, ["Air","Car","Tank","Plane","Ship"], 50] select 0; ["Refueling...", 15, {!isEngineOn veh;}, {hint "Refueling Complete";veh setFuel 1;}, {hint "Refueling Aborted";}] call CBA_fnc_progressBar;
+private _veh = nearestObjects [player, ["Air", "Car", "Tank", "Plane", "Ship"], 50] select 0;
+if (isNull _veh) exitWith {
+	hint "No vehicle nearby.";
 };
+
+[
+	"Refueling...",
+	15,
+	{ !isEngineOn (_this select 0) },
+	{
+		params ["_veh"];
+		hint "Refueling complete";
+		_veh setFuel 1;
+	},
+	{ hint "Refueling aborted." },
+	[_veh]
+] call CBA_fnc_progressBar;

@@ -44,7 +44,7 @@ sleep 3.4;
 			];
 			
 			//Wait until we hit max deploy altitude.
-			waitUntil {(getPos _payload) select 2 < _chuteDeployMaximumAlt;};
+			waitUntil { (getPos _payload) select 2 < _chuteDeployMaximumAlt };
 			
 			//Make and attach the chute.
 			_chute = createVehicle ["O_Parachute_02_F", _payload modelToWorld [0,0,0], [], 0, "CAN_COLLIDE"];

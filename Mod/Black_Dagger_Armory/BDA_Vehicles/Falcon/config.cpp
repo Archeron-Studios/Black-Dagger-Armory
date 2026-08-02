@@ -54,7 +54,7 @@ class CfgVehicles {
 		class ACE_Actions;
 		class ACE_SelfActions;
 	};
-    class Helicopter_Base_F: Helicopter {
+	class Helicopter_Base_F: Helicopter {
 		class Turrets;
 		class HitPoints;
 		class ViewPilot;
@@ -104,17 +104,19 @@ class CfgVehicles {
     class BDA_UNSC_UH145A_Falcon2: OPTRE_UNSC_falcon_S {
 		dlc = "BDA";
 		author = "Rib";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_UH145A_Falcon2.jpg";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Falcon.jpg";
 		scope = 2;
 		scopeCurator = 2;
 		side = 1;
 		faction = "B_BDCUNSC";
+		editorSubcategory = "BDA_ESC_Air";
 		displayName = "UH-145A Falcon";
 		crew = "B_BDA_Pilot";
 		armor = 350;
 		cost = 500;
 		maximumLoad = 1000;
 		OPTRE_canThrust = 1;
+		BDA_ThrustModes[] = {400};
 		ace_cargo_space = 12;
 		magazines[]= {
 			"168Rnd_CMFlare_Chaff_Magazine",
@@ -403,7 +405,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_FullAirbrakeEngage";
+				statement="[this, BDA_fnc_FullAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
 				userActionID=90;
 			};
@@ -417,13 +419,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_HalfAirbrakeEngage";
+				statement="[this, BDA_fnc_HalfAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#F28D00'>Engage Airbrakes (Half)";
 				userActionID=91;
 			};
 			class Thruster400Engage {
 				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 0) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND (((getPosATL this) select 2) > 1)";
 				displayName="<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer=0;
@@ -431,13 +433,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Engage";
+				statement="[this, BDA_fnc_Thruster400Engage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
 				userActionID=92;
 			};
 			class Thruster400Disengage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 400) AND (player == driver this) AND (alive this)";
 				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer=0;
@@ -445,13 +447,14 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Disengage";
+				statement="[this, BDA_fnc_Thruster400Disengage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
 				userActionID=93;
 			};
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
+			#include "\BDA_Weapons\cfg\BDA_VehiclePlaceMarker.hpp"
             class vehCamo {
                 displayName = "Change Camo";
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
@@ -623,12 +626,14 @@ class CfgVehicles {
 		displayName = "MH-145 Falcon";
 		side = 1;
 		faction = "B_BDCUNSC";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_UH145A_Falcon2.jpg";
+		editorSubcategory = "BDA_ESC_Air";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Falcon.jpg";
 		crew = "B_BDA_Pilot";
 		armor = 450;
 		cost = 200;
 		maximumLoad = 1000;
 		OPTRE_canThrust = 1;
+		BDA_ThrustModes[] = {400};
 		ace_cargo_space = 14;
         magazines[] = {
 			"168Rnd_CMFlare_Chaff_Magazine",
@@ -940,7 +945,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_FullAirbrakeEngage";
+				statement="[this, BDA_fnc_FullAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
 				userActionID=90;
 			};
@@ -954,13 +959,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_HalfAirbrakeEngage";
+				statement="[this, BDA_fnc_HalfAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#F28D00'>Engage Airbrakes (Half)";
 				userActionID=91;
 			};
 			class Thruster400Engage {
 				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 0) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND (((getPosATL this) select 2) > 1)";
 				displayName="<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer=0;
@@ -968,13 +973,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Engage";
+				statement="[this, BDA_fnc_Thruster400Engage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
 				userActionID=92;
 			};
 			class Thruster400Disengage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 400) AND (player == driver this) AND (alive this)";
 				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer=0;
@@ -982,13 +987,14 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Disengage";
+				statement="[this, BDA_fnc_Thruster400Disengage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
 				userActionID=93;
 			};
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
+			#include "\BDA_Weapons\cfg\BDA_VehiclePlaceMarker.hpp"
             class vehCamo {
                 displayName = "Change Camo";
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
@@ -1160,12 +1166,14 @@ class CfgVehicles {
 		displayName = "UH-145S Falcon";
 		side = 1;
 		faction = "B_BDCUNSC";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_UH145A_Falcon2.jpg";
+		editorSubcategory = "BDA_ESC_Air";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Falcon.jpg";
 		crew = "B_BDA_Pilot";
 		armor = 250;
 		cost = 1000;
 		maximumLoad = 1000;
 		OPTRE_canThrust = 1;
+		BDA_ThrustModes[] = {400};
 		ace_cargo_space = 14;
         magazines[] = {
 			"168Rnd_CMFlare_Chaff_Magazine",
@@ -1454,7 +1462,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_FullAirbrakeEngage";
+				statement="[this, BDA_fnc_FullAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
 				userActionID=90;
 			};
@@ -1468,13 +1476,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_HalfAirbrakeEngage";
+				statement="[this, BDA_fnc_HalfAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#F28D00'>Engage Airbrakes (Half)";
 				userActionID=91;
 			};
 			class Thruster400Engage {
 				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 0) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND (((getPosATL this) select 2) > 1)";
 				displayName="<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer=0;
@@ -1482,13 +1490,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Engage";
+				statement="[this, BDA_fnc_Thruster400Engage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
 				userActionID=92;
 			};
 			class Thruster400Disengage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 400) AND (player == driver this) AND (alive this)";
 				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer=0;
@@ -1496,13 +1504,14 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Disengage";
+				statement="[this, BDA_fnc_Thruster400Disengage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
 				userActionID=93;
 			};
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
+			#include "\BDA_Weapons\cfg\BDA_VehiclePlaceMarker.hpp"
             class vehCamo {
                 displayName = "Change Camo";
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";

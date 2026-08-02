@@ -198,8 +198,11 @@ class cfgWeapons {
 		scope=2;
 		author="Schlopp";
 		displayName="Naval BDU (ONI)";
-		class ItemInfo: UniformItem {
+		class ItemInfo: ItemInfo {
+			uniformModel="-";
 			uniformClass="BDA_Navy_Uniform_ONI_F";
+			containerClass="Supply120";
+			mass=10;
 		};
 	};
 

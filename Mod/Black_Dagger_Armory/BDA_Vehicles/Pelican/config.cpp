@@ -1,5 +1,5 @@
 class CfgPatches {
-	class BDA_Vehicles {
+	class BDA_Vehicles_Pelican {
 		author = "Black Dagger Development Crew";
 		units[]= {
 			"BDA_UNSC_D77_TC_Pelican",
@@ -95,7 +95,11 @@ class CfgVehicles {
 		};
 	};
 	class B_Heli_Transport_01_F: Helicopter_Base_H {};
+
 	class Splits_Pelican_base: B_Heli_Transport_01_F {
+		driverCanEject = 0;
+		gunnerCanEject = 0;
+		cargoCanEject = 0;
 		class Turrets {
 			class MainTurret;
 			class RearDoorGun;
@@ -128,10 +132,16 @@ class CfgVehicles {
 		dlc="BDA";
 		author = "Rib";
 		faction = "B_BDCUNSC";
+		editorSubcategory = "BDA_ESC_Air";
 		displayName = "D77-TC Pelican";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_D77_TC_Pelican.jpg";
 		crew = "B_BDA_Pilot";
+		driverCanEject = 0;
+		gunnerCanEject = 0;
+		cargoCanEject = 0;
+		BDA_ThrustModes[] = {400, 600};
 		//textures
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
 		hiddenSelectionsTextures[] = {
 			"\BDA_Vehicles\data\pelican\BDA_G_body_co.paa",
 			"\BDA_Vehicles\data\pelican\BDA_G_wings_and_gear_co.paa",
@@ -188,6 +198,7 @@ class CfgVehicles {
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
+			#include "\BDA_Weapons\cfg\BDA_VehiclePlaceMarker.hpp"
             class vehCamo {
                 displayName = "Change Camo";
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
@@ -212,6 +223,19 @@ class CfgVehicles {
         };
 
 		class UserActions {
+			class EmergencyEject {
+				userActionID = 52;
+				displayName = "<t color='#FE9A2E'>Emergency Eject</t>";
+				displayNameDefault = "Emergency Eject";
+				textToolTip = "Emergency eject with auto-deploy parachute";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 100000;
+				priority = 0.05;
+				onlyForPlayer = 1;
+				condition = "(player in crew this) && (alive this) && (alive player) && (vehicle player == this)";
+				statement = "[this, player] call BDA_fnc_pelicanEmergencyEject;";
+			};
 			class PelLift_LoadVehicle {
 				userActionID = 6;
 				displayName = "Load Vehicle";
@@ -249,7 +273,7 @@ class CfgVehicles {
 				priority = 3;
 				onlyForPlayer = 0;
 				condition = "(player in [gunner this, driver this]) AND ((count (vehicle player getVariable [""Splits_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
-				statement = "0 = [this] spawn Splits_fnc_PelicanUnLoadValidate;";
+				statement = "0 = [this] spawn BDA_fnc_PelicanUnLoadValidate;";
 			};
 			class PelLift_OpenDetachPodMenu {
 				userActionID = 8;
@@ -262,7 +286,7 @@ class CfgVehicles {
 				priority = 3;
 				onlyForPlayer = 0;
 				condition = "(player in [gunner this, driver this]) AND (({_x isKindOf ""OPTRE_Ammo_SupplyPod_Empty""} count (this getVariable [""Splits_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
-				statement = "0 = this spawn Splits_fnc_PelicanLoadSupplyPodMenuDetachMenu;";
+				statement = "0 = this spawn BDA_fnc_PelicanLoadSupplyPodMenuDetachMenu;";
 			};
 			class RampOpen {
 				userActionID = 50;
@@ -298,7 +322,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_FullAirbrakeEngage";
+				statement="[this, BDA_fnc_FullAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
 				userActionID=90;
 			};
@@ -312,13 +336,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_HalfAirbrakeEngage";
+				statement="[this, BDA_fnc_HalfAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#F28D00'>Engage Airbrakes (Half)";
 				userActionID=91;
 			};
 			class Thruster400Engage {
 				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 0) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND (((getPosATL this) select 2) > 1)";
 				displayName="<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer=0;
@@ -326,13 +350,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Engage";
+				statement="[this, BDA_fnc_Thruster400Engage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
 				userActionID=92;
 			};
 			class Thruster400Disengage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 400) AND (player == driver this) AND (alive this)";
 				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer=0;
@@ -340,36 +364,36 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Disengage";
+				statement="[this, BDA_fnc_Thruster400Disengage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
 				userActionID=93;
 			};
 			class Afterburners600Engage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-				displayName="<t color='#04B45F'>Engage Afterburners";
-				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 400) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName="<t color='#04B45F'>Engage Boosters";
+				displayNameDefault="<t color='#04B45F'>Engage Boosters";
 				onlyForPlayer=0;
 				position="cargo_door_handle";
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Afterburners600Engage";
-				textToolTip="<t color='#04B45F'>Engage Afterburners";
+				statement="[this, BDA_fnc_Boosters600Engage] call BDA_fnc_spawnThrustScript";
+				textToolTip="<t color='#04B45F'>Engage Boosters";
 				userActionID=94;
 			};
 			class Afterburners600Disengage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName="<t color='#FCE205'>Disengage Afterburners";
-				displayNameDefault="<t color='#FCE205'>Disengage Afterburners";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 600) AND (player == driver this) AND (alive this)";
+				displayName="<t color='#FCE205'>Disengage Boosters";
+				displayNameDefault="<t color='#FCE205'>Disengage Boosters";
 				onlyForPlayer=0;
 				position="cargo_door_handle";
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Afterburners600Disengage";
-				textToolTip="<t color='#FCE205'>Disengage Afterburners";
+				statement="[this, BDA_fnc_Boosters600Disengage] call BDA_fnc_spawnThrustScript";
+				textToolTip="<t color='#FCE205'>Disengage Boosters";
 				userActionID=95;
 			};
 		};
@@ -5775,6 +5799,7 @@ class CfgVehicles {
 		dlc="BDA";
 		author = "Rib";
 		faction = "B_BDCUNSC";
+		editorSubcategory = "BDA_ESC_Air";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_D77_TC_Pelican.jpg";
 		displayName = "D77-TC Pelican (Single)";
 		memoryPointDriverOptics= "PIP2_pos";
@@ -5795,6 +5820,10 @@ class CfgVehicles {
 			"Laserbatteries"
 		};
 		crew = "B_BDA_Pilot";
+		driverCanEject = 0;
+		gunnerCanEject = 0;
+		cargoCanEject = 0;
+		BDA_ThrustModes[] = {400};
 
 		//single seat stuff
 		class pilotCamera {
@@ -5943,6 +5972,7 @@ class CfgVehicles {
 			"BDA_Pelican_W610", 1,
 			"BDA_Pelican_Winter", 1
 		};
+		hiddenSelections[] = {"camo1", "camo2", "camo3"};
 		hiddenSelectionsTextures[]={
 			"\BDA_Vehicles\data\pelican\BDA_G_body_co.paa",
 			"\BDA_Vehicles\data\pelican\BDA_G_wings_and_gear_co.paa",
@@ -5993,6 +6023,7 @@ class CfgVehicles {
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
+			#include "\BDA_Weapons\cfg\BDA_VehiclePlaceMarker.hpp"
             class vehCamo {
                 displayName = "Change Camo";
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
@@ -6017,6 +6048,19 @@ class CfgVehicles {
         };
 
 		class UserActions {
+			class EmergencyEject {
+				userActionID = 52;
+				displayName = "<t color='#FE9A2E'>Emergency Eject</t>";
+				displayNameDefault = "Emergency Eject";
+				textToolTip = "Emergency eject with auto-deploy parachute";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 100000;
+				priority = 0.05;
+				onlyForPlayer = 1;
+				condition = "(player in crew this) && (alive this) && (alive player) && (vehicle player == this)";
+				statement = "[this, player] call BDA_fnc_pelicanEmergencyEject;";
+			};
 			class PelLift_LoadVehicle {
 				userActionID = 6;
 				displayName = "Load Vehicle";
@@ -6054,7 +6098,7 @@ class CfgVehicles {
 				priority = 3;
 				onlyForPlayer = 0;
 				condition = "(player in [gunner this, driver this]) AND ((count (vehicle player getVariable [""Splits_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
-				statement = "0 = [this] spawn Splits_fnc_PelicanUnLoadValidate;";
+				statement = "0 = [this] spawn BDA_fnc_PelicanUnLoadValidate;";
 			};
 			class PelLift_OpenDetachPodMenu {
 				userActionID = 8;
@@ -6067,7 +6111,7 @@ class CfgVehicles {
 				priority = 3;
 				onlyForPlayer = 0;
 				condition = "(player in [gunner this, driver this]) AND (({_x isKindOf ""OPTRE_Ammo_SupplyPod_Empty""} count (this getVariable [""Splits_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
-				statement = "0 = this spawn Splits_fnc_PelicanLoadSupplyPodMenuDetachMenu;";
+				statement = "0 = this spawn BDA_fnc_PelicanLoadSupplyPodMenuDetachMenu;";
 			};
 			class RampOpen {
 				userActionID = 50;
@@ -6103,7 +6147,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_FullAirbrakeEngage";
+				statement="[this, BDA_fnc_FullAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
 				userActionID=90;
 			};
@@ -6117,13 +6161,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_HalfAirbrakeEngage";
+				statement="[this, BDA_fnc_HalfAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#F28D00'>Engage Airbrakes (Half)";
 				userActionID=91;
 			};
 			class Thruster400Engage {
 				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 0) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND (((getPosATL this) select 2) > 1)";
 				displayName="<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer=0;
@@ -6131,13 +6175,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Engage";
+				statement="[this, BDA_fnc_Thruster400Engage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
 				userActionID=92;
 			};
 			class Thruster400Disengage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 400) AND (player == driver this) AND (alive this)";
 				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer=0;
@@ -6145,7 +6189,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Disengage";
+				statement="[this, BDA_fnc_Thruster400Disengage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
 				userActionID=93;
 			};
@@ -11323,6 +11367,47 @@ class CfgVehicles {
 		};
 	};
 
+};
+
+class CfgRemoteExec {
+	class Functions {
+		mode = 1;
+		jip = 0;
+		class BDA_fnc_pelicanEmergencyEject { allowedTargets = 2; };
+		class BDA_fnc_pelicanEmergencyEjectLaunch { allowedTargets = 1; };
+		class BDA_fnc_pelicanEmergencyEjectMonitor { allowedTargets = 2; };
+		class BDA_fnc_pelicanEmergencyEjectDeployChute { allowedTargets = 2; };
+		class BDA_fnc_pelicanEmergencyEjectEnterChute { allowedTargets = 1; };
+		class BDA_fnc_pelicanEmergencyEjectLandCleanup { allowedTargets = 2; };
+		class BDA_fnc_pelicanEmergencyEjectMoveOut { allowedTargets = 1; };
+	};
+};
+
+class CfgFunctions {
+	class BDA {
+		tag = "BDA";
+		class PeliMagSys {
+			file = "\BDA_Vehicles\Pelican\functions";
+			class pelicanloadvalidate {};
+			class pelicanunloadvalidate {};
+			class pelicanload_unloadallsupplypods {};
+			class pelicanloadsupplypodmenudetachmenu {};
+			class pelicanloadsupplypodsmenuload {};
+			class pelicanloadsupplypodsmenuopened {};
+			class pelicanloadsupplypodsmenuunload {};
+		};
+		class PelicanEject {
+			file = "\BDA_Vehicles\Pelican\functions";
+			class pelicanEmergencyEjectPos {};
+			class pelicanEmergencyEject {};
+			class pelicanEmergencyEjectLaunch {};
+			class pelicanEmergencyEjectMonitor {};
+			class pelicanEmergencyEjectDeployChute {};
+			class pelicanEmergencyEjectEnterChute {};
+			class pelicanEmergencyEjectLandCleanup {};
+			class pelicanEmergencyEjectMoveOut {};
+		};
+	};
 };
 
 class cfgMods {

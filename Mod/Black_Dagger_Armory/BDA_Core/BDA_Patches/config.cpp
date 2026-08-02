@@ -5,7 +5,7 @@ class CfgPatches {
 		weapons[] = {};
 		requiredAddons[] = {};
 		version = "1.0.0";
-		author[]= {"Schlopp"};
+		author = "Schlopp";
 		authorUrl = "";
 	};
 

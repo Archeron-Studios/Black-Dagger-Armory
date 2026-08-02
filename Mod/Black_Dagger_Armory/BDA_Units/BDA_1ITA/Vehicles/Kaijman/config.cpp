@@ -106,7 +106,6 @@ class CfgVehicles {
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine"
 		};
-		class Components;
         class Components: Components {
             class TransportPylonsComponent {
                 uiPicture="\A3\Air_F_Beta\Heli_Attack_02\Data\UI\Heli_Attack_02_3DEN_CA.paa";
@@ -188,8 +187,6 @@ class CfgVehicles {
 		class TransportMagazines {};
 		class TransportWeapons {};
 		class TransportItems {};
-        crew = "O_1ITA_Heli_Pilot";
-        typicalCargo[] = {"O_1ITA_Heli_Pilot"};
     };
 
 

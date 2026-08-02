@@ -98,7 +98,7 @@ class CfgVehicles {
     class BDA_1ITA_M813_TT: OPTRE_M813_TT { //TT Hog
         author = "Rib";
         scope = 2;
-        scopeAuthor = 2;
+        scopeCurator = 2;
         displayName = "M813 Troop Transport Warthog";
         faction = "O_1ITA";
 		editorCategory = "BDA_EC_1ITA";
@@ -122,7 +122,7 @@ class CfgVehicles {
     class BDA_1ITA_M12_LRV: OPTRE_M12_LRV { //MG Hog
         author = "Rib";
         scope = 2;
-        scopeAuthor = 2;
+        scopeCurator = 2;
         displayName = "M12 LRV (MG) Warthog";
         faction = "O_1ITA";
 		editorCategory = "BDA_EC_1ITA";
@@ -147,7 +147,7 @@ class CfgVehicles {
     class BDA_1ITA_M12A1_LRV: OPTRE_M12A1_LRV { //AT Hog
         author = "Rib";
         scope = 2;
-        scopeAuthor = 2;
+        scopeCurator = 2;
         displayName = "M12A1 LRV (AT) Warthog";
         faction = "O_1ITA";
 		editorCategory = "BDA_EC_1ITA";

@@ -104,6 +104,11 @@ class CfgMarkers {
 		icon="\BDA_Core\BDA_UI\markers\MapMarkers\mech.paa";
 		name="Mechanized";
 	};
+	class BDA_motor_Marker: BDA_Dot_Marker
+	{
+		icon="\BDA_Core\BDA_UI\markers\MapMarkers\motor.paa";
+		name="Motorized";
+	};
 	class BDA_mort_Marker: BDA_Dot_Marker
 	{
 		icon="\BDA_Core\BDA_UI\markers\MapMarkers\mortar.paa";
@@ -310,22 +315,10 @@ class CfgMarkers {
 		name="2-3";
 	};
 
-	class BDA_3_1_Marker: BDA_Dot_Marker
+	class BDA_Bullfrog_Marker: BDA_Dot_Marker
 	{
 		icon="\BDA_Core\BDA_UI\markers\MapMarkers\3-1.paa";
-		name="3-1";
-	};
-
-	class BDA_3_2_Marker: BDA_Dot_Marker
-	{
-		icon="\BDA_Core\BDA_UI\markers\MapMarkers\3-2.paa";
-		name="3-2";
-	};
-
-	class BDA_3_3_Marker: BDA_Dot_Marker
-	{
-		icon="\BDA_Core\BDA_UI\markers\MapMarkers\3-3.paa";
-		name="3-3";
+		name="Bullfrog";
 	};
 
 	class BDA_4_1_Marker: BDA_Dot_Marker

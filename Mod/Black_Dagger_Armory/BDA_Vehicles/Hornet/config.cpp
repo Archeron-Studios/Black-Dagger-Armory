@@ -138,10 +138,12 @@ class CfgVehicles {
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		side = 1;
+		editorSubcategory = "BDA_ESC_Air";
 		displayName = "AV-15 Heavy Hornet";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.jpg";
 		crew = "B_BDA_Pilot";
 		OPTRE_canThrust = 1;
+		BDA_ThrustModes[] = {400};
 		weapons[] = {
 			"OPTRE_GUA23AW",
 			"CMFlareLauncher",
@@ -241,7 +243,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_FullAirbrakeEngage";
+				statement="[this, BDA_fnc_FullAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
 				userActionID=90;
 			};
@@ -255,13 +257,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_HalfAirbrakeEngage";
+				statement="[this, BDA_fnc_HalfAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#F28D00'>Engage Airbrakes (Half)";
 				userActionID=91;
 			};
 			class Thruster400Engage {
 				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 0) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND (((getPosATL this) select 2) > 1)";
 				displayName="<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer=0;
@@ -269,13 +271,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Engage";
+				statement="[this, BDA_fnc_Thruster400Engage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
 				userActionID=92;
 			};
 			class Thruster400Disengage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 400) AND (player == driver this) AND (alive this)";
 				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer=0;
@@ -283,13 +285,14 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Disengage";
+				statement="[this, BDA_fnc_Thruster400Disengage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
 				userActionID=93;
 			};
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
+			#include "\BDA_Weapons\cfg\BDA_VehiclePlaceMarker.hpp"
             class vehCamo {
                 displayName = "Change Camo";
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
@@ -545,12 +548,14 @@ class CfgVehicles {
 		author = "Rib";
 		faction = "B_BDCUNSC";
 		side = 1;
+		editorSubcategory = "BDA_ESC_Air";
 		displayName = "AV-15 Hornet Stealth";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.jpg";
 		crew = "B_BDA_Pilot";
 		armor = 200;
 		cost = 2000;
 		OPTRE_canThrust = 1;
+		BDA_ThrustModes[] = {400, 600, 800};
 		radartype=4;
 		lockdetectionsystem="2 + 4 + 8";
 		incomingMissileDetectionSystem="8 + 16";
@@ -634,7 +639,7 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_FullAirbrakeEngage";
+				statement="[this, BDA_fnc_FullAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
 				userActionID=90;
 			};
@@ -648,13 +653,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_HalfAirbrakeEngage";
+				statement="[this, BDA_fnc_HalfAirbrakeEngage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#F28D00'>Engage Airbrakes (Half)";
 				userActionID=91;
 			};
 			class Thruster400Engage {
 				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 0) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND (((getPosATL this) select 2) > 1)";
 				displayName="<t color='#04B45F'>Engage Forward Thrusters";
 				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
 				onlyForPlayer=0;
@@ -662,13 +667,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Engage";
+				statement="[this, BDA_fnc_Thruster400Engage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
 				userActionID=92;
 			};
 			class Thruster400Disengage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 400) AND (player == driver this) AND (alive this)";
 				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
 				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
 				onlyForPlayer=0;
@@ -676,41 +681,41 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Thruster400Disengage";
+				statement="[this, BDA_fnc_Thruster400Disengage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
 				userActionID=93;
 			};
-			class Afterburnerss600Engage {
+			class Afterburners600Engage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-				displayName="<t color='#04B45F'>Engage Afterburners";
-				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 400) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName="<t color='#04B45F'>Engage Boosters";
+				displayNameDefault="<t color='#04B45F'>Engage Boosters";
 				onlyForPlayer=0;
 				position="cargo_door_handle";
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Afterburners600Engage";
-				textToolTip="<t color='#04B45F'>Engage Afterburners";
+				statement="[this, BDA_fnc_Boosters600Engage] call BDA_fnc_spawnThrustScript";
+				textToolTip="<t color='#04B45F'>Engage Boosters";
 				userActionID=94;
 			};
 			class Afterburners600Disengage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName="<t color='#FCE205'>Disengage Afterburners";
-				displayNameDefault="<t color='#FCE205'>Disengage Afterburners";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 600) AND (player == driver this) AND (alive this)";
+				displayName="<t color='#FCE205'>Disengage Boosters";
+				displayNameDefault="<t color='#FCE205'>Disengage Boosters";
 				onlyForPlayer=0;
 				position="cargo_door_handle";
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Afterburners600Disengage";
-				textToolTip="<t color='#FCE205'>Disengage Afterburners";
+				statement="[this, BDA_fnc_Boosters600Disengage] call BDA_fnc_spawnThrustScript";
+				textToolTip="<t color='#FCE205'>Disengage Boosters";
 				userActionID=95;
 			};
 			class Afterburners800Engage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 600) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
 				displayName="<t color='#04B45F'>Engage Afterburners";
 				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
 				onlyForPlayer=0;
@@ -718,13 +723,13 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Afterburners800Engage";
+				statement="[this, BDA_fnc_Afterburners800Engage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#04B45F'>Engage Afterburners";
-				userActionID=94;
+				userActionID=96;
 			};
 			class Afterburners800Disengage {
 				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				condition="((this getVariable [""BDA_ThrustMode"",0]) == 800) AND (player == driver this) AND (alive this)";
 				displayName="<t color='#FCE205'>Disengage Afterburners";
 				displayNameDefault="<t color='#FCE205'>Disengage Afterburners";
 				onlyForPlayer=0;
@@ -732,13 +737,14 @@ class CfgVehicles {
 				priority=10;
 				radius=100000;
 				showWindow=0;
-				statement="0 = this spawn BDA_fnc_Afterburners800Disengage";
+				statement="[this, BDA_fnc_Afterburners800Disengage] call BDA_fnc_spawnThrustScript";
 				textToolTip="<t color='#FCE205'>Disengage Afterburners";
-				userActionID=95;
+				userActionID=97;
 			};
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
+			#include "\BDA_Weapons\cfg\BDA_VehiclePlaceMarker.hpp"
             class vehCamo {
                 displayName = "Change Camo";
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
@@ -994,6 +1000,7 @@ class CfgVehicles {
 		author = "Rib";
 		faction = "B_BDCUNSC";
 		side = 1;
+		editorSubcategory = "BDA_ESC_Air";
 		displayName = "AV-15 Hornet VTOL";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.jpg";
 		model="\OPTRE_Vehicles_Air\Hornet\hornet.p3d";
@@ -1094,6 +1101,7 @@ class CfgVehicles {
 		};
 
 		class ACE_SelfActions: ACE_SelfActions {
+			#include "\BDA_Weapons\cfg\BDA_VehiclePlaceMarker.hpp"
             class vehCamo {
                 displayName = "Change Camo";
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
@@ -1132,18 +1140,18 @@ class CfgVehicles {
 					displayName = "Night Ops";
 					class BlackCamo {
 						displayName = "Blackout";
-						statement = "['BDA_Hornet_Blackout', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Blackout', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 					class DarkCamo {
 						displayName = "Darkie";
-						statement = "['BDA_Hornet_Dark', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Dark', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 				};
 				class Desert {
 					displayName = "Desert Ops";
 					class DesertCamo {
 						displayName = "Desert Tan";
-						statement = "['BDA_Hornet_Desert', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						statement = "['BDA_Hornet_Desert', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 				};
             };
@@ -10897,11 +10905,11 @@ class CfgVehicles {
 						UIposition[]={0.22,0.2};
 					};
 					class pylons3: pylons1 {
-						mirroredMissilePos=1;
+						mirroredMissilePos=2;
 						UIposition[]={0.42,0.2};
 					};
 					class pylons4: pylons1 {
-						mirroredMissilePos=1;
+						mirroredMissilePos=3;
 						UIposition[]={0.54,0.2};
 					};
 				};
@@ -10916,7 +10924,7 @@ class CfgVehicles {
 							"OPTRE_32Rnd_Anvil3_missiles",
 							"OPTRE_8rnd_C2GMLS_missiles",
 							"OPTRE_8rnd_C2GMLS_missiles",
-							"OPTRE_8rnd_C2GMLS_missiles",
+							"OPTRE_32Rnd_Anvil3_missiles",
 						};
 					};
 					class CAS_AT {

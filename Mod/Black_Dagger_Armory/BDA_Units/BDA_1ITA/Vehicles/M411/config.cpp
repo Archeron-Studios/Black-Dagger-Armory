@@ -103,7 +103,7 @@ class CfgVehicles {
 
     class BDA_1ITA_M413_MGS: OPTRE_M413_MGS_UNSC {
         scope = 2;
-        scopeAuthor = 2;
+        scopeCurator = 2;
         author = "Rib";
         displayName = "M413 Bison MGS";
         faction = "O_1ITA";

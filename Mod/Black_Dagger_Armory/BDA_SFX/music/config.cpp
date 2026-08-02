@@ -31,7 +31,7 @@ class CfgMusicClasses {
 	};
 	class BDA_Jeff {
 		displayName = "Black Dagger (Announcer)";
-	}
+	};
 };
 class CfgMusic {
 	tracks[]={};

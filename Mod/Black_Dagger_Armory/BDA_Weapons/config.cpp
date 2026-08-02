@@ -4,7 +4,7 @@ class CfgPatches
     {
         author = "Black Dagger Development Crew";
 		name = "Black Dagger Weapons";
-		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle","Splits_Weaponry_Ammo", "OPTRE_Weapons_MG","OPTRE_Weapons_Vehicle"};
+		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle","Splits_Weaponry_Ammo", "OPTRE_Weapons_MG","OPTRE_Weapons_Vehicle","cba_main","ace_common","ace_interaction"};
 		requiredVersion = 0.100000;
 		units[] = {};
 		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AGM_Launcher","BDA_weapon_Guided_AGM_Bottom_Launcher","BDA_weapon_Guided_AA_Launcher","BDA_weapon_Guided_AA_Bottom_Launcher", "BDA_Smartfinder","BDA_M247T_Coax","BDA_MG470_40mm"};
@@ -188,8 +188,8 @@ class cfgMagazineWells {
 
 	class BDA_Magwell_M73: OPTRE_Magwell_M73 {
 		BDA_95x40_400Rnd[]={
-			"BDA_95x40_Box_400rnd_Box",
-			"BDA_95x40_Box_400rnd_Box_Tracer"
+			"BDA_95x40_400rnd_Box",
+			"BDA_95x40_400rnd_Box_Tracer"
 		};
 	};
 	
@@ -420,6 +420,49 @@ class CfgWeapons {
 				positionName="usti hlavne";
 				directionName="konec hlavne";
 				effectName="GrenadeLauncherCloud";
+			};
+		};
+	};
+};
+
+class CfgFunctions {
+	class BDA {
+		tag = "BDA";
+		class Weapons {
+			file = "\BDA_Weapons\functions";
+			class isBino {};
+			class isSmartfinder {};
+			class canUseMarkerOptics {};
+			class getCachedSpottedTarget {};
+			class setSpottedTargetCache {};
+			class getMarkPosition {};
+			class resolveSpottedTarget {};
+			class getSpottedPosition {};
+			class placeMarker {};
+			class initMarkerCache { postInit = 1; };
+		};
+		class Markers {
+			file = "\BDA_Weapons\functions\Markers";
+			class isLZ {};
+			class isFM {};
+			class isFrd {};
+			class isEnm {};
+			class isCM {};
+			class advMark {};
+			class classifySpottedTarget {};
+			class advMarkAuto {};
+		};
+	};
+};
+
+class CfgVehicles {
+	class Man;
+	class CAManBase: Man {
+		class ACE_SelfActions {
+			class BDA_PlaceMarker {
+				displayName = "Place Marker";
+				condition = "[] call BDA_fnc_isBino";
+				#include "\BDA_Weapons\cfg\BDA_MarkerACE.hpp"
 			};
 		};
 	};

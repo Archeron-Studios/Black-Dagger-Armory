@@ -23,9 +23,10 @@ class CfgVehicles {
 	class BDA_Frigate: OPTRE_Frigate_UNSC {
 		DLC="BDA";
 		author="Rib";
+		scope = 2;
+		scopeCurator = 2;
 		displayName="Frigate (Alaskan Conquest)";
 		faction = "B_BDCUNSC";
-		editorCategory="BDA_EC_BlackDagger";
 		editorSubcategory="BDA_ESC_AerospaceShip";
 		hiddenSelectionsTextures[]= {
 			"BDA_Ext\BDA_Frigate\data\decals_aq_ca.paa",

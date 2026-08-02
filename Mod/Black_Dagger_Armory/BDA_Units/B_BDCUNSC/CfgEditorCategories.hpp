@@ -26,4 +26,7 @@ class CfgEditorSubcategories {
     class BDA_ESC_Squads {
         displayName = "Squads";
     };
+	class BDA_ESC_Men {
+		displayName = "Men";
+	};
 };

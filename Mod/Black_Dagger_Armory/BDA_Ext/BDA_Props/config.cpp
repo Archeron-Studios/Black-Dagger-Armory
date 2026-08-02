@@ -341,7 +341,7 @@ class CfgVehicles {
                 count = 12;
             };
             class xx_ACE_Painkillers {
-                name = "ACE_Painkiller";
+                name = "ACE_painkillers";
                 count = 6;
             };
             class xx_ACE_SalineIV {

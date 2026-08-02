@@ -1936,11 +1936,11 @@ class cfgWeapons {
 		};
 	};	
 
-	class BDA_CH252D_David_Helmet: BDA_CH252D_Helmet {
-		author="Griffin";
-		displayName="CH252D Helmet (S. David)";
+	class BDA_CH252D_Monocle_Helmet: BDA_CH252D_Helmet {
+		author="Rib";
+		displayName="CH252D Helmet (D. Monocle)";
 		hiddenSelectionsTextures[]= {
-			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_David_CO.paa",
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Monocle_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
@@ -1956,17 +1956,17 @@ class cfgWeapons {
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_David_CO.paa",
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Monocle_CO.paa",
 				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		};
 	};
-	class BDA_CH252D_David_Helmet_dp: BDA_CH252D_Helmet_dp {
-		author="Griffin";
+	class BDA_CH252D_Monocle_Helmet_dp: BDA_CH252D_Helmet_dp {
+		author="Rib";
 		hiddenSelectionsTextures[]= {
-			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_David_CO.paa",
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Monocle_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -1982,7 +1982,7 @@ class cfgWeapons {
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_David_CO.paa",
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Monocle_CO.paa",
 				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};

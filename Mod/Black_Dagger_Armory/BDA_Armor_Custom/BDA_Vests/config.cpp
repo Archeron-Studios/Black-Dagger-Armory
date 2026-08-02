@@ -1104,7 +1104,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_Armor_Niki: BDA_Armor_RF {
-		author = "Rib & Apollo";
+		author = "Apollo";
 		displayName = "M52D Body Armor (B. Niki)";
 		hiddenSelectionsTextures[] = {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
@@ -1114,7 +1114,7 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Niki_CO.paa"
 		};
 	};
-	class BDA_Armor_Magnum: BD_Armor_RF {
+	class BDA_Armor_Magnum: BDA_Armor_RF {
 		author = "Rib";
 		displayName = "M52D Body Armor (C. Magnum)";
 		hiddenSelectionsTextures[] = {

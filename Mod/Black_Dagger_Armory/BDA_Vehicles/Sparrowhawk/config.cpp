@@ -18,7 +18,8 @@ class CfgPatches {
 			"OPTRE_Vehicles_Air",
 			"OPTRE_Vehicles_Sparrowhawk",
 			"ace_interaction",
-			"BDA_Weapons"
+			"BDA_Weapons",
+			"BDA_Vehicles_Pelican"
 		};
 	};
 };
@@ -92,26 +93,23 @@ class CfgVehicles {
 			class Right;
 		};
 	};
+	// Forward-declare only — do NOT empty Components/Turrets or OPTRE sensors/turret break
 	class OPTRE_AV22_Sparrowhawk_Base: Helicopter_Base_H {
-        class AnimationSources: AnimationSources {};
-        class Components: Components {};
-        class Hitpoints: Hitpoints {};
-        class Reflectors: Reflectors {};
-        class ViewPilot: ViewPilot {};
-        class Viewoptics: Viewoptics {};
-        class Turrets: Turrets {};
-        class Damage;
-        class Exhausts;
-        class MFD;
-        class pilotCamera;
-        class Sounds;
-    };
-    class OPTRE_AV22_Sparrowhawk: OPTRE_AV22_Sparrowhawk_Base {
-        class Turrets: Turrets {};
-    };
-    class OPTRE_AV22C_Sparrowhawk: OPTRE_AV22_Sparrowhawk {
-        class Turrets: Turrets {};
-    };
+		class Components;
+		class Turrets: Turrets {
+			class CopilotTurret;
+		};
+	};
+	class OPTRE_AV22_Sparrowhawk: OPTRE_AV22_Sparrowhawk_Base {
+		class Turrets: Turrets {
+			class CopilotTurret;
+		};
+	};
+	class OPTRE_AV22C_Sparrowhawk: OPTRE_AV22_Sparrowhawk {
+		class Turrets: Turrets {
+			class CopilotTurret;
+		};
+	};
 
     class BDA_AV22_Sparrowhawk: OPTRE_AV22C_Sparrowhawk { 
         dlc = "BDA";
@@ -125,6 +123,9 @@ class CfgVehicles {
         displayName = "AV-22C Sparrowhawk";
         crew = "B_BDA_Pilot";
 		BDA_ThrustModes[] = {400, 600, 800};
+		driverCanEject = 0;
+		gunnerCanEject = 0;
+		cargoCanEject = 0;
 
         //TFAR Config
 		tf_range = 50000;
@@ -133,6 +134,27 @@ class CfgVehicles {
 		tf_hasRadio = 1;
 		enableRadio = 1;
 
+		// Radar / RWR — use full OPTRE bitflags (IR+Laser+Radar+Missile)
+		radarType = 4;
+		lockDetectionSystem = "2+4+8+16";
+		incomingMissileDetectionSystem = "2+4+8+16";
+		weaponLockSystem = "2+4+8+16";
+		receiveRemoteTargets = 1;
+		reportRemoteTargets = 1;
+		reportOwnPosition = 1;
+		showAllTargets = 2;
+		irTarget = 1;
+		radarTarget = 1;
+		radarTargetSize = 2;
+		laserScanner = 1;
+		nvScanner = 1;
+		allowTabLock = 1;
+		canUseScanners = 1;
+		driverCanSee = 31;
+		gunnerCanSee = 31;
+		commanderCanSee = 31;
+
+		// Misriah + M230: hide unused nose laser + heavy chin (OPTRE AV-22M attach hides)
         hiddenSelections[] = {
             "camo1",
 			"camo2",
@@ -148,7 +170,9 @@ class CfgVehicles {
 			"camo12",
 			"camo13",
 			"attach_Decal1",
-			"attach_Decal2"
+			"attach_Decal2",
+			"attach_noseLaser",
+			"attach_CannonHeavy"
         };
         hiddenSelectionsTextures[] = {
 			"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_1_co.paa",
@@ -178,8 +202,114 @@ class CfgVehicles {
 			"168Rnd_CMFlare_Chaff_Magazine"
 		};
 
+		class Components: Components {
+			class SensorsManagerComponent {
+				class Components {
+					class IRSensorComponent: SensorTemplateIR {
+						class AirTarget {
+							minRange = 500;
+							maxRange = 4000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget {
+							minRange = 500;
+							maxRange = 3000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						maxTrackableSpeed = 300;
+						animDirection = "mainGun";
+						angleRangeHorizontal = 46;
+						angleRangeVertical = 34;
+						aimdown = -0.25;
+					};
+					class VisualSensorComponent: SensorTemplateVisual {
+						class AirTarget {
+							minRange = 500;
+							maxRange = 2500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget {
+							minRange = 500;
+							maxRange = 2000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						maxTrackableSpeed = 100;
+						animDirection = "mainGun";
+						angleRangeHorizontal = 46;
+						angleRangeVertical = 34;
+						aimdown = -0.25;
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar {
+						class AirTarget {
+							minRange = 5000;
+							maxRange = 8000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget {
+							minRange = 5000;
+							maxRange = 8000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						maxTrackableSpeed = 100;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 90;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 0;
+						aimDown = 30;
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar {};
+					class LaserSensorComponent: SensorTemplateLaser {};
+					class NVSensorComponent: SensorTemplateNV {};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft {
+				class Components: components {
+					class VehiclePrimaryGunnerDisplay {
+						componentType = "TransportFeedDisplayComponent";
+						source = "PrimaryGunner";
+					};
+					class VehicleMissileDisplay {
+						componentType = "TransportFeedDisplayComponent";
+						source = "Missile";
+					};
+					class SensorDisplay {
+						componentType = "SensorsDisplayComponent";
+						range[] = {8000, 4000, 16000, 2000};
+						resource = "RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight {
+				defaultDisplay = "SensorDisplay";
+				class Components: components {
+					class VehiclePrimaryGunnerDisplay {
+						componentType = "TransportFeedDisplayComponent";
+						source = "PrimaryGunner";
+					};
+					class VehicleMissileDisplay {
+						componentType = "TransportFeedDisplayComponent";
+						source = "Missile";
+					};
+					class SensorDisplay {
+						componentType = "SensorsDisplayComponent";
+						range[] = {8000, 4000, 16000, 2000};
+						resource = "RscCustomInfoSensors";
+					};
+				};
+			};
+		};
+
         class Turrets: Turrets {
 			class CopilotTurret: CopilotTurret {
+				canEject = 0;
 				weapons[] = {
 					"OPTRE_M230",
 					"Laserdesignator_mounted"
@@ -189,13 +319,26 @@ class CfgVehicles {
 					"OPTRE_100Rnd_50mm_HE",
 					"OPTRE_100Rnd_50mm_HE",
 					"OPTRE_100Rnd_50mm_APFSDS",
-                    "OPTRE_100Rnd_50mm_APFSDS",
+					"OPTRE_100Rnd_50mm_APFSDS",
 					"Laserbatteries"
 				};
 			};
 		};
 
         class UserActions {
+			class EmergencyEject {
+				userActionID = 52;
+				displayName = "<t color='#FE9A2E'>Emergency Eject</t>";
+				displayNameDefault = "Emergency Eject";
+				textToolTip = "Emergency eject with auto-deploy parachute";
+				position = "cargo_door_handle";
+				showWindow = 0;
+				radius = 100000;
+				priority = 0.05;
+				onlyForPlayer = 1;
+				condition = "(player in [driver this, gunner this]) && (alive this) && (alive player) && (vehicle player == this)";
+				statement = "[this, player] call BDA_fnc_pelicanEmergencyEject;";
+			};
             class FullAirbrakeEngage {
 				animPeriod=5;
 				condition="(player == driver this) AND (alive this) AND ((speed this) > 60)";

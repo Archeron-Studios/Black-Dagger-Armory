@@ -1,9 +1,9 @@
 /*
- * One-click threat intel marker. BDA Smartfinder only.
+ * One-click threat intel marker — Smartfinder or vehicle crew optics.
  */
 
-if !([] call BDA_fnc_isSmartfinder) exitWith {
-	systemChat "Equip the BDA Smartfinder to auto-mark spotted threats.";
+if !([] call BDA_fnc_canUseMarkerOptics) exitWith {
+	systemChat "Use the BDA Smartfinder or vehicle optics to auto-mark spotted threats.";
 };
 
 private _target = call BDA_fnc_getCachedSpottedTarget;

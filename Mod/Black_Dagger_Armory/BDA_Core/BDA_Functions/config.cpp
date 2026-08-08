@@ -19,6 +19,14 @@ class CfgPatches {
 	};
 };
 
+class CfgRemoteExec {
+	class Functions {
+		mode = 1;
+		jip = 1;
+		class BDA_fnc_medicCheck { allowedTargets = 0; };
+	};
+};
+
 class CfgFunctions {
     class BDA_Scripts {
         tag = "BDA";

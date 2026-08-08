@@ -20,7 +20,7 @@ class MarkCM {
 };
 class MarkSpottedThreat {
 	displayName = "Mark Spotted Threat";
-	condition = "[] call BDA_fnc_isSmartfinder";
+	condition = "[] call BDA_fnc_canUseMarkerOptics";
 	statement = "[] call BDA_fnc_advMarkAuto";
 };
 class MarkThreat {

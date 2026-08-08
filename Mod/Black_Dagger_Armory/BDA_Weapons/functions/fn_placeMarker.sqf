@@ -1,6 +1,6 @@
 /*
  * Creates a synced map marker on the global channel.
- * Optional: color, type, and text are applied on the server in MP.
+ * Clients remote to the server so createMarker runs with authority in MP.
  */
 
 params [
@@ -26,9 +26,8 @@ if (!isServer) exitWith {
 	_name
 };
 
-private _prevChannel = currentChannel;
-setCurrentChannel 0;
-_channel = currentChannel;
+// Dedicated servers have no chat UI — do not call setCurrentChannel here.
+if (_channel < 0) then { _channel = 0 };
 
 if (markerShape _name != "") then {
 	deleteMarker _name;
@@ -40,5 +39,4 @@ if (_color != "") then { _name setMarkerColor _color };
 if (_type != "") then { _name setMarkerType _type };
 if (_text != "") then { _name setMarkerText _text };
 
-setCurrentChannel _prevChannel;
 _name

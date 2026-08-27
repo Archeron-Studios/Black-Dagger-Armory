@@ -354,7 +354,7 @@ class CfgVehicles {
 				class pylons {
 					class pylons1 {
 						maxweight=600;
-						hardpoints[] = {"OPAEX_Hardpoint_AV14"};
+						hardpoints[] = {"OPTRE_Hardpoint_AV14"};
 						attachment="OPTRE_8rnd_C2GMLS_missiles";
 						bay=-1;
 						priority=2;
@@ -823,7 +823,7 @@ class CfgVehicles {
 				class pylons {
 					class pylons1 {
 						maxweight=800;
-						hardpoints[] = {"OPAEX_Hardpoint_AV14"};
+						hardpoints[] = {"OPTRE_Hardpoint_AV14"};
 						attachment="OPTRE_8rnd_C2GMLS_missiles";
 						bay=-1;
 						priority=2;
@@ -10893,7 +10893,7 @@ class CfgVehicles {
 				class pylons {
 					class pylons1 {
 						maxweight=600;
-						hardpoints[] = {"OPAEX_Hardpoint_AV14"};
+						hardpoints[] = {"OPTRE_Hardpoint_AV14"};
 						attachment="OPTRE_8rnd_C2GMLS_missiles";
 						bay=-1;
 						priority=2;

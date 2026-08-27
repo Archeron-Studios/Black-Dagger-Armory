@@ -4286,7 +4286,7 @@ class CfgVehicles {
 						hardpoints[]=
 						{
 							"BDA_T_Missiles",
-							"OPAEX_Hardpoint_AV22",
+							"OPTRE_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
 						};
@@ -4300,7 +4300,7 @@ class CfgVehicles {
 						hardpoints[]=
 						{
 							"BDA_T_Missiles",
-							"OPAEX_Hardpoint_AV22",
+							"OPTRE_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
 						};
@@ -4314,7 +4314,7 @@ class CfgVehicles {
 						hardpoints[]=
 						{
 							"BDA_B_Missiles",
-							"OPAEX_Hardpoint_AV22",
+							"OPTRE_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
 						};
@@ -4328,7 +4328,7 @@ class CfgVehicles {
 						hardpoints[]=
 						{
 							"BDA_B_Missiles",
-							"OPAEX_Hardpoint_AV22",
+							"OPTRE_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
 						};
@@ -10071,7 +10071,7 @@ class CfgVehicles {
 						hardpoints[]=
 						{
 							"BDA_T_Missiles",
-							"OPAEX_Hardpoint_AV22",
+							"OPTRE_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
 						};
@@ -10085,7 +10085,7 @@ class CfgVehicles {
 						hardpoints[]=
 						{
 							"BDA_T_Missiles",
-							"OPAEX_Hardpoint_AV22",
+							"OPTRE_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
 						};
@@ -10099,7 +10099,7 @@ class CfgVehicles {
 						hardpoints[]=
 						{
 							"BDA_B_Missiles",
-							"OPAEX_Hardpoint_AV22",
+							"OPTRE_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
 						};
@@ -10113,7 +10113,7 @@ class CfgVehicles {
 						hardpoints[]=
 						{
 							"BDA_B_Missiles",
-							"OPAEX_Hardpoint_AV22",
+							"OPTRE_Hardpoint_AV22",
 							"B_HARM_RAIL",
 							"B_BOMB_PYLON"
 						};

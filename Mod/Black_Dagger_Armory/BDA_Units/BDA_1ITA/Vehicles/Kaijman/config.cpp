@@ -116,9 +116,9 @@ class CfgVehicles {
 						hardpoints[]= {
 							"O_MISSILE_PYLON",
 							"O_BOMB_PYLON_HELI",
-			                "OPAEX_Hardpoint_AV22",
-                            "OPAEX_Hardpoint_D77-TC",
-                            "OPAEX_Hardpoint_AV14",
+			                "OPTRE_Hardpoint_AV22",
+                            "OPTRE_Hardpoint_D77-TC",
+                            "OPTRE_Hardpoint_AV14",
                             "20MM_TWIN_CANNON"
 						};
 						turret[]={0};
@@ -130,9 +130,9 @@ class CfgVehicles {
 						hardpoints[]= {
 							"O_MISSILE_PYLON",
 							"O_BOMB_PYLON_HELI",
-                            "OPAEX_Hardpoint_AV22",
-                            "OPAEX_Hardpoint_D77-TC",
-                            "OPAEX_Hardpoint_AV14",
+                            "OPTRE_Hardpoint_AV22",
+                            "OPTRE_Hardpoint_D77-TC",
+                            "OPTRE_Hardpoint_AV14",
                             "20MM_TWIN_CANNON"
 						};
 						UIposition[]={0.079999998,0.34999999};

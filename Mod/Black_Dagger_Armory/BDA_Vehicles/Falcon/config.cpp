@@ -560,8 +560,8 @@ class CfgVehicles {
 				class pylons {
 					class WingPylonRight {
 						hardpoints[]={
-							"OPAEX_Hardpoint_NonOffensive_UH144_Lower",
-							"OPAEX_Hardpoint_NonOffensive_UH144_Upper"
+							"OPTRE_Hardpoint_NonOffensive_UH144_Lower",
+							"OPTRE_Hardpoint_NonOffensive_UH144_Upper"
 						};
 						attachment="OPTRE_AN_ALE_407_198Rnd_Chaff_Pylon";
 						bay=-1;
@@ -590,7 +590,7 @@ class CfgVehicles {
 					};
 					class Nose {
 						hardpoints[]={
-							"OPAEX_Hardpoint_UH144_Nose_Searchlight"
+							"OPTRE_Hardpoint_UH144_Nose_Searchlight"
 						};
 						attachment="OPTRE_SearchLight_Pylon";
 						bay=-1;
@@ -1100,8 +1100,8 @@ class CfgVehicles {
 				class pylons {
 					class WingPylonRight {
 						hardpoints[]={
-							"OPAEX_Hardpoint_NonOffensive_UH144_Lower",
-							"OPAEX_Hardpoint_NonOffensive_UH144_Upper"
+							"OPTRE_Hardpoint_NonOffensive_UH144_Lower",
+							"OPTRE_Hardpoint_NonOffensive_UH144_Upper"
 						};
 						attachment="OPTRE_AN_ALE_407_198Rnd_Chaff_Pylon";
 						bay=-1;
@@ -1130,7 +1130,7 @@ class CfgVehicles {
 					};
 					class Nose {
 						hardpoints[]={
-							"OPAEX_Hardpoint_UH144_Nose_Searchlight"
+							"OPTRE_Hardpoint_UH144_Nose_Searchlight"
 						};
 						attachment="OPTRE_SearchLight_Pylon";
 						bay=-1;

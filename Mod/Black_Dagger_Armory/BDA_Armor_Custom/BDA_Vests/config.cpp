@@ -821,14 +821,14 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Bomb: BDA_Armor_RF {
-		author = "Griffin";
+		author = "Old Man Byrne";
 		displayName = "M52D Body Armor (J. Bomb)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Bomb_CO.paa"
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Bomb1_CO.paa"
 		};
 	};
 
@@ -928,7 +928,7 @@ class cfgWeapons {
 		};
 	};
 
-	class BDA_Armor_Byrne: BDA_Armor_SN {
+	class BDA_Armor_Byrne: BDA_Armor_DM {
 		author = "Griffin";
 		displayName = "M52D Body Armor (P. Byrne)";
 		hiddenSelectionsTextures[]= {
@@ -1124,10 +1124,21 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Magnum_CO.paa"
 		};
+	};	class BDA_Armor_Torch: BDA_Armor_RF {
+		author = "Byrne";
+		displayName = "M52D Body Armor (C. Torch)";
+		hiddenSelectionsTextures[] = {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_S6_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Torch_CO.paa"
+		};
 	};
 	//end
-};
 
+	//end
+};
 class cfgMods {
 	author="Rib";
 	timepacked="010029012026";

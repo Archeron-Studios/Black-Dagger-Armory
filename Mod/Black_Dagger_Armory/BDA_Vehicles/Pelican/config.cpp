@@ -11369,20 +11369,6 @@ class CfgVehicles {
 
 };
 
-class CfgRemoteExec {
-	class Functions {
-		mode = 1;
-		jip = 0;
-		class BDA_fnc_pelicanEmergencyEject { allowedTargets = 2; };
-		class BDA_fnc_pelicanEmergencyEjectLaunch { allowedTargets = 1; };
-		class BDA_fnc_pelicanEmergencyEjectMonitor { allowedTargets = 2; };
-		class BDA_fnc_pelicanEmergencyEjectDeployChute { allowedTargets = 2; };
-		class BDA_fnc_pelicanEmergencyEjectEnterChute { allowedTargets = 1; };
-		class BDA_fnc_pelicanEmergencyEjectLandCleanup { allowedTargets = 2; };
-		class BDA_fnc_pelicanEmergencyEjectMoveOut { allowedTargets = 1; };
-	};
-};
-
 class CfgFunctions {
 	class BDA {
 		tag = "BDA";

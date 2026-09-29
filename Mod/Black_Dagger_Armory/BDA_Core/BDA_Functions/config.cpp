@@ -21,9 +21,26 @@ class CfgPatches {
 
 class CfgRemoteExec {
 	class Functions {
-		mode = 1;
-		jip = 1;
+		// Core
 		class BDA_fnc_medicCheck { allowedTargets = 0; };
+
+		// Weapons
+		class BDA_fnc_placeMarker { allowedTargets = 2; };
+
+		// Armor
+		class BDA_fnc_harnessParachuteDeploy { allowedTargets = 2; };
+		class BDA_fnc_harnessParachuteEnterChute { allowedTargets = 1; };
+		class BDA_fnc_harnessParachuteRestore { allowedTargets = 1; };
+
+		// Pelican
+		class BDA_fnc_pelicanEmergencyEject { allowedTargets = 2; };
+		class BDA_fnc_pelicanEmergencyEjectLaunch { allowedTargets = 1; };
+		class BDA_fnc_pelicanEmergencyEjectMonitor { allowedTargets = 2; };
+		class BDA_fnc_pelicanEmergencyEjectDeployChute { allowedTargets = 2; };
+		class BDA_fnc_pelicanEmergencyEjectEnterChute { allowedTargets = 1; };
+		class BDA_fnc_pelicanEmergencyEjectLandCleanup { allowedTargets = 2; };
+		class BDA_fnc_pelicanEmergencyEjectMoveOut { allowedTargets = 1; };
+		class optre_fnc_hevroomdynamicsetupgrabunits;
 	};
 };
 

@@ -312,16 +312,6 @@ class CfgVehicles {
 	};
 };
 
-class CfgRemoteExec {
-	class Functions {
-		mode = 1;
-		jip = 0;
-		class BDA_fnc_harnessParachuteDeploy { allowedTargets = 2; };
-		class BDA_fnc_harnessParachuteEnterChute { allowedTargets = 1; };
-		class BDA_fnc_harnessParachuteRestore { allowedTargets = 1; };
-	};
-};
-
 class CfgFunctions {
 	class BDA {
 		tag = "BDA";

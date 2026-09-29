@@ -425,14 +425,6 @@ class CfgWeapons {
 	};
 };
 
-class CfgRemoteExec {
-	class Functions {
-		mode = 1;
-		jip = 0;
-		class BDA_fnc_placeMarker { allowedTargets = 2; };
-	};
-};
-
 class CfgFunctions {
 	class BDA {
 		tag = "BDA";

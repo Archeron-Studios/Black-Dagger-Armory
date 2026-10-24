@@ -1086,7 +1086,7 @@ class cfgWeapons {
 		displayName = "M52D Body Armor (F. Ant)";
 		hiddenSelectionsTextures[] = {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_S4_Medic_CO",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Ant_CO.paa"

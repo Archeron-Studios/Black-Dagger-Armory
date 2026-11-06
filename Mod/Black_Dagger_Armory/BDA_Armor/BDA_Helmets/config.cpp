@@ -38,6 +38,7 @@ class cfgWeapons {
 	/*arma*/ class H_Cap_oli;
 
 	class BDA_CH252D_Helmet: OPTRE_UNSC_CH252D_Helmet_Base {
+		model="\OPTRE_UNSC_Units\Army\redux\odst_helmet.p3d";
 		scope=2;
 		author="Schlopp";
 		displayName="CH252D Helmet";
@@ -58,6 +59,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
 		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet.p3d";
 			hiddenSelections[]=
 			{
 				"camo",
@@ -82,7 +84,7 @@ class cfgWeapons {
 		author="Rib";
 		displayName="CH252D Helmet";
 		picture="\BDA_Armor\BDA_Helmets\data\icons\BDA_ODST_Helmet.paa";
-		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+		model="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 		hiddenSelections[]= {
 			"camo",
 			"camo2",
@@ -95,7 +97,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
 		class ItemInfo: ItemInfo {
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 			hiddenSelections[]=
 			{
 				"camo",
@@ -148,7 +150,7 @@ class cfgWeapons {
 		};
 		class ItemInfo: ItemInfo
 		{
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 			hiddenSelections[]=
 			{
 				"camo",
@@ -183,7 +185,7 @@ class cfgWeapons {
 		};
 		class ItemInfo: ItemInfo
 		{
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 			hiddenSelections[]= {
 				"camo",
 				"camo2",
@@ -231,7 +233,7 @@ class cfgWeapons {
 		};
 		class ItemInfo: ItemInfo
 		{
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 			hiddenSelections[]= {
 				"camo",
 				"camo2",
@@ -278,7 +280,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
 		class ItemInfo: ItemInfo {
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 			hiddenSelections[]= {
 				"camo",
 				"camo2",
@@ -325,7 +327,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
 		class ItemInfo: ItemInfo {
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 			hiddenSelections[]= {
 				"camo",
 				"camo2",
@@ -376,7 +378,7 @@ class cfgWeapons {
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		class ItemInfo: ItemInfo {
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 			hiddenSelections[]=
 			{
 				"camo",
@@ -421,7 +423,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Helmet_S5_dp: BDA_CH252D_Helmet_dp {
-		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+		model="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S5_CO.paa",
@@ -429,7 +431,7 @@ class cfgWeapons {
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		class ItemInfo: ItemInfo {
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 			hiddenSelections[]=
 			{
 				"camo",
@@ -475,7 +477,7 @@ class cfgWeapons {
 	};
 	class BDA_CH252D_Helmet_S6_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
-		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+		model="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S6_CO.paa",
@@ -483,7 +485,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
 		class ItemInfo: ItemInfo {
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 			hiddenSelections[]=
 			{
 				"camo",
@@ -527,14 +529,14 @@ class cfgWeapons {
 	};
 	class BDA_CH252D_Helmet_S7_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
-		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+		model="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S7_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
 		class ItemInfo: ItemInfo {
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 			hiddenSelections[]= {
 				"camo",
 				"camo2",
@@ -581,7 +583,7 @@ class cfgWeapons {
 	class BDA_CH252D_Helmet_Recon_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		scope = 1;
-		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+		model="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Recon_CO.paa",
@@ -589,7 +591,7 @@ class cfgWeapons {
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		class ItemInfo: ItemInfo {
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 			hiddenSelections[]=
 			{
 				"camo",
@@ -644,7 +646,7 @@ class cfgWeapons {
 			};
 		class ItemInfo: ItemInfo
 		{
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 			hiddenSelections[]=
 			{
 				"camo",
@@ -699,7 +701,7 @@ class cfgWeapons {
 			};
 		class ItemInfo: ItemInfo
 		{
-			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 			hiddenSelections[]=
 			{
 				"camo",

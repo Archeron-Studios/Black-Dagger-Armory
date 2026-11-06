@@ -153,7 +153,9 @@ class cfgWeapons {
 				"APO_Knife",
 				"APO_BR",
 				"APO_SMG",
-				"CustomKit_Scorch"
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR"
 			};
 			hiddenSelectionsTextures[]=
 			{
@@ -230,7 +232,9 @@ class cfgWeapons {
 	//			"APO_Knife",
 				"APO_SMG",
 				"APO_Sniper",
-				"CustomKit_Scorch"
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR"
 			};
 			hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",//vest camo
@@ -325,7 +329,9 @@ class cfgWeapons {
 				"APO_Knife",
 				"APO_SMG",
 				"APO_Sniper",
-	//			"CustomKit_Scorch"
+	//			"APB_Knife",
+	//			"APOR_Knife",
+	//			"APU_AR"
 			};
 			hiddenSelectionsTextures[]={
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
@@ -399,7 +405,9 @@ class cfgWeapons {
 				"APO_BR",
 	//			"APO_SMG",
 				"APO_Sniper",
-	//			"CustomKit_Scorch"
+	//			"APB_Knife",
+	//			"APOR_Knife",
+	//			"APU_AR"
 			};
 			hiddenSelectionsTextures[]=
 			{
@@ -413,6 +421,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Chase: BDA_Armor_RF_Big {
+		model="\OPTRE_UNSC_Units\Army\armor.p3d";
 		author = "Rib";
 		displayName = "M52D Body Armor (F. Chase)";
 		hiddenSelectionsTextures[]= {
@@ -423,6 +432,7 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Chase_CO.paa"
 		};
 		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[]= {
 				"camo",
 				"camo2",
@@ -472,7 +482,9 @@ class cfgWeapons {
 				"APO_BR",
 	//			"APO_SMG",
 				"APO_Sniper",
-	//			"CustomKit_Scorch"
+	//			"APB_Knife",
+	//			"APOR_Knife",
+	//			"APU_AR"
 			};
 			hiddenSelectionsTextures[]=
 			{
@@ -547,7 +559,9 @@ class cfgWeapons {
 	//			"APO_BR",
 				"APO_SMG",
 				"APO_Sniper",
-				"CustomKit_Scorch"
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR"
 			};
 			hiddenSelectionsTextures[]=
 			{
@@ -622,7 +636,9 @@ class cfgWeapons {
 				"APO_BR",
 				"APO_SMG",
 				"APO_Sniper",
-				"CustomKit_Scorch"
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR"
 			};
 			hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
@@ -635,6 +651,7 @@ class cfgWeapons {
 	};
 
 	class BDA_Armor_Beefe: OPTRE_UNSC_M52D_Armor {
+		model="\OPTRE_UNSC_Units\Army\redux\odst.p3d";
 		dlc="BDA";
 		author="Griffin";
 		displayName = "M52D Body Armor (G. Beefe)";
@@ -647,6 +664,7 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Beefe_CO.paa"
 		};
 		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst.p3d";
 				hiddenSelections[]= {
 				"camo",
 				"camo2",
@@ -696,7 +714,9 @@ class cfgWeapons {
 	//			"APO_Knife",
 				"APO_SMG",
 				"APO_Sniper",
-				"CustomKit_Scorch"
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR"
 			};
 			hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
@@ -705,26 +725,6 @@ class cfgWeapons {
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Beefe_CO.paa"
 			};
-		};
-	};
-
-	class BDA_Armor_Arturo: BDA_Armor_RF_Big {
-		author = "Rib";
-		displayName = "M52D Body Armor (L. Arturo)";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Arturo_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Arturo_CO.paa"
-		};
-	};
-
-	class BDA_Armor_Pilot_Arturo: BDA_M52B_Pilot_Armor_B {
-		author = "Rib";
-		displayName = "M52B Body Armor (L. Arturo)";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52B_Armor_Arturo_CO.paa"
 		};
 	};
 
@@ -737,26 +737,6 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Smith_CO.paa"
-		};
-	};
-
-	class BDA_Armor_Parhau: BDA_Armor_RF {
-		author = "Griffin";
-		displayName = "M52D Body Armor (R. Parhau)";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Parhau_CO.paa"
-		};
-	};
-
-	class BDA_Armor_Pilot_Parhau: BDA_M52B_Pilot_Armor_B {
-		author = "Griffin";
-		displayName="M52B Body Armor (R. Parhau)";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52B_Armor_Parhau_CO.paa" 
 		};
 	};
 
@@ -793,18 +773,6 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Beavers_CO.paa"
-		};
-	};
-
-	class BDA_Armor_Wolsey: BDA_Armor_RF {
-		author = "Griffin";
-		displayName = "M52D Body Armor (T. Wolsey)";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Wolsey_CO.paa"
 		};
 	};
 
@@ -940,18 +908,6 @@ class cfgWeapons {
 		};
 	};
 
-	class BDA_Armor_Hill: BDA_Armor_RF {
-		author = "Griffin";
-		displayName = "M52D Body Armor (B. Hill)";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Hill_CO.paa"
-		};
-	};
-
 	class BDA_Armor_Pike: BDA_Armor_AR {
 		author = "Griffin";
 		displayName = "M52D Body Armor (W. Pike)";
@@ -1034,7 +990,8 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
-	};	
+	};
+
 	class BDA_Armor_Apollo: BDA_Armor_Pilot
 	{
 		author="Apollo";
@@ -1048,6 +1005,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
 	};
+
 	class BDA_Armor_Frost: BDA_Armor_MD {
 		author = "Rib";
 		displayName = "M52D Body Armor (B. Frost)";
@@ -1059,6 +1017,7 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Frost_CO.paa"
 		};
 	};
+
 	class BDA_Armor_Capper: BDA_Armor_RF {
 		author = "Rib";
 		displayName = "M52D Body Armor (G. Capper)";
@@ -1070,6 +1029,7 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Capper_CO.paa"
 		};
 	};
+
 	class BDA_Armor_Legion: BDA_Armor_RF {
 		author = "Rib";
 		displayName = "M52D Body Armor (D. Legion)";
@@ -1081,6 +1041,7 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Legion_CO.paa"
 		};
 	};
+
 	class BDA_Armor_Ant: BDA_Armor_RF {
 		author = "Rib";
 		displayName = "M52D Body Armor (F. Ant)";
@@ -1092,6 +1053,7 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Ant_CO.paa"
 		};
 	};
+
 	class BDA_Armor_Burgs: BDA_Armor_RF {
 		author = "Rib";
 		displayName = "M52D Body Armor (J. Burgs)";
@@ -1103,6 +1065,7 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Burgs_CO.paa"
 		};
 	};
+
 	class BDA_Armor_Niki: BDA_Armor_RF {
 		author = "Apollo";
 		displayName = "M52D Body Armor (B. Niki)";
@@ -1114,6 +1077,7 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Niki_CO.paa"
 		};
 	};
+
 	class BDA_Armor_Magnum: BDA_Armor_RF {
 		author = "Rib";
 		displayName = "M52D Body Armor (C. Magnum)";
@@ -1124,7 +1088,9 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Magnum_CO.paa"
 		};
-	};	class BDA_Armor_Torch: BDA_Armor_RF {
+	};	
+
+	class BDA_Armor_Torch: BDA_Armor_RF {
 		author = "Byrne";
 		displayName = "M52D Body Armor (C. Torch)";
 		hiddenSelectionsTextures[] = {
@@ -1135,8 +1101,6 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Torch_CO.paa"
 		};
 	};
-	//end
-
 	//end
 };
 class cfgMods {

@@ -28,6 +28,7 @@ class cfgWeapons {
 	/*extern*/ class OPTRE_FC_M52B_Armor_Vest;
 	
 	class BDA_Armor_RF: OPTRE_UNSC_M52D_Armor_Rifleman {
+		model="\OPTRE_UNSC_Units\Army\redux\odst.p3d";
 		dlc="BDA";
 		author="Black Dagger Development Crew";
 		displayName="M52D Body Armor (Rifleman)";
@@ -38,6 +39,93 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
+		};
+		hiddenSelections[]={
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"APB_Knife",
+			"APOR_Knife",
+			"APU_AR"
+		};
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst.p3d";
+			hiddenSelections[]={
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"A_TacPad",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR"
+			};
 		};
 	};
 	class BDA_Armor_RF_Big: BDA_Armor_RF {
@@ -114,7 +202,9 @@ class cfgWeapons {
 				"APO_Knife",
 				"APO_BR",
 				"APO_SMG",
-				"CustomKit_Scorch"
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR"
 			};
 			hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
@@ -126,6 +216,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_Armor_DM: OPTRE_UNSC_M52D_Armor_Demolitions {
+		model="\OPTRE_UNSC_Units\Army\redux\odst.p3d";
 		dlc="BDA";
 		author="Black Dagger Development Crew";
 		displayName="M52D Body Armor (Demolitions)";
@@ -137,8 +228,96 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
 		};
+		hiddenSelections[]={
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+			"AP_Smoke",
+			"APO_AR",
+			"APO_BR",
+			"APO_Sniper",
+			"APB_Knife",
+			"APOR_Knife",
+			"APU_AR"
+		};
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst.p3d";
+			hiddenSelections[]={
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"A_TacPad",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"AP_Frag",
+				"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+				"APO_Sniper",
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR"
+			};
+		};
 	};
 	class BDA_Armor_SN: OPTRE_UNSC_M52D_Armor_Sniper {
+		model="\OPTRE_UNSC_Units\Army\redux\odst.p3d";
 		dlc="BDA";
 		author="Black Dagger Development Crew";
 		displayName="M52D Body Armor (Sniper)";
@@ -150,8 +329,98 @@ class cfgWeapons {
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
 		};
+		hiddenSelections[]={
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+			"AP_Smoke",
+			"APO_AR",
+			"APO_BR",
+			"APO_SMG",
+			"APB_Knife",
+			"APOR_Knife",
+			"APU_AR"
+		};
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst.p3d";
+			hiddenSelections[]={
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"A_TacPad",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"AP_Frag",
+				"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR"
+			};
+		};
 	};
 	class BDA_Armor_AR: OPTRE_UNSC_M52D_Armor {
+		model="\OPTRE_UNSC_Units\Army\redux\odst.p3d";
 		dlc="BDA";
 		author="Rib";
 		displayName="M52D Body Armor (Autorifleman)";
@@ -164,6 +433,7 @@ class cfgWeapons {
 				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
 			};
 		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst.p3d";
 			hiddenSelections[]= {
 				"camo",
 				"camo2",
@@ -216,7 +486,9 @@ class cfgWeapons {
 				"APO_Knife",
 				"APO_SMG",
 				"APO_Sniper",
-				"CustomKit_Scorch"
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR"
 			};
 			hiddenSelectionsTextures[]={
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
@@ -289,7 +561,9 @@ class cfgWeapons {
 				"APO_Knife",
 				"APO_SMG",
 				"APO_Sniper",
-				"CustomKit_Scorch"
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR"
 			};
 			hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
@@ -951,7 +1225,9 @@ class cfgWeapons {
 				"APO_Knife",
 				"APO_BR",
 				"APO_SMG",
-				"CustomKit_Scorch"
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR"
 			};
 			hiddenSelectionsTextures[]=
 			{
@@ -1036,7 +1312,9 @@ class cfgWeapons {
 				"APO_Knife",
 				"APO_SMG",
 //				"APO_Sniper",
-				"CustomKit_Scorch"
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR"
 			};
 		};
 	};
@@ -1086,6 +1364,7 @@ class cfgWeapons {
 
 	//Naval
 	class BDA_Armor_Pilot: OPTRE_UNSC_M52D_Armor {
+		model="\OPTRE_UNSC_Units\Army\redux\marine.p3d";
 		dlc = "BDA";
 		author = "Rib";
 		displayName="M52A Body Armor (82nd Naval Air Squadron)";
@@ -1098,6 +1377,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_P1_CO.paa"
 		};
 		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\marine.p3d";
 			containerClass="Supply200";
 			hiddenSelections[]= {
 				"camo",
@@ -1149,7 +1429,10 @@ class cfgWeapons {
 	//			"APO_Knife",
 				"APO_SMG",
 				"APO_Sniper",
-				"CustomKit_Scorch"
+				"APB_Knife",
+				"APOR_Knife",
+				"APU_AR",
+				"camo_decal"
 			};
 			hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",

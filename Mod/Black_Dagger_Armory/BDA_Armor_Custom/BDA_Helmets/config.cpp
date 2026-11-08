@@ -923,7 +923,7 @@ class cfgWeapons {
 		author=" Old Man Byrne";
 		displayName="CH252D Helmet (J. Bomb)";
 		hiddenSelectionsTextures[]= {
-			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bomb1_CO.paa",
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bomb_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
@@ -940,7 +940,7 @@ class cfgWeapons {
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bomb1_CO.paa",
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bomb_CO.paa",
 				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
@@ -949,7 +949,7 @@ class cfgWeapons {
 	};
 	class BDA_CH252D_Bomb_Helmet_dp: BDA_CH252D_Helmet_dp {
 		hiddenSelectionsTextures[]= {
-			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bomb1_CO.paa",
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bomb_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -965,7 +965,7 @@ class cfgWeapons {
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bomb1_CO.paa",
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bomb_CO.paa",
 				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};

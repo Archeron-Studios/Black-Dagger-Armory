@@ -1170,6 +1170,72 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
 		};
 	};
+
+	//2-4
+	class BDA_Armor_RF_S8: BDA_Armor_RF {
+		displayName="M52D Body Armor (Rifleman, 2-4)";
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S8_CO.paa"
+		};
+	};
+	class BDA_Armor_MD_S8: BDA_Armor_MD {
+		displayName="M52D Body Armor (Medic, 2-4)";
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_S8_Medic_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S8_Medic_CO.paa"
+		};
+	};
+	class BDA_Armor_DM_S8: BDA_Armor_DM {
+		displayName="M52D Body Armor (Demolitions, 2-4)";
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S8_CO.paa"
+		};
+	};
+	class BDA_Armor_SN_S8: BDA_Armor_SN {
+		displayName="M52D Body Armor (Sniper, 2-4)";
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S8_CO.paa"
+		};
+	};
+	class BDA_Armor_AR_S8: BDA_Armor_AR {
+		displayName="M52D Body Armor (Autorifleman, 2-4)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S8_CO.paa"
+		};
+	};
+	class BDA_Armor_BR_S8: BDA_Armor_BR {
+		displayName="M52D Body Armor (Breacher, 2-4)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S8_CO.paa"
+		};
+	};
 	
 	//Detachments
 	class BDA_Armor_RF_ONI: OPTRE_UNSC_M52D_Armor {

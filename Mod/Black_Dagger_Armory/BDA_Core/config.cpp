@@ -30,7 +30,27 @@ class RscText;
 class RscActiveText;
 class RscActivePicture: RscActiveText {};
 class RscButton;
+class RscButtonMenu;
+class RscButtonMenuMain;
+class RscControlsGroupNoScrollbars;
 
+// Black Dagger dropdown rows. Positions and server labels are set by
+// BDA_Functions\fn_mainMenu.sqf; links must be config url entries because
+// a url on a script-created button does not open.
+class BDA_MenuItem: RscButtonMenuMain {
+	idc=-1;
+	x=0;
+	y=0;
+	w="10 * (pixelW * pixelGrid * 2)";
+	h="1.5 * (pixelH * pixelGrid * 2) - pixelH";
+};
+class BDA_MenuSubGroup: RscControlsGroupNoScrollbars {
+	idc=-1;
+	x=0;
+	y=0;
+	w="10 * (pixelW * pixelGrid * 2)";
+	h=0;
+};
 //attempt of custom world - not in use
 /*class CfgWorlds {
 	class CAWorld;
@@ -65,6 +85,8 @@ class RscTitles {
 };	
 
 class RscDisplayMain: RscStandardDisplay {
+	// Vanilla onLoad first, then the Black Dagger dropdown.
+	onLoad="[""onLoad"",_this,""RscDisplayMain"",'GUI'] call (uinamespace getvariable 'BIS_fnc_initDisplay'); private _bda = uiNamespace getVariable 'BDA_fnc_mainMenu'; if (isNil '_bda') then {_bda = compile preprocessFileLineNumbers '\BDA_Core\BDA_Functions\fn_mainMenu.sqf'; uiNamespace setVariable ['BDA_fnc_mainMenu', _bda]}; ['init', _this select 0] call _bda;";
 	class Controls {
 		class Spotlight1 {};
 		class Spotlight2 {};
@@ -73,34 +95,90 @@ class RscDisplayMain: RscStandardDisplay {
 		class BackgroundSpotlightLeft {};
 		class BackgroundSpotlight {};
 
-		class ConnectServer: RscButton {
-			idc=-1;
-			text="Join BDC Server";
-			tooltip="Click to Join the Black Dagger Company Server";
-			style=2;
-			onbuttonclick="connectToServer ['74.208.86.92', 2302, '']"; //games.blackdagger.org OR 74.208.86.92
-			colorBackground[]={0,0,0,0.40000001};
-			colorBackgroundActive[]={1,0,0,0.2};
-			borderSize=0.054000001;
-			colorBorder[]={0,0,0,0};
-			x="safeZoneX + safeZoneW - 0.8";
-			y="safeZoneY + 0.2 * safeZoneH";
-			w="0.25";
-			h="0.05";
+		// Top-bar tab between Multiplayer and Tutorials, with its dropdown group
+		// below. BDA_Functions\fn_mainMenu.sqf drives both. The onLoad here is a
+		// fallback for when another mod replaces the display onLoad above.
+		class BDA_MenuTitle: RscButtonMenu {
+			idc=67100;
+			text="Black Dagger";
+			tooltip="";
+			onLoad="[ctrlParent (_this select 0)] spawn {disableSerialization; uiSleep 0.1; private _bda = uiNamespace getVariable 'BDA_fnc_mainMenu'; if (isNil '_bda') then {_bda = compile preprocessFileLineNumbers '\BDA_Core\BDA_Functions\fn_mainMenu.sqf'; uiNamespace setVariable ['BDA_fnc_mainMenu', _bda]}; ['init', _this select 0] call _bda;};";
+			size="1.25 * (pixelH * pixelGrid * 2)";
+			style="0x02 + 0xC0";
+			colorBackground[]={0,0,0,0};
+			colorBackground2[]={1,1,1,1};
+			class Attributes {
+				align="center";
+				color="#ffffff";
+				font="PuristaLight";
+				shadow=0;
+				size=1;
+			};
+			class TextPos {
+				left="0.1 * 2 * (pixelW * pixelGrid * 2)";
+				top="0.18 * 2 * (pixelH * pixelGrid * 2)";
+				right="0.1 * 2 * (pixelW * pixelGrid * 2)";
+				bottom="0.18 * 2 * (pixelH * pixelGrid * 2)";
+			};
+			x="0.5 - 5 * (pixelW * pixelGrid * 2)";
+			y="safezoneY + 2 * (pixelH * pixelGrid * 2)";
+			w="10 * (pixelW * pixelGrid * 2)";
+			h="2 * (pixelH * pixelGrid * 2)";
 		};
-		class ConnectDiscord: RscButton {
-			idc=-1;
-			text="Join BDC Discord";
-			tooltip="Click to join the Black Dagger Discord";
-			url="https://discord.gg/faxU2ty9eQ";
-			colorBackground[]={0,0,0,0.69999999};
-			colorBackgroundActive[]={1,0,0,0.2};
-			borderSize=0.054000001;
-			colorBorder[]={0,0,0,0};
-			x="safeZoneX + 0.2 * safeZoneW";
-			y="safeZoneY + 0.2 * safeZoneH";
-			w="0.25";
-			h="0.05";
+		class BDA_MenuGroup: RscControlsGroupNoScrollbars {
+			idc=67090;
+			x="0.5 - 5 * (pixelW * pixelGrid * 2)";
+			y="safezoneY + 4 * (pixelH * pixelGrid * 2)";
+			w="10 * (pixelW * pixelGrid * 2)";
+			h=0;
+			class Controls {
+				class BDA_JoinNA: BDA_MenuItem {
+					idc=67101;
+					text="Join NA";
+					tooltip="Alpha Company servers";
+				};
+				class BDA_ServersNA: BDA_MenuSubGroup {
+					idc=67110;
+					class Controls {
+						class Server1: BDA_MenuItem { idc=67111; };
+						class Server2: BDA_MenuItem { idc=67112; };
+						class Server3: BDA_MenuItem { idc=67113; };
+						class Server4: BDA_MenuItem { idc=67114; };
+					};
+				};
+				class BDA_JoinEU: BDA_MenuItem {
+					idc=67102;
+					text="Join EU";
+					tooltip="Bravo Company servers";
+				};
+				class BDA_ServersEU: BDA_MenuSubGroup {
+					idc=67120;
+					class Controls {
+						class Server1: BDA_MenuItem { idc=67121; };
+						class Server2: BDA_MenuItem { idc=67122; };
+						class Server3: BDA_MenuItem { idc=67123; };
+						class Server4: BDA_MenuItem { idc=67124; };
+					};
+				};
+				class BDA_JoinTS: BDA_MenuItem {
+					idc=67103;
+					text="Join TS";
+					tooltip="main.blackdagger.org:9987";
+					url="ts3server://main.blackdagger.org?port=9987&password=21STBD";
+				};
+				class BDA_Discord: BDA_MenuItem {
+					idc=67104;
+					text="Discord";
+					tooltip="Join the Black Dagger Discord";
+					url="https://discord.gg/faxU2ty9eQ";
+				};
+				class BDA_Website: BDA_MenuItem {
+					idc=67105;
+					text="Website";
+					tooltip="blackdagger.org";
+					url="https://blackdagger.org";
+				};
+			};
 		};
 
 		class Logo: RscActivePicture {
@@ -276,6 +354,16 @@ class Cfg3den {
 					onLoad = "_ctrlYear = _this select 0; for '_y' from 2400 to 2600 do {_lbadd = _ctrlYear lbadd str _y; _ctrlYear lbsetvalue [_lbadd,_y];}; _ctrlYear lbsetcursel 53;";
 				};
 			};
+		};
+	};
+};
+
+class CfgFunctions {
+	class BDA {
+		tag="BDA";
+		class Menu {
+			file="\BDA_Core\BDA_Functions";
+			class mainMenu {};
 		};
 	};
 };

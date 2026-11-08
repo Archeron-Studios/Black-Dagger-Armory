@@ -551,6 +551,54 @@ class cfgWeapons {
 		};
 	};
 
+	class BDA_CH252D_Helmet_S8: BDA_CH252D_Helmet {
+		author = "Rib";
+		displayName="CH252D Helmet (2-4)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S8_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			hiddenSelections[]= {
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]= {
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S8_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
+	class BDA_CH252D_Helmet_S8_dp: BDA_CH252D_Helmet_dp {
+		author="Rib";
+		model="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S8_CO.paa",
+			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformModel="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
+			hiddenSelections[]= {
+				"camo",
+				"camo2",
+				"camo4",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]= {
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S8_CO.paa",
+				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
 	class BDA_CH252D_Helmet_Recon: BDA_CH252D_Helmet {
 		author = "Rib";
 		scope = 1;

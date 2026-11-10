@@ -168,7 +168,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Helmet_S1: BDA_CH252D_Helmet {
-		displayName="CH252D Helmet (1-1)";
+		displayName="CH252D Helmet (A-1-1)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S1_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
@@ -177,7 +177,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Helmet_S1_dp: BDA_CH252D_Helmet_dp {
-		displayName="CH252D Helmet (1-1)";
+		displayName="CH252D Helmet (A-1-1)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S1_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
@@ -201,7 +201,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Helmet_S2: BDA_CH252D_Helmet {
-		displayName="CH252D Helmet (1-2)";
+		displayName="CH252D Helmet (A-1-2)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S2_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
@@ -225,7 +225,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Helmet_S2_dp: BDA_CH252D_Helmet_dp {
-		displayName="CH252D Helmet (1-2)";
+		displayName="CH252D Helmet (A-1-2)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S2_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
@@ -249,7 +249,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Helmet_S3: BDA_CH252D_Helmet {
-		displayName="CH252D Helmet (1-3)";
+		displayName="CH252D Helmet (A-1-3)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S3_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
@@ -273,7 +273,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Helmet_S3_dp: BDA_CH252D_Helmet_dp {
-		displayName="CH252D Helmet (1-3)";
+		displayName="CH252D Helmet (A-1-3)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S3_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
@@ -296,7 +296,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Helmet_S4: BDA_CH252D_Helmet {
-		displayName="CH252D Helmet (1-4)";
+		displayName="CH252D Helmet (A-1-4)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S4_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
@@ -320,7 +320,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Helmet_S4_dp: BDA_CH252D_Helmet_dp {
-		displayName="CH252D Helmet (1-4)";
+		displayName="CH252D Helmet (A-1-4)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S4_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
@@ -396,7 +396,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Helmet_S5: BDA_CH252D_Helmet {
-		displayName="CH252D Helmet (2-1)";
+		displayName="CH252D Helmet (A-2-1)";
 		hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S5_CO.paa",
@@ -423,6 +423,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Helmet_S5_dp: BDA_CH252D_Helmet_dp {
+		displayName="CH252D Helmet (A-2-1)";
 		model="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
 			{
@@ -450,7 +451,7 @@ class cfgWeapons {
 
 	class BDA_CH252D_Helmet_S6: BDA_CH252D_Helmet {
 		author = "Rib";
-		displayName="CH252D Helmet (2-2)";
+		displayName="CH252D Helmet (A-2-2)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S6_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
@@ -477,6 +478,7 @@ class cfgWeapons {
 	};
 	class BDA_CH252D_Helmet_S6_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
+		displayName="CH252D Helmet (A-2-2)";
 		model="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -504,7 +506,7 @@ class cfgWeapons {
 
 	class BDA_CH252D_Helmet_S7: BDA_CH252D_Helmet {
 		author = "Rib";
-		displayName="CH252D Helmet (2-3)";
+		displayName="CH252D Helmet (A-2-3)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S7_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
@@ -529,6 +531,7 @@ class cfgWeapons {
 	};
 	class BDA_CH252D_Helmet_S7_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
+		displayName="CH252D Helmet (A-2-3)";
 		model="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S7_CO.paa",
@@ -553,7 +556,7 @@ class cfgWeapons {
 
 	class BDA_CH252D_Helmet_S8: BDA_CH252D_Helmet {
 		author = "Rib";
-		displayName="CH252D Helmet (2-4)";
+		displayName="CH252D Helmet (A-2-4)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S8_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
@@ -578,6 +581,7 @@ class cfgWeapons {
 	};
 	class BDA_CH252D_Helmet_S8_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
+		displayName="CH252D Helmet (A-2-4)";
 		model="\OPTRE_UNSC_Units\Army\redux\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S8_CO.paa",
@@ -997,5 +1001,5 @@ class cfgWeapons {
 class cfgMods
 {
 	author="Rib";
-	timepacked="090320251540";
+	timepacked="080010112026";
 };
